@@ -27,10 +27,12 @@
 }
 .sim-runs input[type="range"] {
   flex: 1;
-  accent-color: var(--accent);
+  accent-color: var(--accent-2);
 }
-.sim-n {
-  width: 76px;
+/* fixed width; must out-rank the generic .input width */
+.sim-runs input.sim-n {
+  width: 6.5em;
+  flex: none;
   text-align: center;
 }
 .sim-note {
