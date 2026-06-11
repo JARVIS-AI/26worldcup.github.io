@@ -199,7 +199,6 @@ export default function MatchDetail() {
                     {t('pens')} {m.home.pen ?? 0}–{m.away.pen ?? 0}
                   </div>
                 )}
-                {m.status === 'live' && m.time && <div className="md-clock">{m.time}</div>}
               </>
             ) : (
               <>

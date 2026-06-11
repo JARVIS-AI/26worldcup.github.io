@@ -379,7 +379,7 @@ export function runTournament(
 }
 
 /** backtracking assignment of qualified third-place groups to bracket slots */
-function assignThirds(slotAllowed: string[][], qualified: string[]): (string | null)[] {
+export function assignThirds(slotAllowed: string[][], qualified: string[]): (string | null)[] {
   const n = slotAllowed.length
   const used = new Set<string>()
   const out: (string | null)[] = Array(n).fill(null)

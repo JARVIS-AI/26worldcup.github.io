@@ -7,6 +7,7 @@ import { useSettings } from '../settings/SettingsContext'
 import { useAppData } from '../data/DataContext'
 import { displayTz, fmtDate, fmtTime } from '../utils/time'
 import { placeholderLabel, STAGE_LABEL_KEY } from '../utils/helpers'
+import { resolvedSlots } from '../utils/bracketResolve'
 import Flag from '../components/Flag'
 import TeamName from '../components/TeamName'
 import './bracket.css'
@@ -62,18 +63,23 @@ function BkRow({
   other,
   ph,
   flagSize,
+  resolved,
 }: {
   m: Match
   side: MatchSide | null
   other: MatchSide | null
   ph: string | null
   flagSize: number
+  resolved?: string
 }) {
   const { t, pick } = useI18n()
   const { teams } = useAppData()
-  const team = side ? (teams[side.code] ?? null) : null
-  const label = team && side ? pick(team.name, side.code) : ph ? compactPlaceholder(ph, t) : t('tbd')
-  const title = team && side ? label : ph ? placeholderLabel(ph, t) : t('tbd')
+  // a slot can be mathematically decided (group complete) before the data
+  // feed assigns the team — render the resolved team, scoreless
+  const code = side?.code ?? resolved
+  const team = code ? (teams[code] ?? null) : null
+  const label = team && code ? pick(team.name, code) : ph ? compactPlaceholder(ph, t) : t('tbd')
+  const title = team && code ? label : ph ? placeholderLabel(ph, t) : t('tbd')
   const out = outcome(m, side, other)
   const cls = out === 'w' ? ' bk-win' : out === 'l' ? ' bk-lose' : ''
   return (
@@ -92,7 +98,15 @@ function BkRow({
   )
 }
 
-function BkNode({ m, big = false }: { m: Match; big?: boolean }) {
+function BkNode({
+  m,
+  big = false,
+  overlay,
+}: {
+  m: Match
+  big?: boolean
+  overlay?: { home?: string; away?: string }
+}) {
   const { t, locale } = useI18n()
   const { settings } = useSettings()
   const { venues } = useAppData()
@@ -116,7 +130,7 @@ function BkNode({ m, big = false }: { m: Match; big?: boolean }) {
           {m.n}
         </span>
         {m.status === 'live' ? (
-          <span className="bk-live-tag">{m.time ? `${t('statusLive')} ${m.time}` : t('statusLive')}</span>
+          <span className="bk-live-tag">{t('statusLive')}</span>
         ) : m.status === 'finished' ? (
           <span className="bk-when">{t('statusFinished')}</span>
         ) : m.status === 'postponed' ? (
@@ -127,8 +141,22 @@ function BkNode({ m, big = false }: { m: Match; big?: boolean }) {
           </span>
         )}
       </div>
-      <BkRow m={m} side={m.home} other={m.away} ph={m.phA} flagSize={big ? 22 : 18} />
-      <BkRow m={m} side={m.away} other={m.home} ph={m.phB} flagSize={big ? 22 : 18} />
+      <BkRow
+        m={m}
+        side={m.home}
+        other={m.away}
+        ph={m.phA}
+        flagSize={big ? 22 : 18}
+        resolved={overlay?.home}
+      />
+      <BkRow
+        m={m}
+        side={m.away}
+        other={m.home}
+        ph={m.phB}
+        flagSize={big ? 22 : 18}
+        resolved={overlay?.away}
+      />
     </Link>
   )
 }
@@ -137,6 +165,8 @@ export default function Bracket() {
   const { t, locale } = useI18n()
   const { settings } = useSettings()
   const { matches, venues } = useAppData()
+  const { standings } = useAppData()
+  const overlay = useMemo(() => resolvedSlots(matches, standings), [matches, standings])
 
   const bk = useMemo(() => {
     const ko = matches.filter((m) => m.stage !== 'group')
@@ -221,7 +251,7 @@ export default function Bracket() {
             className={`bk-cell bk-${side} ${roundCls[ri]} ${feed}${join}`}
             style={{ gridColumn: cols[ri], gridRow: `${2 + i * span} / span ${span}` }}
           >
-            {m ? <BkNode m={m} /> : <div className="bk-ghost" />}
+            {m ? <BkNode m={m} overlay={overlay[m.id]} /> : <div className="bk-ghost" />}
           </div>,
         )
       })
@@ -268,13 +298,17 @@ export default function Bracket() {
               )}
             </div>
             <div className="bk-center-mid">
-              {bk.final ? <BkNode m={bk.final} big /> : <div className="bk-ghost" />}
+              {bk.final ? (
+                <BkNode m={bk.final} big overlay={overlay[bk.final.id]} />
+              ) : (
+                <div className="bk-ghost" />
+              )}
             </div>
             <div className="bk-center-bottom">
               {bk.third && (
                 <div className="bk-third">
                   <div className="bk-third-label">{t(STAGE_LABEL_KEY.third)}</div>
-                  <BkNode m={bk.third} />
+                  <BkNode m={bk.third} overlay={overlay[bk.third.id]} />
                 </div>
               )}
             </div>
