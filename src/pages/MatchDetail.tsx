@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import type { Lang, MatchSide, Official, TeamLineup } from '../types'
 import { DATA_FALLBACK, useI18n } from '../i18n'
@@ -83,6 +83,7 @@ export default function MatchDetail() {
     o.role
   const { settings } = useSettings()
   const { matches, teams, venues, weather, lineups, broadcasters, probs } = useAppData()
+  const [showProbPast, setShowProbPast] = useState(false)
 
   const m = matches.find((x) => x.id === id)
   const venue = m?.venueId ? (venues[m.venueId] ?? null) : null
@@ -210,7 +211,17 @@ export default function MatchDetail() {
           <HeroSide side={m.away} ph={m.phB} />
         </div>
         {m.status === 'live' && <p className="md-semilive small">{t('semiLiveNote')}</p>}
-        {m.home && m.away && probs[m.id] && (
+        {m.home && m.away && probs[m.id] && m.status === 'finished' && (
+          <button
+            type="button"
+            className="md-prob-show small"
+            aria-expanded={showProbPast}
+            onClick={() => setShowProbPast((v) => !v)}
+          >
+            {t(showProbPast ? 'probHide' : 'probShow')}
+          </button>
+        )}
+        {m.home && m.away && probs[m.id] && (m.status !== 'finished' || showProbPast) && (
           <div className="md-prob">
             <div className="md-prob-head small">
               <span>{t('probTitle')}</span>

@@ -120,6 +120,8 @@ const uz: Dict = {
   probDraw: 'Durang',
   probAdvance: "Keyingi bosqichga chiqish (qo'shimcha vaqt va penaltilar bilan)",
   probNote: "Tarixiy natijalarga asoslangan model bahosi, shunchaki ma'lumot uchun.",
+  probShow: "O'yin oldidagi ehtimollarni ko'rsatish",
+  probHide: 'Ehtimollarni yashirish',
   // ---- tournament simulator ----
   navSim: 'Simulyator',
   simTitle: 'Turnir simulyatori',

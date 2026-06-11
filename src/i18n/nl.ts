@@ -121,6 +121,8 @@ const nl: Dict = {
   probDraw: 'Gelijkspel',
   probAdvance: 'Doorgaan (incl. verlenging en strafschoppen)',
   probNote: 'Modelschatting op basis van historische uitslagen, puur indicatief.',
+  probShow: 'Winkans van vóór de wedstrijd tonen',
+  probHide: 'Winkans verbergen',
   // ---- tournament simulator ----
   navSim: 'Simulator',
   simTitle: 'Toernooisimulator',

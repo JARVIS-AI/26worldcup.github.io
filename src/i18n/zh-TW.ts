@@ -119,6 +119,8 @@ const zhTW: Dict = {
   probDraw: '平局',
   probAdvance: '晉級機率(含延長賽與PK)',
   probNote: '基於歷史戰績的模型估算,僅供參考。',
+  probShow: '顯示賽前勝負機率',
+  probHide: '隱藏勝負機率',
   // ---- tournament simulator ----
   navSim: '模擬器',
   simTitle: '賽事模擬器',

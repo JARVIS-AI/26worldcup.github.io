@@ -123,6 +123,8 @@ const pt: Dict = {
   probDraw: 'Empate',
   probAdvance: 'Apuramento (incl. prolongamento e penáltis)',
   probNote: 'Estimativa do modelo com base em resultados históricos, meramente indicativa.',
+  probShow: 'Mostrar probabilidades pré-jogo',
+  probHide: 'Ocultar probabilidades',
   // ---- tournament simulator ----
   navSim: 'Simulador',
   simTitle: 'Simulador do torneio',

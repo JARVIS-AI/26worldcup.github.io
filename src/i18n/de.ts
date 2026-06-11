@@ -121,6 +121,8 @@ const de: Dict = {
   probDraw: 'Remis',
   probAdvance: 'Weiterkommen (inkl. Verlängerung und Elfmeterschießen)',
   probNote: 'Modellschätzung aus historischen Ergebnissen, nur zur Orientierung.',
+  probShow: 'Siegwahrscheinlichkeit vor dem Spiel anzeigen',
+  probHide: 'Siegwahrscheinlichkeit ausblenden',
   // ---- tournament simulator ----
   navSim: 'Simulator',
   simTitle: 'Turnier-Simulator',

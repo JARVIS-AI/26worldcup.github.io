@@ -122,6 +122,8 @@ const hr: Dict = {
   probDraw: 'Neriješeno',
   probAdvance: 'Prolazak (uklj. produžetke i jedanaesterce)',
   probNote: 'Procjena modela na temelju povijesnih rezultata, samo informativno.',
+  probShow: 'Prikaži vjerojatnosti prije utakmice',
+  probHide: 'Sakrij vjerojatnosti',
   // ---- tournament simulator ----
   navSim: 'Simulator',
   simTitle: 'Simulator turnira',

@@ -121,6 +121,8 @@ const sv: Dict = {
   probDraw: 'Oavgjort',
   probAdvance: 'Avancemang (inkl. förlängning och straffar)',
   probNote: 'Modellskattning från historiska resultat, endast för nöjes skull.',
+  probShow: 'Visa vinstchanser före matchen',
+  probHide: 'Dölj vinstchanser',
   // ---- tournament simulator ----
   navSim: 'Simulator',
   simTitle: 'Turneringssimulator',

@@ -119,6 +119,8 @@ const zh: Dict = {
   probDraw: '平局',
   probAdvance: '晋级概率(含加时与点球)',
   probNote: '基于历史战绩的模型估算，仅供参考。',
+  probShow: '显示赛前胜负概率',
+  probHide: '隐藏胜负概率',
   // ---- tournament simulator ----
   navSim: '模拟器',
   simTitle: '赛事模拟器',

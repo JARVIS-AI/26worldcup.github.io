@@ -122,6 +122,8 @@ const en: Dict = {
   probDraw: 'Draw',
   probAdvance: 'To advance (incl. extra time and penalties)',
   probNote: 'Model estimate from historical results, for fun only.',
+  probShow: 'Show pre-match win probability',
+  probHide: 'Hide win probability',
   // ---- tournament simulator ----
   navSim: 'Simulator',
   simTitle: 'Tournament simulator',

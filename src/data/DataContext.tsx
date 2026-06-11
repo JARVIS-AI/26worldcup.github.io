@@ -1,7 +1,8 @@
-import { createContext, useContext, useEffect, useRef, useState } from 'react'
+import { createContext, useContext, useEffect, useRef, useState, useMemo } from 'react'
 import type { ReactNode } from 'react'
 import type { AppData, Squads } from '../types'
 import type { SimModel } from '../sim/engine'
+import { withResolvedSides } from '../utils/bracketResolve'
 
 interface DataCtx {
   data: AppData | null
@@ -179,8 +180,14 @@ export function DataProvider({ children }: { children: ReactNode }) {
       })
   }
 
+  // knockout slots that are mathematically decided render as real teams everywhere
+  const dataResolved = useMemo(
+    () => (data ? { ...data, matches: withResolvedSides(data.matches, data.standings) } : data),
+    [data],
+  )
+
   return (
-    <Ctx.Provider value={{ data, error, squads, loadSquads, simModel, loadSimModel }}>
+    <Ctx.Provider value={{ data: dataResolved, error, squads, loadSquads, simModel, loadSimModel }}>
       {children}
     </Ctx.Provider>
   )

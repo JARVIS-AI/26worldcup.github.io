@@ -121,6 +121,8 @@ const it: Dict = {
   probDraw: 'Pareggio',
   probAdvance: 'Passaggio del turno (incl. supplementari e rigori)',
   probNote: 'Stima del modello su risultati storici, solo a scopo indicativo.',
+  probShow: 'Mostra le probabilità pre-partita',
+  probHide: 'Nascondi le probabilità',
   // ---- tournament simulator ----
   navSim: 'Simulatore',
   simTitle: 'Simulatore del torneo',

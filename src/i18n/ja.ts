@@ -119,6 +119,8 @@ const ja: Dict = {
   probDraw: '引き分け',
   probAdvance: '勝ち上がり確率(延長・PK含む)',
   probNote: '過去の対戦結果に基づくモデル推定値です。参考程度にどうぞ。',
+  probShow: '試合前の勝利確率を表示',
+  probHide: '勝利確率を隠す',
   // ---- tournament simulator ----
   navSim: 'シミュレーター',
   simTitle: '大会シミュレーター',

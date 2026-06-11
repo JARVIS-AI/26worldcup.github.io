@@ -121,6 +121,8 @@ const es: Dict = {
   probDraw: 'Empate',
   probAdvance: 'Clasificación (incl. prórroga y penales)',
   probNote: 'Estimación del modelo según resultados históricos, solo orientativa.',
+  probShow: 'Ver la probabilidad previa al partido',
+  probHide: 'Ocultar la probabilidad',
   // ---- tournament simulator ----
   navSim: 'Simulador',
   simTitle: 'Simulador del torneo',

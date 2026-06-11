@@ -121,6 +121,8 @@ const fr: Dict = {
   probDraw: 'Nul',
   probAdvance: 'Qualification (prol. et tirs au but inclus)',
   probNote: 'Estimation statistique à partir des résultats historiques, à titre indicatif.',
+  probShow: 'Afficher les probabilités d’avant-match',
+  probHide: 'Masquer les probabilités',
   // ---- tournament simulator ----
   navSim: 'Simulateur',
   simTitle: 'Simulateur de tournoi',

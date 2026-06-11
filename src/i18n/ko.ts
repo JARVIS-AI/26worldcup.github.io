@@ -119,6 +119,8 @@ const ko: Dict = {
   probDraw: '무승부',
   probAdvance: '진출 확률(연장·승부차기 포함)',
   probNote: '과거 경기 결과 기반 모델 추정치로, 재미로만 참고하세요.',
+  probShow: '경기 전 승리 확률 보기',
+  probHide: '승리 확률 숨기기',
   // ---- tournament simulator ----
   navSim: '시뮬레이터',
   simTitle: '대회 시뮬레이터',

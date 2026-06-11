@@ -120,6 +120,8 @@ const fa: Dict = {
   probDraw: 'مساوی',
   probAdvance: 'صعود (شامل وقت اضافه و پنالتی)',
   probNote: 'برآورد مدل بر اساس نتایج تاریخی، صرفا جنبه سرگرمی دارد.',
+  probShow: 'نمایش احتمال برد پیش از بازی',
+  probHide: 'پنهان کردن احتمال برد',
   // ---- tournament simulator ----
   navSim: 'شبیه‌ساز',
   simTitle: 'شبیه‌ساز تورنمنت',

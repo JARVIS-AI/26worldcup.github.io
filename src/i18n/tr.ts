@@ -119,6 +119,8 @@ const tr: Dict = {
   probDraw: 'Beraberlik',
   probAdvance: 'Tur atlama (uzatma ve penaltılar dahil)',
   probNote: 'Geçmiş sonuçlara dayalı model tahmini, yalnızca fikir verir.',
+  probShow: 'Maç öncesi kazanma olasılığını göster',
+  probHide: 'Olasılığı gizle',
   // ---- tournament simulator ----
   navSim: 'Simülatör',
   simTitle: 'Turnuva simülatörü',

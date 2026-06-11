@@ -119,6 +119,8 @@ const id: Dict = {
   probDraw: 'Seri',
   probAdvance: 'Lolos (termasuk perpanjangan waktu dan adu penalti)',
   probNote: 'Perkiraan model dari hasil historis, sekadar hiburan.',
+  probShow: 'Tampilkan peluang sebelum pertandingan',
+  probHide: 'Sembunyikan peluang',
   // ---- tournament simulator ----
   navSim: 'Simulator',
   simTitle: 'Simulator turnamen',

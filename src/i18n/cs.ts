@@ -119,6 +119,8 @@ const cs: Dict = {
   probDraw: 'Remíza',
   probAdvance: 'Postup (vč. prodloužení a penalt)',
   probNote: 'Modelový odhad z historických výsledků, jen pro zajímavost.',
+  probShow: 'Zobrazit předzápasové pravděpodobnosti',
+  probHide: 'Skrýt pravděpodobnosti',
   // ---- tournament simulator ----
   navSim: 'Simulátor',
   simTitle: 'Simulátor turnaje',
