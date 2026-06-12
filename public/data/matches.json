@@ -67,7 +67,7 @@
    "date": "2026-06-12T02:00:00Z",
    "venueId": "400252150",
    "status": "live",
-   "time": "80'",
+   "time": "90'+4'",
    "home": {
     "code": "KOR",
     "score": 2,
@@ -81,7 +81,7 @@
    "phA": "A3",
    "phB": "A4",
    "winner": null,
-   "attendance": null,
+   "attendance": "44985",
    "officials": [
     {
      "id": "392013",

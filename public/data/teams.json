@@ -167,7 +167,7 @@
     "zh-TW": "奧地利"
    },
    "iso2": "AT",
-   "ranking": 24,
+   "ranking": 25,
    "rankingPrev": 24,
    "baseCamp": {
     "city": "Goleta",
@@ -673,7 +673,7 @@
     "zh-TW": "捷克"
    },
    "iso2": "CZ",
-   "ranking": 38,
+   "ranking": 43,
    "rankingPrev": 40,
    "baseCamp": {
     "city": "Mansfield",
@@ -719,7 +719,7 @@
     "zh-TW": "厄瓜多"
    },
    "iso2": "EC",
-   "ranking": 23,
+   "ranking": 24,
    "rankingPrev": 23,
    "baseCamp": {
     "city": "Columbus",
@@ -1271,7 +1271,7 @@
     "zh-TW": "南韓"
    },
    "iso2": "KR",
-   "ranking": 25,
+   "ranking": 22,
    "rankingPrev": 25,
    "baseCamp": {
     "city": "Guadalajara",
@@ -1637,7 +1637,7 @@
     "zh-TW": "巴拉圭"
    },
    "iso2": "PY",
-   "ranking": 41,
+   "ranking": 40,
    "rankingPrev": 41,
    "baseCamp": {
     "city": "San Jose",
@@ -1820,7 +1820,7 @@
     "uk": "Шотландія"
    },
    "iso2": "GB-SCT",
-   "ranking": 42,
+   "ranking": 41,
    "rankingPrev": 42,
    "baseCamp": {
     "city": "Charlotte",
@@ -1958,7 +1958,7 @@
     "zh-TW": "瑞典"
    },
    "iso2": "SE",
-   "ranking": 39,
+   "ranking": 38,
    "rankingPrev": 38,
    "baseCamp": {
     "city": "Frisco",
@@ -2050,7 +2050,7 @@
     "zh-TW": "土耳其"
    },
    "iso2": "TR",
-   "ranking": 22,
+   "ranking": 23,
    "rankingPrev": 22,
    "baseCamp": {
     "city": "Mesa",
