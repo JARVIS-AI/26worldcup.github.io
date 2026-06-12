@@ -51,7 +51,7 @@
   }
  ],
  "cards": {
-  "yellow": 8,
+  "yellow": 9,
   "red": 3,
   "players": [
    {
@@ -125,6 +125,13 @@
     "r": 0
    },
    {
+    "id": "489520",
+    "name": "Nikola KATIC",
+    "code": "BIH",
+    "y": 1,
+    "r": 0
+   },
+   {
     "id": "463221",
     "name": "Nkosinathi SIBISI",
     "code": "RSA",
@@ -133,7 +140,7 @@
    }
   ]
  },
- "attAvg": 62905,
+ "attAvg": 56270,
  "biggestWin": {
   "diff": 2,
   "id": "400021443",
