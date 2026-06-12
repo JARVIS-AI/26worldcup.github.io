@@ -183,7 +183,6 @@ const ja: Dict = {
   teamMatches: '試合',
   addFavorite: 'マイチームに追加',
   removeFavorite: 'マイチームから削除',
-  groupOpponents: 'グループの対戦相手',
   // venues
   venuesTitle: 'スタジアム',
   venuesSub: '開催3カ国・16スタジアム',
@@ -212,6 +211,12 @@ const ja: Dict = {
   matchesPlayed: '試合数',
   statGoals: '総得点',
   statGoalsAvg: '1試合平均ゴール',
+  statCards: 'カード',
+  statYellowCards: 'イエローカード',
+  statRedCards: 'レッドカード',
+  statUpset: '最大の番狂わせ',
+  statBiggestWin: '最大得点差',
+  statFastestGoal: '最速ゴール',
   // settings
   settingsTitle: '設定',
   settingLang: '言語',

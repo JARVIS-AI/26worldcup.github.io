@@ -216,27 +216,6 @@
   }
 }
 
-.td-opps {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 13px;
-}
-.td-opps-flags {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-}
-.td-opps-flags a {
-  display: inline-flex;
-  border-radius: 4px;
-  transition: transform 0.12s;
-}
-.td-opps-flags a:hover {
-  transform: scale(1.12);
-}
-
 /* ---- squad ---- */
 .td-squad-note {
   margin: -6px 0 14px;

@@ -189,7 +189,6 @@ const uk: Dict = {
   teamMatches: 'Матчі',
   addFavorite: 'Додати до моїх збірних',
   removeFavorite: 'Прибрати з моїх збірних',
-  groupOpponents: 'Суперники в групі',
   // venues
   venuesTitle: 'Стадіони',
   venuesSub: '16 стадіонів у 3 країнах-господарках',
@@ -218,6 +217,12 @@ const uk: Dict = {
   matchesPlayed: 'Зіграно матчів',
   statGoals: 'Забито голів',
   statGoalsAvg: 'Голів за матч',
+  statCards: 'Картки',
+  statYellowCards: 'Жовті картки',
+  statRedCards: 'Червоні картки',
+  statUpset: 'Головна сенсація',
+  statBiggestWin: 'Найбільша перемога',
+  statFastestGoal: 'Найшвидший гол',
   // settings
   settingsTitle: 'Налаштування',
   settingLang: 'Мова',

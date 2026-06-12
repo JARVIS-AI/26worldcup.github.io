@@ -195,7 +195,6 @@ const ar: Dict = {
   teamMatches: 'المباريات',
   addFavorite: 'أضِف إلى منتخباتي',
   removeFavorite: 'أزِل من منتخباتي',
-  groupOpponents: 'منافسو المجموعة',
   // venues
   venuesTitle: 'الملاعب',
   venuesSub: '16 ملعبًا في 3 دول مستضيفة',
@@ -224,6 +223,12 @@ const ar: Dict = {
   matchesPlayed: 'المباريات الملعوبة',
   statGoals: 'الأهداف المسجلة',
   statGoalsAvg: 'معدل الأهداف في المباراة',
+  statCards: 'البطاقات',
+  statYellowCards: 'البطاقات الصفراء',
+  statRedCards: 'البطاقات الحمراء',
+  statUpset: 'أكبر مفاجأة',
+  statBiggestWin: 'أكبر فوز',
+  statFastestGoal: 'أسرع هدف',
   // settings
   settingsTitle: 'الإعدادات',
   settingLang: 'اللغة',

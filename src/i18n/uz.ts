@@ -186,7 +186,6 @@ const uz: Dict = {
   teamMatches: "O'yinlar",
   addFavorite: "Jamoalarimga qo'shish",
   removeFavorite: 'Jamoalarimdan olib tashlash',
-  groupOpponents: 'Guruhdagi raqiblar',
   // venues
   venuesTitle: 'Stadionlar',
   venuesSub: '3 mezbon mamlakatdagi 16 ta stadion',
@@ -215,6 +214,12 @@ const uz: Dict = {
   matchesPlayed: "O'tkazilgan o'yinlar",
   statGoals: 'Urilgan gollar',
   statGoalsAvg: 'Har oʻyinga gol',
+  statCards: 'Kartochkalar',
+  statYellowCards: 'Sariq kartochkalar',
+  statRedCards: 'Qizil kartochkalar',
+  statUpset: 'Eng katta kutilmagan natija',
+  statBiggestWin: 'Eng yirik g‘alaba',
+  statFastestGoal: 'Eng tezkor gol',
   // settings
   settingsTitle: 'Sozlamalar',
   settingLang: 'Til',

@@ -184,7 +184,6 @@ const fa: Dict = {
   teamMatches: 'بازی‌ها',
   addFavorite: 'افزودن به تیم‌های من',
   removeFavorite: 'حذف از تیم‌های من',
-  groupOpponents: 'حریفان هم‌گروه',
   // venues
   venuesTitle: 'ورزشگاه‌ها',
   venuesSub: '16 ورزشگاه در 3 کشور میزبان',
@@ -213,6 +212,12 @@ const fa: Dict = {
   matchesPlayed: 'بازی‌های انجام‌شده',
   statGoals: 'گل‌های زده',
   statGoalsAvg: 'گل در هر بازی',
+  statCards: 'کارت‌ها',
+  statYellowCards: 'کارت‌های زرد',
+  statRedCards: 'کارت‌های قرمز',
+  statUpset: 'بزرگ‌ترین شگفتی',
+  statBiggestWin: 'بزرگ‌ترین برد',
+  statFastestGoal: 'سریع‌ترین گل',
   // settings
   settingsTitle: 'تنظیمات',
   settingLang: 'زبان',

@@ -188,7 +188,6 @@ const cs: Dict = {
   teamMatches: 'Zápasy',
   addFavorite: 'Přidat do mých týmů',
   removeFavorite: 'Odebrat z mých týmů',
-  groupOpponents: 'Soupeři ve skupině',
   // venues
   venuesTitle: 'Stadiony',
   venuesSub: '16 stadionů ve 3 pořadatelských zemích',
@@ -217,6 +216,12 @@ const cs: Dict = {
   matchesPlayed: 'Odehrané zápasy',
   statGoals: 'Vstřelené góly',
   statGoalsAvg: 'Gólů na zápas',
+  statCards: 'Karty',
+  statYellowCards: 'Žluté karty',
+  statRedCards: 'Červené karty',
+  statUpset: 'Největší překvapení',
+  statBiggestWin: 'Nejvyšší výhra',
+  statFastestGoal: 'Nejrychlejší gól',
   // settings
   settingsTitle: 'Nastavení',
   settingLang: 'Jazyk',

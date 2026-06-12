@@ -8,6 +8,7 @@ import { useAppData, useData } from '../data/DataContext'
 import { fifaToIso2, qualState, sortMatches } from '../utils/helpers'
 import Flag from '../components/Flag'
 import Icon from '../components/Icon'
+import MapLinks from '../components/MapLinks'
 import MatchCard from '../components/MatchCard'
 import TeamName from '../components/TeamName'
 import './teamdetail.css'
@@ -143,15 +144,6 @@ export default function TeamDetail() {
     baseCampText = joined && ctry ? `${joined}, ${ctry}` : joined || ctry || t('none')
   }
 
-  // Google Maps: search by facility+city (lands on the place card); coords as fallback
-  let gmapsUrl: string | null = null
-  if (bc) {
-    const q = [bc.facility, bc.city].filter(Boolean).join(', ')
-    if (q) gmapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`
-    else if (bc.lat != null && bc.lon != null)
-      gmapsUrl = `https://www.google.com/maps/search/?api=1&query=${bc.lat},${bc.lon}`
-  }
-
   const webText = team.web ? team.web.replace(/^https?:\/\//, '') : null
   const webUrl = webText ? `https://${webText}` : null
 
@@ -208,11 +200,10 @@ export default function TeamDetail() {
                     {baseCampText}
                     <Icon name="pin" size={14} />
                   </Link>
-                  {gmapsUrl && (
-                    <a className="td-web td-gmaps" href={gmapsUrl} target="_blank" rel="noopener noreferrer">
-                      Google Maps
-                      <Icon name="external" size={13} />
-                    </a>
+                  {bc && (
+                    <MapLinks
+                      query={[bc.facility, bc.city].filter(Boolean).join(', ') || `${bc.lat},${bc.lon}`}
+                    />
                   )}
                 </>
               ) : (

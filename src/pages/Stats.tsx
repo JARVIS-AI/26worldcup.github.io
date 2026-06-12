@@ -56,6 +56,50 @@ export default function Stats() {
             <div className="sx-lbl">{t('statGoalsAvg')}</div>
           </div>
         )}
+        {(stats.cards?.yellow ?? 0) > 0 && (
+          <div className="card sx-stat">
+            <div className="sx-num tnum">🟨 {stats.cards?.yellow}</div>
+            <div className="sx-lbl">{t('statYellowCards')}</div>
+          </div>
+        )}
+        {(stats.cards?.red ?? 0) > 0 && (
+          <div className="card sx-stat">
+            <div className="sx-num tnum">🟥 {stats.cards?.red}</div>
+            <div className="sx-lbl">{t('statRedCards')}</div>
+          </div>
+        )}
+        {stats.biggestWin && (
+          <Link
+            to={stats.biggestWin.id ? `/match/${stats.biggestWin.id}` : '/'}
+            className="card sx-stat sx-stat-link"
+          >
+            <div className="sx-num tnum sx-num-sm">
+              <Flag team={teams[stats.biggestWin.h]} size={22} /> {stats.biggestWin.hs}–{stats.biggestWin.as}{' '}
+              <Flag team={teams[stats.biggestWin.a]} size={22} />
+            </div>
+            <div className="sx-lbl">{t('statBiggestWin')}</div>
+          </Link>
+        )}
+        {stats.fastestGoal && (
+          <Link
+            to={stats.fastestGoal.id ? `/match/${stats.fastestGoal.id}` : '/'}
+            className="card sx-stat sx-stat-link"
+          >
+            <div className="sx-num tnum sx-num-sm">
+              {stats.fastestGoal.minute} {stats.fastestGoal.name}
+            </div>
+            <div className="sx-lbl">{t('statFastestGoal')}</div>
+          </Link>
+        )}
+        {stats.upset && (
+          <Link to={`/match/${stats.upset.id}`} className="card sx-stat sx-stat-link">
+            <div className="sx-num tnum sx-num-sm">
+              <Flag team={teams[stats.upset.h]} size={22} /> {stats.upset.hs}–{stats.upset.as}{' '}
+              <Flag team={teams[stats.upset.a]} size={22} /> ({stats.upset.p}%)
+            </div>
+            <div className="sx-lbl">{t('statUpset')}</div>
+          </Link>
+        )}
         {liveCount > 0 && (
           <div className="card sx-stat sx-live">
             <div className="sx-num tnum">{liveCount}</div>
@@ -107,6 +151,44 @@ export default function Stats() {
             </table>
           )}
         </section>
+
+        {(stats.cards?.players.length ?? 0) > 0 && (
+          <section className="card card-pad sx-card">
+            <h2>{t('statCards')}</h2>
+            <table className="sx-table">
+              <thead>
+                <tr>
+                  <th />
+                  <th />
+                  <th className="sx-goals-h">🟨</th>
+                  <th className="sx-goals-h">🟥</th>
+                </tr>
+              </thead>
+              <tbody>
+                {(stats.cards?.players ?? []).map((c) => {
+                  const team = teams[c.code]
+                  return (
+                    <tr key={c.id}>
+                      <td className="sx-player">{c.name}</td>
+                      <td className="sx-team-cell">
+                        {team ? (
+                          <Link to={`/team/${c.code}`} className="team-inline sx-team">
+                            <Flag team={team} size={20} />
+                            <span className="nm">{c.code}</span>
+                          </Link>
+                        ) : (
+                          <span className="muted small">{c.code}</span>
+                        )}
+                      </td>
+                      <td className="sx-goals tnum">{c.y || ''}</td>
+                      <td className="sx-goals tnum">{c.r || ''}</td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          </section>
+        )}
 
         <section className="card card-pad sx-card">
           <h2>{t('fifaRanking')}</h2>

@@ -17,6 +17,24 @@
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
+
+/* compact text variant: smaller, wrappable (long player names) */
+.sx-num-sm {
+  font-size: 1.4rem;
+  line-height: 1.3;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.sx-num-sm .flag {
+  vertical-align: -0.12em;
+}
+.sx-stat-link {
+  text-decoration: none;
+  color: inherit;
+}
+.sx-stat-link:hover {
+  border-color: var(--accent-2);
+}
 .sx-lbl {
   margin-top: 4px;
   font-size: 0.8rem;

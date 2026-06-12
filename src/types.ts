@@ -229,6 +229,15 @@ export interface MatchProbs {
 
 export interface Stats {
   scorers: { id: string; name: string; code: string; goals: number; ownGoals: number }[]
+  cards?: {
+    yellow: number
+    red: number
+    players: { id: string; name: string; code: string; y: number; r: number }[]
+  }
+  attAvg?: number | null
+  biggestWin?: { diff: number; id?: string; h: string; a: string; hs: number; as: number } | null
+  fastestGoal?: { min: number; minute: string; name: string; code: string | null; id?: string } | null
+  upset?: { p: number; id: string; h: string; a: string; hs: number; as: number } | null
 }
 
 export interface Meta {

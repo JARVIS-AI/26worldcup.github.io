@@ -15,6 +15,7 @@ import {
 } from '../utils/helpers'
 import Flag from '../components/Flag'
 import Icon from '../components/Icon'
+import MapLinks from '../components/MapLinks'
 import './venues.css'
 
 type HostCountry = Venue['country']
@@ -525,6 +526,11 @@ function VenueCard({ venue: v, matches }: { venue: Venue; matches: Match[] }) {
         <div className="vn-city small muted">
           <Icon name="pin" size={14} />
           <span>{pick(v.cityName, v.city)}</span>
+          <MapLinks
+            query={`${v.realName}, ${v.city}`}
+            size={17}
+            wiki={v.wiki ? { url: v.wiki.url, title: t('wikipedia') } : undefined}
+          />
         </div>
 
         <div className="vn-chips">
@@ -563,15 +569,6 @@ function VenueCard({ venue: v, matches }: { venue: Venue; matches: Match[] }) {
             {localizedNote(cl.rainNote, pick) && (
               <div className="vn-rain muted">{localizedNote(cl.rainNote, pick)}</div>
             )}
-          </div>
-        )}
-
-        {v.wiki && (
-          <div className="vn-wiki small">
-            <a href={v.wiki.url} target="_blank" rel="noopener noreferrer" title={t('wikipedia')}>
-              {v.wiki.title}
-              <Icon name="external" size={13} />
-            </a>
           </div>
         )}
       </div>

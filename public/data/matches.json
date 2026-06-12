@@ -22,7 +22,7 @@
    "phA": "A1",
    "phB": "A2",
    "winner": "MEX",
-   "attendance": "80824",
+   "attendance": 80824,
    "officials": [
     {
      "id": "361561",
@@ -81,7 +81,7 @@
    "phA": "A3",
    "phB": "A4",
    "winner": "KOR",
-   "attendance": "44985",
+   "attendance": 44985,
    "officials": [
     {
      "id": "392013",
@@ -126,7 +126,7 @@
    "date": "2026-06-12T19:00:00Z",
    "venueId": "400242032",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "CAN",
     "score": null,
@@ -495,7 +495,41 @@
    "phB": "E4",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "347710",
+     "country": "ENG",
+     "role": "referee",
+     "name": {
+      "en": "Michael OLIVER",
+      "fr": "Michael OLIVER",
+      "zh": "Michael OLIVER",
+      "ar": "Michael OLIVER",
+      "es": "Michael OLIVER",
+      "de": "Michael OLIVER",
+      "pt": "Michael OLIVER",
+      "it": "Michael OLIVER",
+      "ja": "Michael OLIVER",
+      "ko": "Michael OLIVER",
+      "id": "Michael OLIVER",
+      "ru": "Michael OLIVER"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021464",
@@ -520,7 +554,41 @@
    "phB": "E2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "416524",
+     "country": "MAR",
+     "role": "referee",
+     "name": {
+      "en": "Jalal JAYED",
+      "fr": "Jalal JAYED",
+      "zh": "Jalal JAYED",
+      "ar": "Jalal JAYED",
+      "es": "Jalal JAYED",
+      "de": "Jalal JAYED",
+      "pt": "Jalal JAYED",
+      "it": "Jalal JAYED",
+      "ja": "Jalal JAYED",
+      "ko": "Jalal JAYED",
+      "id": "Jalal JAYED",
+      "ru": "Jalal JAYED"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021470",
@@ -545,7 +613,41 @@
    "phB": "F2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "392406",
+     "country": "USA",
+     "role": "referee",
+     "name": {
+      "en": "Ismail ELFATH",
+      "fr": "Ismail ELFATH",
+      "zh": "Ismail ELFATH",
+      "ar": "Ismail ELFATH",
+      "es": "Ismail ELFATH",
+      "de": "Ismail ELFATH",
+      "pt": "Ismail ELFATH",
+      "it": "Ismail ELFATH",
+      "ja": "Ismail ELFATH",
+      "ko": "Ismail ELFATH",
+      "id": "Ismail ELFATH",
+      "ru": "Ismail ELFATH"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021474",
@@ -570,7 +672,41 @@
    "phB": "F4",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "434995",
+     "country": "ARG",
+     "role": "referee",
+     "name": {
+      "en": "Yael FALCON PEREZ",
+      "fr": "Yael FALCON PEREZ",
+      "zh": "Yael FALCON PEREZ",
+      "ar": "Yael FALCON PEREZ",
+      "es": "Yael FALCON PEREZ",
+      "de": "Yael FALCON PEREZ",
+      "pt": "Yael FALCON PEREZ",
+      "it": "Yael FALCON PEREZ",
+      "ja": "Yael FALCON PEREZ",
+      "ko": "Yael FALCON PEREZ",
+      "id": "Yael FALCON PEREZ",
+      "ru": "Yael FALCON PEREZ"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021486",

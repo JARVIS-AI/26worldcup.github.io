@@ -68,11 +68,40 @@ export default function Settings() {
   ]
 
   const allTz = useMemo(() => allTimezones(), [])
+  // "UTC+8"-style offset per zone (computed once; also searchable)
+  const tzOffsets = useMemo(() => {
+    const map = new Map<string, string>()
+    const now = new Date()
+    for (const z of allTz) {
+      try {
+        const part = new Intl.DateTimeFormat('en', { timeZone: z, timeZoneName: 'shortOffset' })
+          .formatToParts(now)
+          .find((x) => x.type === 'timeZoneName')?.value
+        map.set(z, (part ?? 'GMT').replace('GMT', 'UTC').replace(/^UTC$/, 'UTC+0'))
+      } catch {
+        /* unknown zone */
+      }
+    }
+    return map
+  }, [allTz])
+
+  const [tzOpen, setTzOpen] = useState(false)
   const tzOptions = useMemo(() => {
-    const q = tzQuery.trim().toLowerCase().replace(/\s+/g, '_')
-    const filtered = q ? allTz.filter((z) => z.toLowerCase().includes(q)) : allTz
+    const qRaw = tzQuery.trim().toLowerCase()
+    const q = qRaw.replace(/\s+/g, '_')
+    const filtered = qRaw
+      ? allTz.filter((z) => {
+          const off = (tzOffsets.get(z) ?? '').toLowerCase()
+          return (
+            z.toLowerCase().includes(q) ||
+            off.includes(qRaw) ||
+            off.replace('utc', 'gmt').includes(qRaw) ||
+            off.replace('utc', '').includes(qRaw)
+          )
+        })
+      : allTz
     return filtered.includes(settings.fixedTz) ? filtered : [settings.fixedTz, ...filtered]
-  }, [allTz, tzQuery, settings.fixedTz])
+  }, [allTz, tzQuery, settings.fixedTz, tzOffsets])
 
   const grouped = useMemo(() => {
     const map = new Map<string, Team[]>()
@@ -168,11 +197,20 @@ export default function Settings() {
                 aria-label={t('tzFixed')}
                 placeholder={settings.fixedTz.replaceAll('_', ' ')}
                 onChange={(e) => setTzQuery(e.target.value)}
+                onFocus={() => setTzOpen(true)}
               />
-              <select className="input" value={settings.fixedTz} onChange={(e) => setFixedTz(e.target.value)}>
+              <select
+                className="input"
+                size={tzOpen ? 4 : undefined}
+                value={settings.fixedTz}
+                onChange={(e) => {
+                  setFixedTz(e.target.value)
+                  setTzOpen(false)
+                }}
+              >
                 {tzOptions.map((z) => (
                   <option key={z} value={z}>
-                    {z.replaceAll('_', ' ')}
+                    {z.replaceAll('_', ' ')} ({tzOffsets.get(z) ?? '—'})
                   </option>
                 ))}
               </select>

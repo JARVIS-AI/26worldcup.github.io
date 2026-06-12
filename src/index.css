@@ -607,6 +607,9 @@ input.input {
   gap: 10px;
   margin: 26px 0 12px;
 }
+.section-title .flag {
+  align-self: center; /* images have no text baseline — centre them on the row */
+}
 .section-title h2 {
   margin: 0;
 }
@@ -839,4 +842,35 @@ input.input {
 }
 .shell-footer-links a:hover {
   color: var(--accent-2);
+}
+
+/* map app logo links (Google/Apple Maps) */
+.maplinks {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-inline-start: 10px;
+  vertical-align: -2px;
+}
+.maplinks a {
+  display: inline-flex;
+  border-radius: 4px;
+  transition: transform 0.12s ease;
+}
+.maplinks a:hover {
+  transform: scale(1.15);
+}
+.vn-city .maplinks {
+  margin-inline-start: auto;
+}
+
+/* the Wikipedia W is a black glyph — invert it on dark surfaces */
+[data-theme="dark"] .maplinks img[alt="Wikipedia"] {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .maplinks img[alt="Wikipedia"] {
+    filter: invert(1);
+  }
 }

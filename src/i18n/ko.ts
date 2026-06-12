@@ -183,7 +183,6 @@ const ko: Dict = {
   teamMatches: '경기',
   addFavorite: '내 팀에 추가',
   removeFavorite: '내 팀에서 제거',
-  groupOpponents: '같은 조 상대',
   // venues
   venuesTitle: '경기장',
   venuesSub: '3개 개최국, 16개 경기장',
@@ -212,6 +211,12 @@ const ko: Dict = {
   matchesPlayed: '경기 수',
   statGoals: '총 득점',
   statGoalsAvg: '경기당 득점',
+  statCards: '카드',
+  statYellowCards: '옐로카드',
+  statRedCards: '레드카드',
+  statUpset: '최대 이변',
+  statBiggestWin: '최다 점수차 승리',
+  statFastestGoal: '최단시간 골',
   // settings
   settingsTitle: '설정',
   settingLang: '언어',

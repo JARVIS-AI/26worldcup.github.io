@@ -187,7 +187,6 @@ const it: Dict = {
   teamMatches: 'Partite',
   addFavorite: 'Aggiungi alle mie squadre',
   removeFavorite: 'Rimuovi dalle mie squadre',
-  groupOpponents: 'Avversarie nel girone',
   // venues
   venuesTitle: 'Stadi',
   venuesSub: '16 stadi in 3 paesi ospitanti',
@@ -216,6 +215,12 @@ const it: Dict = {
   matchesPlayed: 'Partite giocate',
   statGoals: 'Gol segnati',
   statGoalsAvg: 'Gol a partita',
+  statCards: 'Cartellini',
+  statYellowCards: 'Cartellini gialli',
+  statRedCards: 'Cartellini rossi',
+  statUpset: 'Sorpresa più grande',
+  statBiggestWin: 'Vittoria più larga',
+  statFastestGoal: 'Gol più veloce',
   // settings
   settingsTitle: 'Impostazioni',
   settingLang: 'Lingua',

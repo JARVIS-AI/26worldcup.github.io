@@ -184,7 +184,6 @@ const tr: Dict = {
   teamMatches: 'Maçlar',
   addFavorite: 'Takımlarıma ekle',
   removeFavorite: 'Takımlarımdan çıkar',
-  groupOpponents: 'Gruptaki rakipler',
   // venues
   venuesTitle: 'Statlar',
   venuesSub: '3 ev sahibi ülkede 16 stadyum',
@@ -213,6 +212,12 @@ const tr: Dict = {
   matchesPlayed: 'Oynanan maç',
   statGoals: 'Atılan gol',
   statGoalsAvg: 'Maç başına gol',
+  statCards: 'Kartlar',
+  statYellowCards: 'Sarı kartlar',
+  statRedCards: 'Kırmızı kartlar',
+  statUpset: 'En büyük sürpriz',
+  statBiggestWin: 'En farklı galibiyet',
+  statFastestGoal: 'En hızlı gol',
   // settings
   settingsTitle: 'Ayarlar',
   settingLang: 'Dil',

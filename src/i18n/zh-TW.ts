@@ -183,7 +183,6 @@ const zhTW: Dict = {
   teamMatches: '球隊賽程',
   addFavorite: '加入我的最愛',
   removeFavorite: '從我的最愛移除',
-  groupOpponents: '同組對手',
   // venues
   venuesTitle: '比賽場館',
   venuesSub: '3個主辦國的16座球場',
@@ -211,6 +210,12 @@ const zhTW: Dict = {
   matchesPlayed: '已賽場次',
   statGoals: '總進球',
   statGoalsAvg: '場均進球',
+  statCards: '紅黃牌',
+  statYellowCards: '黃牌',
+  statRedCards: '紅牌',
+  statUpset: '最大冷門',
+  statBiggestWin: '最大比分差',
+  statFastestGoal: '最快進球',
   // settings
   settingsTitle: '設定',
   settingLang: '語言',

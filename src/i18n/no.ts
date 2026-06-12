@@ -186,7 +186,6 @@ const no: Dict = {
   teamMatches: 'Kamper',
   addFavorite: 'Legg til i mine lag',
   removeFavorite: 'Fjern fra mine lag',
-  groupOpponents: 'Motstandere i gruppen',
   // venues
   venuesTitle: 'Stadioner',
   venuesSub: '16 stadioner i 3 vertsland',
@@ -215,6 +214,12 @@ const no: Dict = {
   matchesPlayed: 'Spilte kamper',
   statGoals: 'Mål scoret',
   statGoalsAvg: 'Mål per kamp',
+  statCards: 'Kort',
+  statYellowCards: 'Gule kort',
+  statRedCards: 'Røde kort',
+  statUpset: 'Største overraskelse',
+  statBiggestWin: 'Største seier',
+  statFastestGoal: 'Raskeste mål',
   // settings
   settingsTitle: 'Innstillinger',
   settingLang: 'Språk',

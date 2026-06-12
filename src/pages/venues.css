@@ -364,19 +364,6 @@
 }
 
 /* enwiki link on venue cards */
-.vn-wiki {
-  margin-top: 9px;
-}
-.vn-wiki a {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-weight: 650;
-  color: var(--accent-2);
-}
-.vn-wiki a:hover {
-  text-decoration: underline;
-}
 
 /* team filter inside the legend row, after the camps toggle */
 .vn-team-filter {

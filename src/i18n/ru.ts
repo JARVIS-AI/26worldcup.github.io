@@ -189,7 +189,6 @@ const ru: Dict = {
   teamMatches: 'Матчи',
   addFavorite: 'Добавить в мои сборные',
   removeFavorite: 'Убрать из моих сборных',
-  groupOpponents: 'Соперники по группе',
   // venues
   venuesTitle: 'Стадионы',
   venuesSub: '16 стадионов в 3 странах-хозяйках',
@@ -218,6 +217,12 @@ const ru: Dict = {
   matchesPlayed: 'Сыграно матчей',
   statGoals: 'Забито голов',
   statGoalsAvg: 'Голов за матч',
+  statCards: 'Карточки',
+  statYellowCards: 'Жёлтые карточки',
+  statRedCards: 'Красные карточки',
+  statUpset: 'Главная сенсация',
+  statBiggestWin: 'Крупнейшая победа',
+  statFastestGoal: 'Самый быстрый гол',
   // settings
   settingsTitle: 'Настройки',
   settingLang: 'Язык',

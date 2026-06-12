@@ -187,7 +187,6 @@ const hr: Dict = {
   teamMatches: 'Utakmice',
   addFavorite: 'Dodaj u moje momčadi',
   removeFavorite: 'Ukloni iz mojih momčadi',
-  groupOpponents: 'Protivnici u skupini',
   // venues
   venuesTitle: 'Stadioni',
   venuesSub: '16 stadiona u 3 zemlje domaćina',
@@ -216,6 +215,12 @@ const hr: Dict = {
   matchesPlayed: 'Odigrane utakmice',
   statGoals: 'Postignuti golovi',
   statGoalsAvg: 'Golova po utakmici',
+  statCards: 'Kartoni',
+  statYellowCards: 'Žuti kartoni',
+  statRedCards: 'Crveni kartoni',
+  statUpset: 'Najveće iznenađenje',
+  statBiggestWin: 'Najveća pobjeda',
+  statFastestGoal: 'Najbrži gol',
   // settings
   settingsTitle: 'Postavke',
   settingLang: 'Jezik',

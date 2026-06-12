@@ -188,7 +188,6 @@ const nl: Dict = {
   teamMatches: 'Wedstrijden',
   addFavorite: 'Toevoegen aan mijn teams',
   removeFavorite: 'Verwijderen uit mijn teams',
-  groupOpponents: 'Groepstegenstanders',
   // venues
   venuesTitle: 'Stadions',
   venuesSub: '16 stadions in 3 gastlanden',
@@ -217,6 +216,12 @@ const nl: Dict = {
   matchesPlayed: 'Gespeelde wedstrijden',
   statGoals: 'Gemaakte doelpunten',
   statGoalsAvg: 'Doelpunten per wedstrijd',
+  statCards: 'Kaarten',
+  statYellowCards: 'Gele kaarten',
+  statRedCards: 'Rode kaarten',
+  statUpset: 'Grootste verrassing',
+  statBiggestWin: 'Grootste zege',
+  statFastestGoal: 'Snelste doelpunt',
   // settings
   settingsTitle: 'Instellingen',
   settingLang: 'Taal',

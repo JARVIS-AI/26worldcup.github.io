@@ -18,6 +18,7 @@ import {
 } from '../utils/helpers'
 import Flag from '../components/Flag'
 import Icon from '../components/Icon'
+import MapLinks from '../components/MapLinks'
 import MatchCard from '../components/MatchCard'
 import Pitch from '../components/Pitch'
 import './matchdetail.css'
@@ -408,7 +409,13 @@ export default function MatchDetail() {
                 <Icon name="external" size={13} />
               </Link>
             </h3>
-            <div className="md-venue-name">{venue.realName}</div>
+            <div className="md-venue-name">
+              {venue.realName}
+              <MapLinks
+                query={`${venue.realName}, ${venue.city}`}
+                wiki={venue.wiki ? { url: venue.wiki.url, title: t('wikipedia') } : undefined}
+              />
+            </div>
             {fifaName && fifaName !== venue.realName && <div className="md-venue-sub">{fifaName}</div>}
             <div className="md-chips md-facts">
               <span className="chip">

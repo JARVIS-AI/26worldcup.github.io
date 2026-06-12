@@ -35,5 +35,77 @@
    "goals": 1,
    "ownGoals": 0
   }
- ]
+ ],
+ "cards": {
+  "yellow": 4,
+  "red": 3,
+  "players": [
+   {
+    "id": "395516",
+    "name": "Cesar MONTES",
+    "code": "MEX",
+    "y": 0,
+    "r": 1
+   },
+   {
+    "id": "390475",
+    "name": "SITHOLE",
+    "code": "RSA",
+    "y": 0,
+    "r": 1
+   },
+   {
+    "id": "395984",
+    "name": "ZWANE",
+    "code": "RSA",
+    "y": 0,
+    "r": 1
+   },
+   {
+    "id": "464533",
+    "name": "Brian GUTIERREZ",
+    "code": "MEX",
+    "y": 1,
+    "r": 0
+   },
+   {
+    "id": "492315",
+    "name": "LEE Gihyuk",
+    "code": "KOR",
+    "y": 1,
+    "r": 0
+   },
+   {
+    "id": "403616",
+    "name": "MOKOENA",
+    "code": "RSA",
+    "y": 1,
+    "r": 0
+   },
+   {
+    "id": "463221",
+    "name": "Nkosinathi SIBISI",
+    "code": "RSA",
+    "y": 1,
+    "r": 0
+   }
+  ]
+ },
+ "attAvg": 62905,
+ "biggestWin": {
+  "diff": 2,
+  "id": "400021443",
+  "h": "MEX",
+  "a": "RSA",
+  "hs": 2,
+  "as": 0
+ },
+ "fastestGoal": {
+  "min": 9,
+  "minute": "9'",
+  "name": "Julian QUINONES",
+  "code": "MEX",
+  "id": "400021443"
+ },
+ "upset": null
 }

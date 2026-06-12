@@ -183,7 +183,6 @@ const zh: Dict = {
   teamMatches: '球队赛程',
   addFavorite: '加入我的球队',
   removeFavorite: '移出我的球队',
-  groupOpponents: '同组对手',
   // venues
   venuesTitle: '比赛场馆',
   venuesSub: '3个主办国的16座球场',
@@ -211,6 +210,12 @@ const zh: Dict = {
   matchesPlayed: '已赛场次',
   statGoals: '总进球',
   statGoalsAvg: '场均进球',
+  statCards: '红黄牌',
+  statYellowCards: '黄牌',
+  statRedCards: '红牌',
+  statUpset: '最大冷门',
+  statBiggestWin: '最大比分差',
+  statFastestGoal: '最快进球',
   // settings
   settingsTitle: '设置',
   settingLang: '语言',

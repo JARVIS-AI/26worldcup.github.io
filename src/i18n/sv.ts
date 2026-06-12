@@ -186,7 +186,6 @@ const sv: Dict = {
   teamMatches: 'Matcher',
   addFavorite: 'Lägg till i mina lag',
   removeFavorite: 'Ta bort från mina lag',
-  groupOpponents: 'Gruppmotståndare',
   // venues
   venuesTitle: 'Arenor',
   venuesSub: '16 arenor i 3 värdländer',
@@ -215,6 +214,12 @@ const sv: Dict = {
   matchesPlayed: 'Spelade matcher',
   statGoals: 'Gjorda mål',
   statGoalsAvg: 'Mål per match',
+  statCards: 'Kort',
+  statYellowCards: 'Gula kort',
+  statRedCards: 'Röda kort',
+  statUpset: 'Största skrällen',
+  statBiggestWin: 'Största seger',
+  statFastestGoal: 'Snabbaste målet',
   // settings
   settingsTitle: 'Inställningar',
   settingLang: 'Språk',

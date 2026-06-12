@@ -184,7 +184,6 @@ const id: Dict = {
   teamMatches: 'Pertandingan',
   addFavorite: 'Tambahkan ke tim saya',
   removeFavorite: 'Hapus dari tim saya',
-  groupOpponents: 'Lawan satu grup',
   // venues
   venuesTitle: 'Stadion',
   venuesSub: '16 stadion di 3 negara tuan rumah',
@@ -213,6 +212,12 @@ const id: Dict = {
   matchesPlayed: 'Pertandingan dimainkan',
   statGoals: 'Gol tercipta',
   statGoalsAvg: 'Gol per laga',
+  statCards: 'Kartu',
+  statYellowCards: 'Kartu kuning',
+  statRedCards: 'Kartu merah',
+  statUpset: 'Kejutan terbesar',
+  statBiggestWin: 'Kemenangan terbesar',
+  statFastestGoal: 'Gol tercepat',
   // settings
   settingsTitle: 'Pengaturan',
   settingLang: 'Bahasa',

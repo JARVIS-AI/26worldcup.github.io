@@ -188,7 +188,6 @@ const en: Dict = {
   teamMatches: 'Matches',
   addFavorite: 'Add to my teams',
   removeFavorite: 'Remove from my teams',
-  groupOpponents: 'Group opponents',
   // venues
   venuesTitle: 'Venues',
   venuesSub: '16 stadiums across 3 host countries',
@@ -217,6 +216,12 @@ const en: Dict = {
   matchesPlayed: 'Matches played',
   statGoals: 'Goals scored',
   statGoalsAvg: 'Goals per match',
+  statCards: 'Cards',
+  statYellowCards: 'Yellow cards',
+  statRedCards: 'Red cards',
+  statUpset: 'Biggest upset',
+  statBiggestWin: 'Biggest win',
+  statFastestGoal: 'Fastest goal',
   // settings
   settingsTitle: 'Settings',
   settingLang: 'Language',

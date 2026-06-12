@@ -236,7 +236,7 @@ async function fetchMatches() {
       phA: m.PlaceHolderA || null,
       phB: m.PlaceHolderB || null,
       winner,
-      attendance: m.Attendance ?? null,
+      attendance: m.Attendance != null && m.Attendance !== '' ? Number(m.Attendance) || null : null,
       officials: (m.Officials || []).map((o) => {
         const l10n = officialL10n[`${m.IdMatch}:${o.OfficialId}`] || { name: {}, typeName: {} }
         return {
@@ -720,11 +720,81 @@ function computeStats(lineups, matches) {
       }
     }
   }
+  // discipline: bookings per player (card 1 = yellow, >=2 = red incl. second yellow)
+  const carded = {}
+  let yellow = 0
+  let red = 0
+  for (const [matchId, lu] of Object.entries(lineups)) {
+    const m = byId[matchId]
+    if (!m) continue
+    for (const side of ['home', 'away']) {
+      const team = lu[side]
+      if (!team) continue
+      const code = m[side]?.code
+      if (!code) continue
+      const nameOf = (pid) =>
+        (team.xi || []).concat(team.subs || []).find((p) => p.id === pid)?.name || `#${pid}`
+      for (const b of team.bookings || []) {
+        const isRed = (b.card ?? 0) >= 2
+        if (isRed) red++
+        else yellow++
+        const key = `${b.player}`
+        carded[key] ??= { id: b.player, name: nameOf(b.player), code, y: 0, r: 0 }
+        if (isRed) carded[key].r++
+        else carded[key].y++
+      }
+    }
+  }
+
+  // tournament-wide odds and ends from finished matches
+  const fin = matches.filter((m) => m.status === 'finished' && m.home && m.away)
+  // FIFA occasionally ships garbage in Attendance (seen: 4e9 for the opener) —
+  // only values that fit in a real stadium count
+  const att = fin
+    .map((m) => Number(m.attendance))
+    .filter((v) => Number.isFinite(v) && v >= 1000 && v <= 150000)
+  const attAvg = att.length ? Math.round(att.reduce((a, v) => a + v, 0) / att.length) : null
+  let biggestWin = null
+  for (const m of fin) {
+    const diff = Math.abs((m.home.score ?? 0) - (m.away.score ?? 0))
+    if (diff > 0 && (!biggestWin || diff > biggestWin.diff))
+      biggestWin = { diff, id: m.id, h: m.home.code, a: m.away.code, hs: m.home.score, as: m.away.score }
+  }
+  let fastestGoal = null
+  for (const [matchId, lu] of Object.entries(lineups)) {
+    const m = byId[matchId]
+    if (!m) continue
+    for (const side of ['home', 'away']) {
+      for (const g of lu[side]?.goals || []) {
+        if (g.period === 11 || g.type === 3 || !g.minute) continue
+        const min = parseInt(g.minute, 10)
+        if (!Number.isFinite(min)) continue
+        if (!fastestGoal || min < fastestGoal.min) {
+          const sd = side
+          const name =
+            (lu[sd]?.xi || []).concat(lu[sd]?.subs || []).find((p) => p.id === g.player)?.name ||
+            `#${g.player}`
+          fastestGoal = { min, minute: g.minute, name, code: m[sd]?.code ?? null, id: m.id }
+        }
+      }
+    }
+  }
+
   return {
     scorers: Object.values(scorers)
       .filter((s) => s.goals > 0)
       .sort((a, b) => b.goals - a.goals || a.name.localeCompare(b.name))
       .slice(0, 40),
+    cards: {
+      yellow,
+      red,
+      players: Object.values(carded)
+        .sort((a, b) => b.r - a.r || b.y - a.y || a.name.localeCompare(b.name))
+        .slice(0, 20),
+    },
+    attAvg,
+    biggestWin,
+    fastestGoal,
   }
 }
 
@@ -1172,6 +1242,24 @@ async function main() {
       .slice(0, 5)
       .map(([c, n]) => ({ c, p: +((n / RUNS) * 100).toFixed(1) }))
     log(`title odds: ${titleOdds.map((o) => `${o.c} ${o.p}%`).join(', ')}`)
+
+    // biggest upset: the finished result our frozen pre-match probabilities
+    // found least likely (group stage only — h/d/a are 90' probabilities)
+    let upset = null
+    for (const m of matches) {
+      if (m.status !== 'finished' || !m.home || !m.away || m.stage !== 'group') continue
+      const pr = probs[m.id]
+      if (!pr) continue
+      // an upset is strictly the LESS-favoured team winning: a favourite's win
+      // is never one (whatever its percentage), and draws don't count either
+      let p = null
+      if (m.home.score > m.away.score && pr.h < pr.a) p = pr.h
+      else if (m.away.score > m.home.score && pr.a < pr.h) p = pr.a
+      if (p == null) continue
+      if (!upset || p < upset.p)
+        upset = { p, id: m.id, h: m.home.code, a: m.away.code, hs: m.home.score, as: m.away.score }
+    }
+    stats.upset = upset
   } catch (e) {
     warn(`probs: ${e.message} — keeping previous file`)
     probs = prevProbs

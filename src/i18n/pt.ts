@@ -190,7 +190,6 @@ const pt: Dict = {
   teamMatches: 'Jogos',
   addFavorite: 'Adicionar às minhas seleções',
   removeFavorite: 'Remover das minhas seleções',
-  groupOpponents: 'Adversários no grupo',
   // venues
   venuesTitle: 'Estádios',
   venuesSub: '16 estádios em 3 países anfitriões',
@@ -219,6 +218,12 @@ const pt: Dict = {
   matchesPlayed: 'Jogos disputados',
   statGoals: 'Golos marcados',
   statGoalsAvg: 'Golos por jogo',
+  statCards: 'Cartões',
+  statYellowCards: 'Cartões amarelos',
+  statRedCards: 'Cartões vermelhos',
+  statUpset: 'Maior surpresa',
+  statBiggestWin: 'Maior goleada',
+  statFastestGoal: 'Golo mais rápido',
   // settings
   settingsTitle: 'Definições',
   settingLang: 'Idioma',
