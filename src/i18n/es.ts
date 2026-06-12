@@ -173,6 +173,8 @@ const es: Dict = {
   teamNotFound: 'Selección no encontrada.',
   squad: 'Plantilla',
   squadNote: 'Listas oficiales de la FIFA (vía Wikipedia); los nombres de los jugadores enlazan a Wikipedia.',
+  suspTitle: 'Sanciones',
+  suspMisses: 'se pierde',
   posGK: 'Porteros',
   posDF: 'Defensas',
   posMF: 'Centrocampistas',

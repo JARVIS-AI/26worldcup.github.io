@@ -169,6 +169,8 @@ const zhTW: Dict = {
   teamNotFound: '找不到該球隊。',
   squad: '球員名單',
   squadNote: 'FIFA官方球員名單（資料來自維基百科）；點選球員姓名可開啟其維基百科條目。',
+  suspTitle: '停賽',
+  suspMisses: '缺席',
   posGK: '門將',
   posDF: '後衛',
   posMF: '中場',

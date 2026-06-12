@@ -362,3 +362,39 @@
 .td-gmaps {
   color: var(--accent-2);
 }
+
+/* suspensions box above the squad list */
+.td-susp {
+  margin-bottom: 14px;
+}
+.td-susp h3 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+}
+.td-susp-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  padding: 3px 0;
+  font-size: 0.9rem;
+}
+.td-susp-name {
+  font-weight: 700;
+}
+.td-susp-due {
+  display: inline-flex;
+  gap: 5px;
+}
+.td-susp .chip {
+  text-decoration: none;
+}
+.td-susp .chip:hover {
+  border-color: var(--accent-2);
+}
+
+.td-susp-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}

@@ -169,6 +169,8 @@ const ja: Dict = {
   teamNotFound: 'チームが見つかりません。',
   squad: '登録メンバー',
   squadNote: 'FIFA公式の登録メンバー（ウィキペディア経由）。選手名はウィキペディアにリンクしています。',
+  suspTitle: '出場停止',
+  suspMisses: '欠場:',
   posGK: 'ゴールキーパー',
   posDF: 'ディフェンダー',
   posMF: 'ミッドフィールダー',

@@ -438,12 +438,7 @@ export default function MatchDetail() {
 
         {(w || (venue && clim)) && (
           <section className="card card-pad">
-            <h3 className="md-info-title">
-              <span className="md-title-emoji" aria-hidden="true">
-                {w ? wmoEmoji(w.code) : '🌤️'}
-              </span>
-              {t('weatherTitle')}
-            </h3>
+            <h3 className="md-info-title">{t('weatherTitle')}</h3>
             {w ? (
               <>
                 <div className="md-wx-main">

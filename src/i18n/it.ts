@@ -173,6 +173,8 @@ const it: Dict = {
   teamNotFound: 'Squadra non trovata.',
   squad: 'Rosa',
   squadNote: 'Rose ufficiali FIFA (via Wikipedia); i nomi dei giocatori rimandano a Wikipedia.',
+  suspTitle: 'Squalifiche',
+  suspMisses: 'salta',
   posGK: 'Portieri',
   posDF: 'Difensori',
   posMF: 'Centrocampisti',

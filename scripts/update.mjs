@@ -690,6 +690,69 @@ async function fetchLiveDetails(matches, rawById) {
 // FIFA v3 goal Type semantics (verified against 2022 data): 1 = in-game penalty,
 // 2 = open play, 3 = own goal. Own goals sit in the BENEFITING team's Goals array
 // with the opponent player's id. Period 11 entries are shootout kicks, not goals.
+// FIFA discipline: 2 accumulated yellows (different matches) ban the next
+// match; singles are wiped after the quarter-finals (so accumulation can
+// never ban a semi or later). Any red (straight or second yellow) bans at
+// least the next match. Only not-yet-played bans are listed.
+function computeSuspensions(lineups, matches) {
+  const byId = Object.fromEntries(matches.map((m) => [m.id, m]))
+  const ACCUM_BANNABLE = new Set(['group', 'r32', 'r16', 'qf'])
+  const events = {} // code -> player -> { name, list: [{matchId, date, red, yellow}] }
+  for (const [matchId, lu] of Object.entries(lineups)) {
+    const m = byId[matchId]
+    if (!m) continue
+    for (const side of ['home', 'away']) {
+      const team = lu[side]
+      const code = m[side]?.code
+      if (!team || !code) continue
+      const nameOf = (pid) =>
+        (team.xi || []).concat(team.subs || []).find((p) => p.id === pid)?.name || `#${pid}`
+      for (const b of team.bookings || []) {
+        events[code] ??= {}
+        events[code][b.player] ??= { name: nameOf(b.player), list: [] }
+        events[code][b.player].list.push({
+          matchId,
+          date: m.date,
+          red: (b.card ?? 0) >= 2,
+          yellow: (b.card ?? 0) === 1,
+        })
+      }
+    }
+  }
+  const out = {}
+  for (const [code, players] of Object.entries(events)) {
+    const teamMatches = matches
+      .filter((m) => m.home?.code === code || m.away?.code === code)
+      .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
+    const nextAfter = (date) => teamMatches.find((m) => Date.parse(m.date) > Date.parse(date))
+    for (const [pid, rec] of Object.entries(players)) {
+      rec.list.sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
+      const bans = []
+      let pendingYellows = []
+      for (const ev of rec.list) {
+        if (ev.red) {
+          const nm = nextAfter(ev.date)
+          bans.push({ type: 'red', due: [ev.matchId], banned: nm?.id ?? null })
+        } else if (ev.yellow) {
+          pendingYellows.push(ev)
+          if (pendingYellows.length === 2) {
+            const nm = nextAfter(ev.date)
+            if (nm && ACCUM_BANNABLE.has(nm.stage))
+              bans.push({ type: 'yellows', due: pendingYellows.map((e) => e.matchId), banned: nm.id })
+            pendingYellows = []
+          }
+        }
+      }
+      const open = bans.filter((b) => b.banned && byId[b.banned]?.status !== 'finished')
+      if (open.length) {
+        out[code] ??= []
+        out[code].push({ id: pid, name: rec.name, bans: open })
+      }
+    }
+  }
+  return out
+}
+
 function computeStats(lineups, matches) {
   const scorers = {}
   const byId = Object.fromEntries(matches.map((m) => [m.id, m]))
@@ -1096,6 +1159,7 @@ async function main() {
   // 7. live lineups + stats
   const lineups = await fetchLiveDetails(matches, rawById)
   const stats = computeStats(lineups, matches)
+  stats.suspensions = computeSuspensions(lineups, matches)
 
   // 8. weather
   let weather = (await readJsonSafe(path.join(OUT, 'weather.json'))) || {}

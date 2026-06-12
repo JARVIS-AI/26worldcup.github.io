@@ -172,6 +172,8 @@ const uz: Dict = {
   squad: 'Tarkib',
   squadNote:
     "Rasmiy FIFA tarkib ro'yxatlari (Wikipedia orqali); futbolchi ismlari Wikipedia sahifalariga olib boradi.",
+  suspTitle: 'Diskvalifikatsiyalar',
+  suspMisses: "o'tkazib yuboradi",
   posGK: 'Darvozabonlar',
   posDF: 'Himoyachilar',
   posMF: 'Yarim himoyachilar',

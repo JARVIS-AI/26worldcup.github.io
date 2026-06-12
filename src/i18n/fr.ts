@@ -173,6 +173,8 @@ const fr: Dict = {
   teamNotFound: 'Équipe introuvable.',
   squad: 'Effectif',
   squadNote: 'Listes officielles FIFA (via Wikipédia) ; le nom de chaque joueur renvoie vers Wikipédia.',
+  suspTitle: 'Suspensions',
+  suspMisses: 'manque',
   posGK: 'Gardiens',
   posDF: 'Défenseurs',
   posMF: 'Milieux',

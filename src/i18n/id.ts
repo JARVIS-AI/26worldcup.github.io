@@ -170,6 +170,8 @@ const id: Dict = {
   teamNotFound: 'Tim tidak ditemukan.',
   squad: 'Skuad',
   squadNote: 'Daftar skuad resmi FIFA (via Wikipedia); nama pemain tertaut ke Wikipedia.',
+  suspTitle: 'Skorsing',
+  suspMisses: 'absen di',
   posGK: 'Penjaga gawang',
   posDF: 'Bek',
   posMF: 'Gelandang',

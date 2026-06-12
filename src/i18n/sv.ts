@@ -172,6 +172,8 @@ const sv: Dict = {
   teamNotFound: 'Laget hittades inte.',
   squad: 'Trupp',
   squadNote: 'Officiella FIFA-trupper (via Wikipedia); spelarnamn länkar till Wikipedia.',
+  suspTitle: 'Avstängningar',
+  suspMisses: 'missar',
   posGK: 'Målvakter',
   posDF: 'Försvarare',
   posMF: 'Mittfältare',

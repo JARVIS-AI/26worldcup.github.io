@@ -125,16 +125,16 @@
    "group": "B",
    "date": "2026-06-12T19:00:00Z",
    "venueId": "400242032",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "2'",
    "home": {
     "code": "CAN",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "BIH",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "B1",

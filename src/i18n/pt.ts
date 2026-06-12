@@ -176,6 +176,8 @@ const pt: Dict = {
   squad: 'Convocados',
   squadNote:
     'Listas oficiais de convocados da FIFA (via Wikipédia); os nomes dos jogadores ligam à Wikipédia.',
+  suspTitle: 'Castigos',
+  suspMisses: 'falha',
   posGK: 'Guarda-redes',
   posDF: 'Defesas',
   posMF: 'Médios',

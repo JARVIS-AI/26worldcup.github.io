@@ -172,6 +172,8 @@ const no: Dict = {
   teamNotFound: 'Fant ikke laget.',
   squad: 'Tropp',
   squadNote: 'Offisielle FIFA-tropper (via Wikipedia); spillernavn lenker til Wikipedia.',
+  suspTitle: 'Karantener',
+  suspMisses: 'mister',
   posGK: 'Keepere',
   posDF: 'Forsvarsspillere',
   posMF: 'Midtbanespillere',

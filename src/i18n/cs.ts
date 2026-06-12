@@ -172,6 +172,8 @@ const cs: Dict = {
   teamNotFound: 'Tým nenalezen.',
   squad: 'Soupiska',
   squadNote: 'Oficiální soupisky FIFA (podle Wikipedie); jména hráčů odkazují na Wikipedii.',
+  suspTitle: 'Tresty',
+  suspMisses: 'vynechá',
   posGK: 'Brankáři',
   posDF: 'Obránci',
   posMF: 'Záložníci',

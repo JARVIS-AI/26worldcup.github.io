@@ -238,6 +238,10 @@ export interface Stats {
   biggestWin?: { diff: number; id?: string; h: string; a: string; hs: number; as: number } | null
   fastestGoal?: { min: number; minute: string; name: string; code: string | null; id?: string } | null
   upset?: { p: number; id: string; h: string; a: string; hs: number; as: number } | null
+  suspensions?: Record<
+    string,
+    { id: string; name: string; bans: { type: 'red' | 'yellows'; due: string[]; banned: string | null }[] }[]
+  >
 }
 
 export interface Meta {

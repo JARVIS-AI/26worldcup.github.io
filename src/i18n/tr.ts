@@ -170,6 +170,8 @@ const tr: Dict = {
   teamNotFound: 'Takım bulunamadı.',
   squad: 'Kadro',
   squadNote: 'Resmî FIFA kadro listeleri (Vikipedi üzerinden); oyuncu adları Vikipedi sayfalarına bağlanır.',
+  suspTitle: 'Cezalar',
+  suspMisses: 'kaçıracak',
   posGK: 'Kaleciler',
   posDF: 'Defans',
   posMF: 'Orta saha',

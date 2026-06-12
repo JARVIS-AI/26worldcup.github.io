@@ -130,10 +130,6 @@ a.md-side {
 .md-info-title .md-cardlink {
   margin-inline-start: auto;
 }
-.md-title-emoji {
-  font-size: 1.05rem;
-  line-height: 1;
-}
 .md-cardlink {
   display: inline-flex;
   align-items: center;

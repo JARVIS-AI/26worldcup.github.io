@@ -92,7 +92,7 @@ export default function TeamDetail() {
   const { t, pick, countryName } = useI18n()
   const { settings, toggleFavorite } = useSettings()
   const { squads, loadSquads } = useData()
-  const { teams, matches, standings } = useAppData()
+  const { teams, matches, standings, stats } = useAppData()
 
   const team = teams[code] as Team | undefined
 
@@ -149,6 +149,26 @@ export default function TeamDetail() {
 
   const rows = standings.groups[team.group] ?? []
 
+  // suspension chips: flag score flag (finished) or flag vs flag (upcoming)
+  const matchChip = (mid: string, accent = false) => {
+    const mm = matches.find((x) => x.id === mid)
+    if (!mm) return null
+    const cls = `chip td-susp-chip tnum${accent ? ' chip-accent' : ''}`
+    return (
+      <Link key={mid} to={`/match/${mid}`} className={cls}>
+        {mm.home && mm.away ? (
+          <>
+            <Flag team={teams[mm.home.code]} size={15} />
+            {mm.status === 'finished' ? `${mm.home.score}–${mm.away.score}` : t('vs')}
+            <Flag team={teams[mm.away.code]} size={15} />
+          </>
+        ) : (
+          t('matchN', { n: mm.n })
+        )}
+      </Link>
+    )
+  }
+
   return (
     <div className="team-detail">
       <Link to="/teams" className="td-back">
@@ -162,9 +182,6 @@ export default function TeamDetail() {
           <h1>{name}</h1>
           {team.nickname && <div className="muted td-nick">{team.nickname}</div>}
           <div className="td-chips">
-            <Link to="/groups" className="chip chip-accent">
-              {t('groupX', { x: team.group })}
-            </Link>
             {team.ranking !== null && (
               <span className="chip">
                 {t('fifaRanking')} <b className="tnum">#{team.ranking}</b>
@@ -300,6 +317,22 @@ export default function TeamDetail() {
       <div className="section-title">
         <h2>{t('squad')}</h2>
       </div>
+      {(stats.suspensions?.[code]?.length ?? 0) > 0 && (
+        <div className="card card-pad td-susp">
+          <h3>{t('suspTitle')}</h3>
+          {(stats.suspensions?.[code] ?? []).map((sp) =>
+            sp.bans.map((ban, i) => (
+              <div className="td-susp-row" key={`${sp.id}-${i}`}>
+                <span aria-hidden="true">{ban.type === 'red' ? '🟥' : '🟨🟨'}</span>
+                <span className="td-susp-name">{sp.name}</span>
+                <span className="td-susp-due">{ban.due.map((mid) => matchChip(mid))}</span>
+                <span className="td-susp-miss muted small">→ {t('suspMisses')}</span>
+                {ban.banned && matchChip(ban.banned, true)}
+              </div>
+            )),
+          )}
+        </div>
+      )}
       <p className="small muted td-squad-note">{t('squadNote')}</p>
       {squads === null ? (
         <div>

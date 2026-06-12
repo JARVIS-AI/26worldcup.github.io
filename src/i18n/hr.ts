@@ -173,6 +173,8 @@ const hr: Dict = {
   teamNotFound: 'Momčad nije pronađena.',
   squad: 'Kadar',
   squadNote: 'Službeni FIFA-ini popisi igrača (putem Wikipedije); imena igrača vode na Wikipediju.',
+  suspTitle: 'Suspenzije',
+  suspMisses: 'propušta',
   posGK: 'Vratari',
   posDF: 'Braniči',
   posMF: 'Vezni igrači',

@@ -93,9 +93,7 @@ function MatchCard({ match: m, hideDate = false, showWeather = false }: MatchCar
         <div className="mc-when">
           {m.status === 'finished' ? (
             <div className="st">{t('statusFinished')}</div>
-          ) : m.status === 'live' ? (
-            <div className="st">{t('statusLive')}</div>
-          ) : (
+          ) : m.status === 'live' ? null : (
             <div className="tm">{fmtTime(m.date, locale, tz)}</div>
           )}
           {!hideDate && <div className="dt">{fmtDate(m.date, locale, tz)}</div>}

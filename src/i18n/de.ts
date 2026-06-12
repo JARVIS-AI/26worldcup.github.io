@@ -174,6 +174,8 @@ const de: Dict = {
   teamNotFound: 'Team nicht gefunden.',
   squad: 'Kader',
   squadNote: 'Offizielle FIFA-Kaderlisten (via Wikipedia); Spielernamen verlinken auf Wikipedia.',
+  suspTitle: 'Sperren',
+  suspMisses: 'fehlt in',
   posGK: 'Torhüter',
   posDF: 'Abwehr',
   posMF: 'Mittelfeld',

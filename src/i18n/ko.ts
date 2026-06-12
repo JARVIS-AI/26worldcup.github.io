@@ -169,6 +169,8 @@ const ko: Dict = {
   teamNotFound: '팀을 찾을 수 없습니다.',
   squad: '스쿼드',
   squadNote: 'FIFA 공식 스쿼드 명단(위키백과 제공). 선수 이름을 누르면 위키백과로 이동합니다.',
+  suspTitle: '출전 정지',
+  suspMisses: '결장:',
   posGK: '골키퍼',
   posDF: '수비수',
   posMF: '미드필더',

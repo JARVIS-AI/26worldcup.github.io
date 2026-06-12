@@ -169,6 +169,8 @@ const zh: Dict = {
   teamNotFound: '未找到该球队。',
   squad: '球员名单',
   squadNote: 'FIFA官方公布的26人名单（经维基百科整理）；点击球员姓名可打开其维基百科条目。',
+  suspTitle: '停赛',
+  suspMisses: '缺席',
   posGK: '门将',
   posDF: '后卫',
   posMF: '中场',

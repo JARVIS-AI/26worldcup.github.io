@@ -174,6 +174,8 @@ const nl: Dict = {
   teamNotFound: 'Team niet gevonden.',
   squad: 'Selectie',
   squadNote: 'Officiële FIFA-selecties (via Wikipedia); spelersnamen linken naar Wikipedia.',
+  suspTitle: 'Schorsingen',
+  suspMisses: 'mist',
   posGK: 'Keepers',
   posDF: 'Verdedigers',
   posMF: 'Middenvelders',

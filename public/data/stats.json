@@ -107,5 +107,50 @@
   "code": "MEX",
   "id": "400021443"
  },
+ "suspensions": {
+  "MEX": [
+   {
+    "id": "395516",
+    "name": "Cesar MONTES",
+    "bans": [
+     {
+      "type": "red",
+      "due": [
+       "400021443"
+      ],
+      "banned": "400021442"
+     }
+    ]
+   }
+  ],
+  "RSA": [
+   {
+    "id": "390475",
+    "name": "SITHOLE",
+    "bans": [
+     {
+      "type": "red",
+      "due": [
+       "400021443"
+      ],
+      "banned": "400021440"
+     }
+    ]
+   },
+   {
+    "id": "395984",
+    "name": "ZWANE",
+    "bans": [
+     {
+      "type": "red",
+      "due": [
+       "400021443"
+      ],
+      "banned": "400021440"
+     }
+    ]
+   }
+  ]
+ },
  "upset": null
 }
