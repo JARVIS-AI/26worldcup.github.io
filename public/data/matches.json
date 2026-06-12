@@ -66,16 +66,16 @@
    "group": "A",
    "date": "2026-06-12T02:00:00Z",
    "venueId": "400252150",
-   "status": "scheduled",
-   "time": null,
+   "status": "live",
+   "time": "16'",
    "home": {
     "code": "KOR",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "CZE",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "A3",
