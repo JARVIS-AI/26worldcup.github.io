@@ -421,7 +421,7 @@
    "date": "2026-06-13T19:00:00Z",
    "venueId": "400257521",
    "status": "live",
-   "time": "73'",
+   "time": "86'",
    "home": {
     "code": "QAT",
     "score": 0,
@@ -435,7 +435,7 @@
    "phA": "B3",
    "phB": "B4",
    "winner": null,
-   "attendance": null,
+   "attendance": 67966,
    "officials": [
     {
      "id": "400191",
