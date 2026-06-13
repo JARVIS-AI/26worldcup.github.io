@@ -1680,13 +1680,13 @@
    "bookings": [
     {
      "player": "419459",
-     "minute": "16'",
+     "minute": "13'",
      "card": 1,
      "period": 3
     },
     {
      "player": "419473",
-     "minute": "22'",
+     "minute": "23'",
      "card": 1,
      "period": 3
     }
@@ -1996,7 +1996,7 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "27'",
+  "matchTime": "40'",
   "period": 3,
   "final": false
  },
