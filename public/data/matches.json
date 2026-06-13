@@ -185,7 +185,7 @@
    "date": "2026-06-13T01:00:00Z",
    "venueId": "400017978",
    "status": "live",
-   "time": "62'",
+   "time": "76'",
    "home": {
     "code": "USA",
     "score": 3,
@@ -193,13 +193,13 @@
    },
    "away": {
     "code": "PAR",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "D1",
    "phB": "D2",
    "winner": null,
-   "attendance": null,
+   "attendance": 70492,
    "officials": [
     {
      "id": "327159",
