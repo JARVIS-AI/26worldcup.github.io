@@ -420,16 +420,16 @@
    "group": "B",
    "date": "2026-06-13T19:00:00Z",
    "venueId": "400257521",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "12'",
    "home": {
     "code": "QAT",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "SUI",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "B3",

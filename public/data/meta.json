@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-06-13T19:03:37.510Z",
+ "updatedAt": "2026-06-13T19:17:31.775Z",
  "season": "285023",
  "titleOdds": [
   {
@@ -32,7 +32,8 @@
   "flags": 179
  },
  "errors": [
-  "geocode New Tecumseth: no usable result — not cached, will retry next run"
+  "geocode New Tecumseth: no usable result — not cached, will retry next run",
+  "probs: keepReal is not a function. (In 'keepReal(m)', 'keepReal' is \"continue\") — keeping previous file"
  ],
  "sources": [
   "api.fifa.com",
