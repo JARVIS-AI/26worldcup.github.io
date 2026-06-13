@@ -1637,7 +1637,7 @@
     "zh-TW": "巴拉圭"
    },
    "iso2": "PY",
-   "ranking": 38,
+   "ranking": 42,
    "rankingPrev": 41,
    "baseCamp": {
     "city": "San Jose",
@@ -1820,7 +1820,7 @@
     "uk": "Шотландія"
    },
    "iso2": "GB-SCT",
-   "ranking": 41,
+   "ranking": 40,
    "rankingPrev": 42,
    "baseCamp": {
     "city": "Charlotte",
@@ -1866,7 +1866,7 @@
     "zh-TW": "塞內加爾"
    },
    "iso2": "SN",
-   "ranking": 15,
+   "ranking": 16,
    "rankingPrev": 15,
    "baseCamp": {
     "city": "New Brunswick",
@@ -1958,7 +1958,7 @@
     "zh-TW": "瑞典"
    },
    "iso2": "SE",
-   "ranking": 39,
+   "ranking": 38,
    "rankingPrev": 38,
    "baseCamp": {
     "city": "Frisco",
@@ -2096,7 +2096,7 @@
     "zh-TW": "烏拉圭"
    },
    "iso2": "UY",
-   "ranking": 16,
+   "ranking": 17,
    "rankingPrev": 16,
    "baseCamp": {
     "city": "Playa del Carmen",
@@ -2142,7 +2142,7 @@
     "zh-TW": "美國"
    },
    "iso2": "US",
-   "ranking": 17,
+   "ranking": 15,
    "rankingPrev": 17,
    "baseCamp": {
     "city": "Irvine",

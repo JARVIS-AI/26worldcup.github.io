@@ -51,7 +51,7 @@
   }
  ],
  "cards": {
-  "yellow": 9,
+  "yellow": 10,
   "red": 3,
   "players": [
    {
@@ -100,6 +100,13 @@
     "id": "519954",
     "name": "Jovo LUKIC",
     "code": "BIH",
+    "y": 1,
+    "r": 0
+   },
+   {
+    "id": "479601",
+    "name": "Juan Jose CACERES",
+    "code": "PAR",
     "y": 1,
     "r": 0
    },
