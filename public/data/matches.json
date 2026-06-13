@@ -421,7 +421,7 @@
    "date": "2026-06-13T19:00:00Z",
    "venueId": "400257521",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "QAT",
     "score": null,
@@ -497,22 +497,22 @@
    "attendance": null,
    "officials": [
     {
-     "id": "347710",
-     "country": "ENG",
+     "id": "399029",
+     "country": "FRA",
      "role": "referee",
      "name": {
-      "en": "Michael OLIVER",
-      "fr": "Michael OLIVER",
-      "zh": "Michael OLIVER",
-      "ar": "Michael OLIVER",
-      "es": "Michael OLIVER",
-      "de": "Michael OLIVER",
-      "pt": "Michael OLIVER",
-      "it": "Michael OLIVER",
-      "ja": "Michael OLIVER",
-      "ko": "Michael OLIVER",
-      "id": "Michael OLIVER",
-      "ru": "Michael OLIVER"
+      "en": "Francois LETEXIER",
+      "fr": "Francois LETEXIER",
+      "zh": "Francois LETEXIER",
+      "ar": "Francois LETEXIER",
+      "es": "Francois LETEXIER",
+      "de": "Francois LETEXIER",
+      "pt": "Francois LETEXIER",
+      "it": "Francois LETEXIER",
+      "ja": "Francois LETEXIER",
+      "ko": "Francois LETEXIER",
+      "id": "Francois LETEXIER",
+      "ru": "Francois LETEXIER"
      },
      "typeName": {
       "en": "Referee",
@@ -731,7 +731,41 @@
    "phB": "H4",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "415965",
+     "country": "ITA",
+     "role": "referee",
+     "name": {
+      "en": "Maurizio MARIANI",
+      "fr": "Maurizio MARIANI",
+      "zh": "Maurizio MARIANI",
+      "ar": "Maurizio MARIANI",
+      "es": "Maurizio MARIANI",
+      "de": "Maurizio MARIANI",
+      "pt": "Maurizio MARIANI",
+      "it": "Maurizio MARIANI",
+      "ja": "Maurizio MARIANI",
+      "ko": "Maurizio MARIANI",
+      "id": "Maurizio MARIANI",
+      "ru": "Maurizio MARIANI"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021482",
@@ -756,7 +790,41 @@
    "phB": "H2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "361034",
+     "country": "JOR",
+     "role": "referee",
+     "name": {
+      "en": "Adham MAKHADMEH",
+      "fr": "Adham MAKHADMEH",
+      "zh": "Adham MAKHADMEH",
+      "ar": "Adham MAKHADMEH",
+      "es": "Adham MAKHADMEH",
+      "de": "Adham MAKHADMEH",
+      "pt": "Adham MAKHADMEH",
+      "it": "Adham MAKHADMEH",
+      "ja": "Adham MAKHADMEH",
+      "ko": "Adham MAKHADMEH",
+      "id": "Adham MAKHADMEH",
+      "ru": "Adham MAKHADMEH"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021476",
@@ -781,7 +849,41 @@
    "phB": "G4",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "374810",
+     "country": "MEX",
+     "role": "referee",
+     "name": {
+      "en": "Cesar RAMOS",
+      "fr": "Cesar RAMOS",
+      "zh": "Cesar RAMOS",
+      "ar": "Cesar RAMOS",
+      "es": "Cesar RAMOS",
+      "de": "Cesar RAMOS",
+      "pt": "Cesar RAMOS",
+      "it": "Cesar RAMOS",
+      "ja": "Cesar RAMOS",
+      "ko": "Cesar RAMOS",
+      "id": "Cesar RAMOS",
+      "ru": "Cesar RAMOS"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021478",
@@ -806,7 +908,41 @@
    "phB": "G2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "446932",
+     "country": "BRA",
+     "role": "referee",
+     "name": {
+      "en": "Ramon ABATTI",
+      "fr": "Ramon ABATTI",
+      "zh": "Ramon ABATTI",
+      "ar": "Ramon ABATTI",
+      "es": "Ramon ABATTI",
+      "de": "Ramon ABATTI",
+      "pt": "Ramon ABATTI",
+      "it": "Ramon ABATTI",
+      "ja": "Ramon ABATTI",
+      "ko": "Ramon ABATTI",
+      "id": "Ramon ABATTI",
+      "ru": "Ramon ABATTI"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021490",

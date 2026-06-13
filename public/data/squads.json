@@ -11948,6 +11948,19 @@
     "wiki": "https://en.wikipedia.org/wiki/Henrik_Falchener"
    },
    {
+    "id": "julian-ryerson",
+    "no": 26,
+    "pos": "DF",
+    "name": "Julian Ryerson",
+    "dob": "1997-11-17",
+    "caps": 43,
+    "goals": 1,
+    "club": "Borussia Dortmund",
+    "clubNat": "GER",
+    "captain": false,
+    "wiki": "https://en.wikipedia.org/wiki/Julian_Ryerson"
+   },
+   {
     "id": "morten-thorsby",
     "no": 2,
     "pos": "MF",
@@ -12039,6 +12052,19 @@
     "wiki": "https://en.wikipedia.org/wiki/Thelo_Aasgaard"
    },
    {
+    "id": "antonio-nusa",
+    "no": 20,
+    "pos": "MF",
+    "name": "Antonio Nusa",
+    "dob": "2005-04-17",
+    "caps": 24,
+    "goals": 8,
+    "club": "RB Leipzig",
+    "clubNat": "GER",
+    "captain": false,
+    "wiki": "https://en.wikipedia.org/wiki/Antonio_Nusa"
+   },
+   {
     "id": "andreas-schjelderup",
     "no": 21,
     "pos": "MF",
@@ -12115,32 +12141,6 @@
     "clubNat": "ENG",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/J%C3%B8rgen_Strand_Larsen"
-   },
-   {
-    "id": "antonio-nusa",
-    "no": 20,
-    "pos": "FW",
-    "name": "Antonio Nusa",
-    "dob": "2005-04-17",
-    "caps": 24,
-    "goals": 8,
-    "club": "RB Leipzig",
-    "clubNat": "GER",
-    "captain": false,
-    "wiki": "https://en.wikipedia.org/wiki/Antonio_Nusa"
-   },
-   {
-    "id": "julian-ryerson",
-    "no": 26,
-    "pos": "FW",
-    "name": "Julian Ryerson",
-    "dob": "1997-11-17",
-    "caps": 43,
-    "goals": 1,
-    "club": "Borussia Dortmund",
-    "clubNat": "GER",
-    "captain": false,
-    "wiki": "https://en.wikipedia.org/wiki/Julian_Ryerson"
    }
   ]
  },
