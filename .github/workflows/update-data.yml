@@ -106,7 +106,7 @@ jobs:
             echo "no data changes to commit"
             exit 0
           fi
-          git commit -m "data: daily update $(date -u +%F)"
+          git commit -m "data: scheduled update $(date -u +%F)"
           # main may have moved while the update ran — rebase and retry up to 3 times
           for attempt in 1 2 3; do
             git pull --rebase origin main || { echo "rebase failed (attempt $attempt)"; sleep 10; continue; }
