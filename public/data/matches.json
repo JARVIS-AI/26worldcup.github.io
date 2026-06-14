@@ -598,15 +598,15 @@
    "date": "2026-06-14T20:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": null,
+   "time": "57'",
    "home": {
     "code": "NED",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
     "code": "JPN",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "F1",

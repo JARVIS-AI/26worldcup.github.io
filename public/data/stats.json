@@ -113,6 +113,13 @@
    "ownGoals": 0
   },
   {
+   "id": "405522",
+   "name": "NAKAMURA",
+   "code": "JPN",
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "511015",
    "name": "Nathaniel BROWN",
    "code": "GER",
@@ -165,6 +172,13 @@
    "id": "405742",
    "name": "VINI JR.",
    "code": "BRA",
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
+   "id": "397786",
+   "name": "Virgil VAN DIJK",
+   "code": "NED",
    "goals": 1,
    "ownGoals": 0
   }
