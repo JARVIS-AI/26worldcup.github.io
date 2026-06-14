@@ -538,8 +538,8 @@
    "group": "E",
    "date": "2026-06-14T17:00:00Z",
    "venueId": "400249385",
-   "status": "live",
-   "time": "90'",
+   "status": "finished",
+   "time": "96'",
    "home": {
     "code": "GER",
     "score": 7,
@@ -552,7 +552,7 @@
    },
    "phA": "E1",
    "phB": "E2",
-   "winner": null,
+   "winner": "GER",
    "attendance": 68021,
    "officials": [
     {
@@ -598,7 +598,7 @@
    "date": "2026-06-14T20:00:00Z",
    "venueId": "400257526",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "NED",
     "score": null,
