@@ -92,6 +92,13 @@
    "ownGoals": 0
   },
   {
+   "id": "448557",
+   "name": "KAMADA",
+   "code": "JPN",
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "441170",
    "name": "Ladislav KREJCI",
    "code": "CZE",
@@ -191,7 +198,7 @@
   }
  ],
  "cards": {
-  "yellow": 27,
+  "yellow": 28,
   "red": 3,
   "players": [
    {
@@ -336,7 +343,7 @@
    }
   ]
  },
- "attAvg": 63622,
+ "attAvg": 64188,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",

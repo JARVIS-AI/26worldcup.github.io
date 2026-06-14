@@ -305,7 +305,7 @@
     "zh-TW": "巴西"
    },
    "iso2": "BR",
-   "ranking": 7,
+   "ranking": 6,
    "rankingPrev": 6,
    "baseCamp": {
     "city": "Morristown",
@@ -1363,7 +1363,7 @@
     "zh-TW": "摩洛哥"
    },
    "iso2": "MA",
-   "ranking": 8,
+   "ranking": 7,
    "rankingPrev": 7,
    "baseCamp": {
     "city": "Basking Ridge",
@@ -1455,7 +1455,7 @@
     "zh-TW": "荷蘭"
    },
    "iso2": "NL",
-   "ranking": 5,
+   "ranking": 8,
    "rankingPrev": 8,
    "baseCamp": {
     "city": "Kansas City",
@@ -1682,7 +1682,7 @@
     "zh-TW": "葡萄牙"
    },
    "iso2": "PT",
-   "ranking": 6,
+   "ranking": 5,
    "rankingPrev": 5,
    "baseCamp": {
     "city": "Palm Beach Gardens",

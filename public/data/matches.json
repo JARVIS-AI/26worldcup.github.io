@@ -480,7 +480,7 @@
    "date": "2026-06-14T23:00:00Z",
    "venueId": "400248622",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "CIV",
     "score": null,
@@ -597,8 +597,8 @@
    "group": "F",
    "date": "2026-06-14T20:00:00Z",
    "venueId": "400257526",
-   "status": "live",
-   "time": "86'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "NED",
     "score": 2,
@@ -606,7 +606,7 @@
    },
    "away": {
     "code": "JPN",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "F1",
