@@ -893,7 +893,7 @@
    "date": "2026-06-15T19:00:00Z",
    "venueId": "400216606",
    "status": "live",
-   "time": "16'",
+   "time": "30'",
    "home": {
     "code": "BEL",
     "score": 0,
@@ -901,7 +901,7 @@
    },
    "away": {
     "code": "EGY",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "G1",
