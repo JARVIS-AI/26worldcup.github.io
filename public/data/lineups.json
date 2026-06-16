@@ -11133,7 +11133,7 @@
     },
     {
      "id": "395186",
-     "name": "Hussain",
+     "name": "HUSSEIN",
      "number": 18,
      "captain": false,
      "gk": false,
@@ -11319,7 +11319,20 @@
     }
    ],
    "bookings": [],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "436628",
+     "on": "484262",
+     "minute": "59'",
+     "period": 5
+    },
+    {
+     "off": "484270",
+     "on": "434026",
+     "minute": "59'",
+     "period": 5
+    }
+   ]
   },
   "away": {
    "tactics": "4-1-2-3",
@@ -11630,7 +11643,7 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "55'",
+  "matchTime": "69'",
   "period": 5,
   "final": false
  },
