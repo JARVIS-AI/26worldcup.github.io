@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 40,
+  "yellow": 41,
   "red": 3,
   "players": [
    {
@@ -438,6 +438,14 @@
     "r": 0
    },
    {
+    "id": "288961",
+    "name": "Ehsan HAJISAFI",
+    "code": "IRN",
+    "no": 3,
+    "y": 1,
+    "r": 0
+   },
+   {
     "id": "436743",
     "name": "Ermedin DEMIROVIC",
     "code": "BIH",
@@ -476,18 +484,10 @@
     "no": 5,
     "y": 1,
     "r": 0
-   },
-   {
-    "id": "430697",
-    "name": "Jean-Ricner BELLEGARDE",
-    "code": "HAI",
-    "no": 10,
-    "y": 1,
-    "r": 0
    }
   ]
  },
- "attAvg": 63888,
+ "attAvg": 64277,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",

@@ -102,6 +102,30 @@
   ],
   "G": [
    {
+    "code": "NZL",
+    "p": 1,
+    "w": 0,
+    "d": 1,
+    "l": 0,
+    "gf": 2,
+    "ga": 2,
+    "gd": 0,
+    "pts": 1,
+    "rank": 1
+   },
+   {
+    "code": "IRN",
+    "p": 1,
+    "w": 0,
+    "d": 1,
+    "l": 0,
+    "gf": 2,
+    "ga": 2,
+    "gd": 0,
+    "pts": 1,
+    "rank": 2
+   },
+   {
     "code": "BEL",
     "p": 1,
     "w": 0,
@@ -111,7 +135,7 @@
     "ga": 1,
     "gd": 0,
     "pts": 1,
-    "rank": 1
+    "rank": 3
    },
    {
     "code": "EGY",
@@ -123,30 +147,6 @@
     "ga": 1,
     "gd": 0,
     "pts": 1,
-    "rank": 2
-   },
-   {
-    "code": "IRN",
-    "p": 0,
-    "w": 0,
-    "d": 0,
-    "l": 0,
-    "gf": 0,
-    "ga": 0,
-    "gd": 0,
-    "pts": 0,
-    "rank": 3
-   },
-   {
-    "code": "NZL",
-    "p": 0,
-    "w": 0,
-    "d": 0,
-    "l": 0,
-    "gf": 0,
-    "ga": 0,
-    "gd": 0,
-    "pts": 0,
     "rank": 4
    }
   ],
@@ -633,8 +633,8 @@
    "qualifies": null
   },
   {
-   "group": "B",
-   "code": "QAT",
+   "group": "G",
+   "code": "BEL",
    "p": 1,
    "w": 0,
    "d": 1,
@@ -648,6 +648,21 @@
    "qualifies": null
   },
   {
+   "group": "B",
+   "code": "QAT",
+   "p": 1,
+   "w": 0,
+   "d": 1,
+   "l": 0,
+   "gf": 1,
+   "ga": 1,
+   "gd": 0,
+   "pts": 1,
+   "rank": 3,
+   "thirdRank": 4,
+   "qualifies": null
+  },
+  {
    "group": "H",
    "code": "ESP",
    "p": 1,
@@ -658,21 +673,6 @@
    "ga": 0,
    "gd": 0,
    "pts": 1,
-   "rank": 3,
-   "thirdRank": 4,
-   "qualifies": null
-  },
-  {
-   "group": "G",
-   "code": "IRN",
-   "p": 0,
-   "w": 0,
-   "d": 0,
-   "l": 0,
-   "gf": 0,
-   "ga": 0,
-   "gd": 0,
-   "pts": 0,
    "rank": 3,
    "thirdRank": 5,
    "qualifies": null

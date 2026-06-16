@@ -833,8 +833,8 @@
    "group": "G",
    "date": "2026-06-16T01:00:00Z",
    "venueId": "400017978",
-   "status": "live",
-   "time": "82'",
+   "status": "finished",
+   "time": "96'",
    "home": {
     "code": "IRN",
     "score": 2,
@@ -848,7 +848,7 @@
    "phA": "G3",
    "phB": "G4",
    "winner": null,
-   "attendance": null,
+   "attendance": 70108,
    "officials": [
     {
      "id": "374810",
