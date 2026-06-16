@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import type { ReactNode } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import type { Match, StandingRow } from '../types'
 import { useI18n } from '../i18n'
 import { useAppData } from '../data/DataContext'
@@ -49,6 +50,82 @@ function NumCells({ r }: { r: StandingRow }) {
       <td className="tnum">{fmtGd(r.gd)}</td>
       <td className="tnum gp-pts">{r.pts}</td>
     </>
+  )
+}
+
+/** render a tie-break string whose link span is delimited by [[...]] as text with
+ * that span turned into a link to `to` (a Stats section); plain text if unmarked */
+function renderLinked(text: string, to: string): ReactNode {
+  const a = text.indexOf('[[')
+  const b = text.indexOf(']]')
+  if (a === -1 || b === -1 || b < a) return text
+  return (
+    <>
+      {text.slice(0, a)}
+      <Link className="gp-tb-link" to={to}>
+        {text.slice(a + 2, b)}
+      </Link>
+      {text.slice(b + 2)}
+    </>
+  )
+}
+
+/** collapsible FIFA tie-breaking rules, shown at the bottom of the page */
+function TieBreak() {
+  const { t } = useI18n()
+  const [open, setOpen] = useState(false)
+  return (
+    <section className="gp-tb">
+      <h2 className="gp-tb-title">
+        <button
+          type="button"
+          className="gp-tb-btn"
+          aria-expanded={open}
+          aria-controls="gp-tb-body"
+          onClick={() => setOpen((o) => !o)}
+        >
+          <Icon name="info" size={17} />
+          <span>{t('tbTitle')}</span>
+          <Icon name="back" size={15} className={`gp-chev${open ? ' open' : ''}`} />
+        </button>
+      </h2>
+      {open && (
+        <div id="gp-tb-body" className="gp-tb-body">
+          <h3 className="gp-tb-h">{t('tbGroupTitle')}</h3>
+          <p>{t('tbIntro')}</p>
+          <ol className="gp-tb-list" type="a">
+            <li>{t('tbA')}</li>
+            <li>{t('tbB')}</li>
+            <li>{t('tbC')}</li>
+          </ol>
+          <p>{t('tbReapply')}</p>
+          <ol className="gp-tb-list" type="a" start={4}>
+            <li>{t('tbD')}</li>
+            <li>{t('tbE')}</li>
+            <li>
+              {renderLinked(t('tbF'), '/stats?fairplay=1')}
+              <ul className="gp-tb-sub">
+                <li>{t('tbFYellow')}</li>
+                <li>{t('tbFIndirectRed')}</li>
+                <li>{t('tbFDirectRed')}</li>
+                <li>{t('tbFYellowRed')}</li>
+              </ul>
+            </li>
+            <li>{renderLinked(t('tbG'), '/stats?ranking=1')}</li>
+            <li>{t('tbH')}</li>
+          </ol>
+          <h3 className="gp-tb-h">{t('tbThirdsTitle')}</h3>
+          <ol className="gp-tb-list">
+            <li>{t('tbThirds1')}</li>
+            <li>{t('tbThirds2')}</li>
+            <li>{t('tbThirds3')}</li>
+            <li>{renderLinked(t('tbThirds4'), '/stats?fairplay=1')}</li>
+            <li>{renderLinked(t('tbThirds5'), '/stats?ranking=1')}</li>
+            <li>{t('tbThirds6')}</li>
+          </ol>
+        </div>
+      )}
+    </section>
   )
 }
 
@@ -222,6 +299,8 @@ export default function Groups() {
           {t('legendOut')}
         </span>
       </div>
+
+      <TieBreak />
     </div>
   )
 }

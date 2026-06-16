@@ -71,6 +71,75 @@
   font-size: 1.05rem;
   margin-bottom: 10px;
 }
+.sx-rank-date {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+/* deep-link target (from the group-stage tie-breaking criteria): offset below the
+   sticky header and flash once to draw the eye */
+#sx-fifa-ranking,
+#sx-fair-play {
+  scroll-margin-top: calc(var(--hdr-h, 58px) + 12px);
+}
+/* fair-play header: title + group/all segmented toggle */
+.sx-fp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.sx-fp-head h2 {
+  margin: 0;
+}
+.sx-fp-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.sx-fp-toggle button {
+  padding: 4px 11px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-2);
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.sx-fp-toggle button + button {
+  border-inline-start: 1px solid var(--border);
+}
+.sx-fp-toggle button:hover {
+  color: var(--text);
+}
+/* active segment: blue background, white text — fixed blue (not --accent-2, which
+   lightens in dark mode and would drop white-text contrast below AA) */
+.sx-fp-toggle button.on {
+  background: #2563eb;
+  color: #fff;
+}
+.sx-card.flash {
+  animation: sx-card-flash 1.8s ease-out;
+}
+@keyframes sx-card-flash {
+  0%,
+  20% {
+    border-color: var(--accent-2);
+    box-shadow: 0 0 0 2px var(--accent-2);
+  }
+  100% {
+    border-color: var(--border);
+    box-shadow: var(--shadow);
+  }
+}
 
 /* top scorers table */
 .sx-table {

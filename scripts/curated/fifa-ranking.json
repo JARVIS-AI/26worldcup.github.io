@@ -1,0 +1,299 @@
+{
+  "_meta": {
+    "description": "Official FIFA men's world ranking published 2026-06-11 (frozen; not refreshed by update.mjs)",
+    "date": "2026-06-11",
+    "dateId": "FRS_Male_Football_20260401",
+    "source": "https://inside.fifa.com/fifa-world-ranking/men",
+    "teams": 48
+  },
+  "ranking": {
+    "ALG": {
+      "rank": 28,
+      "prev": 28,
+      "pts": 1571.03,
+      "prevPts": 1564.26
+    },
+    "ARG": {
+      "rank": 1,
+      "prev": 3,
+      "pts": 1877.27,
+      "prevPts": 1874.81
+    },
+    "AUS": {
+      "rank": 27,
+      "prev": 27,
+      "pts": 1579.34,
+      "prevPts": 1580.67
+    },
+    "AUT": {
+      "rank": 24,
+      "prev": 24,
+      "pts": 1597.4,
+      "prevPts": 1593.45
+    },
+    "BEL": {
+      "rank": 9,
+      "prev": 9,
+      "pts": 1742.24,
+      "prevPts": 1734.71
+    },
+    "BIH": {
+      "rank": 64,
+      "prev": 65,
+      "pts": 1387.22,
+      "prevPts": 1385.84
+    },
+    "BRA": {
+      "rank": 6,
+      "prev": 6,
+      "pts": 1765.86,
+      "prevPts": 1761.16
+    },
+    "CAN": {
+      "rank": 30,
+      "prev": 30,
+      "pts": 1559.48,
+      "prevPts": 1556.48
+    },
+    "CIV": {
+      "rank": 33,
+      "prev": 34,
+      "pts": 1540.87,
+      "prevPts": 1532.98
+    },
+    "COD": {
+      "rank": 46,
+      "prev": 46,
+      "pts": 1474.43,
+      "prevPts": 1478.35
+    },
+    "COL": {
+      "rank": 13,
+      "prev": 13,
+      "pts": 1698.35,
+      "prevPts": 1693.09
+    },
+    "CPV": {
+      "rank": 67,
+      "prev": 69,
+      "pts": 1371.11,
+      "prevPts": 1366.13
+    },
+    "CRO": {
+      "rank": 11,
+      "prev": 11,
+      "pts": 1714.87,
+      "prevPts": 1717.07
+    },
+    "CUW": {
+      "rank": 82,
+      "prev": 82,
+      "pts": 1294.77,
+      "prevPts": 1294.65
+    },
+    "CZE": {
+      "rank": 40,
+      "prev": 41,
+      "pts": 1505.74,
+      "prevPts": 1501.38
+    },
+    "ECU": {
+      "rank": 23,
+      "prev": 23,
+      "pts": 1598.52,
+      "prevPts": 1594.78
+    },
+    "EGY": {
+      "rank": 29,
+      "prev": 29,
+      "pts": 1562.37,
+      "prevPts": 1563.24
+    },
+    "ENG": {
+      "rank": 4,
+      "prev": 4,
+      "pts": 1828.02,
+      "prevPts": 1825.97
+    },
+    "ESP": {
+      "rank": 2,
+      "prev": 2,
+      "pts": 1874.71,
+      "prevPts": 1876.4
+    },
+    "FRA": {
+      "rank": 3,
+      "prev": 1,
+      "pts": 1870.7,
+      "prevPts": 1877.32
+    },
+    "GER": {
+      "rank": 10,
+      "prev": 10,
+      "pts": 1735.77,
+      "prevPts": 1730.37
+    },
+    "GHA": {
+      "rank": 73,
+      "prev": 74,
+      "pts": 1346.88,
+      "prevPts": 1346.31
+    },
+    "HAI": {
+      "rank": 83,
+      "prev": 83,
+      "pts": 1293.1,
+      "prevPts": 1291.71
+    },
+    "IRN": {
+      "rank": 20,
+      "prev": 21,
+      "pts": 1619.58,
+      "prevPts": 1615.3
+    },
+    "IRQ": {
+      "rank": 57,
+      "prev": 57,
+      "pts": 1446.28,
+      "prevPts": 1447.14
+    },
+    "JOR": {
+      "rank": 63,
+      "prev": 63,
+      "pts": 1387.74,
+      "prevPts": 1391.45
+    },
+    "JPN": {
+      "rank": 18,
+      "prev": 18,
+      "pts": 1661.58,
+      "prevPts": 1660.43
+    },
+    "KOR": {
+      "rank": 25,
+      "prev": 25,
+      "pts": 1591.63,
+      "prevPts": 1588.66
+    },
+    "KSA": {
+      "rank": 61,
+      "prev": 61,
+      "pts": 1423.88,
+      "prevPts": 1421.43
+    },
+    "MAR": {
+      "rank": 7,
+      "prev": 8,
+      "pts": 1755.1,
+      "prevPts": 1755.87
+    },
+    "MEX": {
+      "rank": 14,
+      "prev": 15,
+      "pts": 1687.48,
+      "prevPts": 1681.03
+    },
+    "NED": {
+      "rank": 8,
+      "prev": 7,
+      "pts": 1753.57,
+      "prevPts": 1757.87
+    },
+    "NOR": {
+      "rank": 31,
+      "prev": 31,
+      "pts": 1557.44,
+      "prevPts": 1550.94
+    },
+    "NZL": {
+      "rank": 85,
+      "prev": 85,
+      "pts": 1275.58,
+      "prevPts": 1281.57
+    },
+    "PAN": {
+      "rank": 34,
+      "prev": 33,
+      "pts": 1539.16,
+      "prevPts": 1540.64
+    },
+    "PAR": {
+      "rank": 41,
+      "prev": 40,
+      "pts": 1505.35,
+      "prevPts": 1503.5
+    },
+    "POR": {
+      "rank": 5,
+      "prev": 5,
+      "pts": 1767.85,
+      "prevPts": 1763.83
+    },
+    "QAT": {
+      "rank": 56,
+      "prev": 55,
+      "pts": 1450.31,
+      "prevPts": 1454.96
+    },
+    "RSA": {
+      "rank": 60,
+      "prev": 60,
+      "pts": 1428.38,
+      "prevPts": 1429.73
+    },
+    "SCO": {
+      "rank": 42,
+      "prev": 43,
+      "pts": 1503.34,
+      "prevPts": 1498.35
+    },
+    "SEN": {
+      "rank": 15,
+      "prev": 14,
+      "pts": 1684.07,
+      "prevPts": 1688.99
+    },
+    "SUI": {
+      "rank": 19,
+      "prev": 19,
+      "pts": 1650.06,
+      "prevPts": 1649.4
+    },
+    "SWE": {
+      "rank": 38,
+      "prev": 38,
+      "pts": 1509.79,
+      "prevPts": 1514.77
+    },
+    "TUN": {
+      "rank": 45,
+      "prev": 44,
+      "pts": 1476.41,
+      "prevPts": 1483.05
+    },
+    "TUR": {
+      "rank": 22,
+      "prev": 22,
+      "pts": 1605.73,
+      "prevPts": 1599.04
+    },
+    "URU": {
+      "rank": 16,
+      "prev": 17,
+      "pts": 1673.07,
+      "prevPts": 1673.07
+    },
+    "USA": {
+      "rank": 17,
+      "prev": 16,
+      "pts": 1671.23,
+      "prevPts": 1673.13
+    },
+    "UZB": {
+      "rank": 50,
+      "prev": 50,
+      "pts": 1458.73,
+      "prevPts": 1465.34
+    }
+  }
+}

@@ -84,17 +84,49 @@ function layout(tl: TeamLineup, half: 'top' | 'bottom'): Placed[] {
   return out
 }
 
-function PlayerDot({
+// Dots and labels are drawn in two separate passes (all dots, then all labels)
+// so a player's annotation text below the dot is never covered by a neighbouring
+// player's dot painted later in document order.
+function PlayerMarks({ pl, side, card }: { pl: Placed; side: 'home' | 'away'; card?: 'y' | 'r' }) {
+  const c = COLORS[side]
+  return (
+    <g transform={`translate(${pl.x} ${pl.y})`}>
+      <circle r={4.3} style={{ fill: c.dot, stroke: 'rgb(0 0 0 / 0.35)', strokeWidth: 0.5 }} />
+      {card && (
+        <rect
+          x={-5.8}
+          y={-5.8}
+          width={2.3}
+          height={3.2}
+          rx={0.5}
+          style={{
+            fill: card === 'r' ? '#d92d20' : '#f3c513',
+            stroke: 'rgb(0 0 0 / 0.35)',
+            strokeWidth: 0.3,
+          }}
+        />
+      )}
+      {pl.p.captain && (
+        <circle
+          cx={3.5}
+          cy={-3.5}
+          r={1.9}
+          style={{ fill: '#d4a017', stroke: 'rgb(0 0 0 / 0.3)', strokeWidth: 0.35 }}
+        />
+      )}
+    </g>
+  )
+}
+
+function PlayerLabels({
   pl,
   side,
-  card,
   off,
   goals,
   code,
 }: {
   pl: Placed
   side: 'home' | 'away'
-  card?: 'y' | 'r'
   off?: string
   goals?: string
   code?: string
@@ -125,33 +157,20 @@ function PlayerDot({
   )
   return (
     <g transform={`translate(${pl.x} ${pl.y})`}>
-      <circle r={4.3} style={{ fill: c.dot, stroke: 'rgb(0 0 0 / 0.35)', strokeWidth: 0.5 }} />
       {pl.p.number !== null && (
         <text textAnchor="middle" y={1.45} style={{ fontSize: 3.6, fontWeight: 750, fill: c.text }}>
           {pl.p.number}
         </text>
       )}
-      {card && (
-        <rect
-          x={-5.8}
-          y={-5.8}
-          width={2.3}
-          height={3.2}
-          rx={0.5}
-          style={{
-            fill: card === 'r' ? '#d92d20' : '#f3c513',
-            stroke: 'rgb(0 0 0 / 0.35)',
-            strokeWidth: 0.3,
-          }}
-        />
-      )}
       {pl.p.captain && (
-        <g transform="translate(3.5 -3.5)">
-          <circle r={1.9} style={{ fill: '#d4a017', stroke: 'rgb(0 0 0 / 0.3)', strokeWidth: 0.35 }} />
-          <text textAnchor="middle" y={0.95} style={{ fontSize: 2.4, fontWeight: 800, fill: '#ffffff' }}>
-            C
-          </text>
-        </g>
+        <text
+          textAnchor="middle"
+          x={3.5}
+          y={-2.55}
+          style={{ fontSize: 2.4, fontWeight: 800, fill: '#ffffff' }}
+        >
+          C
+        </text>
       )}
       {href ? (
         <a href={href} aria-label={pl.p.name ?? undefined}>
@@ -309,24 +328,28 @@ export default function Pitch({
       <path d="M 5.5 153 A 2.5 2.5 0 0 0 3 150.5" style={lineStyle} />
       <path d="M 97 150.5 A 2.5 2.5 0 0 0 94.5 153" style={lineStyle} />
 
-      {/* players */}
+      {/* players: all dots first, then all labels on top so no text is covered by a dot */}
       {awayPlaced.map((pl) => (
-        <PlayerDot
+        <PlayerMarks key={pl.p.id} pl={pl} side="away" card={marks?.[pl.p.id]?.card} />
+      ))}
+      {homePlaced.map((pl) => (
+        <PlayerMarks key={pl.p.id} pl={pl} side="home" card={marks?.[pl.p.id]?.card} />
+      ))}
+      {awayPlaced.map((pl) => (
+        <PlayerLabels
           key={pl.p.id}
           pl={pl}
           side="away"
-          card={marks?.[pl.p.id]?.card}
           off={subOff?.[pl.p.id]}
           goals={goals?.[pl.p.id]}
           code={awayCode}
         />
       ))}
       {homePlaced.map((pl) => (
-        <PlayerDot
+        <PlayerLabels
           key={pl.p.id}
           pl={pl}
           side="home"
-          card={marks?.[pl.p.id]?.card}
           off={subOff?.[pl.p.id]}
           goals={goals?.[pl.p.id]}
           code={homeCode}

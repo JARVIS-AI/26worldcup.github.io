@@ -259,3 +259,101 @@
   background: var(--loss);
   opacity: 0.65;
 }
+
+/* ---- tie-breaking criteria (collapsible) ---- */
+.gp-tb {
+  margin: 18px 0 4px;
+}
+.gp-tb-title {
+  margin: 0;
+}
+.gp-tb-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--r-md);
+  background: transparent;
+  font-family: inherit;
+  font-weight: 650;
+  font-size: 0.84rem;
+  color: var(--text-2);
+  text-align: start;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.gp-tb-btn:hover {
+  background: var(--chip-bg);
+  color: var(--text);
+}
+/* when open, the trigger and body fuse into one bordered box */
+.gp-tb-btn[aria-expanded="true"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.gp-tb-btn > span {
+  flex: 1;
+}
+.gp-tb-btn > svg:first-child {
+  flex: none;
+  color: var(--text-3);
+}
+
+.gp-tb-body {
+  margin-top: 0;
+  padding: 12px;
+  border: 1px dashed var(--border-strong);
+  border-top: 0;
+  border-bottom-left-radius: var(--r-md);
+  border-bottom-right-radius: var(--r-md);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text-2);
+}
+.gp-tb-body p {
+  margin: 0 0 10px;
+}
+.gp-tb-h {
+  margin: 16px 0 8px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.gp-tb-body > .gp-tb-h:first-child {
+  margin-top: 0;
+}
+.gp-tb-list {
+  margin: 0 0 10px;
+  padding-inline-start: 1.7em;
+}
+.gp-tb-list > li {
+  margin: 4px 0;
+  padding-inline-start: 4px;
+}
+.gp-tb-list > li::marker {
+  color: var(--text-3);
+  font-weight: 650;
+}
+.gp-tb-sub {
+  list-style: disc;
+  margin: 6px 0 4px;
+  padding-inline-start: 1.4em;
+}
+.gp-tb-sub > li {
+  margin: 3px 0;
+}
+.gp-tb-sub > li::marker {
+  color: var(--text-3);
+}
+/* inline link from a criterion to the matching Stats section */
+.gp-tb-link {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.gp-tb-link:hover {
+  text-decoration-thickness: 2px;
+}

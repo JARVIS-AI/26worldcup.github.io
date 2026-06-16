@@ -58,6 +58,17 @@ export function fmtDateTime(dateIso: string, locale: string, tz?: string): strin
   }).format(new Date(dateIso))
 }
 
+/** localized "11 June 2026"-style calendar date, formatted in UTC so a fixed
+ * calendar day (e.g. a ranking release date) never shifts across user timezones */
+export function fmtCalendarDate(dateIso: string, locale: string): string {
+  return getFormatter(locale, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(dateIso))
+}
+
 export function tzAbbr(dateIso: string, locale: string, tz?: string): string {
   const parts = getFormatter(locale, {
     timeZone: tz,

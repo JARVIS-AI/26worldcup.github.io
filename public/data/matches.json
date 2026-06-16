@@ -1472,7 +1472,41 @@
    "phB": "A2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "428431",
+     "country": "USA",
+     "role": "referee",
+     "name": {
+      "en": "Tori PENSO",
+      "fr": "Tori PENSO",
+      "zh": "Tori PENSO",
+      "ar": "Tori PENSO",
+      "es": "Tori PENSO",
+      "de": "Tori PENSO",
+      "pt": "Tori PENSO",
+      "it": "Tori PENSO",
+      "ja": "Tori PENSO",
+      "ko": "Tori PENSO",
+      "id": "Tori PENSO",
+      "ru": "Tori PENSO"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021446",
@@ -1497,7 +1531,41 @@
    "phB": "B2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "392268",
+     "country": "POR",
+     "role": "referee",
+     "name": {
+      "en": "Joao PINHEIRO",
+      "fr": "Joao PINHEIRO",
+      "zh": "Joao PINHEIRO",
+      "ar": "Joao PINHEIRO",
+      "es": "Joao PINHEIRO",
+      "de": "Joao PINHEIRO",
+      "pt": "Joao PINHEIRO",
+      "it": "Joao PINHEIRO",
+      "ja": "Joao PINHEIRO",
+      "ko": "Joao PINHEIRO",
+      "id": "Joao PINHEIRO",
+      "ru": "Joao PINHEIRO"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021450",
@@ -1522,7 +1590,41 @@
    "phB": "B3",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "416177",
+     "country": "CHI",
+     "role": "referee",
+     "name": {
+      "en": "Cristian GARAY",
+      "fr": "Cristian GARAY",
+      "zh": "Cristian GARAY",
+      "ar": "Cristian GARAY",
+      "es": "Cristian GARAY",
+      "de": "Cristian GARAY",
+      "pt": "Cristian GARAY",
+      "it": "Cristian GARAY",
+      "ja": "Cristian GARAY",
+      "ko": "Cristian GARAY",
+      "id": "Cristian GARAY",
+      "ru": "Cristian GARAY"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021442",
@@ -1547,7 +1649,41 @@
    "phB": "A3",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "408669",
+     "country": "URU",
+     "role": "referee",
+     "name": {
+      "en": "Gustavo TEJERA",
+      "fr": "Gustavo TEJERA",
+      "zh": "Gustavo TEJERA",
+      "ar": "Gustavo TEJERA",
+      "es": "Gustavo TEJERA",
+      "de": "Gustavo TEJERA",
+      "pt": "Gustavo TEJERA",
+      "it": "Gustavo TEJERA",
+      "ja": "Gustavo TEJERA",
+      "ko": "Gustavo TEJERA",
+      "id": "Gustavo TEJERA",
+      "ru": "Gustavo TEJERA"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021457",

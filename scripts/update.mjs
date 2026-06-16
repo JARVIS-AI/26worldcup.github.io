@@ -4,13 +4,16 @@
  *
  * Sources (all free, no API key required):
  *  - FIFA public API (api.fifa.com)  : matches, officials, localized names (en/fr/zh/ar),
- *                                      live lineups & goals, world ranking
+ *                                      live lineups & goals
  *  - Wikipedia                       : official 26-player squads
  *  - Open-Meteo                      : weather forecasts + base-camp geocoding
  *
+ * The FIFA world ranking is NOT fetched here: it is frozen to the official 2026-06-11
+ * release in scripts/curated/fifa-ranking.json (fetch once, see that file's _meta).
+ *
  * Usage:
  *   bun run update            refresh everything: matches, standings, squads,
- *                             lineups, stats, rankings, weather
+ *                             lineups, stats, weather
  *
  * Output: public/data/*.json (consumed by the app at runtime)
  */
@@ -956,6 +959,42 @@ function computeStats(lineups, matches) {
     }
   }
 
+  // team conduct ("fair play") score per team — same scheme as the standings
+  // tiebreaker (criterion f): one deduction per player per match, worst card only
+  // (Y -1, second yellow / yellow+red -3, direct red -4). Computed for group-stage
+  // matches and for all matches; 0 means no deductions.
+  const fairPlayOver = (ms) => {
+    const score = {}
+    for (const m of ms) {
+      if (m.status !== 'finished' || !m.home || !m.away) continue
+      const lu = lineups[m.id]
+      if (!lu) continue
+      for (const side of ['home', 'away']) {
+        const code = m[side]?.code
+        const tl = lu[side]
+        if (!code || !tl) continue
+        score[code] ??= 0
+        const byPlayer = {}
+        for (const b of tl.bookings || []) {
+          byPlayer[b.player] = byPlayer[b.player] ?? []
+          byPlayer[b.player].push(b)
+        }
+        for (const cards of Object.values(byPlayer)) {
+          const reds = cards.filter((b) => (b.card ?? 0) >= 2).length
+          const yellows = cards.filter((b) => b.card === 1).length
+          if (reds > 0) score[code] += yellows >= 1 ? -3 : -4
+          else if (yellows >= 2) score[code] += -3
+          else if (yellows === 1) score[code] += -1
+        }
+      }
+    }
+    return score
+  }
+  const fairPlay = {
+    group: fairPlayOver(matches.filter((m) => m.stage === 'group')),
+    all: fairPlayOver(matches),
+  }
+
   // tournament-wide odds and ends from finished matches
   const fin = matches.filter((m) => m.status === 'finished' && m.home && m.away)
   // FIFA occasionally ships garbage in Attendance (seen: 4e9 for the opener) —
@@ -1005,6 +1044,7 @@ function computeStats(lineups, matches) {
     attAvg,
     biggestWin,
     fastestGoal,
+    fairPlay,
   }
 }
 
@@ -1044,21 +1084,6 @@ async function downloadFlags(fifaIso, broadcasters) {
   }
   if (downloaded) log(`flags: downloaded ${downloaded} (${codes.size} total)`)
   return codes.size
-}
-
-// ---------------------------------------------------------------- FIFA world ranking (live)
-
-/** live FIFA ranking (updates between official releases) -> { ARG: {rank, prev}, ... } */
-async function fetchRankings() {
-  const d = await fetchJson(`${FIFA}/fifarankings/rankings/live?gender=1&sportType=0&language=en`)
-  const out = {}
-  for (const r of d.Results || []) {
-    if (r.IdCountry && r.Rank)
-      out[r.IdCountry] = { rank: r.Rank, prev: r.PrevRank ?? null, pts: r.TotalPoints ?? null }
-  }
-  if (Object.keys(out).length < 100)
-    throw new Error(`suspiciously few ranking entries: ${Object.keys(out).length}`)
-  return out
 }
 
 // --------------------------------------------- base-camp geocoding (Open-Meteo, cached)
@@ -1239,14 +1264,12 @@ async function main() {
     .sort()
 
   // 4. assemble teams.json
-  // live FIFA ranking is the primary source; the curated April snapshot is the fallback
-  let liveRanks = {}
-  try {
-    liveRanks = await fetchRankings()
-    log(`FIFA live ranking: ${Object.keys(liveRanks).length} teams`)
-  } catch (e) {
-    warn(`rankings: ${e.message} — using curated snapshot`)
-  }
+  // FIFA ranking is FROZEN to the official 2026-06-11 release (the last one before the
+  // World Cup): fetched once into scripts/curated/fifa-ranking.json and never refreshed
+  // here. Feeds the ranking display, tie-break criteria g/h, and the model's FIFA-points
+  // leg. The curated teams-extra snapshot stays as a last-resort fallback.
+  const officialRanks = (await readJsonSafe(path.join(CURATED, 'fifa-ranking.json')))?.ranking || {}
+  log(`FIFA ranking (frozen 2026-06-11): ${Object.keys(officialRanks).length} teams`)
   const teams = {}
   for (const code of codes) {
     const extra = teamsExtra[code] || {}
@@ -1261,8 +1284,8 @@ async function main() {
         ...(teamL10n.perTeam?.[code] || {}),
       },
       iso2: fifaIso[code] || null,
-      ranking: liveRanks[code]?.rank ?? extra.fifaRanking ?? null,
-      rankingPrev: liveRanks[code]?.prev ?? null,
+      ranking: officialRanks[code]?.rank ?? extra.fifaRanking ?? null,
+      rankingPrev: officialRanks[code]?.prev ?? null,
       baseCamp: extra.baseCamp ?? null,
       colors: st.colors || [],
       nickname: st.nickname || null,
@@ -1414,8 +1437,8 @@ async function main() {
       const pElo = rawProbs(eh - ea + bonus + adj, outcomeCurve)
       // leg 2: official FIFA points — an independent rating with opposite
       // confederation biases — mapped via the SUM formula's 600 scale
-      const ptsH = liveRanks[m.home.code]?.pts
-      const ptsA = liveRanks[m.away.code]?.pts
+      const ptsH = officialRanks[m.home.code]?.pts
+      const ptsA = officialRanks[m.away.code]?.pts
       const pFifa =
         ptsH != null && ptsA != null ? rawProbs(((ptsH - ptsA) * 400) / 600 + bonus, outcomeCurve) : null
       probs[m.id] = intify(blend(pElo, pFifa), m.stage !== 'group')
@@ -1430,7 +1453,7 @@ async function main() {
       if (e == null) continue
       simTeams[code] = {
         r: Math.round(e + (offsets[CONFED_OF[code]] ?? 0)),
-        f: liveRanks[code]?.pts != null ? Math.round(liveRanks[code].pts) : null,
+        f: officialRanks[code]?.pts != null ? Math.round(officialRanks[code].pts) : null,
       }
     }
     const simModel = {

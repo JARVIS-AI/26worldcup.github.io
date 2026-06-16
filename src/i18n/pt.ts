@@ -102,6 +102,33 @@ const pt: Dict = {
   thirdsInfo:
     'Os 8 melhores terceiros classificados (entre 12 grupos) apuram-se para os dezasseis avos de final.',
   groupFixtures: 'Calendário',
+  // tie-breaking criteria (FIFA group-stage ranking)
+  tbTitle: 'Critérios de desempate',
+  tbGroupTitle: 'Critérios de desempate para a classificação da fase de grupos',
+  tbIntro:
+    'A classificação das seleções em cada grupo é determinada pelos pontos obtidos em todos os jogos do grupo. Se duas ou mais seleções ficarem empatadas em pontos, são aplicados os seguintes critérios para determinar a classificação:',
+  tbA: 'Maior número de pontos obtidos nos jogos do grupo disputados entre as seleções em causa;',
+  tbB: 'Melhor diferença de golos nos jogos do grupo disputados entre as seleções em causa;',
+  tbC: 'Maior número de golos marcados nos jogos do grupo disputados entre as seleções em causa;',
+  tbReapply:
+    'Se, após a aplicação dos critérios a a c, as seleções continuarem empatadas na classificação, os critérios a a c são novamente aplicados exclusivamente aos jogos entre as seleções que se mantêm empatadas, a fim de determinar a sua classificação final. Se este procedimento não conduzir a uma decisão, aplicam-se os critérios d a h.',
+  tbD: 'Melhor diferença de golos em todos os jogos do grupo;',
+  tbE: 'Maior número de golos marcados em todos os jogos do grupo;',
+  tbF: 'Melhor [[pontuação de conduta da seleção ("fair play")]] em todos os jogos do grupo (só pode ser aplicada uma dedução a um jogador ou a um treinador/dirigente da seleção num mesmo jogo):',
+  tbFYellow: 'Cartão amarelo: −1 ponto;',
+  tbFIndirectRed: 'Cartão vermelho indireto (segundo cartão amarelo): −3 pontos;',
+  tbFDirectRed: 'Cartão vermelho direto: −4 pontos;',
+  tbFYellowRed: 'Cartão amarelo e cartão vermelho direto: −5 pontos;',
+  tbG: 'Melhor posição no [[Ranking Mundial FIFA Masculino mais recente (11 de junho de 2026)]];',
+  tbH: 'Melhor posição em Rankings Mundiais FIFA Masculinos progressivamente mais antigos, até ser possível separar as seleções.',
+  tbThirdsTitle: 'Critérios de desempate para a classificação dos terceiros classificados',
+  tbThirds1: 'Pontos;',
+  tbThirds2: 'Diferença de golos;',
+  tbThirds3: 'Golos marcados;',
+  tbThirds4: '[[Pontuação de conduta da seleção]];',
+  tbThirds5: '[[Ranking FIFA mais recente (11 de junho de 2026)]];',
+  tbThirds6: 'Registo do(s) Ranking(s) FIFA anterior(es).',
+  fairPlay: 'Pontuação de fair play',
   // bracket
   bracketTitle: 'Quadro da fase a eliminar',
   bkHalfL: 'Metade esquerda',

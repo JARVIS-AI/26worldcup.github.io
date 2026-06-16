@@ -249,6 +249,9 @@ export interface Stats {
     string,
     { id: string; name: string; bans: { type: 'red' | 'yellows'; due: string[]; banned: string | null }[] }[]
   >
+  // team conduct ("fair play") score per team (0 best, negative = card deductions),
+  // for group-stage matches and for all matches
+  fairPlay?: { group: Record<string, number>; all: Record<string, number> }
 }
 
 export interface Meta {

@@ -84,6 +84,9 @@ interface GoalRow {
   minute: string | null
   name: string
   code: string | null
+  /** squad number + team code of the player, used to link to their team card */
+  num: number | null
+  playerCode: string | null
   own: boolean
   pen: boolean
 }
@@ -133,7 +136,12 @@ export default function MatchDetail() {
   const goalRows = useMemo<GoalRow[]>(() => {
     if (!m || !lu) return []
     const rows: GoalRow[] = []
-    const collect = (tl: TeamLineup | null, other: TeamLineup | null, code: string | null) => {
+    const collect = (
+      tl: TeamLineup | null,
+      other: TeamLineup | null,
+      code: string | null,
+      otherCode: string | null,
+    ) => {
       if (!tl) return
       const all = [...tl.xi, ...tl.subs]
       // own goals sit in the benefiting team's goals with the opponent player's id
@@ -147,13 +155,16 @@ export default function MatchDetail() {
           minute: g.minute,
           name: p?.name || g.player,
           code,
+          num: p?.number ?? null,
+          // an own-goal scorer's card lives in the opponent (their own) squad
+          playerCode: own ? otherCode : code,
           own,
           pen: g.type === 1,
         })
       })
     }
-    collect(lu.home, lu.away, m.home?.code ?? null)
-    collect(lu.away, lu.home, m.away?.code ?? null)
+    collect(lu.home, lu.away, m.home?.code ?? null, m.away?.code ?? null)
+    collect(lu.away, lu.home, m.away?.code ?? null, m.home?.code ?? null)
     return rows.sort((a, b) => (parseInt(a.minute || '0', 10) || 0) - (parseInt(b.minute || '0', 10) || 0))
   }, [lu, m])
 
@@ -175,15 +186,19 @@ export default function MatchDetail() {
       tl.bookings.forEach((b, i) => {
         const red = (b.card ?? 0) >= 2
         marks[b.player] = { card: red ? 'r' : marks[b.player]?.card === 'r' ? 'r' : 'y' }
-        if (red)
+        if (red) {
+          const p = all.find((x) => x.id === b.player)
           reds.push({
             key: `r-${code ?? 'x'}-${i}`,
             minute: b.minute,
-            name: all.find((x) => x.id === b.player)?.name || b.player,
+            name: p?.name || b.player,
             code,
+            num: p?.number ?? null,
+            playerCode: code,
             own: false,
             pen: false,
           })
+        }
       })
       for (const sub of tl.substitutions ?? [])
         if (sub.minute) {
@@ -204,6 +219,16 @@ export default function MatchDetail() {
     return { reds, marks, subOn, subOff, goals }
   }, [lu, m])
   const redRows = cardInfo.reds
+
+  // scorer / red-card name, linked to the player's card on their team's squad page
+  const scorerName = (g: GoalRow) =>
+    g.playerCode && g.num != null ? (
+      <Link className="md-plink" to={`/team/${g.playerCode}?p=${g.num}`}>
+        {g.name}
+      </Link>
+    ) : (
+      g.name
+    )
 
   if (!m) {
     return (
@@ -285,7 +310,7 @@ export default function MatchDetail() {
                 .filter((g) => g.code === m.home?.code)
                 .map((g) => (
                   <div key={g.key}>
-                    {g.name} {g.minute}
+                    {scorerName(g)} {g.minute}
                     {g.own && <span className="muted"> ({t('ownGoal')})</span>}
                     {g.pen && <span className="muted"> ({t('penaltyGoal')})</span>}
                   </div>
@@ -299,7 +324,7 @@ export default function MatchDetail() {
                 .filter((g) => g.code === m.away?.code)
                 .map((g) => (
                   <div key={g.key}>
-                    {g.name} {g.minute}
+                    {g.minute} {scorerName(g)}
                     {g.own && <span className="muted"> ({t('ownGoal')})</span>}
                     {g.pen && <span className="muted"> ({t('penaltyGoal')})</span>}
                   </div>
@@ -314,7 +339,7 @@ export default function MatchDetail() {
                 .filter((g) => g.code === m.home?.code)
                 .map((g) => (
                   <div key={g.key}>
-                    {g.name} {g.minute}
+                    {scorerName(g)} {g.minute}
                   </div>
                 ))}
             </div>
@@ -326,7 +351,7 @@ export default function MatchDetail() {
                 .filter((g) => g.code === m.away?.code)
                 .map((g) => (
                   <div key={g.key}>
-                    {g.name} {g.minute}
+                    {g.minute} {scorerName(g)}
                   </div>
                 ))}
             </div>

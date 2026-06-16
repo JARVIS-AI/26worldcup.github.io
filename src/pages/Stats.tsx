@@ -1,13 +1,46 @@
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { useAppData } from '../data/DataContext'
+import { fmtCalendarDate } from '../utils/time'
 import TeamName from '../components/TeamName'
 import Flag from '../components/Flag'
 import './stats.css'
 
+// official FIFA ranking the app freezes to (see scripts/curated/fifa-ranking.json)
+const RANKING_DATE = '2026-06-11'
+
 export default function Stats() {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
   const { matches, teams, stats } = useAppData()
+
+  // deep links from the group-stage tie-breaking criteria: ?ranking=1 / ?fairplay=1
+  // scroll to the matching section and flash it once
+  const [searchParams] = useSearchParams()
+  useEffect(() => {
+    const target = searchParams.get('ranking')
+      ? 'sx-fifa-ranking'
+      : searchParams.get('fairplay')
+        ? 'sx-fair-play'
+        : null
+    if (!target) return
+    const el = document.getElementById(target)
+    if (!el) return
+    const id = requestAnimationFrame(() => {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      el.classList.add('flash')
+      setTimeout(() => el.classList.remove('flash'), 1800)
+    })
+    return () => cancelAnimationFrame(id)
+  }, [searchParams])
+
+  // fair-play (team conduct) score table: group-stage by default, toggleable to all
+  const [fpMode, setFpMode] = useState<'group' | 'all'>('group')
+  const fpScores = stats.fairPlay?.[fpMode] ?? {}
+  // most deductions first (most negative), like the cards table; cleanest teams last
+  const fairPlayRows = Object.values(teams)
+    .map((tm) => ({ code: tm.code, group: tm.group, score: fpScores[tm.code] ?? 0 }))
+    .sort((a, b) => a.score - b.score || a.code.localeCompare(b.code))
 
   const finished = matches.filter((m) => m.status === 'finished')
   const liveCount = matches.filter((m) => m.status === 'live').length
@@ -209,14 +242,53 @@ export default function Stats() {
           </section>
         )}
 
-        <section className="card card-pad sx-card">
-          <h2>{t('fifaRanking')}</h2>
+        <section id="sx-fifa-ranking" className="card card-pad sx-card">
+          <h2>
+            {t('fifaRanking')} <span className="sx-rank-date">({fmtCalendarDate(RANKING_DATE, locale)})</span>
+          </h2>
           <div className="sx-rank-list">
             {ranked.map((team) => (
               <div key={team.code} className="sx-rank-row">
                 <span className="sx-rank-no tnum">{team.ranking ?? t('none')}</span>
                 <TeamName code={team.code} flagSize={20} className="sx-rank-team" />
-                <span className="chip">{t('groupX', { x: team.group })}</span>
+                <span className="chip" title={t('groupX', { x: team.group })}>
+                  {team.group}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="sx-fair-play" className="card card-pad sx-card">
+          <div className="sx-fp-head">
+            <h2>{t('fairPlay')}</h2>
+            <div className="sx-fp-toggle" role="group" aria-label={t('fairPlay')}>
+              <button
+                type="button"
+                className={fpMode === 'group' ? 'on' : ''}
+                aria-pressed={fpMode === 'group'}
+                onClick={() => setFpMode('group')}
+              >
+                {t('stageGroup')}
+              </button>
+              <button
+                type="button"
+                className={fpMode === 'all' ? 'on' : ''}
+                aria-pressed={fpMode === 'all'}
+                onClick={() => setFpMode('all')}
+              >
+                {t('all')}
+              </button>
+            </div>
+          </div>
+          <div className="sx-rank-list">
+            {fairPlayRows.map((row) => (
+              <div key={row.code} className="sx-rank-row">
+                <span className="sx-rank-no tnum">{row.score}</span>
+                <TeamName code={row.code} flagSize={20} className="sx-rank-team" />
+                <span className="chip" title={t('groupX', { x: row.group })}>
+                  {row.group}
+                </span>
               </div>
             ))}
           </div>
