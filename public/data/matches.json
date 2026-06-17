@@ -1312,8 +1312,8 @@
    "group": "L",
    "date": "2026-06-17T20:00:00Z",
    "venueId": "400257526",
-   "status": "live",
-   "time": "88'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "ENG",
     "score": 4,
@@ -1326,7 +1326,7 @@
    },
    "phA": "L1",
    "phB": "L2",
-   "winner": null,
+   "winner": "ENG",
    "attendance": 70389,
    "officials": [
     {
