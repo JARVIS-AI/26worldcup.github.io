@@ -257,6 +257,14 @@
    "ownGoals": 0
   },
   {
+   "id": "229397",
+   "name": "MESSI",
+   "code": "ARG",
+   "no": 10,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "429642",
    "name": "MUSIALA",
    "code": "GER",
@@ -309,14 +317,6 @@
    "name": "RAMIN",
    "code": "IRN",
    "no": 23,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "356731",
-   "name": "RAÚL",
-   "code": "MEX",
-   "no": 9,
    "goals": 1,
    "ownGoals": 0
   }
