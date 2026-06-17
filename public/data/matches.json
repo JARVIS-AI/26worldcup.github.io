@@ -1070,7 +1070,7 @@
    "date": "2026-06-17T01:00:00Z",
    "venueId": "400254717",
    "status": "live",
-   "time": "37'",
+   "time": null,
    "home": {
     "code": "ARG",
     "score": 1,
