@@ -502,6 +502,18 @@
   ],
   "I": [
    {
+    "code": "NOR",
+    "p": 1,
+    "w": 1,
+    "d": 0,
+    "l": 0,
+    "gf": 4,
+    "ga": 1,
+    "gd": 3,
+    "pts": 3,
+    "rank": 1
+   },
+   {
     "code": "FRA",
     "p": 1,
     "w": 1,
@@ -511,31 +523,7 @@
     "ga": 1,
     "gd": 2,
     "pts": 3,
-    "rank": 1
-   },
-   {
-    "code": "NOR",
-    "p": 0,
-    "w": 0,
-    "d": 0,
-    "l": 0,
-    "gf": 0,
-    "ga": 0,
-    "gd": 0,
-    "pts": 0,
     "rank": 2
-   },
-   {
-    "code": "IRQ",
-    "p": 0,
-    "w": 0,
-    "d": 0,
-    "l": 0,
-    "gf": 0,
-    "ga": 0,
-    "gd": 0,
-    "pts": 0,
-    "rank": 3
    },
    {
     "code": "SEN",
@@ -546,6 +534,18 @@
     "gf": 1,
     "ga": 3,
     "gd": -2,
+    "pts": 0,
+    "rank": 3
+   },
+   {
+    "code": "IRQ",
+    "p": 1,
+    "w": 0,
+    "d": 0,
+    "l": 1,
+    "gf": 1,
+    "ga": 4,
+    "gd": -3,
     "pts": 0,
     "rank": 4
    }
@@ -723,21 +723,6 @@
    "qualifies": null
   },
   {
-   "group": "I",
-   "code": "IRQ",
-   "p": 0,
-   "w": 0,
-   "d": 0,
-   "l": 0,
-   "gf": 0,
-   "ga": 0,
-   "gd": 0,
-   "pts": 0,
-   "rank": 3,
-   "thirdRank": 9,
-   "qualifies": null
-  },
-  {
    "group": "A",
    "code": "CZE",
    "p": 1,
@@ -749,7 +734,7 @@
    "gd": -1,
    "pts": 0,
    "rank": 3,
-   "thirdRank": 10,
+   "thirdRank": 9,
    "qualifies": null
   },
   {
@@ -762,6 +747,21 @@
    "gf": 0,
    "ga": 1,
    "gd": -1,
+   "pts": 0,
+   "rank": 3,
+   "thirdRank": 10,
+   "qualifies": null
+  },
+  {
+   "group": "I",
+   "code": "SEN",
+   "p": 1,
+   "w": 0,
+   "d": 0,
+   "l": 1,
+   "gf": 1,
+   "ga": 3,
+   "gd": -2,
    "pts": 0,
    "rank": 3,
    "thirdRank": 11,

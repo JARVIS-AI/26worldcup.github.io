@@ -11671,9 +11671,9 @@
      "period": 5
     },
     {
-     "player": "419681",
-     "minute": "90'+7'",
-     "type": 2,
+     "player": "395186",
+     "minute": "90'+6'",
+     "type": 3,
      "period": 5
     }
    ],
@@ -11711,9 +11711,9 @@
     }
    ]
   },
-  "matchTime": "90'+7'",
-  "period": 5,
-  "final": false
+  "matchTime": "98'",
+  "period": 10,
+  "final": true
  },
  "400021490": {
   "home": {

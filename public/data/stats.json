@@ -150,7 +150,7 @@
    "code": "IRQ",
    "no": 18,
    "goals": 1,
-   "ownGoals": 0
+   "ownGoals": 1
   },
   {
    "id": "395084",
@@ -189,14 +189,6 @@
    "name": "KAMADA",
    "code": "JPN",
    "no": 15,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "419681",
-   "name": "Kristian THORSTVEDT",
-   "code": "NOR",
-   "no": 18,
    "goals": 1,
    "ownGoals": 0
   },
@@ -317,6 +309,14 @@
    "name": "RAMIN",
    "code": "IRN",
    "no": 23,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
+   "id": "356731",
+   "name": "RAÚL",
+   "code": "MEX",
+   "no": 9,
    "goals": 1,
    "ownGoals": 0
   }
@@ -487,7 +487,7 @@
    }
   ]
  },
- "attAvg": 65234,
+ "attAvg": 65116,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -538,7 +538,9 @@
    "BEL": -2,
    "EGY": -2,
    "FRA": 0,
-   "SEN": 0
+   "SEN": 0,
+   "IRQ": -1,
+   "NOR": 0
   },
   "all": {
    "MEX": -5,
@@ -574,7 +576,9 @@
    "BEL": -2,
    "EGY": -2,
    "FRA": 0,
-   "SEN": 0
+   "SEN": 0,
+   "IRQ": -1,
+   "NOR": 0
   }
  },
  "suspensions": {

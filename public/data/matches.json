@@ -1010,8 +1010,8 @@
    "group": "I",
    "date": "2026-06-16T22:00:00Z",
    "venueId": "400248623",
-   "status": "live",
-   "time": "90'+7'",
+   "status": "finished",
+   "time": "98'",
    "home": {
     "code": "IRQ",
     "score": 1,
@@ -1024,7 +1024,7 @@
    },
    "phA": "I3",
    "phB": "I4",
-   "winner": null,
+   "winner": "NOR",
    "attendance": 63106,
    "officials": [
     {
@@ -1070,7 +1070,7 @@
    "date": "2026-06-17T01:00:00Z",
    "venueId": "400254717",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "ARG",
     "score": null,
