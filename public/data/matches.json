@@ -1253,16 +1253,16 @@
    "group": "L",
    "date": "2026-06-17T23:00:00Z",
    "venueId": "400242032",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "9'",
    "home": {
     "code": "GHA",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "PAN",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "L3",
