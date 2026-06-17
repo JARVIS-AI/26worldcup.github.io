@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 44,
+  "yellow": 45,
   "red": 3,
   "players": [
    {
@@ -422,6 +422,14 @@
     "r": 0
    },
    {
+    "id": "356532",
+    "name": "Chancel MBEMBA",
+    "code": "COD",
+    "no": 22,
+    "y": 1,
+    "r": 0
+   },
+   {
     "id": "489518",
     "name": "Crysencio SUMMERVILLE",
     "code": "NED",
@@ -474,14 +482,6 @@
     "name": "Guela DOUE",
     "code": "CIV",
     "no": 17,
-    "y": 1,
-    "r": 0
-   },
-   {
-    "id": "419003",
-    "name": "Jackson POROZO",
-    "code": "ECU",
-    "no": 25,
     "y": 1,
     "r": 0
    }
