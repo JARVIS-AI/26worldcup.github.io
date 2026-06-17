@@ -96,10 +96,10 @@
    "wcRed": 0
   },
   {
-   "id": "roberto-lopes",
+   "id": "pico",
    "no": 4,
    "pos": "DF",
-   "name": "Roberto Lopes",
+   "name": "Pico",
    "dob": "1992-06-17",
    "caps": 45,
    "goals": 0,
@@ -107,7 +107,7 @@
    "clubNat": "IRL",
    "clubWiki": "https://en.wikipedia.org/wiki/Shamrock_Rovers_F.C.",
    "captain": false,
-   "wiki": "https://en.wikipedia.org/wiki/Roberto_Lopes_(footballer%2C_born_1992)",
+   "wiki": "https://en.wikipedia.org/wiki/Pico_Lopes",
    "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
