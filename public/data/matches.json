@@ -1313,7 +1313,7 @@
    "date": "2026-06-17T20:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "42'",
+   "time": null,
    "home": {
     "code": "ENG",
     "score": 2,
@@ -1321,7 +1321,7 @@
    },
    "away": {
     "code": "CRO",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "L1",
