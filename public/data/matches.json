@@ -1581,21 +1581,21 @@
    "group": "B",
    "date": "2026-06-18T19:00:00Z",
    "venueId": "400017978",
-   "status": "live",
-   "time": "86'",
+   "status": "finished",
+   "time": "98'",
    "home": {
     "code": "SUI",
-    "score": 2,
+    "score": 4,
     "pen": null
    },
    "away": {
     "code": "BIH",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "B4",
    "phB": "B2",
-   "winner": null,
+   "winner": "SUI",
    "attendance": 70026,
    "officials": [
     {

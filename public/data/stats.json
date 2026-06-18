@@ -33,6 +33,14 @@
    "ownGoals": 0
   },
   {
+   "id": "502727",
+   "name": "Johan MANZAMBI",
+   "code": "SUI",
+   "no": 9,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "405454",
    "name": "JUST",
    "code": "NZL",
@@ -201,6 +209,14 @@
    "ownGoals": 0
   },
   {
+   "id": "522846",
+   "name": "Ermin MAHMIC",
+   "code": "BIH",
+   "no": 26,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "448586",
    "name": "H G OH",
    "code": "KOR",
@@ -237,14 +253,6 @@
    "name": "JOÃO NEVES",
    "code": "POR",
    "no": 15,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "502727",
-   "name": "Johan MANZAMBI",
-   "code": "SUI",
-   "no": 9,
    "goals": 1,
    "ownGoals": 0
   },
@@ -309,14 +317,6 @@
    "name": "Luis DIAZ",
    "code": "COL",
    "no": 7,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "448497",
-   "name": "M.MOHEBBI",
-   "code": "IRN",
-   "no": 8,
    "goals": 1,
    "ownGoals": 0
   }
@@ -487,7 +487,7 @@
    }
   ]
  },
- "attAvg": 65601,
+ "attAvg": 65771,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -510,7 +510,7 @@
    "KOR": -1,
    "CZE": -1,
    "CAN": -2,
-   "BIH": -3,
+   "BIH": -9,
    "USA": -1,
    "PAR": -5,
    "HAI": -1,
@@ -520,7 +520,7 @@
    "BRA": -2,
    "MAR": 0,
    "QAT": -2,
-   "SUI": -1,
+   "SUI": -2,
    "CIV": -3,
    "ECU": -1,
    "GER": 0,
@@ -560,7 +560,7 @@
    "KOR": -1,
    "CZE": -1,
    "CAN": -2,
-   "BIH": -3,
+   "BIH": -9,
    "USA": -1,
    "PAR": -5,
    "HAI": -1,
@@ -570,7 +570,7 @@
    "BRA": -2,
    "MAR": 0,
    "QAT": -2,
-   "SUI": -1,
+   "SUI": -2,
    "CIV": -3,
    "ECU": -1,
    "GER": 0,

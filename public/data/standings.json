@@ -153,14 +153,14 @@
   "B": [
    {
     "code": "SUI",
-    "p": 1,
-    "w": 0,
+    "p": 2,
+    "w": 1,
     "d": 1,
     "l": 0,
-    "gf": 1,
-    "ga": 1,
-    "gd": 0,
-    "pts": 1,
+    "gf": 5,
+    "ga": 2,
+    "gd": 3,
+    "pts": 4,
     "rank": 1
    },
    {
@@ -176,19 +176,19 @@
     "rank": 2
    },
    {
-    "code": "QAT",
-    "p": 1,
+    "code": "BIH",
+    "p": 2,
     "w": 0,
     "d": 1,
-    "l": 0,
-    "gf": 1,
-    "ga": 1,
-    "gd": 0,
+    "l": 1,
+    "gf": 2,
+    "ga": 5,
+    "gd": -3,
     "pts": 1,
     "rank": 3
    },
    {
-    "code": "BIH",
+    "code": "QAT",
     "p": 1,
     "w": 0,
     "d": 1,
@@ -648,21 +648,6 @@
    "qualifies": null
   },
   {
-   "group": "B",
-   "code": "QAT",
-   "p": 1,
-   "w": 0,
-   "d": 1,
-   "l": 0,
-   "gf": 1,
-   "ga": 1,
-   "gd": 0,
-   "pts": 1,
-   "rank": 3,
-   "thirdRank": 4,
-   "qualifies": null
-  },
-  {
    "group": "K",
    "code": "POR",
    "p": 1,
@@ -674,7 +659,7 @@
    "gd": 0,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 5,
+   "thirdRank": 4,
    "qualifies": null
   },
   {
@@ -689,7 +674,7 @@
    "gd": 0,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 6,
+   "thirdRank": 5,
    "qualifies": null
   },
   {
@@ -702,6 +687,21 @@
    "gf": 2,
    "ga": 3,
    "gd": -1,
+   "pts": 1,
+   "rank": 3,
+   "thirdRank": 6,
+   "qualifies": null
+  },
+  {
+   "group": "B",
+   "code": "BIH",
+   "p": 2,
+   "w": 0,
+   "d": 1,
+   "l": 1,
+   "gf": 2,
+   "ga": 5,
+   "gd": -3,
    "pts": 1,
    "rank": 3,
    "thirdRank": 7,

@@ -2325,6 +2325,18 @@
      "minute": "84'",
      "type": 2,
      "period": 5
+    },
+    {
+     "player": "502727",
+     "minute": "90'",
+     "type": 2,
+     "period": 5
+    },
+    {
+     "player": "311558",
+     "minute": "90'+7'",
+     "type": 1,
+     "period": 5
     }
    ],
    "bookings": [
@@ -2358,6 +2370,12 @@
      "off": "356412",
      "on": "510908",
      "minute": "86'",
+     "period": 5
+    },
+    {
+     "off": "393480",
+     "on": "448104",
+     "minute": "89'",
      "period": 5
     }
    ]
@@ -2654,7 +2672,14 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "522846",
+     "minute": "90'+3'",
+     "type": 2,
+     "period": 5
+    }
+   ],
    "bookings": [
     {
      "player": "482976",
@@ -2699,12 +2724,18 @@
      "on": "519954",
      "minute": "85'",
      "period": 5
+    },
+    {
+     "off": "504990",
+     "on": "522846",
+     "minute": "90'+1'",
+     "period": 5
     }
    ]
   },
-  "matchTime": "86'",
-  "period": 5,
-  "final": false
+  "matchTime": "98'",
+  "period": 10,
+  "final": true
  },
  "400021447": {
   "home": {
