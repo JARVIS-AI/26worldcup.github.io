@@ -111,7 +111,7 @@
    "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
-   "wcRed": 0
+   "wcRed": 1
   },
   {
    "id": "sead-kolasinac",
@@ -306,7 +306,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Hull_City_A.F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Amir_Had%C5%BEiahmetovi%C4%87",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -468,7 +468,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Universitatea_Cluj",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jovo_Luki%C4%87",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 1,
    "wcYellow": 1,
    "wcRed": 0

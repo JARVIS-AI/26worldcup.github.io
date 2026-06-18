@@ -241,6 +241,14 @@
    "ownGoals": 0
   },
   {
+   "id": "502727",
+   "name": "Johan MANZAMBI",
+   "code": "SUI",
+   "no": 9,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "401334",
    "name": "John McGINN",
    "code": "SCO",
@@ -311,19 +319,11 @@
    "no": 8,
    "goals": 1,
    "ownGoals": 0
-  },
-  {
-   "id": "482774",
-   "name": "Martin BATURINA",
-   "code": "CRO",
-   "no": 16,
-   "goals": 1,
-   "ownGoals": 0
   }
  ],
  "cards": {
   "yellow": 58,
-  "red": 3,
+  "red": 4,
   "players": [
    {
     "id": "395516",
@@ -338,6 +338,14 @@
     "name": "SITHOLE",
     "code": "RSA",
     "no": 13,
+    "y": 0,
+    "r": 1
+   },
+   {
+    "id": "484022",
+    "name": "Tarik MUHAREMOVIC",
+    "code": "BIH",
+    "no": 4,
     "y": 0,
     "r": 1
    },
@@ -474,14 +482,6 @@
     "name": "Crysencio SUMMERVILLE",
     "code": "NED",
     "no": 24,
-    "y": 1,
-    "r": 0
-   },
-   {
-    "id": "448373",
-    "name": "DE CUYPER",
-    "code": "BEL",
-    "no": 5,
     "y": 1,
     "r": 0
    }
@@ -633,6 +633,21 @@
        "400021443"
       ],
       "banned": "400021442"
+     }
+    ]
+   }
+  ],
+  "BIH": [
+   {
+    "id": "484022",
+    "name": "Tarik MUHAREMOVIC",
+    "bans": [
+     {
+      "type": "red",
+      "due": [
+       "400021446"
+      ],
+      "banned": "400021448"
      }
     ]
    }
