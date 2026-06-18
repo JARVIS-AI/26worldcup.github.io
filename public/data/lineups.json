@@ -1,7 +1,7 @@
 {
  "400021440": {
   "home": {
-   "tactics": "5-2-3",
+   "tactics": "3-5-2",
    "xi": [
     {
      "id": "484012",
@@ -293,7 +293,7 @@
    "substitutions": []
   },
   "away": {
-   "tactics": "4-2-3-1",
+   "tactics": "4-3-3",
    "xi": [
     {
      "id": "395986",
@@ -566,7 +566,7 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "17'",
+  "matchTime": "31'",
   "period": 3,
   "final": false
  },
