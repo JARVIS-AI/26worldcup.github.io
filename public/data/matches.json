@@ -1969,7 +1969,7 @@
    "date": "2026-06-19T19:00:00Z",
    "venueId": "400216606",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "USA",
     "score": null,
@@ -2279,7 +2279,74 @@
    "phB": "H2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "400227",
+     "country": "NOR",
+     "role": "referee",
+     "name": {
+      "en": "Espen ESKAS",
+      "fr": "Espen ESKAS",
+      "zh": "Espen ESKAS",
+      "ar": "Espen ESKAS",
+      "es": "Espen ESKAS",
+      "de": "Espen ESKAS",
+      "pt": "Espen ESKAS",
+      "it": "Espen ESKAS",
+      "ja": "Espen ESKAS",
+      "ko": "Espen ESKAS",
+      "id": "Espen ESKAS",
+      "ru": "Espen ESKAS"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "428431",
+     "country": "USA",
+     "role": "fourth",
+     "name": {
+      "en": "Tori PENSO",
+      "fr": "Tori PENSO",
+      "zh": "Tori PENSO",
+      "ar": "Tori PENSO",
+      "es": "Tori PENSO",
+      "de": "Tori PENSO",
+      "pt": "Tori PENSO",
+      "it": "Tori PENSO",
+      "ja": "Tori PENSO",
+      "ko": "Tori PENSO",
+      "id": "Tori PENSO",
+      "ru": "Tori PENSO"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021483",
@@ -2304,7 +2371,41 @@
    "phB": "H3",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "383222",
+     "country": "BRA",
+     "role": "referee",
+     "name": {
+      "en": "Raphael CLAUS",
+      "fr": "Raphael CLAUS",
+      "zh": "Raphael CLAUS",
+      "ar": "Raphael CLAUS",
+      "es": "Raphael CLAUS",
+      "de": "Raphael CLAUS",
+      "pt": "Raphael CLAUS",
+      "it": "Raphael CLAUS",
+      "ja": "Raphael CLAUS",
+      "ko": "Raphael CLAUS",
+      "id": "Raphael CLAUS",
+      "ru": "Raphael CLAUS"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021477",
@@ -2329,7 +2430,41 @@
    "phB": "G3",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "383174",
+     "country": "ARG",
+     "role": "referee",
+     "name": {
+      "en": "Dario HERRERA",
+      "fr": "Dario HERRERA",
+      "zh": "Dario HERRERA",
+      "ar": "Dario HERRERA",
+      "es": "Dario HERRERA",
+      "de": "Dario HERRERA",
+      "pt": "Dario HERRERA",
+      "it": "Dario HERRERA",
+      "ja": "Dario HERRERA",
+      "ko": "Dario HERRERA",
+      "id": "Dario HERRERA",
+      "ru": "Dario HERRERA"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021480",
@@ -2354,7 +2489,41 @@
    "phB": "G2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "383421",
+     "country": "UAE",
+     "role": "referee",
+     "name": {
+      "en": "Omar ALALI",
+      "fr": "Omar ALALI",
+      "zh": "Omar ALALI",
+      "ar": "Omar ALALI",
+      "es": "Omar ALALI",
+      "de": "Omar ALALI",
+      "pt": "Omar ALALI",
+      "it": "Omar ALALI",
+      "ja": "Omar ALALI",
+      "ko": "Omar ALALI",
+      "id": "Omar ALALI",
+      "ru": "Omar ALALI"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021491",
