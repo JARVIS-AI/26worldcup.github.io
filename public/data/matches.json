@@ -1876,16 +1876,16 @@
    "group": "D",
    "date": "2026-06-20T03:00:00Z",
    "venueId": "400257521",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "4'",
    "home": {
     "code": "TUR",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "PAR",
-    "score": null,
+    "score": 1,
     "pen": null
    },
    "phA": "D4",
