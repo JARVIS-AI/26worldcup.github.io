@@ -1877,7 +1877,7 @@
    "date": "2026-06-20T03:00:00Z",
    "venueId": "400257521",
    "status": "live",
-   "time": "47'",
+   "time": "61'",
    "home": {
     "code": "TUR",
     "score": 0,
@@ -1891,7 +1891,7 @@
    "phA": "D4",
    "phB": "D2",
    "winner": null,
-   "attendance": null,
+   "attendance": 68827,
    "officials": [
     {
      "id": "408378",
