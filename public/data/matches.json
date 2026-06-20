@@ -2061,7 +2061,7 @@
    "date": "2026-06-20T20:00:00Z",
    "venueId": "400242032",
    "status": "live",
-   "time": "22'",
+   "time": "36'",
    "home": {
     "code": "GER",
     "score": 0,
@@ -2069,7 +2069,7 @@
    },
    "away": {
     "code": "CIV",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "E1",

@@ -281,6 +281,14 @@
    "ownGoals": 0
   },
   {
+   "id": "371609",
+   "name": "Franck KESSIE",
+   "code": "CIV",
+   "no": 8,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "419068",
    "name": "Giovanni REYNA",
    "code": "USA",
@@ -309,14 +317,6 @@
    "name": "Ibrahim MBAYE",
    "code": "SEN",
    "no": 20,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "429642",
-   "name": "Jamal MUSIALA",
-   "code": "GER",
-   "no": 10,
    "goals": 1,
    "ownGoals": 0
   }
