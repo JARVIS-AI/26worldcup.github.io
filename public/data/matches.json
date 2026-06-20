@@ -1759,7 +1759,7 @@
    "date": "2026-06-20T00:30:00Z",
    "venueId": "400248622",
    "status": "live",
-   "time": null,
+   "time": "47'",
    "home": {
     "code": "BRA",
     "score": 3,
@@ -1877,7 +1877,7 @@
    "date": "2026-06-20T03:00:00Z",
    "venueId": "400257521",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "TUR",
     "score": null,
