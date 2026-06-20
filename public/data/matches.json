@@ -1758,16 +1758,16 @@
    "group": "C",
    "date": "2026-06-20T00:30:00Z",
    "venueId": "400248622",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "1'",
    "home": {
     "code": "BRA",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "HAI",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "C1",
