@@ -600,8 +600,8 @@ export default function MatchDetail() {
                         </>
                       ) : (
                         <>
-                          {pick(o.name)}
                           {country}
+                          {pick(o.name)}
                         </>
                       )}
                     </span>

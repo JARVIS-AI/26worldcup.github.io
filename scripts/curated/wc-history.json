@@ -1,0 +1,33 @@
+{
+  "_note": "Curated inputs for the one-time World Cup history generator (scripts/gen-wc-history.mjs -> public/data/wc-history.json). Finishes and non-participation reasons are scraped from each team's English Wikipedia 'Competitive record' table; match stats come from results.csv. Only two things are curated here: (1) the host of each tournament, and (2) each team's Wikipedia page title. hosts: a FIFA code, \"CODE,CODE\" for co-hosts, or {code, name?, flag?} to override the display name (West Germany) or flag (the 1861-1946 Italian flag). Frozen data, NOT refreshed by update.mjs.",
+  "hosts": {
+    "1930": "URU",
+    "1934": { "code": "ITA", "flag": "flags/it-1861-1946.svg" },
+    "1938": "FRA",
+    "1950": "BRA",
+    "1954": "SUI",
+    "1958": "SWE",
+    "1962": "CHI",
+    "1966": "ENG",
+    "1970": "MEX",
+    "1974": { "code": "GER", "name": "West Germany" },
+    "1978": "ARG",
+    "1982": "ESP",
+    "1986": "MEX",
+    "1990": "ITA",
+    "1994": "USA",
+    "1998": "FRA",
+    "2002": "KOR,JPN",
+    "2006": "GER",
+    "2010": "RSA",
+    "2014": "BRA",
+    "2018": "RUS",
+    "2022": "QAT"
+  },
+  "teams": {
+    "USA": { "wiki": "United States men's national soccer team" },
+    "CAN": { "wiki": "Canada men's national soccer team" },
+    "AUS": { "wiki": "Australia men's national soccer team" },
+    "SEN": { "reasons": { "1958": "Part of France" } }
+  }
+}

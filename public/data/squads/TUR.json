@@ -126,9 +126,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Galatasaray_S.K._(football)",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Eren_Elmal%C4%B1",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -252,7 +252,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Be%C5%9Fikta%C5%9F_J.K.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Orkun_K%C3%B6k%C3%A7%C3%BC",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

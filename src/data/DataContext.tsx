@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useRef, useState, useMemo } from 'react'
 import type { ReactNode } from 'react'
-import type { AppData, Squads } from '../types'
+import type { AppData, Squads, WcHistory } from '../types'
 import type { SimModel } from '../sim/engine'
 import { withResolvedSides } from '../utils/bracketResolve'
 
@@ -12,6 +12,9 @@ interface DataCtx {
   loadSquads: () => void
   simModel: SimModel | null
   loadSimModel: () => void
+  /** frozen World Cup history + qualification, loaded lazily on first use */
+  wcHistory: WcHistory | null
+  loadWcHistory: () => void
 }
 
 const Ctx = createContext<DataCtx | null>(null)
@@ -45,8 +48,10 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [error, setError] = useState<string | null>(null)
   const [squads, setSquads] = useState<Squads | null>(null)
   const [simModel, setSimModel] = useState<SimModel | null>(null)
+  const [wcHistory, setWcHistory] = useState<WcHistory | null>(null)
   const simRequested = useRef(false)
   const squadsRequested = useRef(false)
+  const wcHistoryRequested = useRef(false)
   const dataRef = useRef<AppData | null>(null)
   const refreshing = useRef(false)
 
@@ -180,6 +185,18 @@ export function DataProvider({ children }: { children: ReactNode }) {
       })
   }
 
+  const loadWcHistory = () => {
+    if (wcHistoryRequested.current) return
+    wcHistoryRequested.current = true
+    getJson<WcHistory>('wc-history.json')
+      .then(setWcHistory)
+      .catch(() => {
+        // transient failure: degrade for now but let a later visit retry
+        wcHistoryRequested.current = false
+        setWcHistory((h) => h ?? {})
+      })
+  }
+
   // knockout slots that are mathematically decided render as real teams everywhere
   const dataResolved = useMemo(
     () => (data ? { ...data, matches: withResolvedSides(data.matches, data.standings) } : data),
@@ -187,7 +204,18 @@ export function DataProvider({ children }: { children: ReactNode }) {
   )
 
   return (
-    <Ctx.Provider value={{ data: dataResolved, error, squads, loadSquads, simModel, loadSimModel }}>
+    <Ctx.Provider
+      value={{
+        data: dataResolved,
+        error,
+        squads,
+        loadSquads,
+        simModel,
+        loadSimModel,
+        wcHistory,
+        loadWcHistory,
+      }}
+    >
       {children}
     </Ctx.Provider>
   )

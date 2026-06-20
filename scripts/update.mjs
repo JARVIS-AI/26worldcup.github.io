@@ -711,14 +711,54 @@ function parseLivePlayers(team) {
   }
 }
 
+// Precise goal times from the FIFA timeline (the live feed is minute-only). Returns
+// { home: [sec…], away: [sec…] } in scoring order, each the elapsed seconds within
+// the goal's period (goal Timestamp minus that period's "Start Time" Timestamp).
+// Detects goals by score increments, so it matches open play, penalties and own
+// goals alike and ignores shootout kicks (which don't move Home/AwayGoals).
+async function fetchGoalSecs(stageId, matchId) {
+  const d = await fetchJson(
+    `${FIFA}/timelines/${ID_COMPETITION}/${ID_SEASON}/${stageId}/${matchId}?language=en`,
+  )
+  const events = (d?.Event ?? d?.Events ?? []).filter((e) => e?.Timestamp)
+  if (!events.length) return null
+  events.sort((a, b) => Date.parse(a.Timestamp) - Date.parse(b.Timestamp))
+  const periodStart = {}
+  for (const e of events)
+    if (e.Type === 7 && e.Period != null) periodStart[e.Period] ??= Date.parse(e.Timestamp)
+  const out = { home: [], away: [] }
+  let ph = 0
+  let pa = 0
+  for (const e of events) {
+    const start = periodStart[e.Period]
+    const sec = start ? Math.max(0, Math.round((Date.parse(e.Timestamp) - start) / 1000)) : null
+    const hg = Number(e.HomeGoals ?? 0)
+    const ag = Number(e.AwayGoals ?? 0)
+    if (hg > ph) {
+      out.home.push(sec)
+      ph = hg
+    }
+    if (ag > pa) {
+      out.away.push(sec)
+      pa = ag
+    }
+  }
+  return out
+}
+
 async function fetchLiveDetails(matches, rawById) {
   const lineups = (await readJsonSafe(path.join(OUT, 'lineups.json'))) || {}
-  const targets = matches.filter(
-    (m) =>
+  const hasGoals = (lu) => ['home', 'away'].some((s) => (lu?.[s]?.goals || []).length > 0)
+  const targets = matches.filter((m) => {
+    const lu = lineups[m.id]
+    return (
       m.status === 'live' ||
-      (m.status === 'finished' && !lineups[m.id]?.final) ||
-      (m.status === 'scheduled' && Math.abs(Date.parse(m.date) - Date.now()) < 3 * 3600e3),
-  )
+      // finished matches latch via `final`; re-fetch once more to backfill goal
+      // seconds (secTried) on entries written before timelines were captured
+      (m.status === 'finished' && (!lu?.final || (!lu?.secTried && hasGoals(lu)))) ||
+      (m.status === 'scheduled' && Math.abs(Date.parse(m.date) - Date.now()) < 3 * 3600e3)
+    )
+  })
   log(`live/lineup targets: ${targets.length}`)
   for (const m of targets) {
     try {
@@ -740,9 +780,30 @@ async function fetchLiveDetails(matches, rawById) {
       const home = parseLivePlayers(homeRaw)
       const away = parseLivePlayers(awayRaw)
       if (!home && !away) continue
+      // attach exact goal seconds from the timeline (index-aligned per side; both
+      // the live Goals and the timeline list goals in scoring order)
+      if (safeId(raw.IdStage)) {
+        try {
+          const secs = await fetchGoalSecs(raw.IdStage, m.id)
+          if (secs)
+            for (const [side, obj] of [
+              ['home', home],
+              ['away', away],
+            ]) {
+              const g = obj?.goals
+              const tl = secs[side]
+              if (g && tl && g.length === tl.length) {
+                for (let i = 0; i < g.length; i++) if (tl[i] != null) g[i].sec = tl[i]
+              } else if (g?.length) warn(`timeline ${m.id} ${side}: ${g.length} goals vs ${tl?.length ?? 0}`)
+            }
+        } catch (e) {
+          if (e.status !== 404) warn(`timeline ${m.id}: ${e.message}`)
+        }
+      }
       // merge per-side over the previous entry so a degraded one-sided response
       // never erases the other side; `final` latches the entry out of future
-      // refetches, so only set it when finished AND both sides parsed this run
+      // refetches, so only set it when finished AND both sides parsed this run.
+      // secTried latches the one-time goal-seconds backfill (see targets above)
       const prev = lineups[m.id]
       lineups[m.id] = {
         home: home ?? prev?.home ?? null,
@@ -750,6 +811,7 @@ async function fetchLiveDetails(matches, rawById) {
         matchTime: d.MatchTime || null,
         period: d.Period ?? null,
         final: m.status === 'finished' && !!home && !!away,
+        secTried: true,
       }
       await sleep(400)
     } catch (e) {
@@ -1018,12 +1080,15 @@ function computeStats(lineups, matches) {
         if (g.period === 11 || g.type === 3 || !g.minute) continue
         const min = parseInt(g.minute, 10)
         if (!Number.isFinite(min)) continue
-        if (!fastestGoal || min < fastestGoal.min) {
+        // within a shared minute, the exact second decides (two goals can both
+        // read "2'" yet be 65s vs 72s); fall back to the minute when sec is absent
+        const sec = Number.isFinite(g.sec) ? g.sec : min * 60
+        if (!fastestGoal || min < fastestGoal.min || (min === fastestGoal.min && sec < fastestGoal.sec)) {
           const sd = side
           const name =
             (lu[sd]?.xi || []).concat(lu[sd]?.subs || []).find((p) => p.id === g.player)?.name ||
             `#${g.player}`
-          fastestGoal = { min, minute: g.minute, name, code: m[sd]?.code ?? null, id: m.id }
+          fastestGoal = { min, sec, minute: g.minute, name, code: m[sd]?.code ?? null, id: m.id }
         }
       }
     }

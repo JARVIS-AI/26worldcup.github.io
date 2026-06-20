@@ -465,3 +465,100 @@
   align-items: center;
   gap: 5px;
 }
+
+/* ---- World Cup history (collapsible, dashed box like the group tie-breaks) ---- */
+.td-wc-sec {
+  margin: 26px 0 4px;
+}
+.td-wc-title {
+  margin: 0;
+}
+.td-wc-head {
+  display: flex;
+  align-items: center;
+  gap: 8px 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--r-md);
+  background: transparent;
+  font-family: inherit;
+  color: var(--text);
+  text-align: start;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.td-wc-head:hover {
+  background: var(--chip-bg);
+}
+/* when open, the trigger and body fuse into one dashed box */
+.td-wc-head[aria-expanded="true"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.td-wc-name {
+  flex: none;
+  font-size: 1.02rem;
+  font-weight: 750;
+}
+.td-wc-summary {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+.td-wc-chev {
+  flex: none;
+  color: var(--text-3);
+  transition: transform 0.15s ease;
+}
+.td-wc-head:hover .td-wc-chev {
+  color: var(--text-2);
+}
+.td-wc-chev.open {
+  transform: rotate(180deg);
+}
+.td-wc-body {
+  padding: 2px 12px 6px;
+  border: 1px dashed var(--border-strong);
+  border-top: 0;
+  border-bottom-left-radius: var(--r-md);
+  border-bottom-right-radius: var(--r-md);
+}
+.td-wc-titles {
+  font-weight: 700;
+}
+/* Edition cell: year then host flag(s); host name lives in each flag's title */
+.td-wc-ed {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.td-wc-fin {
+  font-weight: 650;
+}
+.td-wc-fin-gold {
+  color: var(--gold);
+  font-weight: 800;
+}
+.td-wc-fin-silver {
+  color: #9aa3ad;
+  font-weight: 750;
+}
+.td-wc-fin-bronze {
+  color: #c0814f;
+  font-weight: 750;
+}
+/* tournaments the team missed: greyed, with the reason spanning the stat columns */
+.td-wc-miss td {
+  color: var(--text-3);
+}
+.td-wc-total td {
+  border-top: 2px solid var(--border);
+  font-weight: 750;
+  color: var(--text-2);
+}

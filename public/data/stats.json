@@ -10,7 +10,7 @@
   },
   {
    "id": "229397",
-   "name": "MESSI",
+   "name": "Lionel MESSI",
    "code": "ARG",
    "no": 10,
    "goals": 3,
@@ -25,6 +25,22 @@
    "ownGoals": 0
   },
   {
+   "id": "405454",
+   "name": "Elijah JUST",
+   "code": "NZL",
+   "no": 11,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
+   "id": "419652",
+   "name": "Erling HAALAND",
+   "code": "NOR",
+   "no": 9,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "466624",
    "name": "Folarin BALOGUN",
    "code": "USA",
@@ -33,18 +49,10 @@
    "ownGoals": 0
   },
   {
-   "id": "419652",
-   "name": "HAALAND",
-   "code": "NOR",
+   "id": "369419",
+   "name": "Harry KANE",
+   "code": "ENG",
    "no": 9,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "411367",
-   "name": "HAVERTZ",
-   "code": "GER",
-   "no": 7,
    "goals": 2,
    "ownGoals": 0
   },
@@ -65,18 +73,18 @@
    "ownGoals": 0
   },
   {
-   "id": "405454",
-   "name": "JUST",
-   "code": "NZL",
-   "no": 11,
+   "id": "411367",
+   "name": "Kai HAVERTZ",
+   "code": "GER",
+   "no": 7,
    "goals": 2,
    "ownGoals": 0
   },
   {
-   "id": "369419",
-   "name": "KANE",
-   "code": "ENG",
-   "no": 9,
+   "id": "389867",
+   "name": "Kylian MBAPPE",
+   "code": "FRA",
+   "no": 10,
    "goals": 2,
    "ownGoals": 0
   },
@@ -89,16 +97,8 @@
    "ownGoals": 0
   },
   {
-   "id": "389867",
-   "name": "MBAPPÉ",
-   "code": "FRA",
-   "no": 10,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
    "id": "405742",
-   "name": "VINI JR.",
+   "name": "VINICIUS JUNIOR",
    "code": "BRA",
    "no": 7,
    "goals": 2,
@@ -122,7 +122,7 @@
   },
   {
    "id": "403312",
-   "name": "ALAMRI",
+   "name": "ABDULELAH ALAMRI",
    "code": "KSA",
    "no": 4,
    "goals": 1,
@@ -161,34 +161,26 @@
    "ownGoals": 0
   },
   {
-   "id": "299200",
-   "name": "ARNAUTOVIC",
-   "code": "AUT",
-   "no": 7,
+   "id": "395186",
+   "name": "AYMEN HUSSEIN",
+   "code": "IRQ",
+   "no": 18,
    "goals": 1,
-   "ownGoals": 0
+   "ownGoals": 1
   },
   {
    "id": "484860",
-   "name": "BARCOLA",
+   "name": "Bradley BARCOLA",
    "code": "FRA",
    "no": 12,
    "goals": 1,
    "ownGoals": 0
   },
   {
-   "id": "448202",
-   "name": "BELLINGHAM",
-   "code": "ENG",
-   "no": 10,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "385067",
-   "name": "BOUALEM KHOUKHI",
-   "code": "QAT",
-   "no": 16,
+   "id": "393480",
+   "name": "Breel EMBOLO",
+   "code": "SUI",
+   "no": 7,
    "goals": 1,
    "ownGoals": 0
   },
@@ -217,6 +209,14 @@
    "ownGoals": 0
   },
   {
+   "id": "448557",
+   "name": "Daichi KAMADA",
+   "code": "JPN",
+   "no": 15,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "431200",
    "name": "Daniel MUNOZ",
    "code": "COL",
@@ -234,17 +234,9 @@
   },
   {
    "id": "430482",
-   "name": "E.ASHOUR",
+   "name": "EMAM ASHOUR",
    "code": "EGY",
    "no": 8,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "393480",
-   "name": "EMBOLO",
-   "code": "SUI",
-   "no": 7,
    "goals": 1,
    "ownGoals": 0
   },
@@ -257,26 +249,50 @@
    "ownGoals": 0
   },
   {
-   "id": "448586",
-   "name": "H G OH",
-   "code": "KOR",
-   "no": 18,
+   "id": "492363",
+   "name": "Felix NMECHA",
+   "code": "GER",
+   "no": 23,
    "goals": 1,
    "ownGoals": 0
   },
   {
-   "id": "395186",
-   "name": "HUSSEIN",
-   "code": "IRQ",
-   "no": 18,
+   "id": "419068",
+   "name": "Giovanni REYNA",
+   "code": "USA",
+   "no": 7,
    "goals": 1,
-   "ownGoals": 1
+   "ownGoals": 0
+  },
+  {
+   "id": "311558",
+   "name": "Granit XHAKA",
+   "code": "SUI",
+   "no": 10,
+   "goals": 1,
+   "ownGoals": 0
   },
   {
    "id": "395084",
    "name": "HWANG Inbeom",
    "code": "KOR",
    "no": 6,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
+   "id": "496358",
+   "name": "Ibrahim MBAYE",
+   "code": "SEN",
+   "no": 20,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
+   "id": "429642",
+   "name": "Jamal MUSIALA",
+   "code": "GER",
+   "no": 10,
    "goals": 1,
    "ownGoals": 0
   },
@@ -290,7 +306,7 @@
   },
   {
    "id": "484141",
-   "name": "JOÃO NEVES",
+   "name": "JOAO NEVES",
    "code": "POR",
    "no": 15,
    "goals": 1,
@@ -303,26 +319,10 @@
    "no": 7,
    "goals": 1,
    "ownGoals": 0
-  },
-  {
-   "id": "519954",
-   "name": "Jovo LUKIC",
-   "code": "BIH",
-   "no": 25,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "429157",
-   "name": "Julian QUINONES",
-   "code": "MEX",
-   "no": 16,
-   "goals": 1,
-   "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 77,
+  "yellow": 79,
   "red": 7,
   "players": [
    {
@@ -335,7 +335,7 @@
    },
    {
     "id": "386348",
-    "name": "A. MADIBO",
+    "name": "ASSIM MADIBO",
     "code": "QAT",
     "no": 23,
     "y": 0,
@@ -359,7 +359,7 @@
    },
    {
     "id": "390475",
-    "name": "SITHOLE",
+    "name": "Sphephelo SITHOLE",
     "code": "RSA",
     "no": 13,
     "y": 0,
@@ -375,25 +375,25 @@
    },
    {
     "id": "395984",
-    "name": "ZWANE",
+    "name": "Themba ZWANE",
     "code": "RSA",
     "no": 11,
     "y": 0,
     "r": 1
    },
    {
-    "id": "403616",
-    "name": "MOKOENA",
-    "code": "RSA",
-    "no": 4,
+    "id": null,
+    "name": "#null",
+    "code": "TUR",
     "y": 2,
     "r": 0
    },
    {
-    "id": null,
-    "name": "#null",
-    "code": "PAR",
-    "y": 1,
+    "id": "403616",
+    "name": "Teboho MOKOENA",
+    "code": "RSA",
+    "no": 4,
+    "y": 2,
     "r": 0
    },
    {
@@ -401,6 +401,22 @@
     "name": "Aaron HICKEY",
     "code": "SCO",
     "no": 2,
+    "y": 1,
+    "r": 0
+   },
+   {
+    "id": "464924",
+    "name": "Abdukodir KHUSANOV",
+    "code": "UZB",
+    "no": 2,
+    "y": 1,
+    "r": 0
+   },
+   {
+    "id": "403312",
+    "name": "ABDULELAH ALAMRI",
+    "code": "KSA",
+    "no": 4,
     "y": 1,
     "r": 0
    },
@@ -417,14 +433,6 @@
     "name": "AHMED FATOUH",
     "code": "EGY",
     "no": 13,
-    "y": 1,
-    "r": 0
-   },
-   {
-    "id": "403312",
-    "name": "ALAMRI",
-    "code": "KSA",
-    "no": 4,
     "y": 1,
     "r": 0
    },
@@ -475,18 +483,10 @@
     "no": 5,
     "y": 1,
     "r": 0
-   },
-   {
-    "id": "395205",
-    "name": "BERNARDO",
-    "code": "POR",
-    "no": 10,
-    "y": 1,
-    "r": 0
    }
   ]
  },
- "attAvg": 64757,
+ "attAvg": 64884,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -497,10 +497,11 @@
  },
  "fastestGoal": {
   "min": 2,
+  "sec": 65,
   "minute": "2'",
-  "name": "Ismael SAIBARI",
-  "code": "MAR",
-  "id": "400021454"
+  "name": "Matias GALARZA",
+  "code": "PAR",
+  "id": "400021460"
  },
  "fairPlay": {
   "group": {
@@ -511,11 +512,11 @@
    "CAN": -3,
    "BIH": -9,
    "USA": -4,
-   "PAR": -5,
+   "PAR": -11,
    "HAI": -4,
    "SCO": -4,
    "AUS": -4,
-   "TUR": -1,
+   "TUR": -3,
    "BRA": -3,
    "MAR": -1,
    "QAT": -11,
@@ -561,11 +562,11 @@
    "CAN": -3,
    "BIH": -9,
    "USA": -4,
-   "PAR": -5,
+   "PAR": -11,
    "HAI": -4,
    "SCO": -4,
    "AUS": -4,
-   "TUR": -1,
+   "TUR": -3,
    "BRA": -3,
    "MAR": -1,
    "QAT": -11,
@@ -608,7 +609,7 @@
   "RSA": [
    {
     "id": "403616",
-    "name": "MOKOENA",
+    "name": "Teboho MOKOENA",
     "bans": [
      {
       "type": "yellows",
@@ -639,7 +640,7 @@
   "QAT": [
    {
     "id": "386348",
-    "name": "A. MADIBO",
+    "name": "ASSIM MADIBO",
     "bans": [
      {
       "type": "red",

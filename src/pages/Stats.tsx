@@ -119,7 +119,10 @@ export default function Stats() {
             className="card sx-stat sx-stat-link"
           >
             <div className="sx-num tnum sx-num-sm">
-              {stats.fastestGoal.minute} {stats.fastestGoal.name}
+              {stats.fastestGoal.sec != null
+                ? `${Math.floor(stats.fastestGoal.sec / 60)}:${String(stats.fastestGoal.sec % 60).padStart(2, '0')}`
+                : stats.fastestGoal.minute}{' '}
+              {stats.fastestGoal.name}
             </div>
             <div className="sx-lbl">{t('statFastestGoal')}</div>
           </Link>

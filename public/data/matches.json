@@ -830,6 +830,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "372930",
+     "country": "CAN",
+     "role": "fourth",
+     "name": {
+      "en": "Drew FISCHER",
+      "fr": "Drew FISCHER",
+      "zh": "Drew FISCHER",
+      "ar": "Drew FISCHER",
+      "es": "Drew FISCHER",
+      "de": "Drew FISCHER",
+      "pt": "Drew FISCHER",
+      "it": "Drew FISCHER",
+      "ja": "Drew FISCHER",
+      "ko": "Drew FISCHER",
+      "id": "Drew FISCHER",
+      "ru": "Drew FISCHER"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
@@ -1866,6 +1899,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "361034",
+     "country": "JOR",
+     "role": "fourth",
+     "name": {
+      "en": "Adham MAKHADMEH",
+      "fr": "Adham MAKHADMEH",
+      "zh": "Adham MAKHADMEH",
+      "ar": "Adham MAKHADMEH",
+      "es": "Adham MAKHADMEH",
+      "de": "Adham MAKHADMEH",
+      "pt": "Adham MAKHADMEH",
+      "it": "Adham MAKHADMEH",
+      "ja": "Adham MAKHADMEH",
+      "ko": "Adham MAKHADMEH",
+      "id": "Adham MAKHADMEH",
+      "ru": "Adham MAKHADMEH"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
@@ -1876,8 +1942,8 @@
    "group": "D",
    "date": "2026-06-20T03:00:00Z",
    "venueId": "400257521",
-   "status": "live",
-   "time": "61'",
+   "status": "finished",
+   "time": "99'",
    "home": {
     "code": "TUR",
     "score": 0,
@@ -1890,7 +1956,7 @@
    },
    "phA": "D4",
    "phB": "D2",
-   "winner": null,
+   "winner": "PAR",
    "attendance": 68827,
    "officials": [
     {
@@ -2515,7 +2581,41 @@
    "phB": "I2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "361561",
+     "country": "BRA",
+     "role": "referee",
+     "name": {
+      "en": "Wilton SAMPAIO",
+      "fr": "Wilton SAMPAIO",
+      "zh": "Wilton SAMPAIO",
+      "ar": "Wilton SAMPAIO",
+      "es": "Wilton SAMPAIO",
+      "de": "Wilton SAMPAIO",
+      "pt": "Wilton SAMPAIO",
+      "it": "Wilton SAMPAIO",
+      "ja": "Wilton SAMPAIO",
+      "ko": "Wilton SAMPAIO",
+      "id": "Wilton SAMPAIO",
+      "ru": "Wilton SAMPAIO"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021492",
@@ -2540,7 +2640,41 @@
    "phB": "I3",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "372930",
+     "country": "CAN",
+     "role": "referee",
+     "name": {
+      "en": "Drew FISCHER",
+      "fr": "Drew FISCHER",
+      "zh": "Drew FISCHER",
+      "ar": "Drew FISCHER",
+      "es": "Drew FISCHER",
+      "de": "Drew FISCHER",
+      "pt": "Drew FISCHER",
+      "it": "Drew FISCHER",
+      "ja": "Drew FISCHER",
+      "ko": "Drew FISCHER",
+      "id": "Drew FISCHER",
+      "ru": "Drew FISCHER"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021494",
@@ -2565,7 +2699,74 @@
    "phB": "J3",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "392013",
+     "country": "EGY",
+     "role": "referee",
+     "name": {
+      "en": "Amin MOHAMED",
+      "fr": "Amin MOHAMED",
+      "zh": "Amin MOHAMED",
+      "ar": "Amin MOHAMED",
+      "es": "Amin MOHAMED",
+      "de": "Amin MOHAMED",
+      "pt": "Amin MOHAMED",
+      "it": "Amin MOHAMED",
+      "ja": "Amin MOHAMED",
+      "ko": "Amin MOHAMED",
+      "id": "Amin MOHAMED",
+      "ru": "Amin MOHAMED"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "373845",
+     "country": "ESP",
+     "role": "fourth",
+     "name": {
+      "en": "Alejandro HERNANDEZ",
+      "fr": "Alejandro HERNANDEZ",
+      "zh": "Alejandro HERNANDEZ",
+      "ar": "Alejandro HERNANDEZ",
+      "es": "Alejandro HERNANDEZ",
+      "de": "Alejandro HERNANDEZ",
+      "pt": "Alejandro HERNANDEZ",
+      "it": "Alejandro HERNANDEZ",
+      "ja": "Alejandro HERNANDEZ",
+      "ko": "Alejandro HERNANDEZ",
+      "id": "Alejandro HERNANDEZ",
+      "ru": "Alejandro HERNANDEZ"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021499",
@@ -2590,7 +2791,41 @@
    "phB": "J2",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "315008",
+     "country": "SVN",
+     "role": "referee",
+     "name": {
+      "en": "Slavko VINCIC",
+      "fr": "Slavko VINCIC",
+      "zh": "Slavko VINCIC",
+      "ar": "Slavko VINCIC",
+      "es": "Slavko VINCIC",
+      "de": "Slavko VINCIC",
+      "pt": "Slavko VINCIC",
+      "it": "Slavko VINCIC",
+      "ja": "Slavko VINCIC",
+      "ko": "Slavko VINCIC",
+      "id": "Slavko VINCIC",
+      "ru": "Slavko VINCIC"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021506",
@@ -3441,7 +3676,11 @@
    "venueId": "400257521",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "USA",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "1D",
    "phB": "3BEFIJ",

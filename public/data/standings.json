@@ -76,25 +76,25 @@
     "rank": 2
    },
    {
-    "code": "TUR",
-    "p": 1,
-    "w": 0,
+    "code": "PAR",
+    "p": 2,
+    "w": 1,
     "d": 0,
     "l": 1,
-    "gf": 0,
-    "ga": 2,
+    "gf": 2,
+    "ga": 4,
     "gd": -2,
-    "pts": 0,
+    "pts": 3,
     "rank": 3
    },
    {
-    "code": "PAR",
-    "p": 1,
+    "code": "TUR",
+    "p": 2,
     "w": 0,
     "d": 0,
-    "l": 1,
-    "gf": 1,
-    "ga": 4,
+    "l": 2,
+    "gf": 0,
+    "ga": 3,
     "gd": -3,
     "pts": 0,
     "rank": 4
@@ -618,6 +618,21 @@
    "qualifies": null
   },
   {
+   "group": "D",
+   "code": "PAR",
+   "p": 2,
+   "w": 1,
+   "d": 0,
+   "l": 1,
+   "gf": 2,
+   "ga": 4,
+   "gd": -2,
+   "pts": 3,
+   "rank": 3,
+   "thirdRank": 2,
+   "qualifies": null
+  },
+  {
    "group": "F",
    "code": "NED",
    "p": 1,
@@ -629,7 +644,7 @@
    "gd": 0,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 2,
+   "thirdRank": 3,
    "qualifies": null
   },
   {
@@ -644,7 +659,7 @@
    "gd": 0,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 3,
+   "thirdRank": 4,
    "qualifies": null
   },
   {
@@ -659,7 +674,7 @@
    "gd": 0,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 4,
+   "thirdRank": 5,
    "qualifies": null
   },
   {
@@ -674,7 +689,7 @@
    "gd": 0,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 5,
+   "thirdRank": 6,
    "qualifies": null
   },
   {
@@ -689,7 +704,7 @@
    "gd": -1,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 6,
+   "thirdRank": 7,
    "qualifies": null
   },
   {
@@ -704,7 +719,7 @@
    "gd": -3,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 7,
+   "thirdRank": 8,
    "qualifies": null
   },
   {
@@ -719,7 +734,7 @@
    "gd": -1,
    "pts": 0,
    "rank": 3,
-   "thirdRank": 8,
+   "thirdRank": 9,
    "qualifies": null
   },
   {
@@ -734,7 +749,7 @@
    "gd": -1,
    "pts": 0,
    "rank": 3,
-   "thirdRank": 9,
+   "thirdRank": 10,
    "qualifies": null
   },
   {
@@ -749,7 +764,7 @@
    "gd": -2,
    "pts": 0,
    "rank": 3,
-   "thirdRank": 10,
+   "thirdRank": 11,
    "qualifies": null
   },
   {
@@ -761,21 +776,6 @@
    "l": 1,
    "gf": 1,
    "ga": 3,
-   "gd": -2,
-   "pts": 0,
-   "rank": 3,
-   "thirdRank": 11,
-   "qualifies": null
-  },
-  {
-   "group": "D",
-   "code": "TUR",
-   "p": 1,
-   "w": 0,
-   "d": 0,
-   "l": 1,
-   "gf": 0,
-   "ga": 2,
    "gd": -2,
    "pts": 0,
    "rank": 3,
