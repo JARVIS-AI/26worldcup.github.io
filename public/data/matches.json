@@ -1759,10 +1759,10 @@
    "date": "2026-06-20T00:30:00Z",
    "venueId": "400248622",
    "status": "live",
-   "time": "29'",
+   "time": "42'",
    "home": {
     "code": "BRA",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "away": {

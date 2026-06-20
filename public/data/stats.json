@@ -81,6 +81,14 @@
    "ownGoals": 0
   },
   {
+   "id": "430609",
+   "name": "MATHEUS CUNHA",
+   "code": "BRA",
+   "no": 9,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "389867",
    "name": "MBAPPÉ",
    "code": "FRA",
@@ -309,14 +317,6 @@
    "name": "KAMADA",
    "code": "JPN",
    "no": 15,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "441170",
-   "name": "Ladislav KREJCI",
-   "code": "CZE",
-   "no": 7,
    "goals": 1,
    "ownGoals": 0
   }
