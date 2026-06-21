@@ -145,6 +145,14 @@
    "ownGoals": 0
   },
   {
+   "id": "419100",
+   "name": "Maxi ARAUJO",
+   "code": "URU",
+   "no": 20,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "430751",
    "name": "Mikel OYARZABAL",
    "code": "ESP",
@@ -309,14 +317,6 @@
    "name": "Giovanni REYNA",
    "code": "USA",
    "no": 7,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "311558",
-   "name": "Granit XHAKA",
-   "code": "SUI",
-   "no": 10,
    "goals": 1,
    "ownGoals": 0
   }

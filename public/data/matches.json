@@ -2297,10 +2297,10 @@
    "date": "2026-06-21T22:00:00Z",
    "venueId": "400257525",
    "status": "live",
-   "time": "34'",
+   "time": "45'+3'",
    "home": {
     "code": "URU",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
