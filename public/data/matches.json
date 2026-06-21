@@ -2448,7 +2448,7 @@
    "date": "2026-06-21T19:00:00Z",
    "venueId": "400017978",
    "status": "live",
-   "time": "41'",
+   "time": null,
    "home": {
     "code": "BEL",
     "score": 0,
