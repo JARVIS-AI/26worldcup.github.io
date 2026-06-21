@@ -9580,7 +9580,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Parma_Calcio_1913",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Zion_Suzuki",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9670,7 +9670,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AFC_Ajax",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/K%C5%8D_Itakura",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9742,7 +9742,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Hiroki_It%C5%8D_(footballer%2C_born_1999)",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9760,7 +9760,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AFC_Ajax",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Takehiro_Tomiyasu",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9796,7 +9796,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Leeds_United_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ao_Tanaka",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9832,7 +9832,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ritsu_D%C5%8Dan",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9868,7 +9868,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Stade_de_Reims",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Keito_Nakamura",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -9886,7 +9886,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/KRC_Genk",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Junya_It%C5%8D",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9904,8 +9904,8 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Daichi_Kamada",
-    "wcApps": 1,
-    "wcGoals": 1,
+    "wcApps": 2,
+    "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -9940,7 +9940,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/1._FSV_Mainz_05",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Kaish%C5%AB_Sano",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9994,8 +9994,8 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Feyenoord",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ayase_Ueda",
-    "wcApps": 1,
-    "wcGoals": 0,
+    "wcApps": 2,
+    "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -11032,7 +11032,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/CS_Sfaxien",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Aymen_Dahmen",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11068,7 +11068,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/OGC_Nice",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ali_Abdi_(footballer)",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11086,7 +11086,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Lorient",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Montassar_Talbi",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11104,7 +11104,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/NK_Maribor",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Omar_Rekik",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -11140,7 +11140,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Servette_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Dylan_Bronn",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11176,7 +11176,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/BSC_Young_Boys",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Yan_Valery",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11248,7 +11248,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Burnley_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Hannibal_Mejbri",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11338,7 +11338,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ellyes_Skhiri",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11356,7 +11356,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Norwich_City_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Anis_Ben_Slimane",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11374,7 +11374,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Celtic_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Sebastian_Tounekti",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11410,7 +11410,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Hannover_96",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Elias_Saad",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0

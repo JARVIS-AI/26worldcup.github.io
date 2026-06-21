@@ -2237,16 +2237,16 @@
    "group": "F",
    "date": "2026-06-21T04:00:00Z",
    "venueId": "400238450",
-   "status": "scheduled",
-   "time": null,
+   "status": "live",
+   "time": "34'",
    "home": {
     "code": "TUN",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "JPN",
-    "score": null,
+    "score": 2,
     "pen": null
    },
    "phA": "F4",

@@ -57,6 +57,14 @@
    "ownGoals": 0
   },
   {
+   "id": "448557",
+   "name": "Daichi KAMADA",
+   "code": "JPN",
+   "no": 15,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "405454",
    "name": "Elijah JUST",
    "code": "NZL",
@@ -201,6 +209,14 @@
    "ownGoals": 0
   },
   {
+   "id": "430413",
+   "name": "Ayase UEDA",
+   "code": "JPN",
+   "no": 18,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "395186",
    "name": "AYMEN HUSSEIN",
    "code": "IRQ",
@@ -237,14 +253,6 @@
    "name": "Connor METCALFE",
    "code": "AUS",
    "no": 8,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "448557",
-   "name": "Daichi KAMADA",
-   "code": "JPN",
-   "no": 15,
    "goals": 1,
    "ownGoals": 0
   },
@@ -309,14 +317,6 @@
    "name": "HWANG Inbeom",
    "code": "KOR",
    "no": 6,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "496358",
-   "name": "Ibrahim MBAYE",
-   "code": "SEN",
-   "no": 20,
    "goals": 1,
    "ownGoals": 0
   }
