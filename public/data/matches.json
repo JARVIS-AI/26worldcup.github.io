@@ -2297,7 +2297,7 @@
    "date": "2026-06-21T22:00:00Z",
    "venueId": "400257525",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "URU",
     "score": null,
