@@ -23498,6 +23498,28 @@
   "final": true,
   "secTried": true
  },
+ "400021491": {
+  "home": {
+   "tactics": null,
+   "xi": [],
+   "subs": [],
+   "goals": [],
+   "bookings": [],
+   "substitutions": []
+  },
+  "away": {
+   "tactics": null,
+   "xi": [],
+   "subs": [],
+   "goals": [],
+   "bookings": [],
+   "substitutions": []
+  },
+  "matchTime": "0'",
+  "period": 0,
+  "final": false,
+  "secTried": true
+ },
  "400021492": {
   "home": {
    "tactics": "4-2-3-1",
@@ -23791,12 +23813,20 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "389867",
+     "minute": "14'",
+     "type": 2,
+     "period": 3,
+     "sec": 812
+    }
+   ],
    "bookings": [],
    "substitutions": []
   },
   "away": {
-   "tactics": "4-5-1",
+   "tactics": "4-2-3-1",
    "xi": [
     {
      "id": "433571",
@@ -24088,11 +24118,25 @@
     }
    ],
    "goals": [],
-   "bookings": [],
-   "substitutions": []
+   "bookings": [
+    {
+     "player": "433074",
+     "minute": "6'",
+     "card": 1,
+     "period": 3
+    }
+   ],
+   "substitutions": [
+    {
+     "off": "395186",
+     "on": "436628",
+     "minute": "26'",
+     "period": 3
+    }
+   ]
   },
-  "matchTime": "0'",
-  "period": 0,
+  "matchTime": "32'",
+  "period": 3,
   "final": false,
   "secTried": true
  },

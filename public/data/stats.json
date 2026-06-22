@@ -25,6 +25,14 @@
    "ownGoals": 0
   },
   {
+   "id": "389867",
+   "name": "Kylian MBAPPE",
+   "code": "FRA",
+   "no": 10,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "430413",
    "name": "Ayase UEDA",
    "code": "JPN",
@@ -125,14 +133,6 @@
    "name": "Kai HAVERTZ",
    "code": "GER",
    "no": 7,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "389867",
-   "name": "Kylian MBAPPE",
-   "code": "FRA",
-   "no": 10,
    "goals": 2,
    "ownGoals": 0
   },
@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 103,
+  "yellow": 104,
   "red": 8,
   "players": [
    {
