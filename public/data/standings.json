@@ -365,15 +365,27 @@
    },
    {
     "code": "URU",
-    "p": 1,
+    "p": 2,
     "w": 0,
-    "d": 1,
+    "d": 2,
     "l": 0,
-    "gf": 1,
-    "ga": 1,
+    "gf": 3,
+    "ga": 3,
     "gd": 0,
-    "pts": 1,
+    "pts": 2,
     "rank": 2
+   },
+   {
+    "code": "CPV",
+    "p": 2,
+    "w": 0,
+    "d": 2,
+    "l": 0,
+    "gf": 2,
+    "ga": 2,
+    "gd": 0,
+    "pts": 2,
+    "rank": 3
    },
    {
     "code": "KSA",
@@ -384,18 +396,6 @@
     "gf": 1,
     "ga": 5,
     "gd": -4,
-    "pts": 1,
-    "rank": 3
-   },
-   {
-    "code": "CPV",
-    "p": 1,
-    "w": 0,
-    "d": 1,
-    "l": 0,
-    "gf": 0,
-    "ga": 0,
-    "gd": 0,
     "pts": 1,
     "rank": 4
    }
@@ -648,6 +648,21 @@
    "qualifies": null
   },
   {
+   "group": "H",
+   "code": "CPV",
+   "p": 2,
+   "w": 0,
+   "d": 2,
+   "l": 0,
+   "gf": 2,
+   "ga": 2,
+   "gd": 0,
+   "pts": 2,
+   "rank": 3,
+   "thirdRank": 4,
+   "qualifies": null
+  },
+  {
    "group": "G",
    "code": "NZL",
    "p": 1,
@@ -659,7 +674,7 @@
    "gd": 0,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 4,
+   "thirdRank": 5,
    "qualifies": null
   },
   {
@@ -674,7 +689,7 @@
    "gd": 0,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 5,
+   "thirdRank": 6,
    "qualifies": null
   },
   {
@@ -689,7 +704,7 @@
    "gd": -1,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 6,
+   "thirdRank": 7,
    "qualifies": null
   },
   {
@@ -704,7 +719,7 @@
    "gd": -1,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 7,
+   "thirdRank": 8,
    "qualifies": null
   },
   {
@@ -717,21 +732,6 @@
    "gf": 2,
    "ga": 5,
    "gd": -3,
-   "pts": 1,
-   "rank": 3,
-   "thirdRank": 8,
-   "qualifies": null
-  },
-  {
-   "group": "H",
-   "code": "KSA",
-   "p": 2,
-   "w": 0,
-   "d": 1,
-   "l": 1,
-   "gf": 1,
-   "ga": 5,
-   "gd": -4,
    "pts": 1,
    "rank": 3,
    "thirdRank": 9,

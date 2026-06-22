@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 95,
+  "yellow": 96,
   "red": 8,
   "players": [
    {
@@ -486,7 +486,7 @@
    }
   ]
  },
- "attAvg": 64382,
+ "attAvg": 64372,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -530,9 +530,9 @@
    "SWE": -3,
    "TUN": -1,
    "KSA": -3,
-   "URU": 0,
+   "URU": -2,
    "ESP": -1,
-   "CPV": -1,
+   "CPV": -3,
    "IRN": -2,
    "NZL": 0,
    "BEL": -7,
@@ -580,9 +580,9 @@
    "SWE": -3,
    "TUN": -1,
    "KSA": -3,
-   "URU": 0,
+   "URU": -2,
    "ESP": -1,
-   "CPV": -1,
+   "CPV": -3,
    "IRN": -2,
    "NZL": 0,
    "BEL": -7,
