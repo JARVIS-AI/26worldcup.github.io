@@ -2992,16 +2992,16 @@
    "group": "L",
    "date": "2026-06-23T23:00:00Z",
    "venueId": "400242032",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "13'",
    "home": {
     "code": "PAN",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "CRO",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "L4",
