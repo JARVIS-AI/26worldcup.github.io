@@ -2565,8 +2565,8 @@
    "group": "I",
    "date": "2026-06-23T00:00:00Z",
    "venueId": "400257536",
-   "status": "live",
-   "time": "90'+7'",
+   "status": "finished",
+   "time": "101'",
    "home": {
     "code": "NOR",
     "score": 3,
@@ -2579,7 +2579,7 @@
    },
    "phA": "I4",
    "phB": "I2",
-   "winner": null,
+   "winner": "NOR",
    "attendance": 80663,
    "officials": [
     {
