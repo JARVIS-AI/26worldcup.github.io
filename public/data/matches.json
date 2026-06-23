@@ -3085,10 +3085,10 @@
    "date": "2026-06-23T17:00:00Z",
    "venueId": "400249385",
    "status": "live",
-   "time": "32'",
+   "time": "45'+1'",
    "home": {
     "code": "POR",
-    "score": 2,
+    "score": 3,
     "pen": null
    },
    "away": {

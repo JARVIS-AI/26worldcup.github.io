@@ -65,6 +65,14 @@
    "ownGoals": 0
   },
   {
+   "id": "201200",
+   "name": "CRISTIANO RONALDO",
+   "code": "POR",
+   "no": 7,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "489518",
    "name": "Crysencio SUMMERVILLE",
    "code": "NED",
@@ -293,14 +301,6 @@
    "name": "Connor METCALFE",
    "code": "AUS",
    "no": 8,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "201200",
-   "name": "CRISTIANO RONALDO",
-   "code": "POR",
-   "no": 7,
    "goals": 1,
    "ownGoals": 0
   },
