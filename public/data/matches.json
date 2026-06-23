@@ -2566,7 +2566,7 @@
    "date": "2026-06-23T00:00:00Z",
    "venueId": "400257536",
    "status": "live",
-   "time": "83'",
+   "time": "90'+7'",
    "home": {
     "code": "NOR",
     "score": 3,
@@ -2574,7 +2574,7 @@
    },
    "away": {
     "code": "SEN",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "I4",

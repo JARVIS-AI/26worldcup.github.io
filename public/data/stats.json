@@ -121,6 +121,14 @@
    "ownGoals": 0
   },
   {
+   "id": "401889",
+   "name": "Ismaila SARR",
+   "code": "SEN",
+   "no": 18,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "502727",
    "name": "Johan MANZAMBI",
    "code": "SUI",
@@ -309,14 +317,6 @@
    "name": "Felix NMECHA",
    "code": "GER",
    "no": 23,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "463580",
-   "name": "Finn SURMAN",
-   "code": "NZL",
-   "no": 16,
    "goals": 1,
    "ownGoals": 0
   }
