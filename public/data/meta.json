@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-06-22T23:51:34.017Z",
+ "updatedAt": "2026-06-23T00:05:17.053Z",
  "season": "285023",
  "titleOdds": [
   {
@@ -8,19 +8,19 @@
   },
   {
    "c": "ESP",
-   "p": 18.1
+   "p": 18
   },
   {
    "c": "FRA",
-   "p": 13.9
+   "p": 13.8
   },
   {
    "c": "ENG",
-   "p": 9
+   "p": 9.4
   },
   {
    "c": "BRA",
-   "p": 5.3
+   "p": 5.2
   }
  ],
  "counts": {
@@ -28,11 +28,10 @@
   "teams": 48,
   "squads": 48,
   "weather": 96,
-  "lineups": 43,
+  "lineups": 44,
   "flags": 179
  },
  "errors": [
-  "unknown MatchStatus 11 on match 400021492",
   "geocode New Tecumseth: no usable result — not cached, will retry next run"
  ],
  "sources": [

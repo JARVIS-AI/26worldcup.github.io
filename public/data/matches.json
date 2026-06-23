@@ -2565,16 +2565,16 @@
    "group": "I",
    "date": "2026-06-23T00:00:00Z",
    "venueId": "400257536",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "5'",
    "home": {
     "code": "NOR",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "SEN",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "I4",
@@ -2625,7 +2625,7 @@
    "date": "2026-06-22T21:00:00Z",
    "venueId": "400248622",
    "status": "live",
-   "time": null,
+   "time": "49'",
    "home": {
     "code": "FRA",
     "score": 1,
