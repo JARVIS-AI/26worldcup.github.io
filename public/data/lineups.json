@@ -27652,7 +27652,7 @@
  },
  "400021501": {
   "home": {
-   "tactics": null,
+   "tactics": "4-2-3-1",
    "xi": [
     {
      "id": "360642",
@@ -27948,7 +27948,7 @@
    "substitutions": []
   },
   "away": {
-   "tactics": null,
+   "tactics": "5-3-2",
    "xi": [
     {
      "id": "441313",
@@ -32694,9 +32694,27 @@
    ],
    "substitutions": [
     {
-     "off": "337251",
-     "on": "480310",
+     "off": "480310",
+     "on": "337251",
      "minute": "77'",
+     "period": 5
+    },
+    {
+     "off": "411174",
+     "on": "466669",
+     "minute": "83'",
+     "period": 5
+    },
+    {
+     "off": "400416",
+     "on": "418747",
+     "minute": "90'",
+     "period": 5
+    },
+    {
+     "off": "441242",
+     "on": "337232",
+     "minute": "90'",
      "period": 5
     }
    ]
@@ -33027,10 +33045,16 @@
      "on": "448160",
      "minute": "72'",
      "period": 5
+    },
+    {
+     "off": "241559",
+     "on": "380005",
+     "minute": "81'",
+     "period": 5
     }
    ]
   },
-  "matchTime": "77'",
+  "matchTime": "90'",
   "period": 5,
   "final": false,
   "secTried": true
