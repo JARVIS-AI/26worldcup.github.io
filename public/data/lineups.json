@@ -4414,7 +4414,7 @@
      "minute": "34'",
      "type": 3,
      "period": 3,
-     "sec": 2018
+     "sec": 2014
     }
    ],
    "bookings": [],
@@ -4696,14 +4696,14 @@
      "minute": "42'",
      "type": 2,
      "period": 3,
-     "sec": 2515
+     "sec": 2510
     }
    ],
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "45'",
-  "period": 3,
+  "matchTime": null,
+  "period": 4,
   "final": false,
   "secTried": true
  },
@@ -6707,8 +6707,8 @@
    ],
    "substitutions": []
   },
-  "matchTime": "45'",
-  "period": 3,
+  "matchTime": null,
+  "period": 4,
   "final": false,
   "secTried": true
  },
