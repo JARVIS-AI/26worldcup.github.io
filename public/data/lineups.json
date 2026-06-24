@@ -32706,14 +32706,14 @@
      "period": 5
     },
     {
-     "off": "400416",
-     "on": "418747",
+     "off": "441242",
+     "on": "337232",
      "minute": "90'",
      "period": 5
     },
     {
-     "off": "441242",
-     "on": "337232",
+     "off": "400416",
+     "on": "418747",
      "minute": "90'",
      "period": 5
     }
@@ -33020,7 +33020,14 @@
      "sec": 520
     }
    ],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "485066",
+     "minute": "90'+2'",
+     "card": 1,
+     "period": 5
+    }
+   ],
    "substitutions": [
     {
      "off": "389754",
@@ -33054,9 +33061,9 @@
     }
    ]
   },
-  "matchTime": "90'",
-  "period": 5,
-  "final": false,
+  "matchTime": "96'",
+  "period": 10,
+  "final": true,
   "secTried": true
  }
 }

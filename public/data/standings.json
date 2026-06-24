@@ -426,25 +426,25 @@
     "rank": 2
    },
    {
-    "code": "PAN",
-    "p": 1,
-    "w": 0,
+    "code": "CRO",
+    "p": 2,
+    "w": 1,
     "d": 0,
     "l": 1,
-    "gf": 0,
-    "ga": 1,
+    "gf": 3,
+    "ga": 4,
     "gd": -1,
-    "pts": 0,
+    "pts": 3,
     "rank": 3
    },
    {
-    "code": "CRO",
-    "p": 1,
+    "code": "PAN",
+    "p": 2,
     "w": 0,
     "d": 0,
-    "l": 1,
-    "gf": 2,
-    "ga": 4,
+    "l": 2,
+    "gf": 0,
+    "ga": 2,
     "gd": -2,
     "pts": 0,
     "rank": 4
@@ -633,6 +633,21 @@
    "qualifies": null
   },
   {
+   "group": "L",
+   "code": "CRO",
+   "p": 2,
+   "w": 1,
+   "d": 0,
+   "l": 1,
+   "gf": 3,
+   "ga": 4,
+   "gd": -1,
+   "pts": 3,
+   "rank": 3,
+   "thirdRank": 3,
+   "qualifies": null
+  },
+  {
    "group": "J",
    "code": "ALG",
    "p": 2,
@@ -644,7 +659,7 @@
    "gd": -2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 3,
+   "thirdRank": 4,
    "qualifies": null
   },
   {
@@ -659,7 +674,7 @@
    "gd": -2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 4,
+   "thirdRank": 5,
    "qualifies": null
   },
   {
@@ -674,7 +689,7 @@
    "gd": 0,
    "pts": 2,
    "rank": 3,
-   "thirdRank": 5,
+   "thirdRank": 6,
    "qualifies": null
   },
   {
@@ -689,7 +704,7 @@
    "gd": 0,
    "pts": 2,
    "rank": 3,
-   "thirdRank": 6,
+   "thirdRank": 7,
    "qualifies": null
   },
   {
@@ -704,7 +719,7 @@
    "gd": 0,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 7,
+   "thirdRank": 8,
    "qualifies": null
   },
   {
@@ -719,7 +734,7 @@
    "gd": -1,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 8,
+   "thirdRank": 9,
    "qualifies": null
   },
   {
@@ -734,7 +749,7 @@
    "gd": -1,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 9,
+   "thirdRank": 10,
    "qualifies": null
   },
   {
@@ -748,21 +763,6 @@
    "ga": 5,
    "gd": -3,
    "pts": 1,
-   "rank": 3,
-   "thirdRank": 10,
-   "qualifies": null
-  },
-  {
-   "group": "L",
-   "code": "PAN",
-   "p": 1,
-   "w": 0,
-   "d": 0,
-   "l": 1,
-   "gf": 0,
-   "ga": 1,
-   "gd": -1,
-   "pts": 0,
    "rank": 3,
    "thirdRank": 11,
    "qualifies": null
