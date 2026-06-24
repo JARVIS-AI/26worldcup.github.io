@@ -3111,10 +3111,10 @@
    "date": "2026-06-24T02:00:00Z",
    "venueId": "400252150",
    "status": "live",
-   "time": "65'",
+   "time": "78'",
    "home": {
     "code": "COL",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
@@ -3125,7 +3125,7 @@
    "phA": "K4",
    "phB": "K2",
    "winner": null,
-   "attendance": null,
+   "attendance": 45358,
    "officials": [
     {
      "id": "415965",
