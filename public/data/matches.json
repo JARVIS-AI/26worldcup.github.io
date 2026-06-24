@@ -2993,7 +2993,7 @@
    "date": "2026-06-23T23:00:00Z",
    "venueId": "400242032",
    "status": "live",
-   "time": "49'",
+   "time": "63'",
    "home": {
     "code": "PAN",
     "score": 0,
@@ -3001,7 +3001,7 @@
    },
    "away": {
     "code": "CRO",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "L4",

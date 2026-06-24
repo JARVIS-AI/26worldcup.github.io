@@ -257,6 +257,14 @@
    "ownGoals": 0
   },
   {
+   "id": "430070",
+   "name": "Ante BUDIMIR",
+   "code": "CRO",
+   "no": 11,
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "441137",
    "name": "Anthony ELANGA",
    "code": "SWE",
@@ -311,18 +319,10 @@
    "no": 2,
    "goals": 1,
    "ownGoals": 0
-  },
-  {
-   "id": "430482",
-   "name": "EMAM ASHOUR",
-   "code": "EGY",
-   "no": 8,
-   "goals": 1,
-   "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 110,
+  "yellow": 111,
   "red": 8,
   "players": [
    {
