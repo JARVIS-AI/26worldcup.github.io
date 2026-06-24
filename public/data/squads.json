@@ -2130,7 +2130,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Br%C3%B8ndby_IF",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Benjamin_Tahirovi%C4%87",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -2202,7 +2202,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Viktoria_Plze%C5%88",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Amar_Memi%C4%87",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3104,7 +3104,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Al-Rayyan_SC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Abdulaziz_Hatem",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3763,7 +3763,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Rub%C3%A9n_Vargas",
     "wcApps": 3,
-    "wcGoals": 1,
+    "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
    },

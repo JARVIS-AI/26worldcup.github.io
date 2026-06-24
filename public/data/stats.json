@@ -185,6 +185,14 @@
    "ownGoals": 0
   },
   {
+   "id": "448131",
+   "name": "Ruben VARGAS",
+   "code": "SUI",
+   "no": 17,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "405742",
    "name": "VINICIUS JUNIOR",
    "code": "BRA",
@@ -309,14 +317,6 @@
    "name": "Caleb YIRENKYI",
    "code": "GHA",
    "no": 3,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "430452",
-   "name": "Connor METCALFE",
-   "code": "AUS",
-   "no": 8,
    "goals": 1,
    "ownGoals": 0
   }
