@@ -4408,6 +4408,13 @@
      "type": 2,
      "period": 3,
      "sec": 1707
+    },
+    {
+     "player": "386387",
+     "minute": "34'",
+     "type": 3,
+     "period": 3,
+     "sec": 2018
     }
    ],
    "bookings": [],
@@ -4683,11 +4690,19 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "284190",
+     "minute": "42'",
+     "type": 2,
+     "period": 3,
+     "sec": 2515
+    }
+   ],
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "31'",
+  "matchTime": "45'",
   "period": 3,
   "final": false,
   "secTried": true
@@ -6401,7 +6416,14 @@
     }
    ],
    "goals": [],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "311558",
+     "minute": "32'",
+     "card": 1,
+     "period": 3
+    }
+   ],
    "substitutions": []
   },
   "away": {
@@ -6675,10 +6697,17 @@
     }
    ],
    "goals": [],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "390670",
+     "minute": "32'",
+     "card": 1,
+     "period": 3
+    }
+   ],
    "substitutions": []
   },
-  "matchTime": "31'",
+  "matchTime": "45'",
   "period": 3,
   "final": false,
   "secTried": true
