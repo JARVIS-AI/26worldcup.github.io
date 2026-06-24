@@ -3203,7 +3203,7 @@
    "date": "2026-06-24T22:00:00Z",
    "venueId": "400257525",
    "status": "live",
-   "time": null,
+   "time": "55'",
    "home": {
     "code": "SCO",
     "score": 0,
@@ -3262,7 +3262,7 @@
    "date": "2026-06-24T22:00:00Z",
    "venueId": "400098290",
    "status": "live",
-   "time": null,
+   "time": "57'",
    "home": {
     "code": "MAR",
     "score": 2,

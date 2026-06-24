@@ -7553,8 +7553,8 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": null,
-  "period": 4,
+  "matchTime": "57'",
+  "period": 5,
   "final": false,
   "secTried": true
  },
@@ -9211,7 +9211,14 @@
    ],
    "goals": [],
    "bookings": [],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "401339",
+     "on": "401712",
+     "minute": "",
+     "period": 4
+    }
+   ]
   },
   "away": {
    "tactics": "4-3-3",
@@ -9513,8 +9520,8 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": null,
-  "period": 4,
+  "matchTime": "55'",
+  "period": 5,
   "final": false,
   "secTried": true
  },
