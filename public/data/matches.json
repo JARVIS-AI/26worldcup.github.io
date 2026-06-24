@@ -3262,7 +3262,7 @@
    "date": "2026-06-24T22:00:00Z",
    "venueId": "400098290",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "MAR",
     "score": null,
@@ -3320,8 +3320,8 @@
    "group": "B",
    "date": "2026-06-24T19:00:00Z",
    "venueId": "400248370",
-   "status": "live",
-   "time": "90'+5'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "SUI",
     "score": 2,
@@ -3334,7 +3334,7 @@
    },
    "phA": "B4",
    "phB": "B1",
-   "winner": null,
+   "winner": "SUI",
    "attendance": 52497,
    "officials": [
     {
@@ -3379,8 +3379,8 @@
    "group": "B",
    "date": "2026-06-24T19:00:00Z",
    "venueId": "400216606",
-   "status": "live",
-   "time": "90'+1'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "BIH",
     "score": 3,
@@ -3393,7 +3393,7 @@
    },
    "phA": "B2",
    "phB": "B3",
-   "winner": null,
+   "winner": "BIH",
    "attendance": 66925,
    "officials": [
     {
@@ -4582,7 +4582,11 @@
    "status": "scheduled",
    "time": null,
    "home": null,
-   "away": null,
+   "away": {
+    "code": "CAN",
+    "score": null,
+    "pen": null
+   },
    "phA": "2A",
    "phB": "2B",
    "winner": null,
@@ -4797,7 +4801,11 @@
    "venueId": "400248370",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "SUI",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "1B",
    "phB": "3EFGIJ",

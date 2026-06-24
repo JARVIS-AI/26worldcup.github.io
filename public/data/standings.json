@@ -152,50 +152,50 @@
   ],
   "B": [
    {
-    "code": "CAN",
-    "p": 2,
-    "w": 1,
+    "code": "SUI",
+    "p": 3,
+    "w": 2,
     "d": 1,
     "l": 0,
     "gf": 7,
-    "ga": 1,
-    "gd": 6,
-    "pts": 4,
+    "ga": 3,
+    "gd": 4,
+    "pts": 7,
     "rank": 1
    },
    {
-    "code": "SUI",
-    "p": 2,
+    "code": "CAN",
+    "p": 3,
     "w": 1,
     "d": 1,
-    "l": 0,
-    "gf": 5,
-    "ga": 2,
-    "gd": 3,
+    "l": 1,
+    "gf": 8,
+    "ga": 3,
+    "gd": 5,
     "pts": 4,
     "rank": 2
    },
    {
     "code": "BIH",
-    "p": 2,
-    "w": 0,
+    "p": 3,
+    "w": 1,
     "d": 1,
     "l": 1,
-    "gf": 2,
-    "ga": 5,
-    "gd": -3,
-    "pts": 1,
+    "gf": 5,
+    "ga": 6,
+    "gd": -1,
+    "pts": 4,
     "rank": 3
    },
    {
     "code": "QAT",
-    "p": 2,
+    "p": 3,
     "w": 0,
     "d": 1,
-    "l": 1,
-    "gf": 1,
-    "ga": 7,
-    "gd": -6,
+    "l": 2,
+    "gf": 2,
+    "ga": 10,
+    "gd": -8,
     "pts": 1,
     "rank": 4
    }
@@ -603,6 +603,21 @@
  },
  "thirds": [
   {
+   "group": "B",
+   "code": "BIH",
+   "p": 3,
+   "w": 1,
+   "d": 1,
+   "l": 1,
+   "gf": 5,
+   "ga": 6,
+   "gd": -1,
+   "pts": 4,
+   "rank": 3,
+   "thirdRank": 1,
+   "qualifies": null
+  },
+  {
    "group": "F",
    "code": "SWE",
    "p": 2,
@@ -614,7 +629,7 @@
    "gd": 0,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 1,
+   "thirdRank": 2,
    "qualifies": null
   },
   {
@@ -629,7 +644,7 @@
    "gd": 0,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 2,
+   "thirdRank": 3,
    "qualifies": null
   },
   {
@@ -644,7 +659,7 @@
    "gd": -1,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 3,
+   "thirdRank": 4,
    "qualifies": null
   },
   {
@@ -659,7 +674,7 @@
    "gd": -2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 4,
+   "thirdRank": 5,
    "qualifies": null
   },
   {
@@ -674,7 +689,7 @@
    "gd": -2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 5,
+   "thirdRank": 6,
    "qualifies": null
   },
   {
@@ -689,7 +704,7 @@
    "gd": 0,
    "pts": 2,
    "rank": 3,
-   "thirdRank": 6,
+   "thirdRank": 7,
    "qualifies": null
   },
   {
@@ -704,7 +719,7 @@
    "gd": 0,
    "pts": 2,
    "rank": 3,
-   "thirdRank": 7,
+   "thirdRank": 8,
    "qualifies": null
   },
   {
@@ -719,7 +734,7 @@
    "gd": -1,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 8,
+   "thirdRank": 9,
    "qualifies": null
   },
   {
@@ -734,7 +749,7 @@
    "gd": -1,
    "pts": 1,
    "rank": 3,
-   "thirdRank": 9,
+   "thirdRank": 10,
    "qualifies": null
   },
   {
@@ -747,21 +762,6 @@
    "gf": 0,
    "ga": 1,
    "gd": -1,
-   "pts": 1,
-   "rank": 3,
-   "thirdRank": 10,
-   "qualifies": null
-  },
-  {
-   "group": "B",
-   "code": "BIH",
-   "p": 2,
-   "w": 0,
-   "d": 1,
-   "l": 1,
-   "gf": 2,
-   "ga": 5,
-   "gd": -3,
    "pts": 1,
    "rank": 3,
    "thirdRank": 11,
@@ -787,7 +787,7 @@
   "J": false,
   "D": false,
   "G": false,
-  "B": false,
+  "B": true,
   "C": false,
   "E": false,
   "K": false,
