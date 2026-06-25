@@ -253,49 +253,49 @@
   "E": [
    {
     "code": "GER",
-    "p": 2,
+    "p": 3,
     "w": 2,
     "d": 0,
-    "l": 0,
-    "gf": 9,
-    "ga": 2,
-    "gd": 7,
+    "l": 1,
+    "gf": 10,
+    "ga": 4,
+    "gd": 6,
     "pts": 6,
     "rank": 1
    },
    {
     "code": "CIV",
-    "p": 2,
-    "w": 1,
+    "p": 3,
+    "w": 2,
     "d": 0,
     "l": 1,
-    "gf": 2,
+    "gf": 4,
     "ga": 2,
-    "gd": 0,
-    "pts": 3,
+    "gd": 2,
+    "pts": 6,
     "rank": 2
    },
    {
     "code": "ECU",
-    "p": 2,
-    "w": 0,
+    "p": 3,
+    "w": 1,
     "d": 1,
     "l": 1,
-    "gf": 0,
-    "ga": 1,
-    "gd": -1,
-    "pts": 1,
+    "gf": 2,
+    "ga": 2,
+    "gd": 0,
+    "pts": 4,
     "rank": 3
    },
    {
     "code": "CUW",
-    "p": 2,
+    "p": 3,
     "w": 0,
     "d": 1,
-    "l": 1,
+    "l": 2,
     "gf": 1,
-    "ga": 7,
-    "gd": -6,
+    "ga": 9,
+    "gd": -8,
     "pts": 1,
     "rank": 4
    }
@@ -603,6 +603,21 @@
  },
  "thirds": [
   {
+   "group": "E",
+   "code": "ECU",
+   "p": 3,
+   "w": 1,
+   "d": 1,
+   "l": 1,
+   "gf": 2,
+   "ga": 2,
+   "gd": 0,
+   "pts": 4,
+   "rank": 3,
+   "thirdRank": 1,
+   "qualifies": null
+  },
+  {
    "group": "B",
    "code": "BIH",
    "p": 3,
@@ -614,7 +629,7 @@
    "gd": -1,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 1,
+   "thirdRank": 2,
    "qualifies": null
   },
   {
@@ -629,7 +644,7 @@
    "gd": 0,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 2,
+   "thirdRank": 3,
    "qualifies": null
   },
   {
@@ -644,7 +659,7 @@
    "gd": -1,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 3,
+   "thirdRank": 4,
    "qualifies": null
   },
   {
@@ -659,7 +674,7 @@
    "gd": -1,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 4,
+   "thirdRank": 5,
    "qualifies": null
   },
   {
@@ -674,7 +689,7 @@
    "gd": -2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 5,
+   "thirdRank": 6,
    "qualifies": null
   },
   {
@@ -689,7 +704,7 @@
    "gd": -2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 6,
+   "thirdRank": 7,
    "qualifies": null
   },
   {
@@ -704,7 +719,7 @@
    "gd": -3,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 7,
+   "thirdRank": 8,
    "qualifies": null
   },
   {
@@ -719,7 +734,7 @@
    "gd": 0,
    "pts": 2,
    "rank": 3,
-   "thirdRank": 8,
+   "thirdRank": 9,
    "qualifies": null
   },
   {
@@ -734,7 +749,7 @@
    "gd": 0,
    "pts": 2,
    "rank": 3,
-   "thirdRank": 9,
+   "thirdRank": 10,
    "qualifies": null
   },
   {
@@ -746,21 +761,6 @@
    "l": 1,
    "gf": 1,
    "ga": 2,
-   "gd": -1,
-   "pts": 1,
-   "rank": 3,
-   "thirdRank": 10,
-   "qualifies": null
-  },
-  {
-   "group": "E",
-   "code": "ECU",
-   "p": 2,
-   "w": 0,
-   "d": 1,
-   "l": 1,
-   "gf": 0,
-   "ga": 1,
    "gd": -1,
    "pts": 1,
    "rank": 3,
@@ -789,7 +789,7 @@
   "G": false,
   "B": true,
   "C": true,
-  "E": false,
+  "E": true,
   "K": false,
   "H": false,
   "L": false,

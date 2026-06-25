@@ -3655,8 +3655,8 @@
    "group": "E",
    "date": "2026-06-25T20:00:00Z",
    "venueId": "400248622",
-   "status": "live",
-   "time": "90'+3'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "CUW",
     "score": 0,
@@ -3669,7 +3669,7 @@
    },
    "phA": "E2",
    "phB": "E3",
-   "winner": null,
+   "winner": "CIV",
    "attendance": 68324,
    "officials": [
     {
@@ -3714,8 +3714,8 @@
    "group": "E",
    "date": "2026-06-25T20:00:00Z",
    "venueId": "400257536",
-   "status": "live",
-   "time": "90'+3'",
+   "status": "finished",
+   "time": "98'",
    "home": {
     "code": "ECU",
     "score": 2,
@@ -3728,7 +3728,7 @@
    },
    "phA": "E4",
    "phB": "E1",
-   "winner": null,
+   "winner": "ECU",
    "attendance": 80663,
    "officials": [
     {
@@ -3774,7 +3774,7 @@
    "date": "2026-06-25T23:00:00Z",
    "venueId": "400257526",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "JPN",
     "score": null,
@@ -3833,7 +3833,7 @@
    "date": "2026-06-25T23:00:00Z",
    "venueId": "400254717",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "TUN",
     "score": null,
@@ -5022,7 +5022,11 @@
    "venueId": "400257526",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "CIV",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "2E",
    "phB": "2I",
