@@ -16878,7 +16878,14 @@
      "sec": 507
     }
    ],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "424031",
+     "minute": "43'",
+     "card": 1,
+     "period": 3
+    }
+   ],
    "substitutions": []
   },
   "away": {
@@ -17160,10 +17167,17 @@
      "sec": 110
     }
    ],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "484849",
+     "minute": "44'",
+     "card": 1,
+     "period": 3
+    }
+   ],
    "substitutions": []
   },
-  "matchTime": "31'",
+  "matchTime": "44'",
   "period": 3,
   "final": false,
   "secTried": true
@@ -18454,10 +18468,17 @@
      "sec": 365
     }
    ],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "402261",
+     "minute": "34'",
+     "card": 1,
+     "period": 3
+    }
+   ],
    "substitutions": []
   },
-  "matchTime": "30'",
+  "matchTime": "44'",
   "period": 3,
   "final": false,
   "secTried": true
