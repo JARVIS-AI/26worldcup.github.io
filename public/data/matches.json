@@ -3655,16 +3655,16 @@
    "group": "E",
    "date": "2026-06-25T20:00:00Z",
    "venueId": "400248622",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "2'",
    "home": {
     "code": "CUW",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "CIV",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "E2",
@@ -3714,16 +3714,16 @@
    "group": "E",
    "date": "2026-06-25T20:00:00Z",
    "venueId": "400257536",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "3'",
    "home": {
     "code": "ECU",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "GER",
-    "score": null,
+    "score": 1,
     "pen": null
    },
    "phA": "E4",
