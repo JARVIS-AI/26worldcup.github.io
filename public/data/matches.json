@@ -3656,7 +3656,7 @@
    "date": "2026-06-25T20:00:00Z",
    "venueId": "400248622",
    "status": "live",
-   "time": "51'",
+   "time": "65'",
    "home": {
     "code": "CUW",
     "score": 0,
@@ -3664,13 +3664,13 @@
    },
    "away": {
     "code": "CIV",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "E2",
    "phB": "E3",
    "winner": null,
-   "attendance": null,
+   "attendance": 68324,
    "officials": [
     {
      "id": "392336",
@@ -3715,7 +3715,7 @@
    "date": "2026-06-25T20:00:00Z",
    "venueId": "400257536",
    "status": "live",
-   "time": "51'",
+   "time": "65'",
    "home": {
     "code": "ECU",
     "score": 1,

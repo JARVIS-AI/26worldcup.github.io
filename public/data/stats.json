@@ -209,6 +209,14 @@
    "ownGoals": 0
   },
   {
+   "id": "402261",
+   "name": "Nicolas PEPE",
+   "code": "CIV",
+   "no": 19,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "448131",
    "name": "Ruben VARGAS",
    "code": "SUI",
@@ -308,14 +316,6 @@
    "id": "430070",
    "name": "Ante BUDIMIR",
    "code": "CRO",
-   "no": 11,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "441137",
-   "name": "Anthony ELANGA",
-   "code": "SWE",
    "no": 11,
    "goals": 1,
    "ownGoals": 0

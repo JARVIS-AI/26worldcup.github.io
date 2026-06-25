@@ -198,7 +198,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Newcastle_United_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Malick_Thiaw",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -450,7 +450,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Borussia_Dortmund",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Maximilian_Beier",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -468,7 +468,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/VfB_Stuttgart",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Deniz_Undav",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 3,
    "wcYellow": 0,
    "wcRed": 0
