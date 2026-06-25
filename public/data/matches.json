@@ -3656,7 +3656,7 @@
    "date": "2026-06-25T20:00:00Z",
    "venueId": "400248622",
    "status": "live",
-   "time": "2'",
+   "time": "16'",
    "home": {
     "code": "CUW",
     "score": 0,
@@ -3664,7 +3664,7 @@
    },
    "away": {
     "code": "CIV",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "E2",
@@ -3715,10 +3715,10 @@
    "date": "2026-06-25T20:00:00Z",
    "venueId": "400257536",
    "status": "live",
-   "time": "3'",
+   "time": "17'",
    "home": {
     "code": "ECU",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
