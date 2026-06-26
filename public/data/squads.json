@@ -15659,7 +15659,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9",
     "wcApps": 3,
-    "wcGoals": 2,
+    "wcGoals": 3,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -15851,7 +15851,7 @@
     "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
-    "wcRed": 0
+    "wcRed": 1
    },
    {
     "id": "hussein-ali",
@@ -15920,7 +15920,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Al-Shorta_SC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Manaf_Younis",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -16597,7 +16597,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Thelo_Aasgaard",
     "wcApps": 1,
-    "wcGoals": 0,
+    "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -16842,7 +16842,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Abdoulaye_Seck_(footballer%2C_born_1992)",
     "wcApps": 1,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {

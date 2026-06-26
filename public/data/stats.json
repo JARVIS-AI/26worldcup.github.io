@@ -81,6 +81,14 @@
    "ownGoals": 0
   },
   {
+   "id": "398680",
+   "name": "Ousmane DEMBELE",
+   "code": "FRA",
+   "no": 7,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "441137",
    "name": "Anthony ELANGA",
    "code": "SWE",
@@ -225,14 +233,6 @@
    "ownGoals": 0
   },
   {
-   "id": "398680",
-   "name": "Ousmane DEMBELE",
-   "code": "FRA",
-   "no": 7,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
    "id": "448131",
    "name": "Ruben VARGAS",
    "code": "SUI",
@@ -322,8 +322,8 @@
   }
  ],
  "cards": {
-  "yellow": 143,
-  "red": 8,
+  "yellow": 144,
+  "red": 9,
   "players": [
    {
     "id": "369761",
@@ -362,6 +362,14 @@
     "name": "Nathan NGOY",
     "code": "BEL",
     "no": 25,
+    "y": 0,
+    "r": 1
+   },
+   {
+    "id": "396158",
+    "name": "REBIN SULAKA",
+    "code": "IRQ",
+    "no": 2,
     "y": 0,
     "r": 1
    },
@@ -453,6 +461,14 @@
     "r": 0
    },
    {
+    "id": "370171",
+    "name": "Abdoulaye SECK",
+    "code": "SEN",
+    "no": 4,
+    "y": 1,
+    "r": 0
+   },
+   {
     "id": "464924",
     "name": "Abdukodir KHUSANOV",
     "code": "UZB",
@@ -465,22 +481,6 @@
     "name": "ABDULELAH ALAMRI",
     "code": "KSA",
     "no": 4,
-    "y": 1,
-    "r": 0
-   },
-   {
-    "id": "430477",
-    "name": "AHMED FATOUH",
-    "code": "EGY",
-    "no": 13,
-    "y": 1,
-    "r": 0
-   },
-   {
-    "id": "389784",
-    "name": "Alan FRANCO",
-    "code": "ECU",
-    "no": 21,
     "y": 1,
     "r": 0
    }
