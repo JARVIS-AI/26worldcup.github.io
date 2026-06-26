@@ -4075,16 +4075,16 @@
    "group": "I",
    "date": "2026-06-26T19:00:00Z",
    "venueId": "400248623",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "1'",
    "home": {
     "code": "NOR",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "FRA",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "I4",
@@ -4134,16 +4134,16 @@
    "group": "I",
    "date": "2026-06-26T19:00:00Z",
    "venueId": "400242032",
-   "status": "scheduled",
+   "status": "live",
    "time": "0'",
    "home": {
     "code": "SEN",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "IRQ",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "I2",
