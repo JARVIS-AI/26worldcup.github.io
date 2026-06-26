@@ -31557,8 +31557,8 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "0'",
-  "period": 0,
+  "matchTime": "1'",
+  "period": 3,
   "final": false,
   "secTried": true
  },
@@ -34203,7 +34203,7 @@
    "substitutions": []
   },
   "matchTime": "0'",
-  "period": 2,
+  "period": 3,
   "final": false,
   "secTried": true
  },
