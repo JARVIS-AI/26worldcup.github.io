@@ -3774,7 +3774,7 @@
    "date": "2026-06-25T23:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "45'+3'",
+   "time": null,
    "home": {
     "code": "JPN",
     "score": 0,
