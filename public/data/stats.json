@@ -225,6 +225,14 @@
    "ownGoals": 0
   },
   {
+   "id": "398680",
+   "name": "Ousmane DEMBELE",
+   "code": "FRA",
+   "no": 7,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "448131",
    "name": "Ruben VARGAS",
    "code": "SUI",
@@ -311,18 +319,10 @@
    "no": 15,
    "goals": 1,
    "ownGoals": 0
-  },
-  {
-   "id": "405877",
-   "name": "Amine GOUIRI",
-   "code": "ALG",
-   "no": 9,
-   "goals": 1,
-   "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 142,
+  "yellow": 143,
   "red": 8,
   "players": [
    {
