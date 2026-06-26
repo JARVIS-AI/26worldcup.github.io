@@ -233,6 +233,14 @@
    "ownGoals": 0
   },
   {
+   "id": "431788",
+   "name": "Pape GUEYE",
+   "code": "SEN",
+   "no": 26,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "448131",
    "name": "Ruben VARGAS",
    "code": "SUI",
@@ -311,18 +319,10 @@
    "no": 8,
    "goals": 1,
    "ownGoals": 0
-  },
-  {
-   "id": "430822",
-   "name": "Amad DIALLO",
-   "code": "CIV",
-   "no": 15,
-   "goals": 1,
-   "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 144,
+  "yellow": 145,
   "red": 9,
   "players": [
    {
