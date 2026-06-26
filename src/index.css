@@ -63,6 +63,85 @@
   font-display: swap;
 }
 
+/* ============ Persian font ============ */
+@font-face {
+  font-family: "AzarMehr";
+  src: url("./assets/fonts/azarmehr/100-AzarMehr-Thin.woff2") format("woff2");
+  font-weight: 100;   /* adjust weights if you have a variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzarMehr";
+  src: url("./assets/fonts/azarmehr/200-AzarMehr-Extra-Light.woff2") format("woff2");
+  font-weight: 200;   /* adjust weights if you have a variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzarMehr";
+  src: url("./assets/fonts/azarmehr/300-AzarMehr-Light.woff2") format("woff2");
+  font-weight: 300;   /* adjust weights if you have a variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzarMehr";
+  src: url("./assets/fonts/azarmehr/400-AzarMehr-Regular.woff2") format("woff2");
+  font-weight: 400;   /* adjust weights if you have a variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzarMehr";
+  src: url("./assets/fonts/azarmehr/500-AzarMehr-Medium.woff2") format("woff2");
+  font-weight: 500;   /* adjust weights if you have a variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzarMehr";
+  src: url("./assets/fonts/azarmehr/600-AzarMehr-Semi-Bold.woff2") format("woff2");
+  font-weight: 600;   /* adjust weights if you have a variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzarMehr";
+  src: url("./assets/fonts/azarmehr/700-AzarMehr-Bold.woff2") format("woff2");
+  font-weight: 700;   /* adjust weights if you have a variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzarMehr";
+  src: url("./assets/fonts/azarmehr/800-AzarMehr-Extra-Bold.woff2") format("woff2");
+  font-weight: 800;   /* adjust weights if you have a variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AzarMehr";
+  src: url("./assets/fonts/azarmehr/900-AzarMehr-Black.woff2") format("woff2");
+  font-weight: 900;   /* adjust weights if you have a variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Persian font override */
+html[data-lang="fa"] {
+  --font: "AzarMehr", "IRANSans", Tahoma, sans-serif;
+  --font-display: "AzarMehr", "IRANSans", Tahoma, sans-serif;
+}
+
 /* ============ design tokens ============ */
 :root {
   --page-w: 1320px; /* content container; bracket/map/groups benefit from the extra room */
@@ -664,13 +743,21 @@ input.input {
   border-radius: var(--r-lg);
   padding: 12px 14px;
   box-shadow: var(--shadow);
+
   transition:
-    border-color 0.15s,
-    transform 0.1s;
+    border-color 0.25s ease,
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
 .match-card:hover {
   border-color: var(--border-strong);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+
+  filter:
+    drop-shadow(0 10px 10px rgba(0, 0, 0, 0.08))
+    drop-shadow(0 15px 10px rgba(0, 0, 0, 0.10))
+    drop-shadow(0 20px 10px rgba(0, 0, 0, 0.08)) !important;
 }
 .match-card.live {
   border-color: color-mix(in srgb, var(--live) 45%, var(--border));
@@ -763,6 +850,8 @@ input.input {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media (min-width: 700px) {
   .cards-grid {

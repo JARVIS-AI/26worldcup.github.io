@@ -165,13 +165,15 @@ export default function Layout() {
   // split the localized "by {name}" around the author link (word order varies)
   const [byPre, byPost] = t('footerBy', { name: '\u0000' }).split('\u0000')
 
+  const brandWithDev = `${t('appName')} ${t('byDev')}`
+
   return (
     <>
       <header className="shell-header" ref={headerRef}>
         <div className="shell-header-in">
           <NavLink to="/" className="brand">
             <Logo />
-            <span>{t('appName')}</span>
+            <span>{brandWithDev}</span>
           </NavLink>
           <nav className="top-nav" ref={navRef}>
             {NAV.map((n) => (
@@ -182,7 +184,7 @@ export default function Layout() {
           </nav>
           <a
             className="gh-link"
-            href="https://github.com/26worldcup/26worldcup.github.io"
+            href="https://github.com/JARVIS-AI/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -206,20 +208,20 @@ export default function Layout() {
           <Freshness />
         </div>
         <div className="shell-footer-links">
-          <a href="https://github.com/26worldcup/26worldcup.github.io" target="_blank" rel="noreferrer">
+          <a href="" target="_blank" rel="noreferrer">
             GitHub
           </a>
           <span aria-hidden="true">·</span>
           <span>
             {byPre}
-            <a href="https://github.com/tomchen" target="_blank" rel="noreferrer">
-              Tom Chen
+            <a href="https://github.com/JARVIS-AI" target="_blank" rel="noreferrer">
+              Amir Mohammad Safari
             </a>
             {byPost}
           </span>
           <span aria-hidden="true">·</span>
           <a
-            href="https://github.com/26worldcup/26worldcup.github.io/blob/main/COPYRIGHT.md"
+            href="https://github.com/JARVIS-AI/blob/main/COPYRIGHT.md"
             target="_blank"
             rel="noreferrer"
           >

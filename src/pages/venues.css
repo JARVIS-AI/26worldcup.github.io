@@ -110,12 +110,41 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  background: var(--dot-color);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--text) 10%, transparent);
+  position: relative; /* needed for the pulse ring */
 }
+
+/* Pulse ring (heartbeat) */
+.vn-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 var(--dot-color);
+  animation: pulse-ring 2s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 var(--dot-color);
+    opacity: 0.8;
+  }
+  100% {
+    box-shadow: 0 0 0 12px var(--dot-color);
+    opacity: 0;
+  }
+}
+
+/* Larger dot for venue cards – scale up the pulse */
 .vn-dot.lg {
   width: 12px;
   height: 12px;
   margin-top: 6px;
+}
+.vn-dot.lg::after {
+  animation-duration: 2.5s; /* slightly slower for larger dot */
 }
 
 /* ---- country sections ---- */

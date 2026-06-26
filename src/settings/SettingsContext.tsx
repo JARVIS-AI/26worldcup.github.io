@@ -144,6 +144,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     else root.setAttribute('data-theme', settings.theme)
     root.setAttribute('lang', settings.lang === 'zh' ? 'zh-CN' : settings.lang)
     root.setAttribute('dir', RTL_LANGS.has(settings.lang) ? 'rtl' : 'ltr')
+    root.setAttribute('data-lang', settings.lang)
   }, [settings.theme, settings.lang])
 
   const value = useMemo<SettingsCtx>(

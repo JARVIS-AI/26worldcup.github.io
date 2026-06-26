@@ -302,14 +302,29 @@
   border-color: color-mix(in srgb, var(--gold) 55%, var(--border));
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-lg);
+
   background: linear-gradient(
     168deg,
     color-mix(in srgb, var(--gold) 10%, var(--bg-elev)),
     var(--bg-elev) 58%
   );
+
+  animation: bk-heartbeat-gold 2.8s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform, box-shadow;
 }
+
+/* LIVE FINAL */
 .bk-node.bk-big.bk-on {
-  border-color: color-mix(in srgb, var(--live) 55%, var(--border));
+  border-color: color-mix(in srgb, var(--live) 65%, var(--border));
+
+  background: linear-gradient(
+    168deg,
+    color-mix(in srgb, var(--live) 12%, var(--bg-elev)),
+    var(--bg-elev) 58%
+  );
+
+  animation: bk-heartbeat-red 1.8s ease-in-out infinite;
 }
 .bk-final-head {
   display: flex;
@@ -518,5 +533,79 @@
   }
   .bk-grid .bk-row {
     justify-content: space-between;
+  }
+}
+
+/* =========================
+   Heartbeat Pulse Animation
+   ========================= */
+
+@keyframes bk-heartbeat-red {
+  0% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 0 rgba(220, 38, 38, 0.55),
+      var(--shadow-lg);
+  }
+
+  14% {
+    transform: scale(1.03);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.06);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 16px rgba(220, 38, 38, 0),
+      var(--shadow-lg);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 0 rgba(220, 38, 38, 0),
+      var(--shadow-lg);
+  }
+}
+
+@keyframes bk-heartbeat-gold {
+  0% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 0 rgba(255, 193, 7, 0.45),
+      var(--shadow-lg);
+  }
+
+  14% {
+    transform: scale(1.02);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.045);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 16px rgba(255, 193, 7, 0),
+      var(--shadow-lg);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 0 rgba(255, 193, 7, 0),
+      var(--shadow-lg);
   }
 }

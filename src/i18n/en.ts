@@ -4,6 +4,7 @@ const en: Dict = {
   appName: '2026 World Cup',
   appSub: 'United States · Canada · Mexico',
   appFullName: '2026 World Cup Open Source Companion',
+  byDev: 'By Amir Mohammad Safari',
   metaDesc:
     '2026 World Cup: schedule, groups, bracket, teams, venues, weather, where to watch, win probabilities and tournament forecast, in 23 languages. Unofficial open-source PWA',
   // nav

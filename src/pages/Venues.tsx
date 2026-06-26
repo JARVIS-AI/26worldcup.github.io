@@ -427,7 +427,7 @@ function VenueMap({
       <div className="vn-legend">
         {COUNTRIES.map((c) => (
           <button key={c} type="button" className="vn-leg" onClick={() => onCountry(c)}>
-            <span className="vn-dot" style={{ background: COUNTRY_COLOR[c] }} aria-hidden="true" />
+            <span className="vn-dot" style={{ '--dot-color': COUNTRY_COLOR[c] } as React.CSSProperties} aria-hidden="true" />
             <strong>{t(HOST_KEY[c])}</strong>
             <span className="muted small tnum">{t('matchesShown', { n: counts[c] })}</span>
           </button>
@@ -520,7 +520,7 @@ function VenueCard({ venue: v, matches }: { venue: Venue; matches: Match[] }) {
             <h3 className="vn-name">{v.realName}</h3>
             {fifa && fifa !== v.realName && <div className="vn-fifa muted small">{fifa}</div>}
           </div>
-          <span className="vn-dot lg" style={{ background: COUNTRY_COLOR[v.country] }} aria-hidden="true" />
+          <span className="vn-dot lg" style={{ '--dot-color': COUNTRY_COLOR[v.country] } as React.CSSProperties} aria-hidden="true" />
         </div>
 
         <div className="vn-city small muted">

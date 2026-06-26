@@ -41,12 +41,20 @@ function TitleManager() {
 
   useEffect(() => {
     const brand = t('appFullName')
+    const byDev = t('byDev')                 // 👈 translated credit
+    const brandWithDev = `${brand} ${byDev}` // 👈 space between brand and credit
+
     const [seg, param] = pathname.split('/').filter(Boolean)
     let label = seg ? t(TITLE_KEY[seg] ?? '') : ''
     if (seg === 'team' && param && data?.teams[param.toUpperCase()]) {
       label = pick(data.teams[param.toUpperCase()].name, param.toUpperCase())
     }
-    document.title = label && label !== TITLE_KEY[seg] ? `${label} - ${brand}` : brand
+    
+    // Use brandWithDev in both cases
+    document.title = label && label !== TITLE_KEY[seg]
+      ? `${label} - ${brandWithDev}`          // e.g. "Groups - World Cup 2026 By Amir Mohammad Safari"
+      : brandWithDev                          // e.g. "World Cup 2026 By Amir Mohammad Safari"
+
     document.querySelector('meta[name="description"]')?.setAttribute('content', t('metaDesc'))
   }, [pathname, data, t, pick])
 
