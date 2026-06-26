@@ -3892,7 +3892,7 @@
    "date": "2026-06-26T02:00:00Z",
    "venueId": "400017978",
    "status": "live",
-   "time": "47'",
+   "time": "61'",
    "home": {
     "code": "TUR",
     "score": 2,
@@ -3900,31 +3900,31 @@
    },
    "away": {
     "code": "USA",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "D4",
    "phB": "D1",
    "winner": null,
-   "attendance": null,
+   "attendance": 70492,
    "officials": [
     {
      "id": "375306",
      "country": "ALG",
      "role": "referee",
      "name": {
-      "en": "Mustapha GHORBAL",
-      "fr": "Mustapha GHORBAL",
-      "zh": "Mustapha GHORBAL",
-      "ar": "Mustapha GHORBAL",
-      "es": "Mustapha GHORBAL",
-      "de": "Mustapha GHORBAL",
-      "pt": "Mustapha GHORBAL",
-      "it": "Mustapha GHORBAL",
-      "ja": "Mustapha GHORBAL",
-      "ko": "Mustapha GHORBAL",
-      "id": "Mustapha GHORBAL",
-      "ru": "Mustapha GHORBAL"
+      "en": "M. Ghorbal",
+      "fr": "M. Ghorbal",
+      "zh": "戈巴勒",
+      "ar": "M. Ghorbal",
+      "es": "M. Ghorbal",
+      "de": "M. Ghorbal",
+      "pt": "M. Ghorbal",
+      "it": "M. Ghorbal",
+      "ja": "M. Ghorbal",
+      "ko": "M. Ghorbal",
+      "id": "M. Ghorbal",
+      "ru": "M. Ghorbal"
      },
      "typeName": {
       "en": "Referee",
@@ -3951,7 +3951,7 @@
    "date": "2026-06-26T02:00:00Z",
    "venueId": "400257521",
    "status": "live",
-   "time": "48'",
+   "time": "61'",
    "home": {
     "code": "PAR",
     "score": 0,
@@ -3965,25 +3965,25 @@
    "phA": "D2",
    "phB": "D3",
    "winner": null,
-   "attendance": null,
+   "attendance": 68827,
    "officials": [
     {
      "id": "314589",
      "country": "FRA",
      "role": "referee",
      "name": {
-      "en": "Clement TURPIN",
-      "fr": "Clement TURPIN",
-      "zh": "Clement TURPIN",
-      "ar": "Clement TURPIN",
-      "es": "Clement TURPIN",
-      "de": "Clement TURPIN",
-      "pt": "Clement TURPIN",
-      "it": "Clement TURPIN",
-      "ja": "Clement TURPIN",
-      "ko": "Clement TURPIN",
-      "id": "Clement TURPIN",
-      "ru": "Clement TURPIN"
+      "en": "C. Turpin",
+      "fr": "C. Turpin",
+      "zh": "蒂尔潘",
+      "ar": "ك. توربان",
+      "es": "C. Turpin",
+      "de": "C. Turpin",
+      "pt": "C. Turpin",
+      "it": "C. Turpin",
+      "ja": "C. Turpin",
+      "ko": "C. Turpin",
+      "id": "C. Turpin",
+      "ru": "C. Turpin"
      },
      "typeName": {
       "en": "Referee",
