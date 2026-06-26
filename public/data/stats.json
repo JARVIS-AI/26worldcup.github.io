@@ -25,6 +25,14 @@
    "ownGoals": 0
   },
   {
+   "id": "398680",
+   "name": "Ousmane DEMBELE",
+   "code": "FRA",
+   "no": 7,
+   "goals": 4,
+   "ownGoals": 0
+  },
+  {
    "id": "405742",
    "name": "VINICIUS JUNIOR",
    "code": "BRA",
@@ -77,14 +85,6 @@
    "name": "MATHEUS CUNHA",
    "code": "BRA",
    "no": 9,
-   "goals": 3,
-   "ownGoals": 0
-  },
-  {
-   "id": "398680",
-   "name": "Ousmane DEMBELE",
-   "code": "FRA",
-   "no": 7,
    "goals": 3,
    "ownGoals": 0
   },
