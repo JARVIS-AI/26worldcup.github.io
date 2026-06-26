@@ -3774,7 +3774,7 @@
    "date": "2026-06-25T23:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": null,
+   "time": "55'",
    "home": {
     "code": "JPN",
     "score": 0,
@@ -3833,10 +3833,10 @@
    "date": "2026-06-25T23:00:00Z",
    "venueId": "400254717",
    "status": "live",
-   "time": null,
+   "time": "56'",
    "home": {
     "code": "TUN",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
