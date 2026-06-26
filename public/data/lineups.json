@@ -13090,7 +13090,7 @@
  },
  "400021459": {
   "home": {
-   "tactics": "4-2-3-1",
+   "tactics": "3-4-3",
    "xi": [
     {
      "id": "441181",
@@ -13679,14 +13679,20 @@
      "player": "390272",
      "minute": "3'",
      "type": 2,
-     "period": 3,
-     "sec": 135
+     "period": 3
     }
    ],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "499912",
+     "minute": "19'",
+     "card": 1,
+     "period": 3
+    }
+   ],
    "substitutions": []
   },
-  "matchTime": "15'",
+  "matchTime": "29'",
   "period": 3,
   "final": false,
   "secTried": true
@@ -14951,7 +14957,7 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "15'",
+  "matchTime": "29'",
   "period": 3,
   "final": false,
   "secTried": true
