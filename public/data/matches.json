@@ -4312,7 +4312,7 @@
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400249385",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "CPV",
     "score": null,
@@ -4371,7 +4371,7 @@
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400252150",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "URU",
     "score": null,
