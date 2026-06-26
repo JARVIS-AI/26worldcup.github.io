@@ -4076,7 +4076,7 @@
    "date": "2026-06-26T19:00:00Z",
    "venueId": "400248623",
    "status": "live",
-   "time": "48'",
+   "time": "59'",
    "home": {
     "code": "NOR",
     "score": 1,
@@ -4090,7 +4090,7 @@
    "phA": "I4",
    "phB": "I1",
    "winner": null,
-   "attendance": null,
+   "attendance": 64146,
    "officials": [
     {
      "id": "347710",
@@ -4135,10 +4135,10 @@
    "date": "2026-06-26T19:00:00Z",
    "venueId": "400242032",
    "status": "live",
-   "time": null,
+   "time": "56'",
    "home": {
     "code": "SEN",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "away": {

@@ -65,6 +65,14 @@
    "ownGoals": 0
   },
   {
+   "id": "401889",
+   "name": "Ismaila SARR",
+   "code": "SEN",
+   "no": 18,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "502727",
    "name": "Johan MANZAMBI",
    "code": "SUI",
@@ -181,14 +189,6 @@
    "name": "Harry KANE",
    "code": "ENG",
    "no": 9,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "401889",
-   "name": "Ismaila SARR",
-   "code": "SEN",
-   "no": 18,
    "goals": 2,
    "ownGoals": 0
   },
