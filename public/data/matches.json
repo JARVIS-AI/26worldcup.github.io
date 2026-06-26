@@ -3795,18 +3795,18 @@
      "country": "SLV",
      "role": "referee",
      "name": {
-      "en": "I. Barton",
-      "fr": "I. Barton",
-      "zh": "巴顿",
-      "ar": "I. Barton",
-      "es": "I. Barton",
-      "de": "I. Barton",
-      "pt": "I. Barton",
-      "it": "I. Barton",
-      "ja": "I. Barton",
-      "ko": "I. Barton",
-      "id": "I. Barton",
-      "ru": "I. Barton"
+      "en": "Ivan BARTON",
+      "fr": "Ivan BARTON",
+      "zh": "Ivan BARTON",
+      "ar": "Ivan BARTON",
+      "es": "Ivan BARTON",
+      "de": "Ivan BARTON",
+      "pt": "Ivan BARTON",
+      "it": "Ivan BARTON",
+      "ja": "Ivan BARTON",
+      "ko": "Ivan BARTON",
+      "id": "Ivan BARTON",
+      "ru": "Ivan BARTON"
      },
      "typeName": {
       "en": "Referee",
@@ -3821,6 +3821,39 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "408591",
+     "country": "MTN",
+     "role": "fourth",
+     "name": {
+      "en": "Dahane BEIDA",
+      "fr": "Dahane BEIDA",
+      "zh": "Dahane BEIDA",
+      "ar": "Dahane BEIDA",
+      "es": "Dahane BEIDA",
+      "de": "Dahane BEIDA",
+      "pt": "Dahane BEIDA",
+      "it": "Dahane BEIDA",
+      "ja": "Dahane BEIDA",
+      "ko": "Dahane BEIDA",
+      "id": "Dahane BEIDA",
+      "ru": "Dahane BEIDA"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
      }
     }
    ]
@@ -3854,18 +3887,18 @@
      "country": "MEX",
      "role": "referee",
      "name": {
-      "en": "K. Garcia",
-      "fr": "K. Garcia",
-      "zh": "加西亚",
-      "ar": "K. Garcia",
-      "es": "K. Garcia",
-      "de": "K. Garcia",
-      "pt": "K. Garcia",
-      "it": "K. Garcia",
-      "ja": "K. Garcia",
-      "ko": "K. Garcia",
-      "id": "K. Garcia",
-      "ru": "K. Garcia"
+      "en": "Katia GARCIA",
+      "fr": "Katia GARCIA",
+      "zh": "Katia GARCIA",
+      "ar": "Katia GARCIA",
+      "es": "Katia GARCIA",
+      "de": "Katia GARCIA",
+      "pt": "Katia GARCIA",
+      "it": "Katia GARCIA",
+      "ja": "Katia GARCIA",
+      "ko": "Katia GARCIA",
+      "id": "Katia GARCIA",
+      "ru": "Katia GARCIA"
      },
      "typeName": {
       "en": "Referee",
@@ -3880,6 +3913,39 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "416159",
+     "country": "PAR",
+     "role": "fourth",
+     "name": {
+      "en": "Juan Gabriel BENITEZ",
+      "fr": "Juan Gabriel BENITEZ",
+      "zh": "Juan Gabriel BENITEZ",
+      "ar": "Juan Gabriel BENITEZ",
+      "es": "Juan Gabriel BENITEZ",
+      "de": "Juan Gabriel BENITEZ",
+      "pt": "Juan Gabriel BENITEZ",
+      "it": "Juan Gabriel BENITEZ",
+      "ja": "Juan Gabriel BENITEZ",
+      "ko": "Juan Gabriel BENITEZ",
+      "id": "Juan Gabriel BENITEZ",
+      "ru": "Juan Gabriel BENITEZ"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
      }
     }
    ]
@@ -3906,25 +3972,25 @@
    "phA": "D4",
    "phB": "D1",
    "winner": "TUR",
-   "attendance": 70492,
+   "attendance": null,
    "officials": [
     {
      "id": "375306",
      "country": "ALG",
      "role": "referee",
      "name": {
-      "en": "M. Ghorbal",
-      "fr": "M. Ghorbal",
-      "zh": "戈巴勒",
-      "ar": "M. Ghorbal",
-      "es": "M. Ghorbal",
-      "de": "M. Ghorbal",
-      "pt": "M. Ghorbal",
-      "it": "M. Ghorbal",
-      "ja": "M. Ghorbal",
-      "ko": "M. Ghorbal",
-      "id": "M. Ghorbal",
-      "ru": "M. Ghorbal"
+      "en": "Mustapha GHORBAL",
+      "fr": "Mustapha GHORBAL",
+      "zh": "Mustapha GHORBAL",
+      "ar": "Mustapha GHORBAL",
+      "es": "Mustapha GHORBAL",
+      "de": "Mustapha GHORBAL",
+      "pt": "Mustapha GHORBAL",
+      "it": "Mustapha GHORBAL",
+      "ja": "Mustapha GHORBAL",
+      "ko": "Mustapha GHORBAL",
+      "id": "Mustapha GHORBAL",
+      "ru": "Mustapha GHORBAL"
      },
      "typeName": {
       "en": "Referee",
@@ -3972,18 +4038,18 @@
      "country": "FRA",
      "role": "referee",
      "name": {
-      "en": "C. Turpin",
-      "fr": "C. Turpin",
-      "zh": "蒂尔潘",
-      "ar": "ك. توربان",
-      "es": "C. Turpin",
-      "de": "C. Turpin",
-      "pt": "C. Turpin",
-      "it": "C. Turpin",
-      "ja": "C. Turpin",
-      "ko": "C. Turpin",
-      "id": "C. Turpin",
-      "ru": "C. Turpin"
+      "en": "Clement TURPIN",
+      "fr": "Clement TURPIN",
+      "zh": "Clement TURPIN",
+      "ar": "Clement TURPIN",
+      "es": "Clement TURPIN",
+      "de": "Clement TURPIN",
+      "pt": "Clement TURPIN",
+      "it": "Clement TURPIN",
+      "ja": "Clement TURPIN",
+      "ko": "Clement TURPIN",
+      "id": "Clement TURPIN",
+      "ru": "Clement TURPIN"
      },
      "typeName": {
       "en": "Referee",
@@ -4010,7 +4076,7 @@
    "date": "2026-06-26T19:00:00Z",
    "venueId": "400248623",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "NOR",
     "score": null,
@@ -4058,39 +4124,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "328495",
-     "country": "CHN",
-     "role": "fourth",
-     "name": {
-      "en": "MA Ning",
-      "fr": "MA Ning",
-      "zh": "MA Ning",
-      "ar": "MA Ning",
-      "es": "MA Ning",
-      "de": "MA Ning",
-      "pt": "MA Ning",
-      "it": "MA Ning",
-      "ja": "MA Ning",
-      "ko": "MA Ning",
-      "id": "MA Ning",
-      "ru": "MA Ning"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -4102,7 +4135,7 @@
    "date": "2026-06-26T19:00:00Z",
    "venueId": "400242032",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "SEN",
     "score": null,
@@ -4898,7 +4931,74 @@
    "phB": "2B",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "392268",
+     "country": "POR",
+     "role": "referee",
+     "name": {
+      "en": "Joao PINHEIRO",
+      "fr": "Joao PINHEIRO",
+      "zh": "Joao PINHEIRO",
+      "ar": "Joao PINHEIRO",
+      "es": "Joao PINHEIRO",
+      "de": "Joao PINHEIRO",
+      "pt": "Joao PINHEIRO",
+      "it": "Joao PINHEIRO",
+      "ja": "Joao PINHEIRO",
+      "ko": "Joao PINHEIRO",
+      "id": "Joao PINHEIRO",
+      "ru": "Joao PINHEIRO"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "383421",
+     "country": "UAE",
+     "role": "fourth",
+     "name": {
+      "en": "Omar ALALI",
+      "fr": "Omar ALALI",
+      "zh": "Omar ALALI",
+      "ar": "Omar ALALI",
+      "es": "Omar ALALI",
+      "de": "Omar ALALI",
+      "pt": "Omar ALALI",
+      "it": "Omar ALALI",
+      "ja": "Omar ALALI",
+      "ko": "Omar ALALI",
+      "id": "Omar ALALI",
+      "ru": "Omar ALALI"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021513",
@@ -5191,7 +5291,11 @@
    "venueId": "400257526",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "AUS",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "2D",
    "phB": "2G",
