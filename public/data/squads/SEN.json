@@ -326,7 +326,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Pape_Gueye",
    "wcApps": 3,
    "wcGoals": 2,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -342,7 +342,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Como_1907",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Assane_Diao",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -433,7 +433,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Iliman_Ndiaye",
    "wcApps": 2,
-   "wcGoals": 0,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },

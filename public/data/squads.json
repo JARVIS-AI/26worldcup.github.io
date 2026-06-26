@@ -15370,7 +15370,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Malo_Gusto",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15766,7 +15766,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jean-Philippe_Mateta",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -16066,7 +16066,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Amir_Al-Ammari",
     "wcApps": 3,
     "wcGoals": 0,
-    "wcYellow": 1,
+    "wcYellow": 2,
     "wcRed": 0
    },
    {
@@ -16614,7 +16614,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/RB_Leipzig",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Antonio_Nusa",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -16668,7 +16668,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FK_Bod%C3%B8%2FGlimt",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jens_Petter_Hauge",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17058,7 +17058,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Pape_Gueye",
     "wcApps": 3,
     "wcGoals": 2,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -17074,7 +17074,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Como_1907",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Assane_Diao",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17165,7 +17165,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Iliman_Ndiaye",
     "wcApps": 2,
-    "wcGoals": 0,
+    "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
    },
