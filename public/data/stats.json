@@ -81,6 +81,14 @@
    "ownGoals": 0
   },
   {
+   "id": "441137",
+   "name": "Anthony ELANGA",
+   "code": "SWE",
+   "no": 11,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "430413",
    "name": "Ayase UEDA",
    "code": "JPN",
@@ -309,14 +317,6 @@
    "name": "Amine GOUIRI",
    "code": "ALG",
    "no": 9,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "430070",
-   "name": "Ante BUDIMIR",
-   "code": "CRO",
-   "no": 11,
    "goals": 1,
    "ownGoals": 0
   }
