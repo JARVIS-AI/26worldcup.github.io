@@ -4194,7 +4194,7 @@
    "date": "2026-06-27T03:00:00Z",
    "venueId": "400216606",
    "status": "live",
-   "time": "90'+4'",
+   "time": "90'+6'",
    "home": {
     "code": "EGY",
     "score": 1,
@@ -4202,7 +4202,7 @@
    },
    "away": {
     "code": "IRN",
-    "score": 2,
+    "score": 1,
     "pen": null
    },
    "phA": "G2",
@@ -5197,7 +5197,11 @@
    "venueId": "400216606",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "BEL",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "1G",
    "phB": "3AEHIJ",

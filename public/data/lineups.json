@@ -27464,13 +27464,6 @@
      "type": 2,
      "period": 3,
      "sec": 794
-    },
-    {
-     "player": "346743",
-     "minute": "90'+3'",
-     "type": 2,
-     "period": 5,
-     "sec": 2838
     }
    ],
    "bookings": [
@@ -27520,7 +27513,7 @@
     }
    ]
   },
-  "matchTime": "90'+4'",
+  "matchTime": "90'+7'",
   "period": 5,
   "final": false,
   "secTried": true
