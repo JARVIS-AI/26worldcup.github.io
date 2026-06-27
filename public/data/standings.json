@@ -406,51 +406,49 @@
   "L": [
    {
     "code": "ENG",
-    "p": 2,
-    "w": 1,
+    "p": 3,
+    "w": 2,
     "d": 1,
     "l": 0,
-    "gf": 4,
+    "gf": 6,
     "ga": 2,
-    "gd": 2,
-    "pts": 4,
-    "rank": 1,
-    "clinched": true
-   },
-   {
-    "code": "GHA",
-    "p": 2,
-    "w": 1,
-    "d": 1,
-    "l": 0,
-    "gf": 1,
-    "ga": 0,
-    "gd": 1,
-    "pts": 4,
-    "rank": 2,
-    "clinched": true
+    "gd": 4,
+    "pts": 7,
+    "rank": 1
    },
    {
     "code": "CRO",
-    "p": 2,
-    "w": 1,
+    "p": 3,
+    "w": 2,
     "d": 0,
     "l": 1,
-    "gf": 3,
-    "ga": 4,
-    "gd": -1,
-    "pts": 3,
+    "gf": 5,
+    "ga": 5,
+    "gd": 0,
+    "pts": 6,
+    "rank": 2
+   },
+   {
+    "code": "GHA",
+    "p": 3,
+    "w": 1,
+    "d": 1,
+    "l": 1,
+    "gf": 2,
+    "ga": 2,
+    "gd": 0,
+    "pts": 4,
     "rank": 3
    },
    {
     "code": "PAN",
-    "p": 2,
+    "p": 3,
     "w": 0,
     "d": 0,
-    "l": 2,
+    "l": 3,
     "gf": 0,
-    "ga": 2,
-    "gd": -2,
+    "ga": 4,
+    "gd": -4,
     "pts": 0,
     "rank": 4
    }
@@ -623,6 +621,21 @@
    "qualifies": true
   },
   {
+   "group": "L",
+   "code": "GHA",
+   "p": 3,
+   "w": 1,
+   "d": 1,
+   "l": 1,
+   "gf": 2,
+   "ga": 2,
+   "gd": 0,
+   "pts": 4,
+   "rank": 3,
+   "thirdRank": 2,
+   "qualifies": true
+  },
+  {
    "group": "E",
    "code": "ECU",
    "p": 3,
@@ -634,7 +647,7 @@
    "gd": 0,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 2,
+   "thirdRank": 3,
    "qualifies": true
   },
   {
@@ -649,7 +662,7 @@
    "gd": -1,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 3,
+   "thirdRank": 4,
    "qualifies": true
   },
   {
@@ -664,7 +677,7 @@
    "gd": -2,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 4,
+   "thirdRank": 5,
    "qualifies": true
   },
   {
@@ -679,7 +692,7 @@
    "gd": 2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 5,
+   "thirdRank": 6,
    "qualifies": true
   },
   {
@@ -692,21 +705,6 @@
    "gf": 3,
    "ga": 3,
    "gd": 0,
-   "pts": 3,
-   "rank": 3,
-   "thirdRank": 6,
-   "qualifies": null
-  },
-  {
-   "group": "L",
-   "code": "CRO",
-   "p": 2,
-   "w": 1,
-   "d": 0,
-   "l": 1,
-   "gf": 3,
-   "ga": 4,
-   "gd": -1,
    "pts": 3,
    "rank": 3,
    "thirdRank": 7,
@@ -755,7 +753,7 @@
    "pts": 3,
    "rank": 3,
    "thirdRank": 10,
-   "qualifies": null
+   "qualifies": false
   },
   {
    "group": "H",
@@ -797,7 +795,7 @@
   "E": true,
   "K": false,
   "H": true,
-  "L": false,
+  "L": true,
   "A": true,
   "I": true,
   "F": true

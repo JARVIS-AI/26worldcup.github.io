@@ -4495,8 +4495,8 @@
    "group": "L",
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400257536",
-   "status": "live",
-   "time": "90'+4'",
+   "status": "finished",
+   "time": "98'",
    "home": {
     "code": "PAN",
     "score": 0,
@@ -4509,7 +4509,7 @@
    },
    "phA": "L4",
    "phB": "L1",
-   "winner": null,
+   "winner": "ENG",
    "attendance": 80663,
    "officials": [
     {
@@ -4554,8 +4554,8 @@
    "group": "L",
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400248622",
-   "status": "live",
-   "time": "90'+2'",
+   "status": "finished",
+   "time": "98'",
    "home": {
     "code": "CRO",
     "score": 2,
@@ -4568,7 +4568,7 @@
    },
    "phA": "L2",
    "phB": "L3",
-   "winner": null,
+   "winner": "CRO",
    "attendance": 68324,
    "officials": [
     {
@@ -5139,7 +5139,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "ECU",
+    "score": null,
+    "pen": null
+   },
    "phA": "1A",
    "phB": "3CEFHI",
    "winner": null,
@@ -5155,7 +5159,11 @@
    "venueId": "400098290",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "ENG",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "1L",
    "phB": "3EHIJK",
@@ -5219,7 +5227,11 @@
    "status": "scheduled",
    "time": null,
    "home": null,
-   "away": null,
+   "away": {
+    "code": "CRO",
+    "score": null,
+    "pen": null
+   },
    "phA": "2K",
    "phB": "2L",
    "winner": null,
@@ -5303,7 +5315,11 @@
    "status": "scheduled",
    "time": null,
    "home": null,
-   "away": null,
+   "away": {
+    "code": "GHA",
+    "score": null,
+    "pen": null
+   },
    "phA": "1K",
    "phB": "3DEIJL",
    "winner": null,
