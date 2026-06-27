@@ -3,6 +3,8 @@
 # (Bot pushes made with GITHUB_TOKEN do not trigger deploy.yml, so this
 # workflow carries its own deploy job.)
 name: Update World Cup data
+env:
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 on:
   schedule:
