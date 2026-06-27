@@ -115,26 +115,26 @@
    },
    {
     "code": "EGY",
-    "p": 2,
+    "p": 3,
     "w": 1,
-    "d": 1,
+    "d": 2,
     "l": 0,
-    "gf": 4,
-    "ga": 2,
+    "gf": 5,
+    "ga": 3,
     "gd": 2,
-    "pts": 4,
+    "pts": 5,
     "rank": 2
    },
    {
     "code": "IRN",
-    "p": 2,
+    "p": 3,
     "w": 0,
-    "d": 2,
+    "d": 3,
     "l": 0,
-    "gf": 2,
-    "ga": 2,
+    "gf": 3,
+    "ga": 3,
     "gd": 0,
-    "pts": 2,
+    "pts": 3,
     "rank": 3
    },
    {
@@ -678,6 +678,21 @@
    "qualifies": null
   },
   {
+   "group": "G",
+   "code": "IRN",
+   "p": 3,
+   "w": 0,
+   "d": 3,
+   "l": 0,
+   "gf": 3,
+   "ga": 3,
+   "gd": 0,
+   "pts": 3,
+   "rank": 3,
+   "thirdRank": 6,
+   "qualifies": null
+  },
+  {
    "group": "L",
    "code": "CRO",
    "p": 2,
@@ -689,7 +704,7 @@
    "gd": -1,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 6,
+   "thirdRank": 7,
    "qualifies": null
   },
   {
@@ -704,7 +719,7 @@
    "gd": -1,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 7,
+   "thirdRank": 8,
    "qualifies": null
   },
   {
@@ -719,7 +734,7 @@
    "gd": -2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 8,
+   "thirdRank": 9,
    "qualifies": null
   },
   {
@@ -733,21 +748,6 @@
    "ga": 4,
    "gd": -3,
    "pts": 3,
-   "rank": 3,
-   "thirdRank": 9,
-   "qualifies": null
-  },
-  {
-   "group": "G",
-   "code": "IRN",
-   "p": 2,
-   "w": 0,
-   "d": 2,
-   "l": 0,
-   "gf": 2,
-   "ga": 2,
-   "gd": 0,
-   "pts": 2,
    "rank": 3,
    "thirdRank": 10,
    "qualifies": null
@@ -786,7 +786,7 @@
  "complete": {
   "J": false,
   "D": true,
-  "G": false,
+  "G": true,
   "B": true,
   "C": true,
   "E": true,
