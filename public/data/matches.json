@@ -4495,16 +4495,16 @@
    "group": "L",
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400257536",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "2'",
    "home": {
     "code": "PAN",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "ENG",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "L4",
@@ -4554,16 +4554,16 @@
    "group": "L",
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400248622",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "2'",
    "home": {
     "code": "CRO",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "GHA",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "L2",
