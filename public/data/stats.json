@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 163,
+  "yellow": 165,
   "red": 10,
   "players": [
    {
@@ -453,6 +453,14 @@
     "r": 0
    },
    {
+    "id": "433469",
+    "name": "MOHANAD LASHIN",
+    "code": "EGY",
+    "no": 17,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "371736",
     "name": "Saeid EZATOLAHI",
     "code": "IRN",
@@ -475,18 +483,10 @@
     "no": 4,
     "y": 2,
     "r": 0
-   },
-   {
-    "id": "442428",
-    "name": "Aaron HICKEY",
-    "code": "SCO",
-    "no": 2,
-    "y": 1,
-    "r": 0
    }
   ]
  },
- "attAvg": 64020,
+ "attAvg": 63840,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -534,7 +534,7 @@
    "ESP": -2,
    "CPV": -4,
    "IRN": -2,
-   "NZL": -2,
+   "NZL": -4,
    "BEL": -7,
    "EGY": -3,
    "FRA": -1,
@@ -584,7 +584,7 @@
    "ESP": -2,
    "CPV": -4,
    "IRN": -2,
-   "NZL": -2,
+   "NZL": -4,
    "BEL": -7,
    "EGY": -3,
    "FRA": -1,
@@ -618,21 +618,6 @@
        "400021461"
       ],
       "banned": "400021513"
-     }
-    ]
-   }
-  ],
-  "BEL": [
-   {
-    "id": "514166",
-    "name": "Nathan NGOY",
-    "bans": [
-     {
-      "type": "red",
-      "due": [
-       "400021477"
-      ],
-      "banned": "400021481"
      }
     ]
    }
