@@ -193,6 +193,14 @@
    "ownGoals": 0
   },
   {
+   "id": "448202",
+   "name": "Jude BELLINGHAM",
+   "code": "ENG",
+   "no": 10,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "429157",
    "name": "Julian QUINONES",
    "code": "MEX",
@@ -311,18 +319,10 @@
    "no": 15,
    "goals": 1,
    "ownGoals": 0
-  },
-  {
-   "id": "464542",
-   "name": "Alex FREEMAN",
-   "code": "USA",
-   "no": 16,
-   "goals": 1,
-   "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 165,
+  "yellow": 167,
   "red": 10,
   "players": [
    {

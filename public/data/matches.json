@@ -4496,7 +4496,7 @@
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400257536",
    "status": "live",
-   "time": "53'",
+   "time": "67'",
    "home": {
     "code": "PAN",
     "score": 0,
@@ -4504,13 +4504,13 @@
    },
    "away": {
     "code": "ENG",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "L4",
    "phB": "L1",
    "winner": null,
-   "attendance": null,
+   "attendance": 80663,
    "officials": [
     {
      "id": "361083",
@@ -4555,7 +4555,7 @@
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400248622",
    "status": "live",
-   "time": "50'",
+   "time": "64'",
    "home": {
     "code": "CRO",
     "score": 1,
@@ -4569,7 +4569,7 @@
    "phA": "L2",
    "phB": "L3",
    "winner": null,
-   "attendance": null,
+   "attendance": 68324,
    "officials": [
     {
      "id": "372930",
