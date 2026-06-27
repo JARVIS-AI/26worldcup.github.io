@@ -4193,22 +4193,22 @@
    "group": "G",
    "date": "2026-06-27T03:00:00Z",
    "venueId": "400216606",
-   "status": "scheduled",
-   "time": null,
+   "status": "live",
+   "time": "86'",
    "home": {
     "code": "EGY",
-    "score": null,
+    "score": 1,
     "pen": null
    },
    "away": {
     "code": "IRN",
-    "score": null,
+    "score": 1,
     "pen": null
    },
    "phA": "G2",
    "phB": "G3",
    "winner": null,
-   "attendance": null,
+   "attendance": 66925,
    "officials": [
     {
      "id": "327975",
@@ -4252,22 +4252,22 @@
    "group": "G",
    "date": "2026-06-27T03:00:00Z",
    "venueId": "400248370",
-   "status": "scheduled",
-   "time": null,
+   "status": "live",
+   "time": "88'",
    "home": {
     "code": "NZL",
-    "score": null,
+    "score": 1,
     "pen": null
    },
    "away": {
     "code": "BEL",
-    "score": null,
+    "score": 4,
     "pen": null
    },
    "phA": "G4",
    "phB": "G1",
    "winner": null,
-   "attendance": null,
+   "attendance": 52497,
    "officials": [
     {
      "id": "361034",

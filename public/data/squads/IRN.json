@@ -72,7 +72,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Esteghlal_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Saleh_Hardani",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -146,7 +146,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Hossein_Kanaanizadegan",
    "wcApps": 2,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -182,7 +182,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Ali_Nemati",
    "wcApps": 3,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -199,7 +199,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ramin_Rezaeian",
    "wcApps": 3,
-   "wcGoals": 1,
+   "wcGoals": 2,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -236,7 +236,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Saeid_Ezatolahi",
    "wcApps": 3,
    "wcGoals": 0,
-   "wcYellow": 1,
+   "wcYellow": 2,
    "wcRed": 0
   },
   {
@@ -450,7 +450,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Kalba_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Shahriyar_Moghanlou",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

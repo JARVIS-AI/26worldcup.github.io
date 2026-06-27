@@ -57,6 +57,14 @@
    "ownGoals": 0
   },
   {
+   "id": "405454",
+   "name": "Elijah JUST",
+   "code": "NZL",
+   "no": 11,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "448598",
    "name": "Ismael SAIBARI",
    "code": "MAR",
@@ -161,14 +169,6 @@
    "ownGoals": 0
   },
   {
-   "id": "405454",
-   "name": "Elijah JUST",
-   "code": "NZL",
-   "no": 11,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
    "id": "522846",
    "name": "Ermin MAHMIC",
    "code": "BIH",
@@ -209,6 +209,14 @@
    "ownGoals": 0
   },
   {
+   "id": "448355",
+   "name": "Leandro TROSSARD",
+   "code": "BEL",
+   "no": 10,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "419100",
    "name": "Maxi ARAUJO",
    "code": "URU",
@@ -237,6 +245,14 @@
    "name": "Pape GUEYE",
    "code": "SEN",
    "no": 26,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
+   "id": "384797",
+   "name": "Ramin REZAEIAN",
+   "code": "IRN",
+   "no": 23,
    "goals": 2,
    "ownGoals": 0
   },
@@ -303,26 +319,10 @@
    "no": 16,
    "goals": 1,
    "ownGoals": 0
-  },
-  {
-   "id": "430150",
-   "name": "Alexander ISAK",
-   "code": "SWE",
-   "no": 9,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "431212",
-   "name": "ALI OLWAN",
-   "code": "JOR",
-   "no": 9,
-   "goals": 1,
-   "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 156,
+  "yellow": 163,
   "red": 10,
   "players": [
    {
@@ -453,6 +453,14 @@
     "r": 0
    },
    {
+    "id": "371736",
+    "name": "Saeid EZATOLAHI",
+    "code": "IRN",
+    "no": 6,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "477832",
     "name": "SIDNY LOPES CABRAL",
     "code": "CPV",
@@ -473,14 +481,6 @@
     "name": "Aaron HICKEY",
     "code": "SCO",
     "no": 2,
-    "y": 1,
-    "r": 0
-   },
-   {
-    "id": "370171",
-    "name": "Abdoulaye SECK",
-    "code": "SEN",
-    "no": 4,
     "y": 1,
     "r": 0
    }

@@ -90,7 +90,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Auckland_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Francis_de_Vries",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -126,7 +126,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Minnesota_United_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Michael_Boxall",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -254,7 +254,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Marko_Stameni%C4%87",
    "wcApps": 3,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -289,8 +289,8 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Elijah_Just",
    "wcApps": 3,
-   "wcGoals": 2,
-   "wcYellow": 0,
+   "wcGoals": 3,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -324,7 +324,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/AS_Saint-%C3%89tienne",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ben_Old",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -342,7 +342,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Silkeborg_IF",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Callum_McCowatt",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -468,7 +468,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Auckland_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jesse_Randall",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
