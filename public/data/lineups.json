@@ -29554,7 +29554,7 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "23'",
+  "matchTime": "36'",
   "period": 3,
   "final": false,
   "secTried": true
@@ -30142,9 +30142,16 @@
      "period": 3
     }
    ],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "403335",
+     "on": "433439",
+     "minute": "33'",
+     "period": 3
+    }
+   ]
   },
-  "matchTime": "23'",
+  "matchTime": "36'",
   "period": 3,
   "final": false,
   "secTried": true
