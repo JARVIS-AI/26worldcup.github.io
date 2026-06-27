@@ -4797,16 +4797,16 @@
    "group": "K",
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400257525",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "2'",
    "home": {
     "code": "COL",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "POR",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "K4",
@@ -4856,16 +4856,16 @@
    "group": "K",
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400098290",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "3'",
    "home": {
     "code": "COD",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "UZB",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "K2",
