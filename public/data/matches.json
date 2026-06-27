@@ -4312,7 +4312,7 @@
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400249385",
    "status": "live",
-   "time": "29'",
+   "time": "45'",
    "home": {
     "code": "CPV",
     "score": 0,
@@ -4371,7 +4371,7 @@
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400252150",
    "status": "live",
-   "time": "31'",
+   "time": "45'",
    "home": {
     "code": "URU",
     "score": 0,
@@ -4379,7 +4379,7 @@
    },
    "away": {
     "code": "ESP",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "H4",
