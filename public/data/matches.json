@@ -3972,7 +3972,7 @@
    "phA": "D4",
    "phB": "D1",
    "winner": "TUR",
-   "attendance": null,
+   "attendance": 70492,
    "officials": [
     {
      "id": "375306",
@@ -4005,6 +4005,39 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "383421",
+     "country": "UAE",
+     "role": "fourth",
+     "name": {
+      "en": "Omar ALALI",
+      "fr": "Omar ALALI",
+      "zh": "Omar ALALI",
+      "ar": "Omar ALALI",
+      "es": "Omar ALALI",
+      "de": "Omar ALALI",
+      "pt": "Omar ALALI",
+      "it": "Omar ALALI",
+      "ja": "Omar ALALI",
+      "ko": "Omar ALALI",
+      "id": "Omar ALALI",
+      "ru": "Omar ALALI"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
      }
     }
    ]
@@ -4123,6 +4156,39 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "328495",
+     "country": "CHN",
+     "role": "fourth",
+     "name": {
+      "en": "MA Ning",
+      "fr": "MA Ning",
+      "zh": "MA Ning",
+      "ar": "MA Ning",
+      "es": "MA Ning",
+      "de": "MA Ning",
+      "pt": "MA Ning",
+      "it": "MA Ning",
+      "ja": "MA Ning",
+      "ko": "MA Ning",
+      "id": "MA Ning",
+      "ru": "MA Ning"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
      }
     }
    ]
@@ -4430,7 +4496,7 @@
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400257536",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "PAN",
     "score": null,
@@ -4489,7 +4555,7 @@
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400248622",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "CRO",
     "score": null,
@@ -4548,7 +4614,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400254717",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "ALG",
     "score": null,
@@ -4640,7 +4706,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400257526",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "JOR",
     "score": null,
@@ -4732,7 +4798,7 @@
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400257525",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "COL",
     "score": null,
@@ -4824,7 +4890,7 @@
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400098290",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "COD",
     "score": null,
@@ -4916,7 +4982,7 @@
    "date": "2026-06-28T19:00:00Z",
    "venueId": "400017978",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "RSA",
     "score": null,
@@ -5008,7 +5074,7 @@
    "date": "2026-06-29T20:30:00Z",
    "venueId": "400248623",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "GER",
     "score": null,
@@ -5033,7 +5099,7 @@
    "date": "2026-06-30T01:00:00Z",
    "venueId": "400238450",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "NED",
     "score": null,
@@ -5058,7 +5124,7 @@
    "date": "2026-06-29T17:00:00Z",
    "venueId": "400249385",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "BRA",
     "score": null,
@@ -5083,7 +5149,7 @@
    "date": "2026-06-30T21:00:00Z",
    "venueId": "400257536",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "FRA",
     "score": null,
@@ -5108,7 +5174,7 @@
    "date": "2026-06-30T17:00:00Z",
    "venueId": "400257526",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "CIV",
     "score": null,
@@ -5171,7 +5237,7 @@
    "date": "2026-07-02T00:00:00Z",
    "venueId": "400257521",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "USA",
     "score": null,
@@ -5276,7 +5342,7 @@
    "date": "2026-07-03T22:00:00Z",
    "venueId": "400257525",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "ARG",
     "score": null,
@@ -5318,7 +5384,7 @@
    "date": "2026-07-03T18:00:00Z",
    "venueId": "400257526",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "AUS",
     "score": null,
