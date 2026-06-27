@@ -4311,16 +4311,16 @@
    "group": "H",
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400249385",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "4'",
    "home": {
     "code": "CPV",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "KSA",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "H2",
@@ -4370,16 +4370,16 @@
    "group": "H",
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400252150",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "4'",
    "home": {
     "code": "URU",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "ESP",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "H4",
