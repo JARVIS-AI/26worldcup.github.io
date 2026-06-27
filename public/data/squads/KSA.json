@@ -234,7 +234,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Al_Qadsiah_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Mohammed_Abu_Al-Shamat",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -254,7 +254,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Nasser_Al-Dawsari",
    "wcApps": 3,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -450,7 +450,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Al-Nassr_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Abdullah_Al-Hamdan",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
