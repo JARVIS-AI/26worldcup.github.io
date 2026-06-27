@@ -247,7 +247,7 @@ function TeamLabel({
     </>
   )
   return code ? (
-    <a href={`#/team/${code}`} aria-label={name} style={{ cursor: 'pointer' }}>
+    <a href={`#/team/${code}`} aria-label={name} style={{ cursor: 'pointer', direction: 'ltr' }}>
       {body}
     </a>
   ) : (
