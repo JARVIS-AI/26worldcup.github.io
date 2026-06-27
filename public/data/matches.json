@@ -4194,7 +4194,7 @@
    "date": "2026-06-27T03:00:00Z",
    "venueId": "400216606",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "EGY",
     "score": null,
@@ -4253,7 +4253,7 @@
    "date": "2026-06-27T03:00:00Z",
    "venueId": "400248370",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "NZL",
     "score": null,
@@ -4311,8 +4311,8 @@
    "group": "H",
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400249385",
-   "status": "live",
-   "time": "90'+1'",
+   "status": "finished",
+   "time": "96'",
    "home": {
     "code": "CPV",
     "score": 0,
@@ -4370,8 +4370,8 @@
    "group": "H",
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400252150",
-   "status": "live",
-   "time": "90'+1'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "URU",
     "score": 0,
@@ -4384,7 +4384,7 @@
    },
    "phA": "H4",
    "phB": "H1",
-   "winner": null,
+   "winner": "ESP",
    "attendance": 45065,
    "officials": [
     {
@@ -5014,7 +5014,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "PAR",
+    "score": null,
+    "pen": null
+   },
    "phA": "1E",
    "phB": "3ABCDF",
    "winner": null,
@@ -5085,7 +5089,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "SWE",
+    "score": null,
+    "pen": null
+   },
    "phA": "1I",
    "phB": "3CDFGH",
    "winner": null,
@@ -5223,7 +5231,11 @@
    "venueId": "400017978",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "ESP",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "1H",
    "phB": "2J",
@@ -5266,7 +5278,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "CPV",
+    "score": null,
+    "pen": null
+   },
    "phA": "1J",
    "phB": "2H",
    "winner": null,
