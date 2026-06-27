@@ -4496,7 +4496,7 @@
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400257536",
    "status": "live",
-   "time": null,
+   "time": "53'",
    "home": {
     "code": "PAN",
     "score": 0,
@@ -4555,7 +4555,7 @@
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400248622",
    "status": "live",
-   "time": null,
+   "time": "50'",
    "home": {
     "code": "CRO",
     "score": 1,
@@ -4798,7 +4798,7 @@
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400257525",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "COL",
     "score": null,
@@ -4846,39 +4846,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "400191",
-     "country": "HON",
-     "role": "fourth",
-     "name": {
-      "en": "Said MARTINEZ",
-      "fr": "Said MARTINEZ",
-      "zh": "Said MARTINEZ",
-      "ar": "Said MARTINEZ",
-      "es": "Said MARTINEZ",
-      "de": "Said MARTINEZ",
-      "pt": "Said MARTINEZ",
-      "it": "Said MARTINEZ",
-      "ja": "Said MARTINEZ",
-      "ko": "Said MARTINEZ",
-      "id": "Said MARTINEZ",
-      "ru": "Said MARTINEZ"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -4890,7 +4857,7 @@
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400098290",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "COD",
     "score": null,
@@ -4937,39 +4904,6 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
-     }
-    },
-    {
-     "id": "373845",
-     "country": "ESP",
-     "role": "fourth",
-     "name": {
-      "en": "Alejandro HERNANDEZ",
-      "fr": "Alejandro HERNANDEZ",
-      "zh": "Alejandro HERNANDEZ",
-      "ar": "Alejandro HERNANDEZ",
-      "es": "Alejandro HERNANDEZ",
-      "de": "Alejandro HERNANDEZ",
-      "pt": "Alejandro HERNANDEZ",
-      "it": "Alejandro HERNANDEZ",
-      "ja": "Alejandro HERNANDEZ",
-      "ko": "Alejandro HERNANDEZ",
-      "id": "Alejandro HERNANDEZ",
-      "ru": "Alejandro HERNANDEZ"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
      }
     }
    ]
