@@ -4312,7 +4312,7 @@
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400249385",
    "status": "live",
-   "time": "50'",
+   "time": "64'",
    "home": {
     "code": "CPV",
     "score": 0,
@@ -4326,7 +4326,7 @@
    "phA": "H2",
    "phB": "H3",
    "winner": null,
-   "attendance": null,
+   "attendance": 68278,
    "officials": [
     {
      "id": "399029",
@@ -4371,7 +4371,7 @@
    "date": "2026-06-27T00:00:00Z",
    "venueId": "400252150",
    "status": "live",
-   "time": "50'",
+   "time": "63'",
    "home": {
     "code": "URU",
     "score": 0,
@@ -4385,7 +4385,7 @@
    "phA": "H4",
    "phB": "H1",
    "winner": null,
-   "attendance": null,
+   "attendance": 45065,
    "officials": [
     {
      "id": "392406",
