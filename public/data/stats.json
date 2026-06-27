@@ -65,6 +65,14 @@
    "ownGoals": 0
   },
   {
+   "id": "369419",
+   "name": "Harry KANE",
+   "code": "ENG",
+   "no": 9,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "448598",
    "name": "Ismael SAIBARI",
    "code": "MAR",
@@ -181,14 +189,6 @@
    "name": "Folarin BALOGUN",
    "code": "USA",
    "no": 20,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "369419",
-   "name": "Harry KANE",
-   "code": "ENG",
-   "no": 9,
    "goals": 2,
    "ownGoals": 0
   },
@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 167,
+  "yellow": 168,
   "red": 10,
   "players": [
    {

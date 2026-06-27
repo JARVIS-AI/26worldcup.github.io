@@ -4496,7 +4496,7 @@
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400257536",
    "status": "live",
-   "time": "67'",
+   "time": "80'",
    "home": {
     "code": "PAN",
     "score": 0,
@@ -4504,7 +4504,7 @@
    },
    "away": {
     "code": "ENG",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "L4",
@@ -4555,7 +4555,7 @@
    "date": "2026-06-27T21:00:00Z",
    "venueId": "400248622",
    "status": "live",
-   "time": "64'",
+   "time": "78'",
    "home": {
     "code": "CRO",
     "score": 1,
@@ -4563,7 +4563,7 @@
    },
    "away": {
     "code": "GHA",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "L2",
