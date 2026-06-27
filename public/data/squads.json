@@ -21142,7 +21142,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jo%C5%A1ko_Gvardiol",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -21305,7 +21305,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nikola_Vla%C5%A1i%C4%87",
     "wcApps": 2,
-    "wcGoals": 0,
+    "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -21484,7 +21484,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Orlando_City_SC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Marco_Pa%C5%A1ali%C4%87",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -21800,7 +21800,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Brentford_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jordan_Henderson",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -21944,7 +21944,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Aston_Villa_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ollie_Watkins",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -22224,7 +22224,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Nordsj%C3%A6lland",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Caleb_Yirenkyi",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 1,
     "wcYellow": 1,
     "wcRed": 0
@@ -22648,7 +22648,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/C.D._Plaza_Amador",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Eric_Davis_(Panamanian_footballer)",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -22668,7 +22668,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Andr%C3%A9s_Andrade_(footballer%2C_born_1998)",
     "wcApps": 3,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -22828,7 +22828,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/C.D._Plaza_Amador",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Alberto_Quintero_(footballer)",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0

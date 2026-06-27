@@ -108,7 +108,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jo%C5%A1ko_Gvardiol",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -271,7 +271,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nikola_Vla%C5%A1i%C4%87",
    "wcApps": 2,
-   "wcGoals": 0,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -450,7 +450,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Orlando_City_SC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Marco_Pa%C5%A1ali%C4%87",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
