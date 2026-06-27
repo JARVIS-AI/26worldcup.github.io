@@ -4,6 +4,7 @@ const ptBR: Dict = {
   appName: 'Copa 2026',
   appSub: 'Estados Unidos · Canadá · México',
   appFullName: 'Companheiro open source da Copa 2026',
+  byDev: 'Por Amir Mohammad Safari',
   metaDesc:
     'Copa 2026: calendário, grupos, chaveamento, seleções, estádios, clima, onde assistir, probabilidades de vitória e prognóstico do torneio, em 23 idiomas. PWA open source não oficial',
   // nav

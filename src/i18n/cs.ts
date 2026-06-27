@@ -4,6 +4,7 @@ const cs: Dict = {
   appName: 'Mistrovství světa 2026',
   appSub: 'USA · Kanada · Mexiko',
   appFullName: 'Open source průvodce MS 2026',
+  byDev: 'Autor: Amir Mohammad Safari',
   metaDesc:
     'MS 2026: rozpis, skupiny, pavouk, týmy, stadiony, počasí, kde sledovat, pravděpodobnosti výher a prognóza turnaje, ve 23 jazycích. Neoficiální open source PWA',
   // nav

@@ -4,6 +4,7 @@ const zh: Dict = {
   appName: '2026世界杯',
   appSub: '美国 · 加拿大 · 墨西哥',
   appFullName: '2026世界杯开源助手',
+  byDev: '作者：Amir Mohammad Safari',
   metaDesc:
     '2026世界杯：赛程、小组、对阵图、球队、球场、天气、观赛指南、胜负概率与赛事预测,支持23种语言。非官方开源PWA',
   // nav

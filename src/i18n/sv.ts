@@ -4,6 +4,7 @@ const sv: Dict = {
   appName: 'VM 2026',
   appSub: 'USA · Kanada · Mexiko',
   appFullName: 'Open source-följeslagare för VM 2026',
+  byDev: 'Av Amir Mohammad Safari',
   metaDesc:
     'VM 2026: spelschema, grupper, slutspelsträd, lag, arenor, väder, var man tittar, vinstchanser och turneringsprognos, på 23 språk. Inofficiell open source-PWA',
   // nav

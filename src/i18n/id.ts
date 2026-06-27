@@ -4,6 +4,7 @@ const id: Dict = {
   appName: 'Piala Dunia 2026',
   appSub: 'Amerika Serikat · Kanada · Meksiko',
   appFullName: 'Pendamping open source Piala Dunia 2026',
+  byDev: 'Oleh Amir Mohammad Safari',
   metaDesc:
     'Piala Dunia 2026: jadwal, grup, bagan, tim, stadion, cuaca, tempat menonton, peluang menang, dan prediksi turnamen, dalam 23 bahasa. PWA open source tidak resmi',
   // nav

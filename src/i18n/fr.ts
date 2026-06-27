@@ -4,6 +4,7 @@ const fr: Dict = {
   appName: 'Coupe du Monde 2026',
   appSub: 'États-Unis · Canada · Mexique',
   appFullName: 'Compagnon open source de la Coupe du Monde 2026',
+  byDev: 'Par Amir Mohammad Safari',
   metaDesc:
     'Coupe du Monde 2026 : calendrier, groupes, tableau, équipes, stades, météo, diffusion, probabilités de victoire et pronostics du tournoi, en 23 langues. PWA open source non officielle',
   // nav

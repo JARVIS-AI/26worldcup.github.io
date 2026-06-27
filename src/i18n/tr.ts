@@ -4,6 +4,7 @@ const tr: Dict = {
   appName: '2026 Dünya Kupası',
   appSub: 'ABD · Kanada · Meksika',
   appFullName: '2026 Dünya Kupası Açık Kaynak Rehberi',
+  byDev: 'Yazan: Amir Mohammad Safari',
   metaDesc:
     '2026 Dünya Kupası: fikstür, gruplar, eleme tablosu, takımlar, statlar, hava durumu, nereden izlenir, kazanma olasılıkları ve turnuva tahmini, 23 dilde. Resmî olmayan açık kaynak PWA',
   // nav

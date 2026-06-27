@@ -4,6 +4,7 @@ const de: Dict = {
   appName: 'WM 2026',
   appSub: 'USA · Kanada · Mexiko',
   appFullName: 'Open-Source-Begleiter zur WM 2026',
+  byDev: 'Von Amir Mohammad Safari',
   metaDesc:
     'WM 2026: Spielplan, Gruppen, Turnierbaum, Teams, Stadien, Wetter, TV-Übersicht, Siegwahrscheinlichkeiten und Turnier-Prognose, in 23 Sprachen. Inoffizielle Open-Source-PWA',
   // nav

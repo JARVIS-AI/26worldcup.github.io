@@ -4,6 +4,7 @@ const no: Dict = {
   appName: 'VM 2026',
   appSub: 'USA · Canada · Mexico',
   appFullName: 'Open source-følgesvenn for VM 2026',
+  byDev: 'Av Amir Mohammad Safari',
   metaDesc:
     'VM 2026: kampprogram, grupper, sluttspilltre, lag, stadioner, vær, hvor du ser kampene, vinnersannsynligheter og turneringsprognose, på 23 språk. Uoffisiell open source-PWA',
   // nav

@@ -4,6 +4,7 @@ const ko: Dict = {
   appName: '2026 월드컵',
   appSub: '미국 · 캐나다 · 멕시코',
   appFullName: '2026 월드컵 오픈소스 컴패니언',
+  byDev: '제작: Amir Mohammad Safari',
   metaDesc:
     '2026 월드컵: 일정, 조별리그, 대진표, 팀, 경기장, 날씨, 시청 방법, 승리 확률, 대회 예측을 23개 언어로. 비공식 오픈소스 PWA',
   // nav

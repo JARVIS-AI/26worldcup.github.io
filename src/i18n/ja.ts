@@ -4,6 +4,7 @@ const ja: Dict = {
   appName: 'ワールドカップ2026',
   appSub: 'アメリカ · カナダ · メキシコ',
   appFullName: '2026 ワールドカップ オープンソースコンパニオン',
+  byDev: '作者: Amir Mohammad Safari',
   metaDesc:
     '2026 ワールドカップ:日程、グループ、トーナメント表、チーム、スタジアム、天気、視聴方法、勝利確率、大会予想を23言語で。非公式オープンソースPWA',
   // nav

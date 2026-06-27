@@ -4,6 +4,7 @@ const uk: Dict = {
   appName: 'Чемпіонат світу 2026',
   appSub: 'США · Канада · Мексика',
   appFullName: 'Open source супутник ЧС-2026',
+  byDev: 'Автор: Amir Mohammad Safari',
   metaDesc:
     'ЧС-2026: розклад, групи, сітка, команди, стадіони, погода, де дивитися, ймовірності перемог і прогноз турніру, 23 мовами. Неофіційний open source PWA',
   // nav

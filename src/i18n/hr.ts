@@ -4,6 +4,7 @@ const hr: Dict = {
   appName: 'Svjetsko prvenstvo 2026.',
   appSub: 'SAD · Kanada · Meksiko',
   appFullName: 'Open source vodič za SP 2026',
+  byDev: 'Autor: Amir Mohammad Safari',
   metaDesc:
     'SP 2026: raspored, skupine, kostur, momčadi, stadioni, vrijeme, gdje gledati, vjerojatnosti pobjede i prognoza turnira, na 23 jezika. Neslužbeni open source PWA',
   // nav

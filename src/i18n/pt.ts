@@ -4,6 +4,7 @@ const pt: Dict = {
   appName: 'Mundial 2026',
   appSub: 'Estados Unidos · Canadá · México',
   appFullName: 'Companheiro open source do Mundial 2026',
+  byDev: 'Por Amir Mohammad Safari',
   metaDesc:
     'Mundial 2026: calendário, grupos, quadro, seleções, estádios, meteorologia, onde ver, probabilidades de vitória e prognóstico do torneio, em 23 línguas. PWA open source não oficial',
   // nav

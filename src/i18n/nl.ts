@@ -4,6 +4,7 @@ const nl: Dict = {
   appName: 'WK 2026',
   appSub: 'Verenigde Staten · Canada · Mexico',
   appFullName: 'Open source-metgezel voor het WK 2026',
+  byDev: 'Door Amir Mohammad Safari',
   metaDesc:
     'WK 2026: speelschema, groepen, schema, teams, stadions, weer, waar te kijken, winkansen en toernooiprognose, in 23 talen. Onofficiële opensource-PWA',
   // nav

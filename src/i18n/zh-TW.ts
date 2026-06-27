@@ -4,6 +4,7 @@ const zhTW: Dict = {
   appName: '2026世界盃',
   appSub: '美國 · 加拿大 · 墨西哥',
   appFullName: '2026世界盃開源助手',
+  byDev: '作者：Amir Mohammad Safari',
   metaDesc:
     '2026世界盃：賽程、小組、對陣圖、球隊、球場、天氣、觀賽指南、勝負機率與賽事預測,支援23種語言。非官方開源PWA',
   // nav

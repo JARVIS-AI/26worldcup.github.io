@@ -4,6 +4,7 @@ const uz: Dict = {
   appName: 'Jahon chempionati 2026',
   appSub: 'AQSH · Kanada · Meksika',
   appFullName: '2026 Jahon chempionati ochiq kodli hamrohi',
+  byDev: 'Muallif: Amir Mohammad Safari',
   metaDesc:
     "2026 Jahon chempionati: taqvim, guruhlar, pley-off, jamoalar, stadionlar, ob-havo, qayerda ko'rish, g'alaba ehtimollari va turnir prognozi, 23 tilda. Norasmiy ochiq kodli PWA",
   // nav
