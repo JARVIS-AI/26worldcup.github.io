@@ -466,7 +466,13 @@ export type QualState = 'through' | 'third' | 'out' | null
 
 /** qualification state of a row for group-table coloring, only when group complete */
 export function qualState(standings: Standings, group: string, rank: number, code: string): QualState {
-  if (!standings.complete[group]) return null
+  if (!standings.complete[group]) {
+    // group still in progress: colour only teams that have mathematically
+    // clinched a knockout place (top-2 or a guaranteed top-8 third); the rest
+    // stay undecided until the group — and the thirds race — settles
+    const row = standings.groups[group]?.find((r) => r.code === code)
+    return row?.clinched ? 'through' : null
+  }
   if (rank <= 2) return 'through'
   if (rank === 4) return 'out'
   const third = standings.thirds.find((tr) => tr.code === code)

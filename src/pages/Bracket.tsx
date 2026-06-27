@@ -85,7 +85,9 @@ function BkRow({
   const cls = out === 'w' ? ' bk-win' : out === 'l' ? ' bk-lose' : ''
   return (
     <div className={`bk-row${cls}`} title={title}>
-      <Flag team={team} size={flagSize} />
+      {/* no team yet → skip the empty flag box so the placeholder text can use
+          the full row width, the flag's position included */}
+      {team && <Flag team={team} size={flagSize} />}
       <span className={`bk-nm${team ? '' : ' bk-tbd'}`}>{label}</span>
       {team && <span className="bk-code tnum">{code}</span>}
       {(m.status === 'finished' || m.status === 'live') && side && (

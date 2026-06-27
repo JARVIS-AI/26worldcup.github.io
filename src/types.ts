@@ -122,6 +122,9 @@ export interface StandingRow {
   gd: number
   pts: number
   rank: number
+  /** set while a group is still in progress when the team has mathematically
+   * clinched a knockout place (locked top-2, or a guaranteed top-8 third) */
+  clinched?: boolean
 }
 
 export interface ThirdRow extends StandingRow {

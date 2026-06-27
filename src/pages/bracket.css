@@ -247,6 +247,12 @@
   color: var(--text-3);
   font-weight: 500;
   font-size: 0.7rem;
+  /* placeholders ("2nd of group K", "Winner M74") always show in full: as many
+     lines as needed, breaking anywhere, never clamped to an ellipsis */
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: none;
+  line-clamp: none;
 }
 .bk-score {
   flex: none;
@@ -475,7 +481,10 @@
     display: none;
   }
   .bk-nm.bk-tbd {
-    display: -webkit-box;
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: none;
+    line-clamp: none;
     font-size: 0.58rem;
     line-height: 1.15;
   }
@@ -525,9 +534,21 @@
   }
 }
 
-/* very narrow screens: tree nodes show flags only — full names stay in the
-   final / third-place cards below */
+/* very narrow screens: a played/live node also carries a score, leaving no
+   room for the 3-letter code — it shows flag + score only. A scoreless node
+   (not played yet, or postponed) still fits flag + code, so it keeps the code
+   down to the tighter breakpoint below. */
 @media (max-width: 469.5px) {
+  .bk-grid .bk-row:has(.bk-score) .bk-code {
+    display: none;
+  }
+  .bk-grid .bk-row:has(.bk-score) {
+    justify-content: space-between;
+  }
+}
+
+/* below ~330px even a scoreless node has no room for the code → flags only */
+@media (max-width: 329.5px) {
   .bk-grid .bk-code {
     display: none;
   }

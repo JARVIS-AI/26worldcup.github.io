@@ -437,26 +437,119 @@ function computeStandings(matches, teams, lineups = {}) {
     complete[g] = out[g].every((r) => r.p === 3)
   }
 
+  // remaining (unplayed) group matches, by group, as [home, away] code pairs
+  const remaining = {}
+  for (const m of groupMatches) {
+    if (m.status === 'finished' || !m.home || !m.away) continue
+    remaining[m.group] ??= []
+    remaining[m.group].push([m.home.code, m.away.code])
+  }
+  // Per group, enumerate every remaining win/draw/loss combination (points need
+  // no scores, so this is exact; <= 6 matches remain, i.e. <= 3^6 combinations).
+  // Record the 3rd-place point total's range and, per team, the worst-case
+  // number of group rivals finishing on >= its points.
+  const outlook = (g) => {
+    const teams = Object.values(groups[g])
+    const cur = Object.fromEntries(teams.map((t) => [t.code, t.pts]))
+    const rem = remaining[g] || []
+    let thirdMin = Number.POSITIVE_INFINITY
+    let thirdMax = Number.NEGATIVE_INFINITY
+    const worstAhead = Object.fromEntries(teams.map((t) => [t.code, 0]))
+    for (let mask = 0, n = 3 ** rem.length; mask < n; mask++) {
+      const pts = { ...cur }
+      let x = mask
+      for (const [h, a] of rem) {
+        const o = x % 3
+        x = Math.floor(x / 3)
+        if (o === 0) pts[h] += 3
+        else if (o === 1) pts[a] += 3
+        else {
+          pts[h] += 1
+          pts[a] += 1
+        }
+      }
+      const sorted = Object.values(pts).sort((p, q) => q - p)
+      thirdMin = Math.min(thirdMin, sorted[2])
+      thirdMax = Math.max(thirdMax, sorted[2])
+      for (const t of teams) {
+        let cnt = 0
+        for (const u of teams) if (u.code !== t.code && pts[u.code] >= pts[t.code]) cnt++
+        if (cnt > worstAhead[t.code]) worstAhead[t.code] = cnt
+      }
+    }
+    return { thirdMin, thirdMax, worstAhead }
+  }
+  const groupOutlook = Object.fromEntries(Object.keys(out).map((g) => [g, outlook(g)]))
+  const ptsRange = Object.fromEntries(
+    Object.entries(groupOutlook).map(([g, o]) => [g, { min: o.thirdMin, max: o.thirdMax }]),
+  )
+  // most points the 3rd-placed team of a group can still reach (fixed if done)
+  const maxThirdPts = (g) => (complete[g] ? out[g][2].pts : groupOutlook[g].thirdMax)
+
+  // Flag teams in a still-running group that have already CLINCHED a knockout
+  // place. Safe if it has locked top-2 (worst case <= 1 rival on >= its points),
+  // or it can never drop below 3rd (worst case <= 2) and even its floor-points
+  // 3rd place is a guaranteed top-8 third — i.e. at most 7 other groups' thirds
+  // can still reach those points. Sound by construction: never a false green.
+  for (const g of Object.keys(out)) {
+    if (complete[g]) continue
+    for (const r of out[g]) {
+      const wa = groupOutlook[g].worstAhead[r.code]
+      if (wa <= 1) r.clinched = true
+      else if (wa <= 2) {
+        const rivals = Object.keys(out).filter((x) => x !== g && maxThirdPts(x) >= r.pts).length
+        if (rivals <= 7) r.clinched = true
+      }
+    }
+  }
+
   // best third-placed: top 8 of 12 advance. Criteria: pts, GD, GF, fair play,
   // most recent then older FIFA ranking, then lots (no head-to-head: the third-
   // placed teams come from different groups)
-  const thirds = Object.entries(out)
-    .map(([g, rows]) => ({ group: g, ...rows[2] }))
-    .sort(
-      (a, b) =>
-        b.pts - a.pts ||
-        b.gd - a.gd ||
-        b.gf - a.gf ||
-        (fairPlay[b.code] ?? 0) - (fairPlay[a.code] ?? 0) ||
-        fifaRank(a.code) - fifaRank(b.code) ||
-        fifaRankPrev(a.code) - fifaRankPrev(b.code) ||
-        a.group.localeCompare(b.group),
-    )
-    .map((r, i) => ({
-      ...r,
-      thirdRank: i + 1,
-      qualifies: Object.values(complete).every(Boolean) ? i < 8 : null,
-    }))
+  const thirdCmp = (a, b) =>
+    b.pts - a.pts ||
+    b.gd - a.gd ||
+    b.gf - a.gf ||
+    (fairPlay[b.code] ?? 0) - (fairPlay[a.code] ?? 0) ||
+    fifaRank(a.code) - fifaRank(b.code) ||
+    fifaRankPrev(a.code) - fifaRankPrev(b.code) ||
+    a.group.localeCompare(b.group)
+
+  const thirdRows = Object.entries(out).map(([g, rows]) => ({ group: g, ...rows[2] }))
+  const allComplete = Object.values(complete).every(Boolean)
+  const thirds = thirdRows
+    .slice()
+    .sort(thirdCmp)
+    .map((r, i) => {
+      // Colour a third only once its fate is settled. Even before the whole
+      // group stage ends, the decided cases are caught: count how many other
+      // thirds COULD (aboveMax) and MUST (aboveMin) finish ahead of r. r is in
+      // if at most 7 can ever pass it, out if at least 8 already must. Sound by
+      // construction — never a wrong green/red, it just falls back to undecided
+      // (null). A third from a group still in progress can change team or
+      // record, so it stays undecided.
+      let qualifies = null
+      if (allComplete) {
+        qualifies = i < 8
+      } else if (complete[r.group]) {
+        let aboveMax = 0
+        let aboveMin = 0
+        for (const o of thirdRows) {
+          if (o.group === r.group) continue
+          if (complete[o.group]) {
+            if (thirdCmp(o, r) < 0) {
+              aboveMax++
+              aboveMin++
+            }
+          } else {
+            if (ptsRange[o.group].max >= r.pts) aboveMax++ // could pass on points, then GD via goals
+            if (ptsRange[o.group].min > r.pts) aboveMin++ // always ahead on points alone
+          }
+        }
+        qualifies = aboveMax <= 7 ? true : aboveMin >= 8 ? false : null
+      }
+      return { ...r, thirdRank: i + 1, qualifies }
+    })
 
   return { groups: out, thirds, complete }
 }
