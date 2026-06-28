@@ -3,50 +3,49 @@
   "J": [
    {
     "code": "ARG",
-    "p": 2,
-    "w": 2,
+    "p": 3,
+    "w": 3,
     "d": 0,
     "l": 0,
-    "gf": 5,
-    "ga": 0,
-    "gd": 5,
-    "pts": 6,
-    "rank": 1,
-    "clinched": true
+    "gf": 8,
+    "ga": 1,
+    "gd": 7,
+    "pts": 9,
+    "rank": 1
    },
    {
     "code": "AUT",
-    "p": 2,
+    "p": 3,
     "w": 1,
-    "d": 0,
+    "d": 1,
     "l": 1,
-    "gf": 3,
-    "ga": 3,
+    "gf": 6,
+    "ga": 6,
     "gd": 0,
-    "pts": 3,
+    "pts": 4,
     "rank": 2
    },
    {
     "code": "ALG",
-    "p": 2,
+    "p": 3,
     "w": 1,
-    "d": 0,
+    "d": 1,
     "l": 1,
-    "gf": 2,
-    "ga": 4,
+    "gf": 5,
+    "ga": 7,
     "gd": -2,
-    "pts": 3,
+    "pts": 4,
     "rank": 3
    },
    {
     "code": "JOR",
-    "p": 2,
+    "p": 3,
     "w": 0,
     "d": 0,
-    "l": 2,
-    "gf": 2,
-    "ga": 5,
-    "gd": -3,
+    "l": 3,
+    "gf": 3,
+    "ga": 8,
+    "gd": -5,
     "pts": 0,
     "rank": 4
    }
@@ -679,6 +678,21 @@
    "qualifies": true
   },
   {
+   "group": "J",
+   "code": "ALG",
+   "p": 3,
+   "w": 1,
+   "d": 1,
+   "l": 1,
+   "gf": 5,
+   "ga": 7,
+   "gd": -2,
+   "pts": 4,
+   "rank": 3,
+   "thirdRank": 6,
+   "qualifies": true
+  },
+  {
    "group": "D",
    "code": "PAR",
    "p": 3,
@@ -690,7 +704,7 @@
    "gd": -2,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 6,
+   "thirdRank": 7,
    "qualifies": true
   },
   {
@@ -705,7 +719,7 @@
    "gd": 2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 7,
+   "thirdRank": 8,
    "qualifies": true
   },
   {
@@ -720,8 +734,8 @@
    "gd": 0,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 8,
-   "qualifies": null
+   "thirdRank": 9,
+   "qualifies": false
   },
   {
    "group": "A",
@@ -735,23 +749,8 @@
    "gd": -1,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 9,
-   "qualifies": false
-  },
-  {
-   "group": "J",
-   "code": "ALG",
-   "p": 2,
-   "w": 1,
-   "d": 0,
-   "l": 1,
-   "gf": 2,
-   "ga": 4,
-   "gd": -2,
-   "pts": 3,
-   "rank": 3,
    "thirdRank": 10,
-   "qualifies": null
+   "qualifies": false
   },
   {
    "group": "C",
@@ -785,7 +784,7 @@
   }
  ],
  "complete": {
-  "J": false,
+  "J": true,
   "D": true,
   "G": true,
   "B": true,

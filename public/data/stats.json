@@ -281,6 +281,14 @@
    "ownGoals": 0
   },
   {
+   "id": "379942",
+   "name": "Riyad MAHREZ",
+   "code": "ALG",
+   "no": 7,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "448131",
    "name": "Ruben VARGAS",
    "code": "SUI",
@@ -294,13 +302,6 @@
    "code": "SWE",
    "no": 18,
    "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": null,
-   "name": "#null",
-   "code": "ALG",
-   "goals": 1,
    "ownGoals": 0
   },
   {
@@ -321,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 179,
+  "yellow": 180,
   "red": 10,
   "players": [
    {
@@ -485,7 +486,7 @@
    }
   ]
  },
- "attAvg": 64355,
+ "attAvg": 64508,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -542,8 +543,8 @@
    "NOR": -1,
    "ARG": -2,
    "ALG": -1,
-   "AUT": -3,
-   "JOR": -1,
+   "AUT": -4,
+   "JOR": -4,
    "GHA": -3,
    "PAN": -5,
    "ENG": -2,
@@ -592,8 +593,8 @@
    "NOR": -1,
    "ARG": -2,
    "ALG": -1,
-   "AUT": -3,
-   "JOR": -1,
+   "AUT": -4,
+   "JOR": -4,
    "GHA": -3,
    "PAN": -5,
    "ENG": -2,

@@ -4613,16 +4613,16 @@
    "group": "J",
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400254717",
-   "status": "live",
-   "time": "90'+3'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "ALG",
-    "score": 2,
+    "score": 3,
     "pen": null
    },
    "away": {
     "code": "AUT",
-    "score": 2,
+    "score": 3,
     "pen": null
    },
    "phA": "J2",
@@ -4672,8 +4672,8 @@
    "group": "J",
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400257526",
-   "status": "live",
-   "time": "90'+3'",
+   "status": "finished",
+   "time": "96'",
    "home": {
     "code": "JOR",
     "score": 1,
@@ -4686,7 +4686,7 @@
    },
    "phA": "J4",
    "phB": "J1",
-   "winner": null,
+   "winner": "ARG",
    "attendance": 70649,
    "officials": [
     {
@@ -5198,7 +5198,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "AUT",
+    "score": null,
+    "pen": null
+   },
    "phA": "1H",
    "phB": "2J",
    "winner": null,
@@ -5219,7 +5223,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "ALG",
+    "score": null,
+    "pen": null
+   },
    "phA": "1B",
    "phB": "3EFGIJ",
    "winner": null,
