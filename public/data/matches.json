@@ -4614,7 +4614,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400254717",
    "status": "live",
-   "time": "18'",
+   "time": "32'",
    "home": {
     "code": "ALG",
     "score": 0,
@@ -4622,7 +4622,7 @@
    },
    "away": {
     "code": "AUT",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "J2",
@@ -4673,7 +4673,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "17'",
+   "time": "32'",
    "home": {
     "code": "JOR",
     "score": 0,
@@ -4681,7 +4681,7 @@
    },
    "away": {
     "code": "ARG",
-    "score": 0,
+    "score": 2,
     "pen": null
    },
    "phA": "J4",

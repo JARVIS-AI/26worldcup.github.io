@@ -233,6 +233,14 @@
    "ownGoals": 0
   },
   {
+   "id": "299200",
+   "name": "Marko ARNAUTOVIC",
+   "code": "AUT",
+   "no": 7,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "419100",
    "name": "Maxi ARAUJO",
    "code": "URU",
@@ -309,14 +317,6 @@
    "name": "Achraf HAKIMI",
    "code": "MAR",
    "no": 2,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "402876",
-   "name": "Agustin CANOBBIO",
-   "code": "URU",
-   "no": 14,
    "goals": 1,
    "ownGoals": 0
   }
