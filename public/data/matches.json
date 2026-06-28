@@ -4614,21 +4614,21 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400254717",
    "status": "live",
-   "time": "52'",
+   "time": "66'",
    "home": {
     "code": "ALG",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "away": {
     "code": "AUT",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "J2",
    "phB": "J3",
    "winner": null,
-   "attendance": null,
+   "attendance": 69045,
    "officials": [
     {
      "id": "360687",
@@ -4673,10 +4673,10 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "52'",
+   "time": "66'",
    "home": {
     "code": "JOR",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
@@ -4687,7 +4687,7 @@
    "phA": "J4",
    "phB": "J1",
    "winner": null,
-   "attendance": null,
+   "attendance": 70649,
    "officials": [
     {
      "id": "314605",
@@ -4812,18 +4812,18 @@
      "country": "GER",
      "role": "referee",
      "name": {
-      "en": "Felix ZWAYER",
-      "fr": "Felix ZWAYER",
-      "zh": "Felix ZWAYER",
-      "ar": "Felix ZWAYER",
-      "es": "Felix ZWAYER",
-      "de": "Felix ZWAYER",
-      "pt": "Felix ZWAYER",
-      "it": "Felix ZWAYER",
-      "ja": "Felix ZWAYER",
-      "ko": "Felix ZWAYER",
-      "id": "Felix ZWAYER",
-      "ru": "Felix ZWAYER"
+      "en": "F. Zwayer",
+      "fr": "F. Zwayer",
+      "zh": "茨韦尔",
+      "ar": "ف. تسفايير",
+      "es": "F. Zwayer",
+      "de": "F. Zwayer",
+      "pt": "F. Zwayer",
+      "it": "F. Zwayer",
+      "ja": "F. Zwayer",
+      "ko": "F.제이어",
+      "id": "F. Zwayer",
+      "ru": "F. Zwayer"
      },
      "typeName": {
       "en": "Referee",
