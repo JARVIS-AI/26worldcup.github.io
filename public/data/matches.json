@@ -4915,16 +4915,16 @@
    "group": null,
    "date": "2026-06-28T19:00:00Z",
    "venueId": "400017978",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "3'",
    "home": {
     "code": "RSA",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "CAN",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "2A",
