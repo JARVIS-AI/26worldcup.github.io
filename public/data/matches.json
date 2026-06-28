@@ -4635,18 +4635,18 @@
      "country": "UZB",
      "role": "referee",
      "name": {
-      "en": "I. Tantashev",
-      "fr": "I. Tantashev",
-      "zh": "坦塔舍夫",
-      "ar": "I. Tantashev",
-      "es": "I. Tantashev",
-      "de": "I. Tantashev",
-      "pt": "I. Tantashev",
-      "it": "I. Tantashev",
-      "ja": "I. Tantashev",
-      "ko": "I. Tantashev",
-      "id": "I. Tantashev",
-      "ru": "I. Tantashev"
+      "en": "Ilgiz TANTASHEV",
+      "fr": "Ilgiz TANTASHEV",
+      "zh": "Ilgiz TANTASHEV",
+      "ar": "Ilgiz TANTASHEV",
+      "es": "Ilgiz TANTASHEV",
+      "de": "Ilgiz TANTASHEV",
+      "pt": "Ilgiz TANTASHEV",
+      "it": "Ilgiz TANTASHEV",
+      "ja": "Ilgiz TANTASHEV",
+      "ko": "Ilgiz TANTASHEV",
+      "id": "Ilgiz TANTASHEV",
+      "ru": "Ilgiz TANTASHEV"
      },
      "typeName": {
       "en": "Referee",
@@ -4694,18 +4694,18 @@
      "country": "ROU",
      "role": "referee",
      "name": {
-      "en": "I. Kovács",
-      "fr": "I. Kovács",
-      "zh": "科瓦奇",
-      "ar": "إ. كوفاتش",
-      "es": "I. Kovács",
-      "de": "I. Kovács",
-      "pt": "I. Kovács",
-      "it": "I. Kovács",
-      "ja": "I. Kovács",
-      "ko": "I. Kovács",
-      "id": "I. Kovács",
-      "ru": "I. Kovács"
+      "en": "Istvan KOVACS",
+      "fr": "Istvan KOVACS",
+      "zh": "Istvan KOVACS",
+      "ar": "Istvan KOVACS",
+      "es": "Istvan KOVACS",
+      "de": "Istvan KOVACS",
+      "pt": "Istvan KOVACS",
+      "it": "Istvan KOVACS",
+      "ja": "Istvan KOVACS",
+      "ko": "Istvan KOVACS",
+      "id": "Istvan KOVACS",
+      "ru": "Istvan KOVACS"
      },
      "typeName": {
       "en": "Referee",
@@ -4753,18 +4753,18 @@
      "country": "AUS",
      "role": "referee",
      "name": {
-      "en": "A. Faghani",
-      "fr": "A. Faghani",
-      "zh": "法加尼",
-      "ar": "A. Faghani",
-      "es": "A. Faghani",
-      "de": "A. Faghani",
-      "pt": "A. Faghani",
-      "it": "A. Faghani",
-      "ja": "A. ファガニ",
-      "ko": "A. Faghani",
-      "id": "A. Faghani",
-      "ru": "A. Faghani"
+      "en": "Alireza FAGHANI",
+      "fr": "Alireza FAGHANI",
+      "zh": "Alireza FAGHANI",
+      "ar": "Alireza FAGHANI",
+      "es": "Alireza FAGHANI",
+      "de": "Alireza FAGHANI",
+      "pt": "Alireza FAGHANI",
+      "it": "Alireza FAGHANI",
+      "ja": "Alireza FAGHANI",
+      "ko": "Alireza FAGHANI",
+      "id": "Alireza FAGHANI",
+      "ru": "Alireza FAGHANI"
      },
      "typeName": {
       "en": "Referee",
@@ -4779,6 +4779,39 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "400191",
+     "country": "HON",
+     "role": "fourth",
+     "name": {
+      "en": "Said MARTINEZ",
+      "fr": "Said MARTINEZ",
+      "zh": "Said MARTINEZ",
+      "ar": "Said MARTINEZ",
+      "es": "Said MARTINEZ",
+      "de": "Said MARTINEZ",
+      "pt": "Said MARTINEZ",
+      "it": "Said MARTINEZ",
+      "ja": "Said MARTINEZ",
+      "ko": "Said MARTINEZ",
+      "id": "Said MARTINEZ",
+      "ru": "Said MARTINEZ"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
      }
     }
    ]
@@ -4812,18 +4845,18 @@
      "country": "GER",
      "role": "referee",
      "name": {
-      "en": "F. Zwayer",
-      "fr": "F. Zwayer",
-      "zh": "茨韦尔",
-      "ar": "ف. تسفايير",
-      "es": "F. Zwayer",
-      "de": "F. Zwayer",
-      "pt": "F. Zwayer",
-      "it": "F. Zwayer",
-      "ja": "F. Zwayer",
-      "ko": "F.제이어",
-      "id": "F. Zwayer",
-      "ru": "F. Zwayer"
+      "en": "Felix ZWAYER",
+      "fr": "Felix ZWAYER",
+      "zh": "Felix ZWAYER",
+      "ar": "Felix ZWAYER",
+      "es": "Felix ZWAYER",
+      "de": "Felix ZWAYER",
+      "pt": "Felix ZWAYER",
+      "it": "Felix ZWAYER",
+      "ja": "Felix ZWAYER",
+      "ko": "Felix ZWAYER",
+      "id": "Felix ZWAYER",
+      "ru": "Felix ZWAYER"
      },
      "typeName": {
       "en": "Referee",
@@ -4839,6 +4872,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "373845",
+     "country": "ESP",
+     "role": "fourth",
+     "name": {
+      "en": "Alejandro HERNANDEZ",
+      "fr": "Alejandro HERNANDEZ",
+      "zh": "Alejandro HERNANDEZ",
+      "ar": "Alejandro HERNANDEZ",
+      "es": "Alejandro HERNANDEZ",
+      "de": "Alejandro HERNANDEZ",
+      "pt": "Alejandro HERNANDEZ",
+      "it": "Alejandro HERNANDEZ",
+      "ja": "Alejandro HERNANDEZ",
+      "ko": "Alejandro HERNANDEZ",
+      "id": "Alejandro HERNANDEZ",
+      "ru": "Alejandro HERNANDEZ"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
@@ -4850,7 +4916,7 @@
    "date": "2026-06-28T19:00:00Z",
    "venueId": "400017978",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "RSA",
     "score": null,
@@ -4898,39 +4964,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "383421",
-     "country": "UAE",
-     "role": "fourth",
-     "name": {
-      "en": "Omar ALALI",
-      "fr": "Omar ALALI",
-      "zh": "Omar ALALI",
-      "ar": "Omar ALALI",
-      "es": "Omar ALALI",
-      "de": "Omar ALALI",
-      "pt": "Omar ALALI",
-      "it": "Omar ALALI",
-      "ja": "Omar ALALI",
-      "ko": "Omar ALALI",
-      "id": "Omar ALALI",
-      "ru": "Omar ALALI"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -4957,7 +4990,74 @@
    "phB": "3ABCDF",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "416524",
+     "country": "MAR",
+     "role": "referee",
+     "name": {
+      "en": "Jalal JAYED",
+      "fr": "Jalal JAYED",
+      "zh": "Jalal JAYED",
+      "ar": "Jalal JAYED",
+      "es": "Jalal JAYED",
+      "de": "Jalal JAYED",
+      "pt": "Jalal JAYED",
+      "it": "Jalal JAYED",
+      "ja": "Jalal JAYED",
+      "ko": "Jalal JAYED",
+      "id": "Jalal JAYED",
+      "ru": "Jalal JAYED"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "328495",
+     "country": "CHN",
+     "role": "fourth",
+     "name": {
+      "en": "MA Ning",
+      "fr": "MA Ning",
+      "zh": "MA Ning",
+      "ar": "MA Ning",
+      "es": "MA Ning",
+      "de": "MA Ning",
+      "pt": "MA Ning",
+      "it": "MA Ning",
+      "ja": "MA Ning",
+      "ko": "MA Ning",
+      "id": "MA Ning",
+      "ru": "MA Ning"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021522",
@@ -4982,7 +5082,74 @@
    "phB": "2C",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "361561",
+     "country": "BRA",
+     "role": "referee",
+     "name": {
+      "en": "Wilton SAMPAIO",
+      "fr": "Wilton SAMPAIO",
+      "zh": "Wilton SAMPAIO",
+      "ar": "Wilton SAMPAIO",
+      "es": "Wilton SAMPAIO",
+      "de": "Wilton SAMPAIO",
+      "pt": "Wilton SAMPAIO",
+      "it": "Wilton SAMPAIO",
+      "ja": "Wilton SAMPAIO",
+      "ko": "Wilton SAMPAIO",
+      "id": "Wilton SAMPAIO",
+      "ru": "Wilton SAMPAIO"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "416177",
+     "country": "CHI",
+     "role": "fourth",
+     "name": {
+      "en": "Cristian GARAY",
+      "fr": "Cristian GARAY",
+      "zh": "Cristian GARAY",
+      "ar": "Cristian GARAY",
+      "es": "Cristian GARAY",
+      "de": "Cristian GARAY",
+      "pt": "Cristian GARAY",
+      "it": "Cristian GARAY",
+      "ja": "Cristian GARAY",
+      "ko": "Cristian GARAY",
+      "id": "Cristian GARAY",
+      "ru": "Cristian GARAY"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021516",
@@ -5007,7 +5174,41 @@
    "phB": "2F",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "415965",
+     "country": "ITA",
+     "role": "referee",
+     "name": {
+      "en": "Maurizio MARIANI",
+      "fr": "Maurizio MARIANI",
+      "zh": "Maurizio MARIANI",
+      "ar": "Maurizio MARIANI",
+      "es": "Maurizio MARIANI",
+      "de": "Maurizio MARIANI",
+      "pt": "Maurizio MARIANI",
+      "it": "Maurizio MARIANI",
+      "ja": "Maurizio MARIANI",
+      "ko": "Maurizio MARIANI",
+      "id": "Maurizio MARIANI",
+      "ru": "Maurizio MARIANI"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021523",
