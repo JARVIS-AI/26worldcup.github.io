@@ -38505,7 +38505,7 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "32'",
+  "matchTime": "45'+1'",
   "period": 3,
   "final": false,
   "secTried": true
@@ -39474,7 +39474,15 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "511009",
+     "minute": "45'",
+     "type": 2,
+     "period": 3,
+     "sec": 2642
+    }
+   ],
    "bookings": [],
    "substitutions": []
   },
@@ -39789,7 +39797,7 @@
    ],
    "substitutions": []
   },
-  "matchTime": "32'",
+  "matchTime": "45'",
   "period": 3,
   "final": false,
   "secTried": true
