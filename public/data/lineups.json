@@ -40299,6 +40299,12 @@
      "minute": "21'",
      "card": 1,
      "period": 3
+    },
+    {
+     "player": "424119",
+     "minute": "45'+4'",
+     "card": 1,
+     "period": 3
     }
    ],
    "substitutions": []
@@ -40614,8 +40620,8 @@
    ],
    "substitutions": []
   },
-  "matchTime": "44'",
-  "period": 3,
+  "matchTime": null,
+  "period": 4,
   "final": false,
   "secTried": true
  },
@@ -43998,8 +44004,8 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "44'",
-  "period": 3,
+  "matchTime": null,
+  "period": 4,
   "final": false,
   "secTried": true
  },

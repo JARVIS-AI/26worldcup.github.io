@@ -4798,7 +4798,7 @@
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400257525",
    "status": "live",
-   "time": "44'",
+   "time": null,
    "home": {
     "code": "COL",
     "score": 0,
@@ -4857,7 +4857,7 @@
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400098290",
    "status": "live",
-   "time": "44'",
+   "time": null,
    "home": {
     "code": "COD",
     "score": 0,
