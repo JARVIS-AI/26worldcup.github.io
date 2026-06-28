@@ -4614,7 +4614,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400254717",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "ALG",
     "score": null,
@@ -4662,39 +4662,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "416317",
-     "country": "MEX",
-     "role": "fourth",
-     "name": {
-      "en": "Katia GARCIA",
-      "fr": "Katia GARCIA",
-      "zh": "Katia GARCIA",
-      "ar": "Katia GARCIA",
-      "es": "Katia GARCIA",
-      "de": "Katia GARCIA",
-      "pt": "Katia GARCIA",
-      "it": "Katia GARCIA",
-      "ja": "Katia GARCIA",
-      "ko": "Katia GARCIA",
-      "id": "Katia GARCIA",
-      "ru": "Katia GARCIA"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -4706,7 +4673,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400257526",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "JOR",
     "score": null,
@@ -4754,39 +4721,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "408591",
-     "country": "MTN",
-     "role": "fourth",
-     "name": {
-      "en": "Dahane BEIDA",
-      "fr": "Dahane BEIDA",
-      "zh": "Dahane BEIDA",
-      "ar": "Dahane BEIDA",
-      "es": "Dahane BEIDA",
-      "de": "Dahane BEIDA",
-      "pt": "Dahane BEIDA",
-      "it": "Dahane BEIDA",
-      "ja": "Dahane BEIDA",
-      "ko": "Dahane BEIDA",
-      "id": "Dahane BEIDA",
-      "ru": "Dahane BEIDA"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -4798,7 +4732,7 @@
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400257525",
    "status": "live",
-   "time": null,
+   "time": "52'",
    "home": {
     "code": "COL",
     "score": 0,
@@ -4857,7 +4791,7 @@
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400098290",
    "status": "live",
-   "time": null,
+   "time": "50'",
    "home": {
     "code": "COD",
     "score": 0,
