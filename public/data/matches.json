@@ -4614,7 +4614,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400254717",
    "status": "live",
-   "time": "45'",
+   "time": null,
    "home": {
     "code": "ALG",
     "score": 1,
@@ -4673,7 +4673,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "45'+1'",
+   "time": null,
    "home": {
     "code": "JOR",
     "score": 0,
