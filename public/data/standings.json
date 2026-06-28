@@ -304,51 +304,49 @@
   "K": [
    {
     "code": "COL",
-    "p": 2,
+    "p": 3,
     "w": 2,
-    "d": 0,
+    "d": 1,
     "l": 0,
     "gf": 4,
     "ga": 1,
     "gd": 3,
-    "pts": 6,
-    "rank": 1,
-    "clinched": true
+    "pts": 7,
+    "rank": 1
    },
    {
     "code": "POR",
-    "p": 2,
+    "p": 3,
     "w": 1,
-    "d": 1,
+    "d": 2,
     "l": 0,
     "gf": 6,
     "ga": 1,
     "gd": 5,
-    "pts": 4,
-    "rank": 2,
-    "clinched": true
+    "pts": 5,
+    "rank": 2
    },
    {
     "code": "COD",
-    "p": 2,
-    "w": 0,
+    "p": 3,
+    "w": 1,
     "d": 1,
     "l": 1,
-    "gf": 1,
-    "ga": 2,
-    "gd": -1,
-    "pts": 1,
+    "gf": 4,
+    "ga": 3,
+    "gd": 1,
+    "pts": 4,
     "rank": 3
    },
    {
     "code": "UZB",
-    "p": 2,
+    "p": 3,
     "w": 0,
     "d": 0,
-    "l": 2,
-    "gf": 1,
-    "ga": 8,
-    "gd": -7,
+    "l": 3,
+    "gf": 2,
+    "ga": 11,
+    "gd": -9,
     "pts": 0,
     "rank": 4
    }
@@ -606,6 +604,21 @@
  },
  "thirds": [
   {
+   "group": "K",
+   "code": "COD",
+   "p": 3,
+   "w": 1,
+   "d": 1,
+   "l": 1,
+   "gf": 4,
+   "ga": 3,
+   "gd": 1,
+   "pts": 4,
+   "rank": 3,
+   "thirdRank": 1,
+   "qualifies": true
+  },
+  {
    "group": "F",
    "code": "SWE",
    "p": 3,
@@ -617,7 +630,7 @@
    "gd": 0,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 1,
+   "thirdRank": 2,
    "qualifies": true
   },
   {
@@ -632,7 +645,7 @@
    "gd": 0,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 2,
+   "thirdRank": 3,
    "qualifies": true
   },
   {
@@ -647,7 +660,7 @@
    "gd": 0,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 3,
+   "thirdRank": 4,
    "qualifies": true
   },
   {
@@ -662,7 +675,7 @@
    "gd": -1,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 4,
+   "thirdRank": 5,
    "qualifies": true
   },
   {
@@ -677,7 +690,7 @@
    "gd": -2,
    "pts": 4,
    "rank": 3,
-   "thirdRank": 5,
+   "thirdRank": 6,
    "qualifies": true
   },
   {
@@ -692,7 +705,7 @@
    "gd": 2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 6,
+   "thirdRank": 7,
    "qualifies": true
   },
   {
@@ -707,7 +720,7 @@
    "gd": 0,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 7,
+   "thirdRank": 8,
    "qualifies": null
   },
   {
@@ -722,8 +735,8 @@
    "gd": -1,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 8,
-   "qualifies": null
+   "thirdRank": 9,
+   "qualifies": false
   },
   {
    "group": "J",
@@ -737,7 +750,7 @@
    "gd": -2,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 9,
+   "thirdRank": 10,
    "qualifies": null
   },
   {
@@ -752,7 +765,7 @@
    "gd": -3,
    "pts": 3,
    "rank": 3,
-   "thirdRank": 10,
+   "thirdRank": 11,
    "qualifies": false
   },
   {
@@ -767,23 +780,8 @@
    "gd": -1,
    "pts": 2,
    "rank": 3,
-   "thirdRank": 11,
-   "qualifies": false
-  },
-  {
-   "group": "K",
-   "code": "COD",
-   "p": 2,
-   "w": 0,
-   "d": 1,
-   "l": 1,
-   "gf": 1,
-   "ga": 2,
-   "gd": -1,
-   "pts": 1,
-   "rank": 3,
    "thirdRank": 12,
-   "qualifies": null
+   "qualifies": false
   }
  ],
  "complete": {
@@ -793,7 +791,7 @@
   "B": true,
   "C": true,
   "E": true,
-  "K": false,
+  "K": true,
   "H": true,
   "L": true,
   "A": true,

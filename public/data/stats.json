@@ -113,6 +113,14 @@
    "ownGoals": 0
   },
   {
+   "id": "441316",
+   "name": "Yoane WISSA",
+   "code": "COD",
+   "no": 20,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "441137",
    "name": "Anthony ELANGA",
    "code": "SWE",
@@ -277,14 +285,6 @@
    "name": "Yasin AYARI",
    "code": "SWE",
    "no": 18,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "441316",
-   "name": "Yoane WISSA",
-   "code": "COD",
-   "no": 20,
    "goals": 2,
    "ownGoals": 0
   },
@@ -486,7 +486,7 @@
    }
   ]
  },
- "attAvg": 64296,
+ "attAvg": 64355,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -550,9 +550,9 @@
    "ENG": -2,
    "CRO": -2,
    "POR": -4,
-   "COD": -2,
-   "UZB": -2,
-   "COL": -3
+   "COD": -5,
+   "UZB": -4,
+   "COL": -4
   },
   "all": {
    "MEX": -6,
@@ -600,9 +600,9 @@
    "ENG": -2,
    "CRO": -2,
    "POR": -4,
-   "COD": -2,
-   "UZB": -2,
-   "COL": -3
+   "COD": -5,
+   "UZB": -4,
+   "COL": -4
   }
  },
  "suspensions": {

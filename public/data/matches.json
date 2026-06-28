@@ -4731,8 +4731,8 @@
    "group": "K",
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400257525",
-   "status": "live",
-   "time": "90'+2'",
+   "status": "finished",
+   "time": "96'",
    "home": {
     "code": "COL",
     "score": 0,
@@ -4790,11 +4790,11 @@
    "group": "K",
    "date": "2026-06-27T23:30:00Z",
    "venueId": "400098290",
-   "status": "live",
-   "time": "90'",
+   "status": "finished",
+   "time": "99'",
    "home": {
     "code": "COD",
-    "score": 2,
+    "score": 3,
     "pen": null
    },
    "away": {
@@ -4804,7 +4804,7 @@
    },
    "phA": "K2",
    "phB": "K3",
-   "winner": null,
+   "winner": "COD",
    "attendance": 68239,
    "officials": [
     {
@@ -5098,7 +5098,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "COD",
+    "score": null,
+    "pen": null
+   },
    "phA": "1L",
    "phB": "3EHIJK",
    "winner": null,
@@ -5144,7 +5148,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "SEN",
+    "score": null,
+    "pen": null
+   },
    "phA": "1G",
    "phB": "3AEHIJ",
    "winner": null,
@@ -5160,7 +5168,11 @@
    "venueId": "400242032",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "POR",
+    "score": null,
+    "pen": null
+   },
    "away": {
     "code": "CRO",
     "score": null,
@@ -5248,7 +5260,11 @@
    "venueId": "400254717",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "COL",
+    "score": null,
+    "pen": null
+   },
    "away": {
     "code": "GHA",
     "score": null,

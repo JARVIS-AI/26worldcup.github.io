@@ -41438,13 +41438,22 @@
      "player": "441316",
      "minute": "68'",
      "type": 1,
-     "period": 5
+     "period": 5,
+     "sec": 1355
     },
     {
      "player": "477859",
      "minute": "78'",
      "type": 2,
-     "period": 5
+     "period": 5,
+     "sec": 1925
+    },
+    {
+     "player": "441316",
+     "minute": "90'+1'",
+     "type": 2,
+     "period": 5,
+     "sec": 2715
     }
    ],
    "bookings": [
@@ -41848,9 +41857,9 @@
     }
    ]
   },
-  "matchTime": "90'+1'",
-  "period": 5,
-  "final": false,
+  "matchTime": "99'",
+  "period": 10,
+  "final": true,
   "secTried": true
  },
  "400021501": {
@@ -45301,9 +45310,9 @@
     }
    ]
   },
-  "matchTime": "90'+2'",
-  "period": 5,
-  "final": false,
+  "matchTime": "96'",
+  "period": 10,
+  "final": true,
   "secTried": true
  },
  "400021506": {
