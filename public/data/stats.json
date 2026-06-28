@@ -281,6 +281,14 @@
    "ownGoals": 0
   },
   {
+   "id": "441316",
+   "name": "Yoane WISSA",
+   "code": "COD",
+   "no": 20,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "464933",
    "name": "Abbosbek FAYZULLAEV",
    "code": "UZB",
@@ -309,14 +317,6 @@
    "name": "Agustin CANOBBIO",
    "code": "URU",
    "no": 14,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "447860",
-   "name": "Alex BAENA",
-   "code": "ESP",
-   "no": 15,
    "goals": 1,
    "ownGoals": 0
   }
