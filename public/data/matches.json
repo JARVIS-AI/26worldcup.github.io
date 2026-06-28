@@ -4916,7 +4916,7 @@
    "date": "2026-06-28T19:00:00Z",
    "venueId": "400017978",
    "status": "live",
-   "time": "78'",
+   "time": "90'+2'",
    "home": {
     "code": "RSA",
     "score": 0,
@@ -4924,7 +4924,7 @@
    },
    "away": {
     "code": "CAN",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "2A",

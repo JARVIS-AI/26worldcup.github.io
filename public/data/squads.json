@@ -1318,7 +1318,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Orlando_Pirates_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Tshepang_Moremi",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -1390,7 +1390,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Mamelodi_Sundowns_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Iqraam_Rayners",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -2645,7 +2645,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Stephen_Eust%C3%A1quio",
     "wcApps": 4,
-    "wcGoals": 0,
+    "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
    },
