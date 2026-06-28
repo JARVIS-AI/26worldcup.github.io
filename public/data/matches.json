@@ -4916,7 +4916,7 @@
    "date": "2026-06-28T19:00:00Z",
    "venueId": "400017978",
    "status": "live",
-   "time": "65'",
+   "time": "78'",
    "home": {
     "code": "RSA",
     "score": 0,
@@ -4930,7 +4930,7 @@
    "phA": "2A",
    "phB": "2B",
    "winner": null,
-   "attendance": null,
+   "attendance": 69237,
    "officials": [
     {
      "id": "392268",

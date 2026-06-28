@@ -2572,7 +2572,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Alphonso_Davies",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -2610,7 +2610,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Niko_Sigur",
     "wcApps": 2,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -2698,7 +2698,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Los_Angeles_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jacob_Shaffelburg",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -2842,7 +2842,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Royale_Union_Saint-Gilloise",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Promise_David",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
