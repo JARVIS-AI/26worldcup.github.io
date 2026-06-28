@@ -38483,8 +38483,8 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "0'",
-  "period": 0,
+  "matchTime": "1'",
+  "period": 3,
   "final": false,
   "secTried": true
  },
@@ -39752,8 +39752,8 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "0'",
-  "period": 0,
+  "matchTime": "4'",
+  "period": 3,
   "final": false,
   "secTried": true
  },
