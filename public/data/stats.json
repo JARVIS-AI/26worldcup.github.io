@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 171,
+  "yellow": 172,
   "red": 10,
   "players": [
    {
@@ -406,6 +406,14 @@
     "r": 1
    },
    {
+    "id": "464924",
+    "name": "Abdukodir KHUSANOV",
+    "code": "UZB",
+    "no": 2,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "433394",
     "name": "AHMED FATHY",
     "code": "QAT",
@@ -475,14 +483,6 @@
     "code": "RSA",
     "no": 4,
     "y": 2,
-    "r": 0
-   },
-   {
-    "id": "442428",
-    "name": "Aaron HICKEY",
-    "code": "SCO",
-    "no": 2,
-    "y": 1,
     "r": 0
    }
   ]
