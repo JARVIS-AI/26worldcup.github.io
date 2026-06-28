@@ -4915,8 +4915,8 @@
    "group": null,
    "date": "2026-06-28T19:00:00Z",
    "venueId": "400017978",
-   "status": "live",
-   "time": "90'+2'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "RSA",
     "score": 0,
@@ -4929,7 +4929,7 @@
    },
    "phA": "2A",
    "phB": "2B",
-   "winner": null,
+   "winner": "CAN",
    "attendance": 69237,
    "officials": [
     {
@@ -5536,7 +5536,11 @@
    "venueId": "400249385",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "CAN",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "W73",
    "phB": "W75",
