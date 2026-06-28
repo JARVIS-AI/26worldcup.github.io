@@ -252,7 +252,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/RC_Strasbourg_Alsace",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Valent%C3%ADn_Barco",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -379,7 +379,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Lionel_Messi",
    "wcApps": 3,
-   "wcGoals": 5,
+   "wcGoals": 6,
    "wcYellow": 0,
    "wcRed": 0
   },

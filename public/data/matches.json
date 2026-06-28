@@ -4614,7 +4614,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400254717",
    "status": "live",
-   "time": "66'",
+   "time": "79'",
    "home": {
     "code": "ALG",
     "score": 2,
@@ -4635,18 +4635,18 @@
      "country": "UZB",
      "role": "referee",
      "name": {
-      "en": "Ilgiz TANTASHEV",
-      "fr": "Ilgiz TANTASHEV",
-      "zh": "Ilgiz TANTASHEV",
-      "ar": "Ilgiz TANTASHEV",
-      "es": "Ilgiz TANTASHEV",
-      "de": "Ilgiz TANTASHEV",
-      "pt": "Ilgiz TANTASHEV",
-      "it": "Ilgiz TANTASHEV",
-      "ja": "Ilgiz TANTASHEV",
-      "ko": "Ilgiz TANTASHEV",
-      "id": "Ilgiz TANTASHEV",
-      "ru": "Ilgiz TANTASHEV"
+      "en": "I. Tantashev",
+      "fr": "I. Tantashev",
+      "zh": "坦塔舍夫",
+      "ar": "I. Tantashev",
+      "es": "I. Tantashev",
+      "de": "I. Tantashev",
+      "pt": "I. Tantashev",
+      "it": "I. Tantashev",
+      "ja": "I. Tantashev",
+      "ko": "I. Tantashev",
+      "id": "I. Tantashev",
+      "ru": "I. Tantashev"
      },
      "typeName": {
       "en": "Referee",
@@ -4673,7 +4673,7 @@
    "date": "2026-06-28T02:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "66'",
+   "time": "79'",
    "home": {
     "code": "JOR",
     "score": 1,
