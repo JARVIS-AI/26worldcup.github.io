@@ -38224,6 +38224,18 @@
      "on": "491167",
      "minute": "76'",
      "period": 5
+    },
+    {
+     "off": "431212",
+     "on": "431208",
+     "minute": "90'",
+     "period": 5
+    },
+    {
+     "off": "489550",
+     "on": "499102",
+     "minute": "90'",
+     "period": 5
     }
    ]
   },
@@ -38567,10 +38579,16 @@
      "on": "463661",
      "minute": "71'",
      "period": 5
+    },
+    {
+     "off": "416081",
+     "on": "495054",
+     "minute": "82'",
+     "period": 5
     }
    ]
   },
-  "matchTime": "80'",
+  "matchTime": "90'+3'",
   "period": 5,
   "final": false,
   "secTried": true
@@ -39553,6 +39571,13 @@
      "type": 2,
      "period": 5,
      "sec": 859
+    },
+    {
+     "player": null,
+     "minute": "90'+3'",
+     "type": 2,
+     "period": 5,
+     "sec": 2870
     }
    ],
    "bookings": [],
@@ -39920,7 +39945,7 @@
     }
    ]
   },
-  "matchTime": "79'",
+  "matchTime": "90'+3'",
   "period": 5,
   "final": false,
   "secTried": true

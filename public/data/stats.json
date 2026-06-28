@@ -297,6 +297,13 @@
    "ownGoals": 0
   },
   {
+   "id": null,
+   "name": "#null",
+   "code": "ALG",
+   "goals": 1,
+   "ownGoals": 0
+  },
+  {
    "id": "464933",
    "name": "Abbosbek FAYZULLAEV",
    "code": "UZB",
@@ -309,14 +316,6 @@
    "name": "ABDULELAH ALAMRI",
    "code": "KSA",
    "no": 4,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "400721",
-   "name": "Achraf HAKIMI",
-   "code": "MAR",
-   "no": 2,
    "goals": 1,
    "ownGoals": 0
   }
