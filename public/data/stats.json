@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 171,
+  "yellow": 172,
   "red": 10,
   "players": [
    {
@@ -413,6 +413,14 @@
     "r": 0
    },
    {
+    "id": "464924",
+    "name": "Abdukodir KHUSANOV",
+    "code": "UZB",
+    "no": 2,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "433394",
     "name": "AHMED FATHY",
     "code": "QAT",
@@ -473,14 +481,6 @@
     "name": "SIDNY LOPES CABRAL",
     "code": "CPV",
     "no": 13,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "403616",
-    "name": "Teboho MOKOENA",
-    "code": "RSA",
-    "no": 4,
     "y": 2,
     "r": 0
    }
