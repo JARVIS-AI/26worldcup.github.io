@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 191,
+  "yellow": 195,
   "red": 10,
   "players": [
    {
@@ -409,7 +409,7 @@
     "id": null,
     "name": "#null",
     "code": "TUR",
-    "y": 4,
+    "y": 6,
     "r": 0
    },
    {
@@ -477,10 +477,10 @@
     "r": 0
    },
    {
-    "id": "433469",
-    "name": "MOHANAD LASHIN",
-    "code": "EGY",
-    "no": 17,
+    "id": "424422",
+    "name": "Matias GALARZA",
+    "code": "PAR",
+    "no": 23,
     "y": 2,
     "r": 0
    }
