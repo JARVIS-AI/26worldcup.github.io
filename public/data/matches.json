@@ -5258,7 +5258,7 @@
    "date": "2026-06-29T17:00:00Z",
    "venueId": "400249385",
    "status": "live",
-   "time": "16'",
+   "time": "29'",
    "home": {
     "code": "BRA",
     "score": 0,
@@ -5266,7 +5266,7 @@
    },
    "away": {
     "code": "JPN",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "1C",
