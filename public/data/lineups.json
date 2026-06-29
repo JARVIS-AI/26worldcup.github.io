@@ -49927,9 +49927,22 @@
      "minute": "14'",
      "card": 1,
      "period": 3
+    },
+    {
+     "player": "335656",
+     "minute": "48'",
+     "card": 1,
+     "period": 5
     }
    ],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "411726",
+     "on": "463746",
+     "minute": "",
+     "period": 4
+    }
+   ]
   },
   "away": {
    "tactics": "3-4-3",
@@ -50248,8 +50261,8 @@
    ],
    "substitutions": []
   },
-  "matchTime": null,
-  "period": 4,
+  "matchTime": "50'",
+  "period": 5,
   "final": false,
   "secTried": true
  },

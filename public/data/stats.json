@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 185,
+  "yellow": 186,
   "red": 10,
   "players": [
    {
@@ -438,6 +438,14 @@
     "r": 0
    },
    {
+    "id": "335656",
+    "name": "DANILO",
+    "code": "BRA",
+    "no": 13,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "463128",
     "name": "Diego GOMEZ",
     "code": "PAR",
@@ -474,14 +482,6 @@
     "name": "Saeid EZATOLAHI",
     "code": "IRN",
     "no": 6,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "477832",
-    "name": "SIDNY LOPES CABRAL",
-    "code": "CPV",
-    "no": 13,
     "y": 2,
     "r": 0
    }
