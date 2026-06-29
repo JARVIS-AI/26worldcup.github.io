@@ -5074,7 +5074,7 @@
    "date": "2026-06-29T20:30:00Z",
    "venueId": "400248623",
    "status": "live",
-   "time": "39'",
+   "time": null,
    "home": {
     "code": "GER",
     "score": 0,
@@ -5082,7 +5082,7 @@
    },
    "away": {
     "code": "PAR",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "1E",
