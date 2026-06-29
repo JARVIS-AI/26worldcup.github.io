@@ -5258,7 +5258,7 @@
    "date": "2026-06-29T17:00:00Z",
    "venueId": "400249385",
    "status": "live",
-   "time": "64'",
+   "time": "77'",
    "home": {
     "code": "BRA",
     "score": 1,
@@ -5272,7 +5272,7 @@
    "phA": "1C",
    "phB": "2F",
    "winner": null,
-   "attendance": null,
+   "attendance": 68777,
    "officials": [
     {
      "id": "415965",
