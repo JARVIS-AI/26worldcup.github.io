@@ -5073,21 +5073,21 @@
    "group": null,
    "date": "2026-06-29T20:30:00Z",
    "venueId": "400248623",
-   "status": "live",
-   "time": null,
+   "status": "finished",
+   "time": "132'",
    "home": {
     "code": "GER",
     "score": 1,
-    "pen": 2
+    "pen": 3
    },
    "away": {
     "code": "PAR",
     "score": 1,
-    "pen": 3
+    "pen": 4
    },
    "phA": "1E",
    "phB": "3ABCDF",
-   "winner": null,
+   "winner": "PAR",
    "attendance": 63945,
    "officials": [
     {
@@ -5180,39 +5180,6 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
-     }
-    },
-    {
-     "id": "416177",
-     "country": "CHI",
-     "role": "fourth",
-     "name": {
-      "en": "Cristian GARAY",
-      "fr": "Cristian GARAY",
-      "zh": "Cristian GARAY",
-      "ar": "Cristian GARAY",
-      "es": "Cristian GARAY",
-      "de": "Cristian GARAY",
-      "pt": "Cristian GARAY",
-      "it": "Cristian GARAY",
-      "ja": "Cristian GARAY",
-      "ko": "Cristian GARAY",
-      "id": "Cristian GARAY",
-      "ru": "Cristian GARAY"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
      }
     }
    ]
@@ -5786,7 +5753,11 @@
    "venueId": "400248622",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "PAR",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "W74",
    "phB": "W77",
