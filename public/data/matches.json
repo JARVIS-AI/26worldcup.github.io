@@ -5258,10 +5258,10 @@
    "date": "2026-06-29T17:00:00Z",
    "venueId": "400249385",
    "status": "live",
-   "time": "50'",
+   "time": "64'",
    "home": {
     "code": "BRA",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
