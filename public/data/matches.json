@@ -5073,16 +5073,16 @@
    "group": null,
    "date": "2026-06-29T20:30:00Z",
    "venueId": "400248623",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "11'",
    "home": {
     "code": "GER",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "PAR",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "1E",
