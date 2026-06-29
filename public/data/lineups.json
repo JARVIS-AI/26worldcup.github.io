@@ -49920,6 +49920,12 @@
      "on": "429642",
      "minute": "63'",
      "period": 5
+    },
+    {
+     "off": "484849",
+     "on": "430658",
+     "minute": "79'",
+     "period": 5
     }
    ]
   },
@@ -50236,7 +50242,7 @@
     }
    ]
   },
-  "matchTime": "70'",
+  "matchTime": "84'",
   "period": 5,
   "final": false,
   "secTried": true
