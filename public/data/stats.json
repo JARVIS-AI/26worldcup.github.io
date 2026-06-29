@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 182,
+  "yellow": 184,
   "red": 10,
   "players": [
    {
@@ -430,6 +430,14 @@
     "r": 0
    },
    {
+    "id": "308386",
+    "name": "CASEMIRO",
+    "code": "BRA",
+    "no": 5,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "463128",
     "name": "Diego GOMEZ",
     "code": "PAR",
@@ -474,14 +482,6 @@
     "name": "SIDNY LOPES CABRAL",
     "code": "CPV",
     "no": 13,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "403616",
-    "name": "Teboho MOKOENA",
-    "code": "RSA",
-    "no": 4,
     "y": 2,
     "r": 0
    }
