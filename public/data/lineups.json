@@ -50245,11 +50245,29 @@
      "on": "495046",
      "minute": "57'",
      "period": 5
+    },
+    {
+     "off": "369761",
+     "on": "486875",
+     "minute": "",
+     "period": 17
+    },
+    {
+     "off": "479601",
+     "on": "406205",
+     "minute": "99'",
+     "period": 7
+    },
+    {
+     "off": "476348",
+     "on": "369768",
+     "minute": "99'",
+     "period": 7
     }
    ]
   },
-  "matchTime": null,
-  "period": 17,
+  "matchTime": "101'",
+  "period": 7,
   "final": false,
   "secTried": true
  },
