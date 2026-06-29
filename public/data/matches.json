@@ -5824,7 +5824,11 @@
    "venueId": "400257536",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "BRA",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "W76",
    "phB": "W78",

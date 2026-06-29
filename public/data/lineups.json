@@ -49618,7 +49618,7 @@
  },
  "400021513": {
   "home": {
-   "tactics": null,
+   "tactics": "4-2-3-1",
    "xi": [
     {
      "id": "228912",
@@ -49903,7 +49903,7 @@
    "substitutions": []
   },
   "away": {
-   "tactics": null,
+   "tactics": "4-5-1",
    "xi": [
     {
      "id": "494531",
