@@ -6576,7 +6576,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Portsmouth_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Gustavo_Caballero",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8840,7 +8840,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Leon_Goretzka",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9021,7 +9021,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Kai_Havertz",
     "wcApps": 4,
-    "wcGoals": 2,
+    "wcGoals": 3,
     "wcYellow": 0,
     "wcRed": 0
    },

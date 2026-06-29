@@ -105,6 +105,14 @@
    "ownGoals": 0
   },
   {
+   "id": "411367",
+   "name": "Kai HAVERTZ",
+   "code": "GER",
+   "no": 7,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "430609",
    "name": "MATHEUS CUNHA",
    "code": "BRA",
@@ -213,14 +221,6 @@
    "name": "Julian QUINONES",
    "code": "MEX",
    "no": 16,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "411367",
-   "name": "Kai HAVERTZ",
-   "code": "GER",
-   "no": 7,
    "goals": 2,
    "ownGoals": 0
   },
