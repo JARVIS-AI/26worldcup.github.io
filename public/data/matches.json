@@ -5074,7 +5074,7 @@
    "date": "2026-06-29T20:30:00Z",
    "venueId": "400248623",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "GER",
     "score": null,
@@ -5121,39 +5121,6 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
-     }
-    },
-    {
-     "id": "328495",
-     "country": "CHN",
-     "role": "fourth",
-     "name": {
-      "en": "MA Ning",
-      "fr": "MA Ning",
-      "zh": "MA Ning",
-      "ar": "MA Ning",
-      "es": "MA Ning",
-      "de": "MA Ning",
-      "pt": "MA Ning",
-      "it": "MA Ning",
-      "ja": "MA Ning",
-      "ko": "MA Ning",
-      "id": "MA Ning",
-      "ru": "MA Ning"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
      }
     }
    ]
@@ -5257,11 +5224,11 @@
    "group": null,
    "date": "2026-06-29T17:00:00Z",
    "venueId": "400249385",
-   "status": "live",
-   "time": "90'+1'",
+   "status": "finished",
+   "time": "101'",
    "home": {
     "code": "BRA",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "away": {
@@ -5271,7 +5238,7 @@
    },
    "phA": "1C",
    "phB": "2F",
-   "winner": null,
+   "winner": "BRA",
    "attendance": 68777,
    "officials": [
     {
