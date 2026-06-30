@@ -5317,10 +5317,10 @@
    "date": "2026-06-30T21:00:00Z",
    "venueId": "400257536",
    "status": "live",
-   "time": "44'",
+   "time": null,
    "home": {
     "code": "FRA",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
