@@ -5133,10 +5133,10 @@
    "date": "2026-06-30T01:00:00Z",
    "venueId": "400238450",
    "status": "live",
-   "time": "67'",
+   "time": "83'",
    "home": {
     "code": "NED",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {

@@ -306,7 +306,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Juventus_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Teun_Koopmeiners",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -360,7 +360,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/AFC_Ajax",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Wout_Weghorst",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -397,7 +397,7 @@
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Cody_Gakpo",
    "wcApps": 4,
-   "wcGoals": 2,
+   "wcGoals": 3,
    "wcYellow": 0,
    "wcRed": 0
   },
