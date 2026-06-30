@@ -50970,11 +50970,18 @@
      "sec": 2327
     }
    ],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "483448",
+     "minute": "45'+1'",
+     "card": 1,
+     "period": 3
+    }
+   ],
    "substitutions": []
   },
-  "matchTime": "44'",
-  "period": 3,
+  "matchTime": null,
+  "period": 4,
   "final": false,
   "secTried": true
  },
