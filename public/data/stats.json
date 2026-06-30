@@ -137,6 +137,14 @@
    "ownGoals": 0
   },
   {
+   "id": "430822",
+   "name": "Amad DIALLO",
+   "code": "CIV",
+   "no": 15,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "441137",
    "name": "Anthony ELANGA",
    "code": "SWE",
@@ -309,14 +317,6 @@
    "name": "Abbosbek FAYZULLAEV",
    "code": "UZB",
    "no": 22,
-   "goals": 1,
-   "ownGoals": 0
-  },
-  {
-   "id": "403312",
-   "name": "ABDULELAH ALAMRI",
-   "code": "KSA",
-   "no": 4,
    "goals": 1,
    "ownGoals": 0
   }

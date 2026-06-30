@@ -5409,10 +5409,10 @@
    "date": "2026-06-30T17:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "65'",
+   "time": "79'",
    "home": {
     "code": "CIV",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
@@ -5423,7 +5423,7 @@
    "phA": "2E",
    "phB": "2I",
    "winner": null,
-   "attendance": null,
+   "attendance": 69665,
    "officials": [
     {
      "id": "360305",
