@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 195,
+  "yellow": 196,
   "red": 10,
   "players": [
    {
@@ -469,18 +469,18 @@
     "r": 0
    },
    {
-    "id": "466317",
-    "name": "Juninho BACUNA",
-    "code": "CUW",
-    "no": 7,
+    "id": "403083",
+    "name": "Issa DIOP",
+    "code": "MAR",
+    "no": 14,
     "y": 2,
     "r": 0
    },
    {
-    "id": "424422",
-    "name": "Matias GALARZA",
-    "code": "PAR",
-    "no": 23,
+    "id": "466317",
+    "name": "Juninho BACUNA",
+    "code": "CUW",
+    "no": 7,
     "y": 2,
     "r": 0
    }
