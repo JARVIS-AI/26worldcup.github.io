@@ -5132,16 +5132,16 @@
    "group": null,
    "date": "2026-06-30T01:00:00Z",
    "venueId": "400238450",
-   "status": "scheduled",
-   "time": null,
+   "status": "live",
+   "time": "27'",
    "home": {
     "code": "NED",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "MAR",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "1F",
