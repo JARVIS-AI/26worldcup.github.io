@@ -352,6 +352,26 @@ const sv: Dict = {
   missDne: 'Deltog inte',
   missBanned: 'Avstängd',
   missNotMember: 'Ej Fifa-medlem',
+  navMatchSim: 'Matchsimulator',
+  aimsTitle: 'Matchsimulator',
+  aimsSub:
+    'Välj två lag och låt Elo-modellen förutsäga hur matchen utvecklas på neutral plan (ingen hemmafördel), med aktuella ratingar.',
+  aimsTeamA: 'Lag A',
+  aimsTeamB: 'Lag B',
+  aimsSwap: 'Byt lag',
+  aimsSimulate: 'Simulera match',
+  aimsAnalyzing: 'Analyserar sannolikheter…',
+  aimsDraw: 'Oavgjort!',
+  aimsWinner: '{team} vinner!',
+  aimsDrawLabel: 'Oavgjort',
+  aimsHistory: 'Simuleringshistorik',
+  aimsClearHistory: 'Rensa historik',
+  aimsNote:
+    'Använder samma Elo-ratingmodell som turneringsprognos-sidan. Bara på skoj, ingen officiell förutsägelse.',
+  aimsTryMatch: 'Simulera den här matchen',
+  aimsHome: 'Hemmafördel',
+  aimsNeutral: 'Neutral',
+  aimsGoal: 'MÅÅÅL!',
 }
 
 export default sv

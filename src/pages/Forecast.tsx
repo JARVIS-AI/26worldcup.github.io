@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import type { Match } from '../types'
 import { useI18n } from '../i18n'
 import { useAppData, useData } from '../data/DataContext'
@@ -241,7 +242,13 @@ export default function Forecast() {
   return (
     <div className="sim-page">
       <div className="page-head">
-        <h1>{t('simTitle')}</h1>
+        <div className="page-head-row">
+          <h1>{t('simTitle')}</h1>
+          <Link className="chip page-head-cta" to="/match-simulator">
+            <Icon name="bolt" size={13} />
+            {t('navMatchSim')}
+          </Link>
+        </div>
         <p>{t('simSub')}</p>
       </div>
 

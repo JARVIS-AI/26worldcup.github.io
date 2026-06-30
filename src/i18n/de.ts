@@ -354,6 +354,26 @@ const de: Dict = {
   missDne: 'Nicht teilgenommen',
   missBanned: 'Ausgeschlossen',
   missNotMember: 'Kein FIFA-Mitglied',
+  navMatchSim: 'Einzelspiel-Simulator',
+  aimsTitle: 'Einzelspiel-Simulator',
+  aimsSub:
+    'Wähle zwei Teams und lass das Elo-Modell den Spielverlauf auf neutralem Platz (ohne Heimvorteil) mit den aktuellen Wertungen vorhersagen.',
+  aimsTeamA: 'Team A',
+  aimsTeamB: 'Team B',
+  aimsSwap: 'Teams tauschen',
+  aimsSimulate: 'Spiel simulieren',
+  aimsAnalyzing: 'Wahrscheinlichkeiten werden analysiert…',
+  aimsDraw: 'Unentschieden!',
+  aimsWinner: '{team} gewinnt!',
+  aimsDrawLabel: 'Remis',
+  aimsHistory: 'Simulationsverlauf',
+  aimsClearHistory: 'Verlauf löschen',
+  aimsNote:
+    'Nutzt dasselbe Elo-Wertungsmodell wie die Turnierprognose-Seite. Nur zur Unterhaltung, keine offizielle Vorhersage.',
+  aimsTryMatch: 'Diese Paarung simulieren',
+  aimsHome: 'Heimvorteil',
+  aimsNeutral: 'Neutral',
+  aimsGoal: 'TOOOR!',
 }
 
 export default de

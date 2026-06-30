@@ -350,6 +350,26 @@ const tr: Dict = {
   missDne: 'Katılmadı',
   missBanned: 'Men edildi',
   missNotMember: 'FIFA üyesi değil',
+  navMatchSim: 'Tek maç simülatörü',
+  aimsTitle: 'Tek maç simülatörü',
+  aimsSub:
+    'İki takım seçin; Elo modeli maçın nötr sahada (ev sahibi avantajı olmadan) güncel puanlarla nasıl geçeceğini tahmin etsin.',
+  aimsTeamA: 'A Takımı',
+  aimsTeamB: 'B Takımı',
+  aimsSwap: 'Takımları değiştir',
+  aimsSimulate: 'Maçı simüle et',
+  aimsAnalyzing: 'Olasılıklar analiz ediliyor…',
+  aimsDraw: 'Berabere!',
+  aimsWinner: '{team} kazanıyor!',
+  aimsDrawLabel: 'Beraberlik',
+  aimsHistory: 'Simülasyon geçmişi',
+  aimsClearHistory: 'Geçmişi temizle',
+  aimsNote:
+    'Turnuva tahmini sayfasıyla aynı Elo puanlama modelini kullanır. Yalnızca eğlence amaçlıdır, resmi bir tahmin değildir.',
+  aimsTryMatch: 'Bu eşleşmeyi simüle et',
+  aimsHome: 'Ev sahibi avantajı',
+  aimsNeutral: 'Nötr',
+  aimsGoal: 'GOOOL!',
 }
 
 export default tr

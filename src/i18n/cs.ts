@@ -356,6 +356,26 @@ const cs: Dict = {
   missDne: 'Nepřihlásila se',
   missBanned: 'Vyloučena',
   missNotMember: 'Není členem FIFA',
+  navMatchSim: 'Simulátor zápasu',
+  aimsTitle: 'Simulátor zápasu',
+  aimsSub:
+    'Vyberte dva týmy a nechte model Elo předpovědět průběh zápasu na neutrální půdě (bez výhody domácího prostředí) podle aktuálního hodnocení.',
+  aimsTeamA: 'Tým A',
+  aimsTeamB: 'Tým B',
+  aimsSwap: 'Prohodit týmy',
+  aimsSimulate: 'Simulovat zápas',
+  aimsAnalyzing: 'Analýza pravděpodobností…',
+  aimsDraw: 'Remíza!',
+  aimsWinner: '{team} vyhrává!',
+  aimsDrawLabel: 'Remíza',
+  aimsHistory: 'Historie simulací',
+  aimsClearHistory: 'Vymazat historii',
+  aimsNote:
+    'Používá stejný model hodnocení Elo jako stránka turnajové předpovědi. Jen pro zábavu, nejde o oficiální předpověď.',
+  aimsTryMatch: 'Simulovat tento zápas',
+  aimsHome: 'Výhoda domácího prostředí',
+  aimsNeutral: 'Neutrální',
+  aimsGoal: 'GÓÓÓL!',
 }
 
 export default cs

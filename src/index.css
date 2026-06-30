@@ -627,6 +627,25 @@ input.input {
   color: var(--text-2);
   margin: 2px 0 0;
 }
+/* page-head variant: the title and a right-aligned cross-link share the top line
+   (forecast <-> single-match simulator) */
+.page-head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+}
+.page-head-row h1 {
+  margin: 0;
+}
+.page-head-cta {
+  color: var(--accent);
+}
+.page-head-cta:hover {
+  background: color-mix(in oklab, var(--accent) 14%, transparent);
+}
 
 .empty {
   text-align: center;

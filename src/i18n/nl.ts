@@ -354,6 +354,26 @@ const nl: Dict = {
   missDne: 'Niet ingeschreven',
   missBanned: 'Uitgesloten',
   missNotMember: 'Geen FIFA-lid',
+  navMatchSim: 'Wedstrijdsimulator',
+  aimsTitle: 'Wedstrijdsimulator',
+  aimsSub:
+    'Kies twee teams en laat het Elo-model voorspellen hoe de wedstrijd verloopt op neutraal terrein (geen thuisvoordeel), met de huidige ratings.',
+  aimsTeamA: 'Team A',
+  aimsTeamB: 'Team B',
+  aimsSwap: 'Teams wisselen',
+  aimsSimulate: 'Wedstrijd simuleren',
+  aimsAnalyzing: 'Kansen analyseren…',
+  aimsDraw: 'Gelijkspel!',
+  aimsWinner: '{team} wint!',
+  aimsDrawLabel: 'Gelijk',
+  aimsHistory: 'Simulatiegeschiedenis',
+  aimsClearHistory: 'Geschiedenis wissen',
+  aimsNote:
+    'Gebruikt hetzelfde Elo-ratingmodel als de toernooivoorspelling-pagina. Alleen voor de lol, geen officiële voorspelling.',
+  aimsTryMatch: 'Dit duel simuleren',
+  aimsHome: 'Thuisvoordeel',
+  aimsNeutral: 'Neutraal',
+  aimsGoal: 'GOOOAL!',
 }
 
 export default nl

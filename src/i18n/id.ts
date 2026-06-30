@@ -352,6 +352,26 @@ const id: Dict = {
   missDne: 'Tidak ikut',
   missBanned: 'Dilarang',
   missNotMember: 'Bukan anggota FIFA',
+  navMatchSim: 'Simulator pertandingan',
+  aimsTitle: 'Simulator pertandingan',
+  aimsSub:
+    'Pilih dua tim dan biarkan model Elo memprediksi jalannya pertandingan di tempat netral (tanpa keuntungan tuan rumah), memakai peringkat saat ini.',
+  aimsTeamA: 'Tim A',
+  aimsTeamB: 'Tim B',
+  aimsSwap: 'Tukar tim',
+  aimsSimulate: 'Simulasikan pertandingan',
+  aimsAnalyzing: 'Menganalisis probabilitas…',
+  aimsDraw: 'Seri!',
+  aimsWinner: '{team} menang!',
+  aimsDrawLabel: 'Seri',
+  aimsHistory: 'Riwayat simulasi',
+  aimsClearHistory: 'Hapus riwayat',
+  aimsNote:
+    'Memakai model peringkat Elo yang sama dengan halaman Prediksi turnamen. Hanya untuk hiburan, bukan prediksi resmi.',
+  aimsTryMatch: 'Simulasikan laga ini',
+  aimsHome: 'Keuntungan tuan rumah',
+  aimsNeutral: 'Netral',
+  aimsGoal: 'GOOOL!',
 }
 
 export default id

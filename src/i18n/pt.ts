@@ -355,6 +355,26 @@ const pt: Dict = {
   missDne: 'Não participou',
   missBanned: 'Excluído',
   missNotMember: 'Não membro da FIFA',
+  navMatchSim: 'Simulador de jogo',
+  aimsTitle: 'Simulador de jogo',
+  aimsSub:
+    'Escolha duas equipas e deixe o modelo Elo prever como o jogo decorre em campo neutro (sem vantagem caseira), usando as classificações atuais.',
+  aimsTeamA: 'Equipa A',
+  aimsTeamB: 'Equipa B',
+  aimsSwap: 'Trocar equipas',
+  aimsSimulate: 'Simular jogo',
+  aimsAnalyzing: 'A analisar probabilidades…',
+  aimsDraw: 'Empate!',
+  aimsWinner: '{team} vence!',
+  aimsDrawLabel: 'Empate',
+  aimsHistory: 'Histórico de simulações',
+  aimsClearHistory: 'Limpar histórico',
+  aimsNote:
+    'Usa o mesmo modelo de classificação Elo da página de Prognóstico do torneio. Apenas para diversão, não é uma previsão oficial.',
+  aimsTryMatch: 'Simular este confronto',
+  aimsHome: 'Vantagem caseira',
+  aimsNeutral: 'Neutro',
+  aimsGoal: 'GOOOLO!',
 }
 
 export default pt

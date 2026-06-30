@@ -353,6 +353,26 @@ const uz: Dict = {
   missDne: 'Ishtirok etmadi',
   missBanned: 'Chetlatilgan',
   missNotMember: 'FIFA aʼzosi emas',
+  navMatchSim: "Bitta o'yin simulyatori",
+  aimsTitle: "Bitta o'yin simulyatori",
+  aimsSub:
+    "Istalgan ikki jamoani tanlang va Elo modeli o'yin betaraf maydonda (uy afzalligisiz) joriy reytinglar bilan qanday kechishini bashorat qilsin.",
+  aimsTeamA: 'A jamoa',
+  aimsTeamB: 'B jamoa',
+  aimsSwap: 'Jamoalarni almashtirish',
+  aimsSimulate: "O'yinni simulyatsiya qilish",
+  aimsAnalyzing: 'Ehtimolliklar tahlil qilinmoqda…',
+  aimsDraw: 'Durang!',
+  aimsWinner: "{team} g'alaba qozonadi!",
+  aimsDrawLabel: 'Durang',
+  aimsHistory: 'Simulyatsiya tarixi',
+  aimsClearHistory: 'Tarixni tozalash',
+  aimsNote:
+    "Turnir bashorati sahifasidagi xuddi shu Elo reyting modelidan foydalanadi. Faqat o'yin-kulgi uchun, rasmiy bashorat emas.",
+  aimsTryMatch: 'Ushbu juftlikni simulyatsiya qilish',
+  aimsHome: 'Uy afzalligi',
+  aimsNeutral: 'Betaraf',
+  aimsGoal: 'GOOOL!',
 }
 
 export default uz

@@ -12,6 +12,7 @@ import {
   flagSrc,
   fmtSpeed,
   fmtTemp,
+  hostSide,
   localizedNote,
   placeholderLabel,
   STAGE_LABEL_KEY,
@@ -259,6 +260,19 @@ export default function MatchDetail() {
   const monthKey: 'jun' | 'jul' = dayKey(m.date, venue?.tz).slice(5, 7) === '07' ? 'jul' : 'jun'
   const clim = venue?.climate?.[monthKey]
   const hasLineups = Boolean(lu && (lu.home || lu.away))
+  // chip linking to the single-match simulator, prefilled with this match's teams and,
+  // when a host nation plays in its own country, which side is at home
+  const simHome = m.home && m.away ? hostSide(m.home.code, m.away.code, venue?.country) : null
+  const simLink =
+    m.home && m.away ? (
+      <Link
+        className="chip md-sim-chip"
+        to={`/match-simulator?a=${m.home.code}&b=${m.away.code}${simHome ? `&home=${simHome}` : ''}`}
+      >
+        <Icon name="bolt" size={12} />
+        {t('aimsTryMatch')}
+      </Link>
+    ) : null
 
   return (
     <div>
@@ -359,14 +373,17 @@ export default function MatchDetail() {
         )}
         {m.status === 'live' && <p className="md-semilive small">{t('semiLiveNote')}</p>}
         {m.home && m.away && probs[m.id] && m.status !== 'scheduled' && (
-          <button
-            type="button"
-            className="md-prob-show small"
-            aria-expanded={showProbPast}
-            onClick={() => setShowProbPast((v) => !v)}
-          >
-            {t(showProbPast ? 'probHide' : 'probShow')}
-          </button>
+          <div className="md-prob-actions">
+            <button
+              type="button"
+              className="md-prob-show small"
+              aria-expanded={showProbPast}
+              onClick={() => setShowProbPast((v) => !v)}
+            >
+              {t(showProbPast ? 'probHide' : 'probShow')}
+            </button>
+            {simLink}
+          </div>
         )}
         {m.home && m.away && probs[m.id] && (m.status === 'scheduled' || showProbPast) && (
           <div className="md-prob">
@@ -435,6 +452,7 @@ export default function MatchDetail() {
               )
             )}
             <p className="md-prob-note small muted">{t('probNote')}</p>
+            {m.status === 'scheduled' && <div className="md-prob-actions">{simLink}</div>}
           </div>
         )}
 

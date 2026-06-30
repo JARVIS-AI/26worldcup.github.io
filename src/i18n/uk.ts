@@ -357,6 +357,26 @@ const uk: Dict = {
   missDne: 'Не брала участь',
   missBanned: 'Відсторонена',
   missNotMember: 'Не член ФІФА',
+  navMatchSim: 'Симулятор матчу',
+  aimsTitle: 'Симулятор матчу',
+  aimsSub:
+    'Виберіть дві команди, і модель Ело передбачить, як пройде матч на нейтральному полі (без переваги свого поля), за поточними рейтингами.',
+  aimsTeamA: 'Команда A',
+  aimsTeamB: 'Команда B',
+  aimsSwap: 'Поміняти команди',
+  aimsSimulate: 'Симулювати матч',
+  aimsAnalyzing: 'Аналіз імовірностей…',
+  aimsDraw: 'Нічия!',
+  aimsWinner: '{team} перемагає!',
+  aimsDrawLabel: 'Нічия',
+  aimsHistory: 'Історія симуляцій',
+  aimsClearHistory: 'Очистити історію',
+  aimsNote:
+    'Використовує ту саму модель рейтингу Ело, що й сторінка прогнозу турніру. Лише для розваги, не офіційний прогноз.',
+  aimsTryMatch: 'Симулювати цю пару',
+  aimsHome: 'Перевага свого поля',
+  aimsNeutral: 'Нейтральне',
+  aimsGoal: 'ГОООЛ!',
 }
 
 export default uk

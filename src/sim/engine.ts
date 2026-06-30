@@ -80,9 +80,24 @@ export function pairProbs(
   home: string,
   away: string,
   venueCountry: string | undefined,
+  homeAdvantage?: 'home' | 'away',
 ): { h: number; d: number; a: number; dr: number } {
+  // an explicit home advantage (the match simulator's "who's home" toggle) wins;
+  // otherwise derive it from the venue, where a missing venue means a neutral site.
+  // (guard the undefined venue case — HOST_OF[nonHostTeam] === undefined === venueCountry
+  // would otherwise hand the home team a phantom host bonus.)
   const bonus =
-    HOST_OF[home] === venueCountry ? model.hostBonus : HOST_OF[away] === venueCountry ? -model.hostBonus : 0
+    homeAdvantage === 'home'
+      ? model.hostBonus
+      : homeAdvantage === 'away'
+        ? -model.hostBonus
+        : !venueCountry
+          ? 0
+          : HOST_OF[home] === venueCountry
+            ? model.hostBonus
+            : HOST_OF[away] === venueCountry
+              ? -model.hostBonus
+              : 0
   const th = model.teams[home]
   const ta = model.teams[away]
   const drE = (th?.r ?? 1600) - (ta?.r ?? 1600) + bonus
@@ -136,8 +151,9 @@ export function simulateMatch(
   venueCountry: string | undefined,
   knockout: boolean,
   rnd: () => number,
+  homeAdvantage?: 'home' | 'away',
 ): SimScore {
-  const { h, d, dr } = pairProbs(model, home, away, venueCountry)
+  const { h, d, dr } = pairProbs(model, home, away, venueCountry, homeAdvantage)
   const u = rnd()
   const outcome: 'h' | 'd' | 'a' = u < h ? 'h' : u < h + d ? 'd' : 'a'
   const score = sampleScore(outcome, dr, rnd)

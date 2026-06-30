@@ -253,6 +253,19 @@ export function flagEmoji(iso2: string | null | undefined): string {
   return `${String.fromCodePoint(...[...code].map((c) => 0x1f1e6 + c.charCodeAt(0) - 65))} `
 }
 
+/** WC2026 host nations -> the country their home games are played in */
+export const HOST_COUNTRY: Record<string, string> = { USA: 'US', CAN: 'CA', MEX: 'MX' }
+
+/** which side has the host advantage at `venueCountry`: 'a' (first team) or 'b' (second),
+ *  or null if neither hosts there. a host nation only counts when the venue is actually in
+ *  its own country (co-host Canada can be drawn to play in the USA). */
+export function hostSide(a: string, b: string, venueCountry: string | null | undefined): 'a' | 'b' | null {
+  if (!venueCountry) return null
+  if (HOST_COUNTRY[a] === venueCountry) return 'a'
+  if (HOST_COUNTRY[b] === venueCountry) return 'b'
+  return null
+}
+
 export function assetUrl(p: string | null | undefined): string | null {
   if (!p) return null
   return /^https?:/.test(p) ? p : import.meta.env.BASE_URL + p

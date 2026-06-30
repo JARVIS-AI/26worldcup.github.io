@@ -15,6 +15,7 @@ const Venues = lazy(() => import('./pages/Venues'))
 const Watch = lazy(() => import('./pages/Watch'))
 const Stats = lazy(() => import('./pages/Stats'))
 const Forecast = lazy(() => import('./pages/Forecast'))
+const MatchSimulator = lazy(() => import('./pages/MatchSimulator'))
 const Settings = lazy(() => import('./pages/Settings'))
 const More = lazy(() => import('./pages/More'))
 
@@ -29,6 +30,7 @@ const TITLE_KEY: Record<string, string> = {
   watch: 'navWatch',
   stats: 'navStats',
   forecast: 'navSim',
+  'match-simulator': 'navMatchSim',
   settings: 'navSettings',
   more: 'navMore',
 }
@@ -104,6 +106,7 @@ export default function App() {
             <Route path="/watch" element={<Watch />} />
             <Route path="/stats" element={<Stats />} />
             <Route path="/forecast" element={<Forecast />} />
+            <Route path="/match-simulator" element={<MatchSimulator />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/more" element={<More />} />
             <Route path="*" element={<Matches />} />
