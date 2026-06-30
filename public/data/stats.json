@@ -161,6 +161,14 @@
    "ownGoals": 0
   },
   {
+   "id": "484860",
+   "name": "Bradley BARCOLA",
+   "code": "FRA",
+   "no": 12,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "201200",
    "name": "CRISTIANO RONALDO",
    "code": "POR",
@@ -310,14 +318,6 @@
    "code": "SWE",
    "no": 18,
    "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "464933",
-   "name": "Abbosbek FAYZULLAEV",
-   "code": "UZB",
-   "no": 22,
-   "goals": 1,
    "ownGoals": 0
   }
  ],
