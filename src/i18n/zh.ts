@@ -175,7 +175,7 @@ const zh: Dict = {
   simNowTip:
     '保留目前为止的真实赛果，从现在起模拟剩余所有比赛。进行中比赛的临时比分不计入，将重新模拟。决赛打完后，该选项将不可用。',
   simOpenerTip: '从揭幕战开始，重新模拟全部比赛。',
-  simDateTip: '模拟此日期（按你的本地时间）之后进行的全部比赛。',
+  simDateTip: '从此日期起（含当日，按你的本地时间）模拟之后进行的全部比赛。',
   simMatch: '比赛场次',
   simMatchTip: '从该场次编号起（含该场）模拟之后的全部比赛。',
   fcTitle: '结果概率（{n} 次模拟）',
@@ -346,6 +346,24 @@ const zh: Dict = {
   missDne: '未参赛',
   missBanned: '被禁赛',
   missNotMember: '非国际足联成员',
+  navMatchSim: '单场模拟器',
+  aimsTitle: '单场模拟器',
+  aimsSub: '任选两支球队，用 Elo 模型预测这场比赛的走势：中立球场（无主场优势），采用当前评分。',
+  aimsTeamA: '球队 A',
+  aimsTeamB: '球队 B',
+  aimsSwap: '交换球队',
+  aimsSimulate: '模拟比赛',
+  aimsAnalyzing: '正在分析概率…',
+  aimsDraw: '平局！',
+  aimsWinner: '{team} 获胜！',
+  aimsDrawLabel: '平局',
+  aimsHistory: '模拟记录',
+  aimsClearHistory: '清空记录',
+  aimsNote: '采用与赛事预测页相同的 Elo 评分模型。仅供娱乐，非官方预测。',
+  aimsTryMatch: '模拟这场对阵',
+  aimsHome: '主场优势',
+  aimsNeutral: '中立',
+  aimsGoal: '球进啦！',
 }
 
 export default zh

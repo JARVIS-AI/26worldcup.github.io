@@ -176,7 +176,7 @@ const ko: Dict = {
   simNowTip:
     '지금까지 종료된 경기 결과는 그대로 유지하고, 남은 경기는 현재 시점부터 모두 시뮬레이션합니다. 아직 끝나지 않은 경기의 진행 중 스코어는 반영되지 않습니다. 결승전이 끝나면 이 옵션은 비활성화됩니다.',
   simOpenerTip: '개막전부터 모든 경기를 다시 시뮬레이션합니다.',
-  simDateTip: '이 날짜(현지 시간) 이후에 열리는 모든 경기를 시뮬레이션합니다.',
+  simDateTip: '이 날짜부터(해당 날짜 포함, 현지 시간) 열리는 모든 경기를 시뮬레이션합니다.',
   simMatch: '경기',
   simMatchTip: '이 경기 번호부터(해당 경기 포함) 모든 경기를 시뮬레이션합니다.',
   fcTitle: '결과 확률 (시뮬레이션 {n}회)',
@@ -350,6 +350,24 @@ const ko: Dict = {
   missDne: '불참',
   missBanned: '출전 금지',
   missNotMember: 'FIFA 비회원',
+  navMatchSim: '단일 경기 시뮬레이터',
+  aimsTitle: '단일 경기 시뮬레이터',
+  aimsSub: '두 팀을 고르면 Elo 모델이 중립 경기장(홈 이점 없음)에서 현재 레이팅으로 경기 양상을 예측합니다.',
+  aimsTeamA: 'A팀',
+  aimsTeamB: 'B팀',
+  aimsSwap: '팀 교체',
+  aimsSimulate: '경기 시뮬레이션',
+  aimsAnalyzing: '확률 분석 중…',
+  aimsDraw: '무승부!',
+  aimsWinner: '{team} 승리!',
+  aimsDrawLabel: '무승부',
+  aimsHistory: '시뮬레이션 기록',
+  aimsClearHistory: '기록 지우기',
+  aimsNote: '토너먼트 예측 페이지와 동일한 Elo 레이팅 모델을 사용합니다. 재미용일 뿐 공식 예측이 아닙니다.',
+  aimsTryMatch: '이 대진 시뮬레이션',
+  aimsHome: '홈 이점',
+  aimsNeutral: '중립',
+  aimsGoal: '고오올!',
 }
 
 export default ko

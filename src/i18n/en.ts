@@ -164,6 +164,7 @@ const en: Dict = {
   probHide: 'Hide win probability',
   // ---- tournament forecast ----
   navSim: 'Forecast',
+  navMatchSim: 'Single Match Simulator',
   simTitle: 'Tournament forecast',
   simSub:
     'Predict the whole World Cup by simulating it with the model probabilities: scores, tables, bracket, champion.',
@@ -182,7 +183,7 @@ const en: Dict = {
   simNowTip:
     'Keep real results so far, then simulate everything from now on. Temporary scores of unfinished matches are not counted. Once the final is played, this option is disabled.',
   simOpenerTip: 'Resimulate every match, starting from the opening game.',
-  simDateTip: 'Simulate every match played after this date (your local time).',
+  simDateTip: 'Simulate every match played from this date onward (including it) (your local time).',
   simMatch: 'Match',
   simMatchTip: 'Simulate every match from this match number onward (including it).',
   // ---- forecast: outcome-probability table ----
@@ -360,6 +361,26 @@ const en: Dict = {
   wmo95: 'Thunderstorm',
   wmo96: 'Thunderstorm with hail',
   wmo99: 'Thunderstorm with hail',
+  // Single Match Simulator
+  aimsTitle: 'Single Match Simulator',
+  aimsSub:
+    'Pick any two teams and let the Elo model predict how it plays out at a neutral venue (no home advantage), using current ratings.',
+  aimsTeamA: 'Team A',
+  aimsTeamB: 'Team B',
+  aimsSwap: 'Swap teams',
+  aimsSimulate: 'Simulate Match',
+  aimsAnalyzing: 'Analyzing probabilities…',
+  aimsDraw: "It's a draw!",
+  aimsWinner: '{team} wins!',
+  aimsDrawLabel: 'Draw',
+  aimsHistory: 'Simulation history',
+  aimsClearHistory: 'Clear history',
+  aimsTryMatch: 'Simulate this matchup',
+  aimsHome: 'Home advantage',
+  aimsNeutral: 'Neutral',
+  aimsNote:
+    'Powered by the same Elo rating model used in the tournament Forecast page. For entertainment only. Not an official prediction.',
+  aimsGoal: 'GOOOAL!',
 }
 
 export default en

@@ -180,7 +180,8 @@ const ptBR: Dict = {
   simNowTip:
     'Mantenha os resultados reais até agora e simule todo o restante a partir deste momento. O placar provisório de partidas ainda em andamento não é considerado. Depois que a final for disputada, esta opção fica desativada.',
   simOpenerTip: 'Resimula todos os jogos, começando pela partida de abertura.',
-  simDateTip: 'Simula todos os jogos disputados após esta data (no seu horário local).',
+  simDateTip:
+    'Simula todos os jogos disputados a partir desta data em diante (incluindo ela) (no seu horário local).',
   simMatch: 'Jogo',
   simMatchTip: 'Simula todos os jogos a partir deste número de jogo em diante (incluindo ele).',
   fcTitle: 'Probabilidades de resultado ({n} simulações)',
@@ -354,6 +355,26 @@ const ptBR: Dict = {
   missDne: 'Não participou',
   missBanned: 'Excluído',
   missNotMember: 'Não membro da FIFA',
+  navMatchSim: 'Simulador de partida',
+  aimsTitle: 'Simulador de partida',
+  aimsSub:
+    'Escolha dois times e deixe o modelo Elo prever como a partida se desenrola em campo neutro (sem mando de campo), usando as avaliações atuais.',
+  aimsTeamA: 'Time A',
+  aimsTeamB: 'Time B',
+  aimsSwap: 'Trocar times',
+  aimsSimulate: 'Simular partida',
+  aimsAnalyzing: 'Analisando probabilidades…',
+  aimsDraw: 'Deu empate!',
+  aimsWinner: '{team} vence!',
+  aimsDrawLabel: 'Empate',
+  aimsHistory: 'Histórico de simulações',
+  aimsClearHistory: 'Limpar histórico',
+  aimsNote:
+    'Usa o mesmo modelo de avaliação Elo da página de Prognóstico do torneio. Apenas para diversão, não é uma previsão oficial.',
+  aimsTryMatch: 'Simular este confronto',
+  aimsHome: 'Mando de campo',
+  aimsNeutral: 'Neutro',
+  aimsGoal: 'GOOOL!',
 }
 
 export default ptBR

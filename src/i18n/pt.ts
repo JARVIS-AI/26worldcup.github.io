@@ -182,7 +182,7 @@ const pt: Dict = {
   simNowTip:
     'Mantém os resultados reais até agora e simula tudo a partir deste momento. Os resultados provisórios dos jogos a decorrer não são tidos em conta. Depois de a final estar disputada, esta opção fica desativada.',
   simOpenerTip: 'Voltar a simular todos os jogos, a partir do jogo inaugural.',
-  simDateTip: 'Simular todos os jogos disputados após esta data (hora local).',
+  simDateTip: 'Simular todos os jogos disputados a partir desta data (incluindo-a) (hora local).',
   simMatch: 'Jogo',
   simMatchTip: 'Simular todos os jogos a partir deste número de jogo (incluindo-o).',
   fcTitle: 'Probabilidades de resultado ({n} simulações)',
@@ -356,6 +356,26 @@ const pt: Dict = {
   missDne: 'Não participou',
   missBanned: 'Excluído',
   missNotMember: 'Não membro da FIFA',
+  navMatchSim: 'Simulador de jogo',
+  aimsTitle: 'Simulador de jogo',
+  aimsSub:
+    'Escolha duas equipas e deixe o modelo Elo prever como o jogo decorre em campo neutro (sem vantagem caseira), usando as classificações atuais.',
+  aimsTeamA: 'Equipa A',
+  aimsTeamB: 'Equipa B',
+  aimsSwap: 'Trocar equipas',
+  aimsSimulate: 'Simular jogo',
+  aimsAnalyzing: 'A analisar probabilidades…',
+  aimsDraw: 'Empate!',
+  aimsWinner: '{team} vence!',
+  aimsDrawLabel: 'Empate',
+  aimsHistory: 'Histórico de simulações',
+  aimsClearHistory: 'Limpar histórico',
+  aimsNote:
+    'Usa o mesmo modelo de classificação Elo da página de Prognóstico do torneio. Apenas para diversão, não é uma previsão oficial.',
+  aimsTryMatch: 'Simular este confronto',
+  aimsHome: 'Vantagem caseira',
+  aimsNeutral: 'Neutro',
+  aimsGoal: 'GOOOLO!',
 }
 
 export default pt

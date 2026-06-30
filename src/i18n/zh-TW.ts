@@ -175,7 +175,7 @@ const zhTW: Dict = {
   simNowTip:
     '保留目前為止的真實賽果，其餘賽事一律從現在開始模擬。進行中尚未結束賽事的即時比分不予採計，會重新模擬。一旦決賽踢完，此選項即停用。',
   simOpenerTip: '從揭幕戰開始，重新模擬全部比賽。',
-  simDateTip: '模擬此日期之後（依你所在時區）進行的所有比賽。',
+  simDateTip: '從此日期起（含當日，依你所在時區）模擬之後進行的所有比賽。',
   simMatch: '比賽場次',
   simMatchTip: '從這場比賽編號起（含此場）模擬之後的所有比賽。',
   fcTitle: '各種結果機率（{n}次模擬）',
@@ -346,6 +346,24 @@ const zhTW: Dict = {
   missDne: '未參賽',
   missBanned: '被禁賽',
   missNotMember: '非國際足總會員',
+  navMatchSim: '單場模擬器',
+  aimsTitle: '單場模擬器',
+  aimsSub: '任選兩支球隊，用 Elo 模型預測這場比賽的走勢：中立球場（無主場優勢），採用目前的評分。',
+  aimsTeamA: '球隊 A',
+  aimsTeamB: '球隊 B',
+  aimsSwap: '交換球隊',
+  aimsSimulate: '模擬比賽',
+  aimsAnalyzing: '正在分析機率…',
+  aimsDraw: '平手！',
+  aimsWinner: '{team} 獲勝！',
+  aimsDrawLabel: '平手',
+  aimsHistory: '模擬紀錄',
+  aimsClearHistory: '清除紀錄',
+  aimsNote: '採用與賽事預測頁相同的 Elo 評分模型。僅供娛樂，非官方預測。',
+  aimsTryMatch: '模擬這場對戰',
+  aimsHome: '主場優勢',
+  aimsNeutral: '中立',
+  aimsGoal: '進球啦！',
 }
 
 export default zhTW

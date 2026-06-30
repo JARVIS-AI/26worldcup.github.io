@@ -180,7 +180,7 @@ const hr: Dict = {
   simNowTip:
     'Zadrži dosadašnje stvarne rezultate, a sve od sada simuliraj. Privremeni rezultati utakmica koje su još u tijeku ne uzimaju se u obzir. Kad se odigra finale, ova je opcija onemogućena.',
   simOpenerTip: 'Ponovno simuliraj sve utakmice, počevši od uvodne.',
-  simDateTip: 'Simuliraj sve utakmice odigrane nakon ovog datuma (vaše lokalno vrijeme).',
+  simDateTip: 'Simuliraj sve utakmice od ovog datuma nadalje (uključujući njega) (vaše lokalno vrijeme).',
   simMatch: 'Utakmica',
   simMatchTip: 'Simuliraj sve utakmice od ovog rednog broja nadalje (uključujući nju).',
   fcTitle: 'Vjerojatnosti ishoda ({n} simulacija)',
@@ -356,6 +356,26 @@ const hr: Dict = {
   missDne: 'Nije se prijavila',
   missBanned: 'Isključena',
   missNotMember: 'Nije članica FIFA-e',
+  navMatchSim: 'Simulator utakmice',
+  aimsTitle: 'Simulator utakmice',
+  aimsSub:
+    'Odaberite dvije momčadi i pustite da model Elo predvidi tijek utakmice na neutralnom terenu (bez prednosti domaćeg terena), prema trenutnim ocjenama.',
+  aimsTeamA: 'Momčad A',
+  aimsTeamB: 'Momčad B',
+  aimsSwap: 'Zamijeni momčadi',
+  aimsSimulate: 'Simuliraj utakmicu',
+  aimsAnalyzing: 'Analiza vjerojatnosti…',
+  aimsDraw: 'Neriješeno!',
+  aimsWinner: '{team} pobjeđuje!',
+  aimsDrawLabel: 'Neriješeno',
+  aimsHistory: 'Povijest simulacija',
+  aimsClearHistory: 'Očisti povijest',
+  aimsNote:
+    'Koristi isti Elo model ocjenjivanja kao stranica turnirske prognoze. Samo za zabavu, nije službeno predviđanje.',
+  aimsTryMatch: 'Simuliraj ovaj susret',
+  aimsHome: 'Prednost domaćeg terena',
+  aimsNeutral: 'Neutralno',
+  aimsGoal: 'GOOOL!',
 }
 
 export default hr

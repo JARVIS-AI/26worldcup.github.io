@@ -179,7 +179,7 @@ const uz: Dict = {
     "Hozirgacha bo'lgan haqiqiy natijalarni saqlab, shu paytdan boshlab qolgan hamma narsani simulyatsiya qiladi. Tugamagan o'yinlarning vaqtinchalik hisobi hisobga olinmaydi. Final o'ynalgandan so'ng bu variant o'chiriladi.",
   simOpenerTip: "Ochilish o'yinidan boshlab har bir o'yinni qayta simulyatsiya qiladi.",
   simDateTip:
-    "Shu sanadan keyin o'ynaladigan har bir o'yinni simulyatsiya qiladi (mahalliy vaqtingiz bo'yicha).",
+    "Shu sanadan boshlab o'ynaladigan har bir o'yinni simulyatsiya qiladi (shu sanani ham qo'shgan holda) (mahalliy vaqtingiz bo'yicha).",
   simMatch: "O'yin",
   simMatchTip:
     "Shu o'yin raqamidan boshlab har bir o'yinni simulyatsiya qiladi (shu o'yinni ham qo'shgan holda).",
@@ -354,6 +354,26 @@ const uz: Dict = {
   missDne: 'Ishtirok etmadi',
   missBanned: 'Chetlatilgan',
   missNotMember: 'FIFA aʼzosi emas',
+  navMatchSim: "Bitta o'yin simulyatori",
+  aimsTitle: "Bitta o'yin simulyatori",
+  aimsSub:
+    "Istalgan ikki jamoani tanlang va Elo modeli o'yin betaraf maydonda (uy afzalligisiz) joriy reytinglar bilan qanday kechishini bashorat qilsin.",
+  aimsTeamA: 'A jamoa',
+  aimsTeamB: 'B jamoa',
+  aimsSwap: 'Jamoalarni almashtirish',
+  aimsSimulate: "O'yinni simulyatsiya qilish",
+  aimsAnalyzing: 'Ehtimolliklar tahlil qilinmoqda…',
+  aimsDraw: 'Durang!',
+  aimsWinner: "{team} g'alaba qozonadi!",
+  aimsDrawLabel: 'Durang',
+  aimsHistory: 'Simulyatsiya tarixi',
+  aimsClearHistory: 'Tarixni tozalash',
+  aimsNote:
+    "Turnir bashorati sahifasidagi xuddi shu Elo reyting modelidan foydalanadi. Faqat o'yin-kulgi uchun, rasmiy bashorat emas.",
+  aimsTryMatch: 'Ushbu juftlikni simulyatsiya qilish',
+  aimsHome: 'Uy afzalligi',
+  aimsNeutral: 'Betaraf',
+  aimsGoal: 'GOOOL!',
 }
 
 export default uz

@@ -937,6 +937,7 @@ function computeSuspensions(lineups, matches) {
       const nameOf = (pid) =>
         (team.xi || []).concat(team.subs || []).find((p) => p.id === pid)?.name || `#${pid}`
       for (const b of team.bookings || []) {
+        if (b.player == null) continue // no IdPlayer: can't track a ban for an unnamed player
         events[code] ??= {}
         events[code][b.player] ??= { name: nameOf(b.player), list: [] }
         events[code][b.player].list.push({
@@ -1058,6 +1059,7 @@ function computeStats(lineups, matches) {
         (lu[sd]?.xi || []).concat(lu[sd]?.subs || []).find((p) => p.id === pid)?.name || `#${pid}`
       for (const g of team.goals || []) {
         if (g.period === 11) continue // penalty shootout
+        if (g.player == null) continue // no IdPlayer: can't attribute (see bookings below)
         const own = g.type === 3
         const key = `${g.player}`
         if (own) {
@@ -1106,6 +1108,11 @@ function computeStats(lineups, matches) {
         const isRed = (b.card ?? 0) >= 2
         if (isRed) red++
         else yellow++
+        // FIFA sometimes ships a booking with no IdPlayer. It can't be tied to a
+        // named player, and the shared `null` key would merge unrelated players
+        // (a TUR and a PAR yellow once collapsed into one bogus "#null" row) — so
+        // count it in the totals above but leave it out of the per-player table.
+        if (b.player == null) continue
         const key = `${b.player}`
         carded[key] ??= { id: b.player, name: nameOf(b.player), code, no: numberOf[b.player], y: 0, r: 0 }
         if (isRed) carded[key].r++

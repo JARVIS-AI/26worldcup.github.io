@@ -80,9 +80,24 @@ export function pairProbs(
   home: string,
   away: string,
   venueCountry: string | undefined,
+  homeAdvantage?: 'home' | 'away',
 ): { h: number; d: number; a: number; dr: number } {
+  // an explicit home advantage (the match simulator's "who's home" toggle) wins;
+  // otherwise derive it from the venue, where a missing venue means a neutral site.
+  // (guard the undefined venue case — HOST_OF[nonHostTeam] === undefined === venueCountry
+  // would otherwise hand the home team a phantom host bonus.)
   const bonus =
-    HOST_OF[home] === venueCountry ? model.hostBonus : HOST_OF[away] === venueCountry ? -model.hostBonus : 0
+    homeAdvantage === 'home'
+      ? model.hostBonus
+      : homeAdvantage === 'away'
+        ? -model.hostBonus
+        : !venueCountry
+          ? 0
+          : HOST_OF[home] === venueCountry
+            ? model.hostBonus
+            : HOST_OF[away] === venueCountry
+              ? -model.hostBonus
+              : 0
   const th = model.teams[home]
   const ta = model.teams[away]
   const drE = (th?.r ?? 1600) - (ta?.r ?? 1600) + bonus
@@ -136,8 +151,9 @@ export function simulateMatch(
   venueCountry: string | undefined,
   knockout: boolean,
   rnd: () => number,
+  homeAdvantage?: 'home' | 'away',
 ): SimScore {
-  const { h, d, dr } = pairProbs(model, home, away, venueCountry)
+  const { h, d, dr } = pairProbs(model, home, away, venueCountry, homeAdvantage)
   const u = rnd()
   const outcome: 'h' | 'd' | 'a' = u < h ? 'h' : u < h + d ? 'd' : 'a'
   const score = sampleScore(outcome, dr, rnd)
@@ -349,6 +365,17 @@ export function runTournament(
     groupTables[g] = tableFor(codes, rs, rankOf)
   }
 
+  // a group's REAL standings can be trusted only when every one of its matches is kept
+  // real; if any is simulated, the simulated table must drive the bracket. third-place
+  // qualification compares across all 12 groups, so it needs every group fully settled.
+  const groupReal: Record<string, boolean> = {}
+  for (const g of Object.keys(groups)) {
+    groupReal[g] = groupMatches
+      .filter((m) => m.group === g)
+      .every((m) => keepReal(m) && m.status === 'finished' && m.home?.score != null && m.away?.score != null)
+  }
+  const allGroupsReal = Object.values(groupReal).every(Boolean)
+
   // 2. best thirds: top 8 of 12 by pts, GD, GF, then FIFA ranking (fair play
   //    isn't simulatable), then lots
   const thirdRows = Object.entries(groupTables).map(([g, t]) => ({ group: g, row: t[2] }))
@@ -396,6 +423,20 @@ export function runTournament(
     return undefined
   }
 
+  // pick a knockout slot's team. for group/third placeholders whose feeding group(s)
+  // are fully real, trust the qualifier the data prefills (FIFA's official bracket —
+  // more faithful than re-deriving thirds + tiebreaks here). otherwise take the
+  // simulated bracket. W#/L# slots always resolve: the winners/losers map already
+  // carries the real-or-simulated result of the feeding match.
+  const bracketTeam = (ph: string | null, real: string | undefined): string | undefined => {
+    if (ph && real) {
+      const gp = /^[1-4]([A-L])$/.exec(ph)
+      if (gp && groupReal[gp[1]]) return real
+      if (allGroupsReal && /^3[A-L]{2,}$/.test(ph)) return real
+    }
+    return resolve(ph) ?? real
+  }
+
   const outcome: Record<string, Outcome> = {}
   for (const c of Object.keys(teams)) outcome[c] = 'group'
 
@@ -404,11 +445,17 @@ export function runTournament(
   let third = ''
   let fourth = ''
   for (const m of ko) {
-    const home = m.home?.code ?? resolve(m.phA)
-    const away = m.away?.code ?? resolve(m.phB)
+    // keep a knockout match real only when we're replaying it AND it actually finished
+    const keep = keepReal(m) && m.status === 'finished' && m.home?.score != null && m.away?.score != null
+    // when (re)simulating this match, resolve its teams through bracketTeam so a
+    // simulated group stage actually changes who reaches the knockout, instead of
+    // blindly replaying the real qualifiers prefilled into home/away (which collapsed
+    // every team's "eliminated in group" odds to 0% or 100%).
+    const home = keep ? m.home?.code : bracketTeam(m.phA, m.home?.code)
+    const away = keep ? m.away?.code : bracketTeam(m.phB, m.away?.code)
     if (!home || !away) continue
     let r: SimScore
-    if (keepReal(m) && m.status === 'finished' && m.home?.score != null && m.away?.score != null) {
+    if (keep && m.home?.score != null && m.away?.score != null) {
       const win =
         m.winner ??
         ((m.home.pen ?? 0) > (m.away.pen ?? 0)

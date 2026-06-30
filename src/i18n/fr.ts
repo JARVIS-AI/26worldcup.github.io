@@ -180,7 +180,8 @@ const fr: Dict = {
   simNowTip:
     "Conserve les résultats réels obtenus jusqu'ici, puis simule tout le reste à partir de maintenant. Le score provisoire des matchs en cours n'est pas pris en compte : ces matchs sont entièrement simulés. Une fois la finale jouée, cette option est désactivée.",
   simOpenerTip: "Resimuler tous les matchs, à partir du match d'ouverture.",
-  simDateTip: 'Simuler tous les matchs joués après cette date (à votre heure locale).',
+  simDateTip:
+    'Simuler tous les matchs joués à partir de cette date (celle-ci incluse) (à votre heure locale).',
   simMatch: 'Match',
   simMatchTip: 'Simuler tous les matchs à partir de ce numéro de match (celui-ci inclus).',
   fcTitle: 'Probabilités de résultats ({n} simulations)',
@@ -354,6 +355,26 @@ const fr: Dict = {
   missDne: 'Non inscrite',
   missBanned: 'Exclue',
   missNotMember: 'Non membre de la FIFA',
+  navMatchSim: 'Simulateur de match',
+  aimsTitle: 'Simulateur de match',
+  aimsSub:
+    'Choisissez deux équipes et laissez le modèle Elo prédire le déroulement du match sur terrain neutre (sans avantage du terrain), avec les notes actuelles.',
+  aimsTeamA: 'Équipe A',
+  aimsTeamB: 'Équipe B',
+  aimsSwap: 'Inverser les équipes',
+  aimsSimulate: 'Simuler le match',
+  aimsAnalyzing: 'Analyse des probabilités…',
+  aimsDraw: 'Match nul !',
+  aimsWinner: '{team} gagne !',
+  aimsDrawLabel: 'Nul',
+  aimsHistory: 'Historique des simulations',
+  aimsClearHistory: "Effacer l'historique",
+  aimsNote:
+    'Utilise le même modèle de notation Elo que la page Pronostic du tournoi. Pour le divertissement uniquement, pas une prédiction officielle.',
+  aimsTryMatch: 'Simuler cette affiche',
+  aimsHome: 'Avantage du terrain',
+  aimsNeutral: 'Neutre',
+  aimsGoal: 'BUUUT !',
 }
 
 export default fr

@@ -176,7 +176,8 @@ const ja: Dict = {
   simNowTip:
     'これまでの試合結果はそのまま反映し、ここから先の試合をすべてシミュレーションします。試合中の暫定スコアは反映されません。決勝が終了すると、このオプションは無効になります。',
   simOpenerTip: '開幕戦からすべての試合を再シミュレートします。',
-  simDateTip: 'この日付（お使いの端末の現地時間）以降に行われる試合をすべてシミュレートします。',
+  simDateTip:
+    'この日付以降（その日を含む、お使いの端末の現地時間）に行われる試合をすべてシミュレートします。',
   simMatch: '試合番号',
   simMatchTip: 'この試合番号以降（その試合を含む）のすべての試合をシミュレートします。',
   fcTitle: '結果の確率（{n}回試行）',
@@ -350,6 +351,26 @@ const ja: Dict = {
   missDne: '不参加',
   missBanned: '出場停止',
   missNotMember: 'FIFA非加盟',
+  navMatchSim: '1試合シミュレーター',
+  aimsTitle: '1試合シミュレーター',
+  aimsSub:
+    '2チームを選ぶと、Eloモデルが中立会場（ホームアドバンテージなし）・現在のレーティングで試合展開を予測します。',
+  aimsTeamA: 'チームA',
+  aimsTeamB: 'チームB',
+  aimsSwap: 'チームを入れ替え',
+  aimsSimulate: '試合をシミュレート',
+  aimsAnalyzing: '確率を分析中…',
+  aimsDraw: '引き分け！',
+  aimsWinner: '{team} の勝ち！',
+  aimsDrawLabel: '引き分け',
+  aimsHistory: 'シミュレーション履歴',
+  aimsClearHistory: '履歴を消去',
+  aimsNote:
+    '大会予想ページと同じEloレーティングモデルを使用しています。娯楽目的であり、公式の予想ではありません。',
+  aimsTryMatch: 'この対戦をシミュレート',
+  aimsHome: 'ホームアドバンテージ',
+  aimsNeutral: '中立',
+  aimsGoal: 'ゴーール！',
 }
 
 export default ja

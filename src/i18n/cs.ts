@@ -179,7 +179,7 @@ const cs: Dict = {
   simNowTip:
     'Zachová dosavadní skutečné výsledky a od tohoto okamžiku odsimuluje všechny zbývající zápasy. Průběžné skóre dosud nedohraných zápasů se nezapočítává. Po odehrání finále je tato možnost nedostupná.',
   simOpenerTip: 'Znovu odsimuluje všechny zápasy od úvodního utkání.',
-  simDateTip: 'Odsimuluje všechny zápasy hrané po tomto datu (váš místní čas).',
+  simDateTip: 'Odsimuluje všechny zápasy od tohoto data dál (včetně něj) (váš místní čas).',
   simMatch: 'Zápas',
   simMatchTip: 'Odsimuluje všechny zápasy od tohoto čísla zápasu dál (včetně něj).',
   fcTitle: 'Pravděpodobnosti výsledků ({n} simulací)',
@@ -357,6 +357,26 @@ const cs: Dict = {
   missDne: 'Nepřihlásila se',
   missBanned: 'Vyloučena',
   missNotMember: 'Není členem FIFA',
+  navMatchSim: 'Simulátor zápasu',
+  aimsTitle: 'Simulátor zápasu',
+  aimsSub:
+    'Vyberte dva týmy a nechte model Elo předpovědět průběh zápasu na neutrální půdě (bez výhody domácího prostředí) podle aktuálního hodnocení.',
+  aimsTeamA: 'Tým A',
+  aimsTeamB: 'Tým B',
+  aimsSwap: 'Prohodit týmy',
+  aimsSimulate: 'Simulovat zápas',
+  aimsAnalyzing: 'Analýza pravděpodobností…',
+  aimsDraw: 'Remíza!',
+  aimsWinner: '{team} vyhrává!',
+  aimsDrawLabel: 'Remíza',
+  aimsHistory: 'Historie simulací',
+  aimsClearHistory: 'Vymazat historii',
+  aimsNote:
+    'Používá stejný model hodnocení Elo jako stránka turnajové předpovědi. Jen pro zábavu, nejde o oficiální předpověď.',
+  aimsTryMatch: 'Simulovat tento zápas',
+  aimsHome: 'Výhoda domácího prostředí',
+  aimsNeutral: 'Neutrální',
+  aimsGoal: 'GÓÓÓL!',
 }
 
 export default cs

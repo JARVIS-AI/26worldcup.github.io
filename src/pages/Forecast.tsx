@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import type { Match } from '../types'
 import { useI18n } from '../i18n'
 import { useAppData, useData } from '../data/DataContext'
@@ -64,8 +65,18 @@ export default function Forecast() {
   const [simMode, setSimMode] = useState<SimMode>(finalDone ? 'opener' : 'now')
   const { minDate, maxDate } = useMemo(() => {
     const days = matches.map((m) => localDay(m.date)).sort()
-    return { minDate: days[0] ?? '2026-06-11', maxDate: days[days.length - 1] ?? '2026-07-19' }
-  }, [matches])
+    const first = days[0] ?? '2026-06-11'
+    const finalMatch = matches.find((m) => m.stage === 'final')
+    const finalDay = finalMatch ? localDay(finalMatch.date) : (days[days.length - 1] ?? '2026-07-19')
+    // upper bound: tomorrow (so every match through today can stay real and only the
+    // future is simulated). once the final is played there is no future left, so the
+    // final's day becomes the last meaningful cut.
+    const d = new Date()
+    d.setDate(d.getDate() + 1)
+    const tomorrow = localDay(d.toISOString())
+    const upper = finalDone ? finalDay : tomorrow < finalDay ? tomorrow : finalDay
+    return { minDate: first, maxDate: upper < first ? first : upper }
+  }, [matches, finalDone])
   const [cutDate, setCutDate] = useState(() => {
     const days = matches.map((m) => localDay(m.date)).sort()
     const lo = days[0] ?? '2026-06-11'
@@ -81,13 +92,26 @@ export default function Forecast() {
   // a predicate per match: keep its real finished result, or (re)simulate it
   const keepReal = useMemo<(m: Match) => boolean>(() => {
     if (simMode === 'opener') return () => false
-    if (simMode === 'match') return (m) => m.n < cutMatch
+    if (simMode === 'match') {
+      // match numbers are NOT in kickoff order (a lower number can start at the same
+      // time or later), so cut by the picked match's kickoff time: keep real only the
+      // matches that kicked off strictly earlier; (re)simulate the picked match, anything
+      // kicking off at the same time, and everything after. earlier matches with no real
+      // result yet (live/unplayed) still get simulated via the engine's finished-guard.
+      const sel = matches.find((m) => m.n === cutMatch)
+      if (!sel) return (m) => m.n < cutMatch
+      const cutoff = Date.parse(sel.date)
+      return (m) => Date.parse(m.date) < cutoff
+    }
     if (simMode === 'date') {
-      const cutoff = new Date(`${cutDate}T23:59:59`).getTime()
-      return (m) => Date.parse(m.date) <= cutoff
+      // same kickoff-time logic, inclusive of the picked day: the day and everything
+      // after it (local time) is (re)simulated; only matches that kicked off before that
+      // day's local midnight keep their real result.
+      const cutoff = new Date(`${cutDate}T00:00:00`).getTime()
+      return (m) => Date.parse(m.date) < cutoff
     }
     return () => true // 'now' — keep every finished match, simulate the rest
-  }, [simMode, cutDate, cutMatch])
+  }, [simMode, cutDate, cutMatch, matches])
 
   // slider uses a piecewise-log scale: 1/4 travel -> 100, midpoint -> 1000, end -> 10000
   const posToRuns = (p: number) =>
@@ -218,7 +242,13 @@ export default function Forecast() {
   return (
     <div className="sim-page">
       <div className="page-head">
-        <h1>{t('simTitle')}</h1>
+        <div className="page-head-row">
+          <h1>{t('simTitle')}</h1>
+          <Link className="chip page-head-cta" to="/match-simulator">
+            <Icon name="bolt" size={13} />
+            {t('navMatchSim')}
+          </Link>
+        </div>
         <p>{t('simSub')}</p>
       </div>
 

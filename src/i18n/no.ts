@@ -179,7 +179,7 @@ const no: Dict = {
   simNowTip:
     'Behold de virkelige resultatene så langt, og simuler alt videre herfra. Midlertidige stillinger i kamper som ikke er ferdigspilt, teller ikke. Når finalen er spilt, blir dette valget deaktivert.',
   simOpenerTip: 'Simuler alle kamper på nytt, fra åpningskampen.',
-  simDateTip: 'Simuler alle kamper som spilles etter denne datoen (din lokale tid).',
+  simDateTip: 'Simuler alle kamper fra og med denne datoen (din lokale tid).',
   simMatch: 'Kamp',
   simMatchTip: 'Simuler alle kamper fra og med dette kampnummeret.',
   fcTitle: 'Utfallssannsynligheter ({n} kjøringer)',
@@ -353,6 +353,26 @@ const no: Dict = {
   missDne: 'Deltok ikke',
   missBanned: 'Utestengt',
   missNotMember: 'Ikke Fifa-medlem',
+  navMatchSim: 'Kampsimulator',
+  aimsTitle: 'Kampsimulator',
+  aimsSub:
+    'Velg to lag og la Elo-modellen forutsi hvordan kampen utvikler seg på nøytral bane (ingen hjemmefordel), med dagens ratinger.',
+  aimsTeamA: 'Lag A',
+  aimsTeamB: 'Lag B',
+  aimsSwap: 'Bytt lag',
+  aimsSimulate: 'Simuler kamp',
+  aimsAnalyzing: 'Analyserer sannsynligheter…',
+  aimsDraw: 'Uavgjort!',
+  aimsWinner: '{team} vinner!',
+  aimsDrawLabel: 'Uavgjort',
+  aimsHistory: 'Simuleringshistorikk',
+  aimsClearHistory: 'Tøm historikk',
+  aimsNote:
+    'Bruker samme Elo-ratingmodell som turneringsprognose-siden. Bare for moro skyld, ikke en offisiell spådom.',
+  aimsTryMatch: 'Simuler denne kampen',
+  aimsHome: 'Hjemmefordel',
+  aimsNeutral: 'Nøytral',
+  aimsGoal: 'MÅÅÅL!',
 }
 
 export default no

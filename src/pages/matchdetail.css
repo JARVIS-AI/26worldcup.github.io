@@ -497,3 +497,21 @@ a.md-plink:hover {
   font-weight: 650;
   white-space: nowrap;
 }
+/* "simulate this matchup" link shown next to the win-probability button/note */
+.md-prob-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.md-prob-actions .md-prob-show {
+  margin: 0;
+}
+.md-sim-chip {
+  color: var(--accent);
+}
+.md-sim-chip:hover {
+  background: color-mix(in oklab, var(--accent) 14%, transparent);
+}
