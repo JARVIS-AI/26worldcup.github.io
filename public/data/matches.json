@@ -5365,39 +5365,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "428431",
-     "country": "USA",
-     "role": "fourth",
-     "name": {
-      "en": "Tori PENSO",
-      "fr": "Tori PENSO",
-      "zh": "Tori PENSO",
-      "ar": "Tori PENSO",
-      "es": "Tori PENSO",
-      "de": "Tori PENSO",
-      "pt": "Tori PENSO",
-      "it": "Tori PENSO",
-      "ja": "Tori PENSO",
-      "ko": "Tori PENSO",
-      "id": "Tori PENSO",
-      "ru": "Tori PENSO"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -6107,7 +6074,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "NOR",
+    "score": null,
+    "pen": null
+   },
    "phA": "W76",
    "phB": "W78",
    "winner": null,
