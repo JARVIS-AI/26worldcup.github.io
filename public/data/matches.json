@@ -5317,10 +5317,10 @@
    "date": "2026-06-30T21:00:00Z",
    "venueId": "400257536",
    "status": "live",
-   "time": "66'",
+   "time": "80'",
    "home": {
     "code": "FRA",
-    "score": 2,
+    "score": 3,
     "pen": null
    },
    "away": {
@@ -5331,7 +5331,7 @@
    "phA": "1I",
    "phB": "3CDFGH",
    "winner": null,
-   "attendance": null,
+   "attendance": 80663,
    "officials": [
     {
      "id": "327159",
