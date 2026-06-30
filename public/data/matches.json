@@ -5316,8 +5316,8 @@
    "group": null,
    "date": "2026-06-30T21:00:00Z",
    "venueId": "400257536",
-   "status": "live",
-   "time": "90'+3'",
+   "status": "finished",
+   "time": "95'",
    "home": {
     "code": "FRA",
     "score": 3,
@@ -5330,7 +5330,7 @@
    },
    "phA": "1I",
    "phB": "3CDFGH",
-   "winner": null,
+   "winner": "FRA",
    "attendance": 80663,
    "officials": [
     {
@@ -6028,7 +6028,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "FRA",
+    "score": null,
+    "pen": null
+   },
    "phA": "W74",
    "phB": "W77",
    "winner": null,
