@@ -357,12 +357,11 @@ const es: Dict = {
   // Single Match Simulator
   aimsTitle: 'Simulador de partido',
   aimsSub:
-    'Elige dos equipos y deja que el modelo Elo prediga cómo terminaría el partido en estadio neutral (sin ventaja de local), con la valoración actual.',
+    'Elige dos equipos y deja que el modelo Elo prediga cómo terminaría el partido, con la valoración actual.',
   aimsTeamA: 'Equipo A',
   aimsTeamB: 'Equipo B',
   aimsSwap: 'Intercambiar equipos',
   aimsSimulate: 'Simular Partido',
-  aimsAnalyzing: 'Analizando probabilidades…',
   aimsDraw: '¡Empate!',
   aimsWinner: '¡Gana {team}!',
   aimsDrawLabel: 'Empate',
@@ -374,6 +373,7 @@ const es: Dict = {
   aimsNote:
     'Usa el mismo modelo de calificación Elo de la página de Pronóstico del torneo. Solo con fines de entretenimiento. No es una predicción oficial.',
   aimsGoal: '¡GOOOL!',
+  aimsKnockout: 'Eliminatoria (prórroga + penaltis)',
 }
 
 export default es

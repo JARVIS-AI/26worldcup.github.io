@@ -357,13 +357,11 @@ const hr: Dict = {
   missNotMember: 'Nije članica FIFA-e',
   navMatchSim: 'Simulator utakmice',
   aimsTitle: 'Simulator utakmice',
-  aimsSub:
-    'Odaberite dvije momčadi i pustite da model Elo predvidi tijek utakmice na neutralnom terenu (bez prednosti domaćeg terena), prema trenutnim ocjenama.',
+  aimsSub: 'Odaberite dvije momčadi i pustite da model Elo predvidi tijek utakmice prema trenutnim ocjenama.',
   aimsTeamA: 'Momčad A',
   aimsTeamB: 'Momčad B',
   aimsSwap: 'Zamijeni momčadi',
   aimsSimulate: 'Simuliraj utakmicu',
-  aimsAnalyzing: 'Analiza vjerojatnosti…',
   aimsDraw: 'Neriješeno!',
   aimsWinner: '{team} pobjeđuje!',
   aimsDrawLabel: 'Neriješeno',
@@ -375,6 +373,7 @@ const hr: Dict = {
   aimsHome: 'Prednost domaćeg terena',
   aimsNeutral: 'Neutralno',
   aimsGoal: 'GOOOL!',
+  aimsKnockout: 'Nokaut-faza (produžeci + jedanaesterci)',
 }
 
 export default hr

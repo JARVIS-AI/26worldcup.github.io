@@ -357,12 +357,11 @@ const nl: Dict = {
   navMatchSim: 'Wedstrijdsimulator',
   aimsTitle: 'Wedstrijdsimulator',
   aimsSub:
-    'Kies twee teams en laat het Elo-model voorspellen hoe de wedstrijd verloopt op neutraal terrein (geen thuisvoordeel), met de huidige ratings.',
+    'Kies twee teams en laat het Elo-model voorspellen hoe de wedstrijd verloopt, met de huidige ratings.',
   aimsTeamA: 'Team A',
   aimsTeamB: 'Team B',
   aimsSwap: 'Teams wisselen',
   aimsSimulate: 'Wedstrijd simuleren',
-  aimsAnalyzing: 'Kansen analyseren…',
   aimsDraw: 'Gelijkspel!',
   aimsWinner: '{team} wint!',
   aimsDrawLabel: 'Gelijk',
@@ -374,6 +373,7 @@ const nl: Dict = {
   aimsHome: 'Thuisvoordeel',
   aimsNeutral: 'Neutraal',
   aimsGoal: 'GOOOAL!',
+  aimsKnockout: 'Knock-out (verlenging + strafschoppen)',
 }
 
 export default nl

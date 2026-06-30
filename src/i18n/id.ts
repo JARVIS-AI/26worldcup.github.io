@@ -355,12 +355,11 @@ const id: Dict = {
   navMatchSim: 'Simulator pertandingan',
   aimsTitle: 'Simulator pertandingan',
   aimsSub:
-    'Pilih dua tim dan biarkan model Elo memprediksi jalannya pertandingan di tempat netral (tanpa keuntungan tuan rumah), memakai peringkat saat ini.',
+    'Pilih dua tim dan biarkan model Elo memprediksi jalannya pertandingan memakai peringkat saat ini.',
   aimsTeamA: 'Tim A',
   aimsTeamB: 'Tim B',
   aimsSwap: 'Tukar tim',
   aimsSimulate: 'Simulasikan pertandingan',
-  aimsAnalyzing: 'Menganalisis probabilitas…',
   aimsDraw: 'Seri!',
   aimsWinner: '{team} menang!',
   aimsDrawLabel: 'Seri',
@@ -372,6 +371,7 @@ const id: Dict = {
   aimsHome: 'Keuntungan tuan rumah',
   aimsNeutral: 'Netral',
   aimsGoal: 'GOOOL!',
+  aimsKnockout: 'Babak gugur (perpanjangan waktu + penalti)',
 }
 
 export default id

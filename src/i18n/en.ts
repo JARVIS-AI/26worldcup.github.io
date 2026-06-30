@@ -362,13 +362,11 @@ const en: Dict = {
   wmo99: 'Thunderstorm with hail',
   // Single Match Simulator
   aimsTitle: 'Single Match Simulator',
-  aimsSub:
-    'Pick any two teams and let the Elo model predict how it plays out at a neutral venue (no home advantage), using current ratings.',
+  aimsSub: 'Pick any two teams and let the Elo model predict how it plays out, using current ratings.',
   aimsTeamA: 'Team A',
   aimsTeamB: 'Team B',
   aimsSwap: 'Swap teams',
   aimsSimulate: 'Simulate Match',
-  aimsAnalyzing: 'Analyzing probabilities…',
   aimsDraw: "It's a draw!",
   aimsWinner: '{team} wins!',
   aimsDrawLabel: 'Draw',
@@ -380,6 +378,7 @@ const en: Dict = {
   aimsNote:
     'Powered by the same Elo rating model used in the tournament Forecast page. For entertainment only. Not an official prediction.',
   aimsGoal: 'GOOOAL!',
+  aimsKnockout: 'Knockout (extra time + penalties)',
 }
 
 export default en

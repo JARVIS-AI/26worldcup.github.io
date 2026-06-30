@@ -358,13 +358,11 @@ const cs: Dict = {
   missNotMember: 'Není členem FIFA',
   navMatchSim: 'Simulátor zápasu',
   aimsTitle: 'Simulátor zápasu',
-  aimsSub:
-    'Vyberte dva týmy a nechte model Elo předpovědět průběh zápasu na neutrální půdě (bez výhody domácího prostředí) podle aktuálního hodnocení.',
+  aimsSub: 'Vyberte dva týmy a nechte model Elo předpovědět průběh zápasu podle aktuálního hodnocení.',
   aimsTeamA: 'Tým A',
   aimsTeamB: 'Tým B',
   aimsSwap: 'Prohodit týmy',
   aimsSimulate: 'Simulovat zápas',
-  aimsAnalyzing: 'Analýza pravděpodobností…',
   aimsDraw: 'Remíza!',
   aimsWinner: '{team} vyhrává!',
   aimsDrawLabel: 'Remíza',
@@ -376,6 +374,7 @@ const cs: Dict = {
   aimsHome: 'Výhoda domácího prostředí',
   aimsNeutral: 'Neutrální',
   aimsGoal: 'GÓÓÓL!',
+  aimsKnockout: 'Vyřazovací zápas (prodloužení + penalty)',
 }
 
 export default cs

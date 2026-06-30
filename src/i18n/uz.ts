@@ -356,12 +356,11 @@ const uz: Dict = {
   navMatchSim: "Bitta o'yin simulyatori",
   aimsTitle: "Bitta o'yin simulyatori",
   aimsSub:
-    "Istalgan ikki jamoani tanlang va Elo modeli o'yin betaraf maydonda (uy afzalligisiz) joriy reytinglar bilan qanday kechishini bashorat qilsin.",
+    "Istalgan ikki jamoani tanlang va Elo modeli o'yin joriy reytinglar bilan qanday kechishini bashorat qilsin.",
   aimsTeamA: 'A jamoa',
   aimsTeamB: 'B jamoa',
   aimsSwap: 'Jamoalarni almashtirish',
   aimsSimulate: "O'yinni simulyatsiya qilish",
-  aimsAnalyzing: 'Ehtimolliklar tahlil qilinmoqda…',
   aimsDraw: 'Durang!',
   aimsWinner: "{team} g'alaba qozonadi!",
   aimsDrawLabel: 'Durang',
@@ -373,6 +372,7 @@ const uz: Dict = {
   aimsHome: 'Uy afzalligi',
   aimsNeutral: 'Betaraf',
   aimsGoal: 'GOOOL!',
+  aimsKnockout: "Chiqib ketish bosqichi (qo'shimcha vaqt + penaltilar)",
 }
 
 export default uz

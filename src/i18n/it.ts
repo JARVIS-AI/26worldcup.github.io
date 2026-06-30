@@ -356,12 +356,11 @@ const it: Dict = {
   navMatchSim: 'Simulatore di partita',
   aimsTitle: 'Simulatore di partita',
   aimsSub:
-    'Scegli due squadre e lascia che il modello Elo preveda come si svolge la partita in campo neutro (senza vantaggio casalingo), usando le valutazioni attuali.',
+    'Scegli due squadre e lascia che il modello Elo preveda come si svolge la partita, usando le valutazioni attuali.',
   aimsTeamA: 'Squadra A',
   aimsTeamB: 'Squadra B',
   aimsSwap: 'Scambia le squadre',
   aimsSimulate: 'Simula partita',
-  aimsAnalyzing: 'Analisi delle probabilità…',
   aimsDraw: 'È un pareggio!',
   aimsWinner: 'Vince {team}!',
   aimsDrawLabel: 'Pareggio',
@@ -373,6 +372,7 @@ const it: Dict = {
   aimsHome: 'Fattore campo',
   aimsNeutral: 'Neutro',
   aimsGoal: 'GOOOL!',
+  aimsKnockout: 'Eliminazione diretta (supplementari + rigori)',
 }
 
 export default it

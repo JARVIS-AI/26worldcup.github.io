@@ -2,19 +2,27 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { useAppData, useData } from '../data/DataContext'
-import { pairProbs, simulateMatch } from '../sim/engine'
+import { intifyKo, pairProbs, simulateMatch } from '../sim/engine'
 import type { SimScore } from '../sim/engine'
 import { flagEmoji, hostSide } from '../utils/helpers'
 import Flag from '../components/Flag'
 import Icon from '../components/Icon'
 import './matchsimulator.css'
 
+interface KoProbs {
+  h: number
+  d: number
+  a: number
+  dr: number
+}
+
 interface SimEntry {
   id: number
   homeCode: string
   awayCode: string
   score: SimScore
-  probs: { h: number; d: number; a: number }
+  probs: KoProbs
+  knockout: boolean
 }
 
 export default function MatchSimulator() {
@@ -37,6 +45,8 @@ export default function MatchSimulator() {
   const [awayCode, setAwayCode] = useState('')
   // which side gets the host/home advantage: 'a' = Team A, 'b' = Team B, null = neutral
   const [homeSide, setHomeSide] = useState<'a' | 'b' | null>(null)
+  // knockout: a 90' draw goes to extra time, then penalties (so there's always a winner)
+  const [knockout, setKnockout] = useState(false)
   // optional ?a=XXX&b=YYY&home=a|b (e.g. a link from a match page) pre-selects the
   // matchup and which team is at home
   const [params] = useSearchParams()
@@ -60,6 +70,7 @@ export default function MatchSimulator() {
       setHomeCode(ua)
       setAwayCode(ub)
       setHomeSide(asSide(params.get('home')))
+      setKnockout(params.get('knockout') === '1')
       return
     }
     const da = want(defaultMatch?.home?.code)
@@ -68,23 +79,16 @@ export default function MatchSimulator() {
       setHomeCode(da)
       setAwayCode(db)
       setHomeSide(hostSide(da, db, venues[defaultMatch?.venueId ?? '']?.country))
+      setKnockout(!!defaultMatch && defaultMatch.stage !== 'group')
       return
     }
     setHomeCode(teamCodes[0])
     setAwayCode(teamCodes[1])
   }, [teamCodes, homeCode, awayCode, params, defaultMatch, venues])
 
-  const [analyzing, setAnalyzing] = useState(false)
   const [result, setResult] = useState<SimEntry | null>(null)
   const [history, setHistory] = useState<SimEntry[]>([])
   const idRef = useRef(0)
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-  useEffect(
-    () => () => {
-      if (timerRef.current) clearTimeout(timerRef.current)
-    },
-    [],
-  )
 
   // which positional team the home edge favours ('home' = Team A); undefined = neutral
   const homeAdvantage: 'home' | 'away' | undefined =
@@ -94,27 +98,22 @@ export default function MatchSimulator() {
     return pairProbs(simModel, homeCode, awayCode, undefined, homeAdvantage)
   }, [simModel, homeCode, awayCode, homeAdvantage])
 
-  const canSimulate = !!simModel && !!homeCode && !!awayCode && homeCode !== awayCode && !analyzing
+  const canSimulate = !!simModel && !!homeCode && !!awayCode && homeCode !== awayCode
 
   const simulate = () => {
     if (!canSimulate || !simModel) return
-    setAnalyzing(true)
-    setResult(null)
-    // brief "thinking" delay so the analysis step reads as deliberate, not instant
-    timerRef.current = setTimeout(() => {
-      const probs = pairProbs(simModel, homeCode, awayCode, undefined, homeAdvantage)
-      const score = simulateMatch(simModel, homeCode, awayCode, undefined, false, Math.random, homeAdvantage)
-      const entry: SimEntry = {
-        id: idRef.current++,
-        homeCode,
-        awayCode,
-        score,
-        probs: { h: probs.h, d: probs.d, a: probs.a },
-      }
-      setResult(entry)
-      setHistory((h) => [entry, ...h].slice(0, 8))
-      setAnalyzing(false)
-    }, 1100)
+    const probs = pairProbs(simModel, homeCode, awayCode, undefined, homeAdvantage)
+    const score = simulateMatch(simModel, homeCode, awayCode, undefined, knockout, Math.random, homeAdvantage)
+    const entry: SimEntry = {
+      id: idRef.current++,
+      homeCode,
+      awayCode,
+      score,
+      probs: { h: probs.h, d: probs.d, a: probs.a, dr: probs.dr },
+      knockout,
+    }
+    setResult(entry)
+    setHistory((h) => [entry, ...h].slice(0, 8))
   }
 
   const swapTeams = () => {
@@ -126,16 +125,16 @@ export default function MatchSimulator() {
 
   const teamLabel = (code: string) => pick(teams[code]?.name, code)
 
-  // arriving via a link (?a=&b=) means the user already chose to simulate this matchup,
-  // so kick it off automatically instead of making them press the button again
+  // run a first simulation automatically once the matchup is seeded (from a match-page
+  // link or the default next-match), so the page always lands on a result without a click
   const autoRan = useRef(false)
   const simulateRef = useRef(simulate)
   simulateRef.current = simulate
   useEffect(() => {
-    if (autoRan.current || !params.get('a') || !canSimulate) return
+    if (autoRan.current || !canSimulate) return
     autoRan.current = true
     simulateRef.current()
-  }, [params, canSimulate])
+  }, [canSimulate])
 
   return (
     <div>
@@ -246,9 +245,24 @@ export default function MatchSimulator() {
           </label>
         </div>
 
-        {livePreview && !result && !analyzing && (
+        <label className="ams-ko">
+          <input
+            type="checkbox"
+            checked={knockout}
+            onChange={(e) => {
+              setKnockout(e.target.checked)
+              setResult(null)
+            }}
+          />
+          {t('aimsKnockout')}
+        </label>
+
+        {livePreview && !result && (
           <div className="ams-preview">
             <ProbBar home={teamLabel(homeCode)} away={teamLabel(awayCode)} probs={livePreview} compact />
+            {knockout && (
+              <KoProbTable home={teamLabel(homeCode)} away={teamLabel(awayCode)} p={livePreview} />
+            )}
           </div>
         )}
 
@@ -257,14 +271,7 @@ export default function MatchSimulator() {
           {t('aimsSimulate')}
         </button>
 
-        {analyzing && (
-          <div className="ams-analyzing" role="status" aria-live="polite">
-            <BallSpinner />
-            {t('aimsAnalyzing')}
-          </div>
-        )}
-
-        {result && !analyzing && <ResultCard entry={result} teamLabel={teamLabel} />}
+        {result && <ResultCard entry={result} teamLabel={teamLabel} />}
       </section>
 
       {history.length > 0 && (
@@ -299,30 +306,94 @@ export default function MatchSimulator() {
 function ResultCard({ entry, teamLabel }: { entry: SimEntry; teamLabel: (code: string) => string }) {
   const { teams } = useAppData()
   const { t } = useI18n()
-  const { homeCode, awayCode, score, probs } = entry
-  const winner = score.h > score.a ? homeCode : score.a > score.h ? awayCode : null
+  const { homeCode, awayCode, score, probs, knockout } = entry
+  // the engine sets `winner` accounting for extra time + penalties; '' means a 90' draw
+  const winner = score.winner === homeCode ? homeCode : score.winner === awayCode ? awayCode : null
 
   return (
     <div className="ams-result">
-      <GoalFlash replayKey={entry.id} />
+      <GoalFlash key={entry.id} />
       <div className="ams-scoreboard">
         <div className={`ams-team${winner === homeCode ? ' win' : ''}`}>
           <Flag team={teams[homeCode]} size={36} />
           <span>{teamLabel(homeCode)}</span>
         </div>
         <div className="ams-score tnum">
-          {score.h} – {score.a}
+          {score.et ? (
+            <>
+              {score.et.h} – {score.et.a}
+              <span className="ams-aet">{t('simAet')}</span>
+            </>
+          ) : (
+            <>
+              {score.h} – {score.a}
+            </>
+          )}
         </div>
         <div className={`ams-team away${winner === awayCode ? ' win' : ''}`}>
           <span>{teamLabel(awayCode)}</span>
           <Flag team={teams[awayCode]} size={36} />
         </div>
       </div>
+      {score.et && (
+        <p className="ams-score-sub small muted tnum">
+          90′ {score.h}–{score.a}
+          {score.pens && (
+            <>
+              {' '}
+              · {t('pens')} {score.pens.h}–{score.pens.a}
+            </>
+          )}
+        </p>
+      )}
       <p className="ams-result-label">
         {winner ? t('aimsWinner', { team: teamLabel(winner) }) : t('aimsDraw')}
       </p>
       <ProbBar home={teamLabel(homeCode)} away={teamLabel(awayCode)} probs={probs} />
+      {knockout && <KoProbTable home={teamLabel(homeCode)} away={teamLabel(awayCode)} p={probs} />}
     </div>
+  )
+}
+
+/** knockout-path probabilities: win in 90', in extra time, on penalties, and total
+ *  advance per side — analytical, matching the match-page breakdown */
+function KoProbTable({ home, away, p }: { home: string; away: string; p: KoProbs }) {
+  const { t } = useI18n()
+  // integer percentages rounded exactly like the pipeline (engine intifyKo), so this
+  // table matches the knockout breakdown on the match pages
+  const k = intifyKo(p)
+  return (
+    <table className="ams-kotable small tnum">
+      <thead>
+        <tr>
+          <td />
+          <th scope="col">{home}</th>
+          <th scope="col">{away}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">{t('prob90')}</th>
+          <td>{k.h}%</td>
+          <td>{k.a}%</td>
+        </tr>
+        <tr>
+          <th scope="row">{t('probEt')}</th>
+          <td>+{k.eh}%</td>
+          <td>+{k.ea}%</td>
+        </tr>
+        <tr>
+          <th scope="row">{t('probPens')}</th>
+          <td>+{k.ph}%</td>
+          <td>+{k.pa}%</td>
+        </tr>
+        <tr className="ams-kotable-total">
+          <th scope="row">{t('probAdvance')}</th>
+          <td>{k.ah}%</td>
+          <td>{100 - k.ah}%</td>
+        </tr>
+      </tbody>
+    </table>
   )
 }
 
@@ -362,25 +433,14 @@ function ProbBar({
   )
 }
 
-/** spinning ball shown while the Elo model "thinks" */
-function BallSpinner() {
-  return (
-    <span className="ams-ball" aria-hidden="true">
-      ⚽
-    </span>
-  )
-}
-
 /** brief goal celebration: ball flying into the net, shown once per result */
-function GoalFlash({ replayKey }: { replayKey: number }) {
+function GoalFlash() {
   const { t } = useI18n()
   const [phase, setPhase] = useState<'start' | 'shoot' | 'text'>('start')
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: replayKey is the intentional replay trigger
   useEffect(() => {
-    setPhase('start')
-    // two rAFs ensure the browser paints the "start" position first,
-    // so the transition to "shoot" is guaranteed to animate
+    // two rAFs let the browser paint the "start" position first, so the move to "shoot"
+    // is guaranteed to animate. a fresh key per result remounts this, replaying in full.
     let raf2 = 0
     const raf1 = requestAnimationFrame(() => {
       raf2 = requestAnimationFrame(() => setPhase('shoot'))
@@ -391,7 +451,7 @@ function GoalFlash({ replayKey }: { replayKey: number }) {
       cancelAnimationFrame(raf2)
       clearTimeout(textTimer)
     }
-  }, [replayKey])
+  }, [])
 
   return (
     <div className="ams-goalflash" aria-hidden="true">

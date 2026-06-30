@@ -347,12 +347,11 @@ const zh: Dict = {
   missNotMember: '非国际足联成员',
   navMatchSim: '单场模拟器',
   aimsTitle: '单场模拟器',
-  aimsSub: '任选两支球队，用 Elo 模型预测这场比赛的走势：中立球场（无主场优势），采用当前评分。',
+  aimsSub: '任选两支球队，用 Elo 模型预测这场比赛的走势，采用当前评分。',
   aimsTeamA: '球队 A',
   aimsTeamB: '球队 B',
   aimsSwap: '交换球队',
   aimsSimulate: '模拟比赛',
-  aimsAnalyzing: '正在分析概率…',
   aimsDraw: '平局！',
   aimsWinner: '{team} 获胜！',
   aimsDrawLabel: '平局',
@@ -363,6 +362,7 @@ const zh: Dict = {
   aimsHome: '主场优势',
   aimsNeutral: '中立',
   aimsGoal: '球进啦！',
+  aimsKnockout: '淘汰赛（加时 + 点球）',
 }
 
 export default zh

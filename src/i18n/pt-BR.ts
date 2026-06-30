@@ -357,12 +357,11 @@ const ptBR: Dict = {
   navMatchSim: 'Simulador de partida',
   aimsTitle: 'Simulador de partida',
   aimsSub:
-    'Escolha dois times e deixe o modelo Elo prever como a partida se desenrola em campo neutro (sem mando de campo), usando as avaliações atuais.',
+    'Escolha dois times e deixe o modelo Elo prever como a partida se desenrola, usando as avaliações atuais.',
   aimsTeamA: 'Time A',
   aimsTeamB: 'Time B',
   aimsSwap: 'Trocar times',
   aimsSimulate: 'Simular partida',
-  aimsAnalyzing: 'Analisando probabilidades…',
   aimsDraw: 'Deu empate!',
   aimsWinner: '{team} vence!',
   aimsDrawLabel: 'Empate',
@@ -374,6 +373,7 @@ const ptBR: Dict = {
   aimsHome: 'Mando de campo',
   aimsNeutral: 'Neutro',
   aimsGoal: 'GOOOL!',
+  aimsKnockout: 'Mata-mata (prorrogação + pênaltis)',
 }
 
 export default ptBR

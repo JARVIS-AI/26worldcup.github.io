@@ -357,12 +357,11 @@ const de: Dict = {
   navMatchSim: 'Einzelspiel-Simulator',
   aimsTitle: 'Einzelspiel-Simulator',
   aimsSub:
-    'Wähle zwei Teams und lass das Elo-Modell den Spielverlauf auf neutralem Platz (ohne Heimvorteil) mit den aktuellen Wertungen vorhersagen.',
+    'Wähle zwei Teams und lass das Elo-Modell den Spielverlauf mit den aktuellen Wertungen vorhersagen.',
   aimsTeamA: 'Team A',
   aimsTeamB: 'Team B',
   aimsSwap: 'Teams tauschen',
   aimsSimulate: 'Spiel simulieren',
-  aimsAnalyzing: 'Wahrscheinlichkeiten werden analysiert…',
   aimsDraw: 'Unentschieden!',
   aimsWinner: '{team} gewinnt!',
   aimsDrawLabel: 'Remis',
@@ -374,6 +373,7 @@ const de: Dict = {
   aimsHome: 'Heimvorteil',
   aimsNeutral: 'Neutral',
   aimsGoal: 'TOOOR!',
+  aimsKnockout: 'K.-o.-Spiel (Verlängerung + Elfmeter)',
 }
 
 export default de

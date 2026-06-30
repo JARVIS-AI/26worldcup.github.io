@@ -59,31 +59,51 @@
   accent-color: var(--accent);
 }
 
+/* knockout toggle + extra-time / penalty probability table */
+.ams-ko {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+.ams-ko input {
+  accent-color: var(--accent);
+}
+.ams-kotable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 6px;
+}
+.ams-kotable th,
+.ams-kotable td {
+  padding: 3px 8px;
+  text-align: center;
+}
+.ams-kotable th[scope="row"] {
+  text-align: start;
+  font-weight: 600;
+  color: var(--text-2);
+}
+.ams-kotable-total {
+  border-top: 1px solid var(--border);
+  font-weight: 800;
+}
+.ams-aet {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  vertical-align: super;
+  margin-inline-start: 3px;
+}
+.ams-score-sub {
+  text-align: center;
+  margin: -6px 0 0;
+}
+
 .ams-go {
   align-self: center;
   min-width: 220px;
-}
-
-.ams-analyzing {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: var(--text-2);
-  font-weight: 600;
-  font-size: 0.92rem;
-  padding: 10px 0;
-}
-.ams-ball {
-  display: inline-block;
-  font-size: 1.15rem;
-  line-height: 1;
-  animation: ams-roll 0.7s linear infinite;
-}
-@keyframes ams-roll {
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /* ---- result card ---- */
