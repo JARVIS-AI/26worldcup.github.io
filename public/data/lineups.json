@@ -53441,6 +53441,13 @@
      "type": 2,
      "period": 5,
      "sec": 427
+    },
+    {
+     "player": "389867",
+     "minute": "74'",
+     "type": 2,
+     "period": 5,
+     "sec": 1698
     }
    ],
    "bookings": [],
@@ -53729,9 +53736,22 @@
    ],
    "goals": [],
    "bookings": [],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "519958",
+     "on": "514202",
+     "minute": "65'",
+     "period": 5
+    },
+    {
+     "off": "489689",
+     "on": "503047",
+     "minute": "65'",
+     "period": 5
+    }
+   ]
   },
-  "matchTime": "61'",
+  "matchTime": "74'",
   "period": 5,
   "final": false,
   "secTried": true
