@@ -49,6 +49,14 @@
    "ownGoals": 0
   },
   {
+   "id": "448152",
+   "name": "Cody GAKPO",
+   "code": "NED",
+   "no": 11,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "484851",
    "name": "Deniz UNDAV",
    "code": "GER",
@@ -141,14 +149,6 @@
    "name": "Ayase UEDA",
    "code": "JPN",
    "no": 18,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "448152",
-   "name": "Cody GAKPO",
-   "code": "NED",
-   "no": 11,
    "goals": 2,
    "ownGoals": 0
   },
