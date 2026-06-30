@@ -5408,8 +5408,8 @@
    "group": null,
    "date": "2026-06-30T17:00:00Z",
    "venueId": "400257526",
-   "status": "live",
-   "time": "90'+2'",
+   "status": "finished",
+   "time": "98'",
    "home": {
     "code": "CIV",
     "score": 1,
@@ -5422,7 +5422,7 @@
    },
    "phA": "2E",
    "phB": "2I",
-   "winner": null,
+   "winner": "NOR",
    "attendance": 69665,
    "officials": [
     {
