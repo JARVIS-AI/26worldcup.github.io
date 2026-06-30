@@ -50961,11 +50961,19 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "483448",
+     "minute": "39'",
+     "type": 2,
+     "period": 3,
+     "sec": 2327
+    }
+   ],
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "31'",
+  "matchTime": "44'",
   "period": 3,
   "final": false,
   "secTried": true

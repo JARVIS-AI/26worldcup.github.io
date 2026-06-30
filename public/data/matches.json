@@ -5409,7 +5409,7 @@
    "date": "2026-06-30T17:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "30'",
+   "time": "43'",
    "home": {
     "code": "CIV",
     "score": 0,
@@ -5417,7 +5417,7 @@
    },
    "away": {
     "code": "NOR",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "2E",
