@@ -414,13 +414,6 @@
     "r": 1
    },
    {
-    "id": null,
-    "name": "#null",
-    "code": "TUR",
-    "y": 6,
-    "r": 0
-   },
-   {
     "id": "464924",
     "name": "Abdukodir KHUSANOV",
     "code": "UZB",
@@ -664,20 +657,6 @@
    {
     "id": "424422",
     "name": "Matias GALARZA",
-    "bans": [
-     {
-      "type": "yellows",
-      "due": [
-       "400021460",
-       "400021513"
-      ],
-      "banned": "400021533"
-     }
-    ]
-   },
-   {
-    "id": "null",
-    "name": "#null",
     "bans": [
      {
       "type": "yellows",

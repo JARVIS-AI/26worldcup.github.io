@@ -5549,6 +5549,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "375306",
+     "country": "ALG",
+     "role": "fourth",
+     "name": {
+      "en": "Mustapha GHORBAL",
+      "fr": "Mustapha GHORBAL",
+      "zh": "Mustapha GHORBAL",
+      "ar": "Mustapha GHORBAL",
+      "es": "Mustapha GHORBAL",
+      "de": "Mustapha GHORBAL",
+      "pt": "Mustapha GHORBAL",
+      "it": "Mustapha GHORBAL",
+      "ja": "Mustapha GHORBAL",
+      "ko": "Mustapha GHORBAL",
+      "id": "Mustapha GHORBAL",
+      "ru": "Mustapha GHORBAL"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
