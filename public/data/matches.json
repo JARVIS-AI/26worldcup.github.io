@@ -5592,8 +5592,8 @@
    "group": null,
    "date": "2026-07-01T16:00:00Z",
    "venueId": "400098290",
-   "status": "live",
-   "time": "90'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "ENG",
     "score": 2,
@@ -5606,7 +5606,7 @@
    },
    "phA": "1L",
    "phB": "3EHIJK",
-   "winner": null,
+   "winner": "ENG",
    "attendance": 68239,
    "officials": [
     {
@@ -6169,7 +6169,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "ENG",
+    "score": null,
+    "pen": null
+   },
    "phA": "W79",
    "phB": "W80",
    "winner": null,
