@@ -5652,7 +5652,7 @@
    "date": "2026-07-02T00:00:00Z",
    "venueId": "400257521",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "USA",
     "score": null,
@@ -5700,39 +5700,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "383174",
-     "country": "ARG",
-     "role": "fourth",
-     "name": {
-      "en": "Dario HERRERA",
-      "fr": "Dario HERRERA",
-      "zh": "Dario HERRERA",
-      "ar": "Dario HERRERA",
-      "es": "Dario HERRERA",
-      "de": "Dario HERRERA",
-      "pt": "Dario HERRERA",
-      "it": "Dario HERRERA",
-      "ja": "Dario HERRERA",
-      "ko": "Dario HERRERA",
-      "id": "Dario HERRERA",
-      "ru": "Dario HERRERA"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -5744,10 +5711,10 @@
    "date": "2026-07-01T20:00:00Z",
    "venueId": "400216606",
    "status": "live",
-   "time": "113'",
+   "time": "120'+7'",
    "home": {
     "code": "BEL",
-    "score": 2,
+    "score": 3,
     "pen": null
    },
    "away": {
