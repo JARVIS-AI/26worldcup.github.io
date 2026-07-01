@@ -5593,7 +5593,7 @@
    "date": "2026-07-01T16:00:00Z",
    "venueId": "400098290",
    "status": "live",
-   "time": "3'",
+   "time": "17'",
    "home": {
     "code": "ENG",
     "score": 0,
@@ -5601,7 +5601,7 @@
    },
    "away": {
     "code": "COD",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "1L",
