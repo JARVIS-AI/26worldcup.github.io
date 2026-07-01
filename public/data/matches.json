@@ -5744,10 +5744,10 @@
    "date": "2026-07-01T20:00:00Z",
    "venueId": "400216606",
    "status": "live",
-   "time": "74'",
+   "time": "88'",
    "home": {
     "code": "BEL",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
