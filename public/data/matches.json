@@ -5652,7 +5652,7 @@
    "date": "2026-07-02T00:00:00Z",
    "venueId": "400257521",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "USA",
     "score": null,
@@ -5710,8 +5710,8 @@
    "group": null,
    "date": "2026-07-01T20:00:00Z",
    "venueId": "400216606",
-   "status": "live",
-   "time": "120'+7'",
+   "status": "finished",
+   "time": "132'",
    "home": {
     "code": "BEL",
     "score": 3,
@@ -5724,7 +5724,7 @@
    },
    "phA": "1G",
    "phB": "3AEHIJ",
-   "winner": null,
+   "winner": "BEL",
    "attendance": 66925,
    "officials": [
     {
@@ -6174,7 +6174,11 @@
    "status": "scheduled",
    "time": null,
    "home": null,
-   "away": null,
+   "away": {
+    "code": "BEL",
+    "score": null,
+    "pen": null
+   },
    "phA": "W81",
    "phB": "W82",
    "winner": null,
