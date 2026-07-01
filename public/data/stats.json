@@ -113,6 +113,14 @@
    "ownGoals": 0
   },
   {
+   "id": "429157",
+   "name": "Julian QUINONES",
+   "code": "MEX",
+   "no": 16,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "411367",
    "name": "Kai HAVERTZ",
    "code": "GER",
@@ -233,14 +241,6 @@
    "ownGoals": 0
   },
   {
-   "id": "429157",
-   "name": "Julian QUINONES",
-   "code": "MEX",
-   "no": 16,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
    "id": "448355",
    "name": "Leandro TROSSARD",
    "code": "BEL",
@@ -297,6 +297,14 @@
    "ownGoals": 0
   },
   {
+   "id": "356731",
+   "name": "Raul JIMENEZ",
+   "code": "MEX",
+   "no": 9,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "379942",
    "name": "Riyad MAHREZ",
    "code": "ALG",
@@ -311,25 +319,25 @@
    "no": 17,
    "goals": 2,
    "ownGoals": 0
-  },
-  {
-   "id": "489688",
-   "name": "Yasin AYARI",
-   "code": "SWE",
-   "no": 18,
-   "goals": 2,
-   "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 197,
-  "red": 10,
+  "yellow": 200,
+  "red": 11,
   "players": [
    {
     "id": "369761",
     "name": "Miguel ALMIRON",
     "code": "PAR",
     "no": 10,
+    "y": 1,
+    "r": 1
+   },
+   {
+    "id": "424031",
+    "name": "Piero HINCAPIE",
+    "code": "ECU",
+    "no": 3,
     "y": 1,
     "r": 1
    },
@@ -422,6 +430,14 @@
     "r": 0
    },
    {
+    "id": "389784",
+    "name": "Alan FRANCO",
+    "code": "ECU",
+    "no": 21,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "433074",
     "name": "AMIR ALAMMARI",
     "code": "IRQ",
@@ -468,26 +484,10 @@
     "no": 14,
     "y": 2,
     "r": 0
-   },
-   {
-    "id": "466317",
-    "name": "Juninho BACUNA",
-    "code": "CUW",
-    "no": 7,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "424422",
-    "name": "Matias GALARZA",
-    "code": "PAR",
-    "no": 23,
-    "y": 2,
-    "r": 0
    }
   ]
  },
- "attAvg": 64719,
+ "attAvg": 64923,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -573,7 +573,7 @@
    "QAT": -12,
    "SUI": -3,
    "CIV": -4,
-   "ECU": -5,
+   "ECU": -12,
    "GER": -6,
    "CUW": -7,
    "NED": -3,

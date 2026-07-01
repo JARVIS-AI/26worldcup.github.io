@@ -52688,9 +52688,55 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "429157",
+     "minute": "22'",
+     "type": 2,
+     "period": 3,
+     "sec": 1272
+    },
+    {
+     "player": "356731",
+     "minute": "31'",
+     "type": 2,
+     "period": 3,
+     "sec": 1826
+    }
+   ],
    "bookings": [],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "500037",
+     "on": "464533",
+     "minute": "59'",
+     "period": 5
+    },
+    {
+     "off": "356731",
+     "on": "430759",
+     "minute": "73'",
+     "period": 5
+    },
+    {
+     "off": "430763",
+     "on": "461177",
+     "minute": "73'",
+     "period": 5
+    },
+    {
+     "off": "429157",
+     "on": "372090",
+     "minute": "80'",
+     "period": 5
+    },
+    {
+     "off": "403585",
+     "on": "441261",
+     "minute": "80'",
+     "period": 5
+    }
+   ]
   },
   "away": {
    "tactics": "4-4-2",
@@ -52985,12 +53031,68 @@
     }
    ],
    "goals": [],
-   "bookings": [],
-   "substitutions": []
+   "bookings": [
+    {
+     "player": "389784",
+     "minute": "45'+1'",
+     "card": 1,
+     "period": 3
+    },
+    {
+     "player": "463495",
+     "minute": "90'+3'",
+     "card": 1,
+     "period": 5
+    },
+    {
+     "player": "424031",
+     "minute": "90'+5'",
+     "card": 2,
+     "period": 5
+    },
+    {
+     "player": "428885",
+     "minute": "90'+9'",
+     "card": 1,
+     "period": 5
+    }
+   ],
+   "substitutions": [
+    {
+     "off": "389784",
+     "on": "463489",
+     "minute": "",
+     "period": 4
+    },
+    {
+     "off": "463465",
+     "on": "402974",
+     "minute": "",
+     "period": 4
+    },
+    {
+     "off": "373400",
+     "on": "448310",
+     "minute": "59'",
+     "period": 5
+    },
+    {
+     "off": "405920",
+     "on": "402985",
+     "minute": "79'",
+     "period": 5
+    },
+    {
+     "off": "448312",
+     "on": "463495",
+     "minute": "79'",
+     "period": 5
+    }
+   ]
   },
-  "matchTime": "0'",
-  "period": 0,
-  "final": false,
+  "matchTime": "99'",
+  "period": 10,
+  "final": true,
   "secTried": true
  },
  "400021522": {
