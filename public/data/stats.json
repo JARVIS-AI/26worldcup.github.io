@@ -25,6 +25,14 @@
    "ownGoals": 0
   },
   {
+   "id": "369419",
+   "name": "Harry KANE",
+   "code": "ENG",
+   "no": 9,
+   "goals": 4,
+   "ownGoals": 0
+  },
+  {
    "id": "398680",
    "name": "Ousmane DEMBELE",
    "code": "FRA",
@@ -69,14 +77,6 @@
    "name": "Elijah JUST",
    "code": "NZL",
    "no": 11,
-   "goals": 3,
-   "ownGoals": 0
-  },
-  {
-   "id": "369419",
-   "name": "Harry KANE",
-   "code": "ENG",
-   "no": 9,
    "goals": 3,
    "ownGoals": 0
   },
