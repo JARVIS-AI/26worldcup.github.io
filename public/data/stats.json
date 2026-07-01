@@ -33,6 +33,14 @@
    "ownGoals": 0
   },
   {
+   "id": "401889",
+   "name": "Ismaila SARR",
+   "code": "SEN",
+   "no": 18,
+   "goals": 4,
+   "ownGoals": 0
+  },
+  {
    "id": "398680",
    "name": "Ousmane DEMBELE",
    "code": "FRA",
@@ -85,14 +93,6 @@
    "name": "Ismael SAIBARI",
    "code": "MAR",
    "no": 11,
-   "goals": 3,
-   "ownGoals": 0
-  },
-  {
-   "id": "401889",
-   "name": "Ismaila SARR",
-   "code": "SEN",
-   "no": 18,
    "goals": 3,
    "ownGoals": 0
   },
