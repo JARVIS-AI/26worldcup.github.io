@@ -5744,7 +5744,7 @@
    "date": "2026-07-01T20:00:00Z",
    "venueId": "400216606",
    "status": "live",
-   "time": "60'",
+   "time": "74'",
    "home": {
     "code": "BEL",
     "score": 0,
@@ -5758,7 +5758,7 @@
    "phA": "1G",
    "phB": "3AEHIJ",
    "winner": null,
-   "attendance": null,
+   "attendance": 66925,
    "officials": [
     {
      "id": "400191",

@@ -11584,7 +11584,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Brandon_Mechele",
     "wcApps": 4,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -11762,7 +11762,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/RC_Strasbourg_Alsace",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Diego_Moreira",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -16984,9 +16984,9 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AS_Monaco_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Lamine_Camara",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -17002,7 +17002,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Pape_Matar_Sarr",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17200,7 +17200,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ibrahim_Mbaye",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
