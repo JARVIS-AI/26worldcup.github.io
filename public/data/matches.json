@@ -5743,16 +5743,16 @@
    "group": null,
    "date": "2026-07-01T20:00:00Z",
    "venueId": "400216606",
-   "status": "scheduled",
-   "time": null,
+   "status": "live",
+   "time": "27'",
    "home": {
     "code": "BEL",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "SEN",
-    "score": null,
+    "score": 1,
     "pen": null
    },
    "phA": "1G",

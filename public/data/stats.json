@@ -233,6 +233,14 @@
    "ownGoals": 0
   },
   {
+   "id": "486130",
+   "name": "Habib DIARRA",
+   "code": "SEN",
+   "no": 21,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "448202",
    "name": "Jude BELLINGHAM",
    "code": "ENG",
@@ -309,14 +317,6 @@
    "name": "Riyad MAHREZ",
    "code": "ALG",
    "no": 7,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "448131",
-   "name": "Ruben VARGAS",
-   "code": "SUI",
-   "no": 17,
    "goals": 2,
    "ownGoals": 0
   }
