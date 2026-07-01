@@ -352,12 +352,11 @@ const ko: Dict = {
   missNotMember: 'FIFA 비회원',
   navMatchSim: '단일 경기 시뮬레이터',
   aimsTitle: '단일 경기 시뮬레이터',
-  aimsSub: '두 팀을 고르면 Elo 모델이 중립 경기장(홈 이점 없음)에서 현재 레이팅으로 경기 양상을 예측합니다.',
+  aimsSub: '두 팀을 고르면 Elo 모델이 현재 레이팅으로 경기 양상을 예측합니다.',
   aimsTeamA: 'A팀',
   aimsTeamB: 'B팀',
   aimsSwap: '팀 교체',
   aimsSimulate: '경기 시뮬레이션',
-  aimsAnalyzing: '확률 분석 중…',
   aimsDraw: '무승부!',
   aimsWinner: '{team} 승리!',
   aimsDrawLabel: '무승부',
@@ -368,6 +367,7 @@ const ko: Dict = {
   aimsHome: '홈 이점',
   aimsNeutral: '중립',
   aimsGoal: '고오올!',
+  aimsKnockout: '토너먼트 (연장전 + 승부차기)',
 }
 
 export default ko

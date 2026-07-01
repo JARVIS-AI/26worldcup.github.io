@@ -358,12 +358,11 @@ const fr: Dict = {
   navMatchSim: 'Simulateur de match',
   aimsTitle: 'Simulateur de match',
   aimsSub:
-    'Choisissez deux équipes et laissez le modèle Elo prédire le déroulement du match sur terrain neutre (sans avantage du terrain), avec les notes actuelles.',
+    'Choisissez deux équipes et laissez le modèle Elo prédire le déroulement du match, avec les notes actuelles.',
   aimsTeamA: 'Équipe A',
   aimsTeamB: 'Équipe B',
   aimsSwap: 'Inverser les équipes',
   aimsSimulate: 'Simuler le match',
-  aimsAnalyzing: 'Analyse des probabilités…',
   aimsDraw: 'Match nul !',
   aimsWinner: '{team} gagne !',
   aimsDrawLabel: 'Nul',
@@ -375,6 +374,7 @@ const fr: Dict = {
   aimsHome: 'Avantage du terrain',
   aimsNeutral: 'Neutre',
   aimsGoal: 'BUUUT !',
+  aimsKnockout: 'Élimination directe (prolongation + tirs au but)',
 }
 
 export default fr

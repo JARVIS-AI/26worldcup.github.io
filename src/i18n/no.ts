@@ -355,13 +355,11 @@ const no: Dict = {
   missNotMember: 'Ikke Fifa-medlem',
   navMatchSim: 'Kampsimulator',
   aimsTitle: 'Kampsimulator',
-  aimsSub:
-    'Velg to lag og la Elo-modellen forutsi hvordan kampen utvikler seg på nøytral bane (ingen hjemmefordel), med dagens ratinger.',
+  aimsSub: 'Velg to lag og la Elo-modellen forutsi hvordan kampen utvikler seg, med dagens ratinger.',
   aimsTeamA: 'Lag A',
   aimsTeamB: 'Lag B',
   aimsSwap: 'Bytt lag',
   aimsSimulate: 'Simuler kamp',
-  aimsAnalyzing: 'Analyserer sannsynligheter…',
   aimsDraw: 'Uavgjort!',
   aimsWinner: '{team} vinner!',
   aimsDrawLabel: 'Uavgjort',
@@ -373,6 +371,7 @@ const no: Dict = {
   aimsHome: 'Hjemmefordel',
   aimsNeutral: 'Nøytral',
   aimsGoal: 'MÅÅÅL!',
+  aimsKnockout: 'Utslagskamp (ekstraomganger + straffer)',
 }
 
 export default no

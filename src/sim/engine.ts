@@ -113,6 +113,74 @@ export function pairProbs(
   return { ...p, dr }
 }
 
+/** decompose a knockout match's 90' draw mass over extra time + penalties, plus the
+ *  total advance probability per side. analytical mirror of the pipeline (elo.mjs
+ *  koBreakdown) and of simulateMatch's ET model, so the simulator's knockout odds line
+ *  up with the match pages. `p` is the 90' result from pairProbs. */
+export function knockoutProbs(p: { h: number; d: number; a: number; dr: number }): {
+  eh: number
+  ea: number
+  ph: number
+  pa: number
+  ah: number
+  aa: number
+} {
+  const share = 1 / (1 + 10 ** (-p.dr / 400))
+  const lh = Math.max(0.85 * share, 0.12)
+  const la = Math.max(0.85 * (1 - share), 0.12)
+  const fact = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800]
+  const pois = (l: number, k: number) => (Math.exp(-l) * l ** k) / fact[k]
+  let tie = 0
+  let hw = 0
+  for (let i = 0; i <= 10; i++) {
+    for (let j = 0; j <= 10; j++) {
+      const pr = pois(lh, i) * pois(la, j)
+      if (i === j) tie += pr
+      else if (i > j) hw += pr
+    }
+  }
+  const eh = p.d * hw
+  const ea = p.d * (1 - tie - hw)
+  const pens = (p.d * tie) / 2
+  const ah = p.h + eh + pens
+  return { eh, ea, ph: pens, pa: pens, ah, aa: 1 - ah }
+}
+
+/** largest-remainder rounding: integer parts of `vals` (already scaled) that sum to `total` */
+function largestRemainder(vals: number[], total: number): number[] {
+  const ints = vals.map(Math.floor)
+  let left = total - ints.reduce((s, v) => s + v, 0)
+  vals
+    .map((v, i): [number, number] => [v - ints[i], i])
+    .sort((x, y) => y[0] - x[0])
+    .forEach(([, i]) => {
+      if (left > 0) {
+        ints[i]++
+        left--
+      }
+    })
+  return ints
+}
+
+/** integer knockout percentages exactly as the data pipeline reports them (elo.mjs
+ *  intify): 90' h/d/a sum to 100 and the ET + penalty cells sum to the integer draw %.
+ *  use this for display so the simulator's knockout table matches the match pages. */
+export function intifyKo(p: { h: number; d: number; a: number; dr: number }): {
+  h: number
+  d: number
+  a: number
+  eh: number
+  ea: number
+  ph: number
+  pa: number
+  ah: number
+} {
+  const [h, d, a] = largestRemainder([p.h * 100, p.d * 100, p.a * 100], 100)
+  const kp = knockoutProbs(p)
+  const [eh, ea, ph, pa] = largestRemainder([kp.eh * 100, kp.ea * 100, kp.ph * 100, kp.pa * 100], d)
+  return { h, d, a, eh, ea, ph, pa, ah: h + eh + ph }
+}
+
 const poisson = (lambda: number, rnd: () => number): number => {
   const L = Math.exp(-lambda)
   let k = 0

@@ -267,7 +267,7 @@ export default function MatchDetail() {
     m.home && m.away ? (
       <Link
         className="chip md-sim-chip"
-        to={`/match-simulator?a=${m.home.code}&b=${m.away.code}${simHome ? `&home=${simHome}` : ''}`}
+        to={`/match-simulator?a=${m.home.code}&b=${m.away.code}${simHome ? `&home=${simHome}` : ''}${m.stage !== 'group' ? '&knockout=1' : ''}`}
       >
         <Icon name="bolt" size={12} />
         {t('aimsTryMatch')}

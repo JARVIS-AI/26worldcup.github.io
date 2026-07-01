@@ -362,13 +362,11 @@ const ar: Dict = {
   missNotMember: 'ليس عضواً في الفيفا',
   navMatchSim: 'محاكي مباراة واحدة',
   aimsTitle: 'محاكي مباراة واحدة',
-  aimsSub:
-    'اختر أي فريقين ودع نموذج إيلو يتوقع كيف ستجري المباراة على ملعب محايد (دون أفضلية أرض) باستخدام التقييمات الحالية.',
+  aimsSub: 'اختر أي فريقين ودع نموذج إيلو يتوقع كيف ستجري المباراة باستخدام التقييمات الحالية.',
   aimsTeamA: 'الفريق أ',
   aimsTeamB: 'الفريق ب',
   aimsSwap: 'تبديل الفريقين',
   aimsSimulate: 'محاكاة المباراة',
-  aimsAnalyzing: 'جارٍ تحليل الاحتمالات…',
   aimsDraw: 'إنه تعادل!',
   aimsWinner: 'فوز {team}!',
   aimsDrawLabel: 'تعادل',
@@ -379,6 +377,7 @@ const ar: Dict = {
   aimsHome: 'أفضلية الأرض',
   aimsNeutral: 'محايد',
   aimsGoal: 'جوووول!',
+  aimsKnockout: 'أدوار الإقصاء (وقت إضافي + ركلات ترجيح)',
 }
 
 export default ar

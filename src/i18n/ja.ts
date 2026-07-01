@@ -353,13 +353,11 @@ const ja: Dict = {
   missNotMember: 'FIFA非加盟',
   navMatchSim: '1試合シミュレーター',
   aimsTitle: '1試合シミュレーター',
-  aimsSub:
-    '2チームを選ぶと、Eloモデルが中立会場（ホームアドバンテージなし）・現在のレーティングで試合展開を予測します。',
+  aimsSub: '2チームを選ぶと、Eloモデルが現在のレーティングで試合展開を予測します。',
   aimsTeamA: 'チームA',
   aimsTeamB: 'チームB',
   aimsSwap: 'チームを入れ替え',
   aimsSimulate: '試合をシミュレート',
-  aimsAnalyzing: '確率を分析中…',
   aimsDraw: '引き分け！',
   aimsWinner: '{team} の勝ち！',
   aimsDrawLabel: '引き分け',
@@ -371,6 +369,7 @@ const ja: Dict = {
   aimsHome: 'ホームアドバンテージ',
   aimsNeutral: '中立',
   aimsGoal: 'ゴーール！',
+  aimsKnockout: 'ノックアウト（延長戦 + PK戦）',
 }
 
 export default ja

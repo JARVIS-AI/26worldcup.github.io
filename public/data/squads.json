@@ -498,7 +498,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/C.D._Guadalajara",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Rangel_(footballer)",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -552,7 +552,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/PAOK_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jorge_S%C3%A1nchez_(footballer%2C_born_1997)",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -570,7 +570,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Lokomotiv_Moscow",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/C%C3%A9sar_Montes",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 1
@@ -606,7 +606,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Genoa_CFC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Johan_V%C3%A1squez_(footballer%2C_born_1998)",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -624,7 +624,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Club_Am%C3%A9rica",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Israel_Reyes",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -660,7 +660,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Toluca_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jes%C3%BAs_Gallardo",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -678,7 +678,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Cruz_Azul",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/%C3%89rik_Lira",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -696,7 +696,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/C.D._Guadalajara",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Luis_Romo",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -732,7 +732,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AEK_Athens_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Orbel%C3%ADn_Pineda",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -750,7 +750,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Obed_Vargas",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -768,7 +768,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Club_Tijuana",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Gilberto_Mora_(footballer%2C_born_2008)",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -804,7 +804,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/C.D._Guadalajara",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Brian_Guti%C3%A9rrez",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -822,8 +822,8 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Fulham_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Jim%C3%A9nez",
-    "wcApps": 2,
-    "wcGoals": 1,
+    "wcApps": 3,
+    "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -858,7 +858,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AC_Milan",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Santiago_Gim%C3%A9nez",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -894,8 +894,8 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Al_Qadsiah_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Qui%C3%B1ones",
-    "wcApps": 3,
-    "wcGoals": 2,
+    "wcApps": 4,
+    "wcGoals": 3,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -948,7 +948,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/C.D._Guadalajara",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Roberto_Alvarado",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8146,7 +8146,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Club_Atl%C3%A9tico_Hurac%C3%A1n",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Hern%C3%A1n_Gal%C3%ADndez",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8218,10 +8218,10 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Arsenal_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Piero_Hincapi%C3%A9",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 1,
-    "wcRed": 0
+    "wcRed": 1
    },
    {
     "id": "joel-ordonez",
@@ -8236,7 +8236,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Club_Brugge_KV",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Joel_Ord%C3%B3%C3%B1ez",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8254,7 +8254,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Willian_Pacho",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8290,7 +8290,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Clube_Atl%C3%A9tico_Mineiro",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/%C3%81ngelo_Preciado",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8326,7 +8326,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/KRC_Genk",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Yaimar_Medina",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8380,9 +8380,9 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Club_Atl%C3%A9tico_River_Plate",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Kendry_P%C3%A1ez",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -8416,7 +8416,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Pumas_UNAM",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Pedro_Vite",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8452,9 +8452,9 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Clube_Atl%C3%A9tico_Mineiro",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Alan_Franco_(footballer%2C_born_1998)",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
-    "wcYellow": 1,
+    "wcYellow": 2,
     "wcRed": 0
    },
    {
@@ -8470,9 +8470,9 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -8488,7 +8488,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Venezia_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/John_Yeboah",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8506,7 +8506,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Royale_Union_Saint-Gilloise",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Kevin_Rodr%C3%ADguez_(footballer%2C_born_2000)",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8524,7 +8524,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/C.F._Pachuca",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Enner_Valencia",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8542,7 +8542,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Club_Atl%C3%A9tico_Hurac%C3%A1n",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jordy_Caicedo",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -8560,7 +8560,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/CR_Flamengo",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Gonzalo_Plata",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 1,
     "wcYellow": 1,
     "wcRed": 0
@@ -8578,7 +8578,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Sunderland_A.F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nilson_Angulo",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -9462,7 +9462,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/OGC_Nice",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Elye_Wahi",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9480,7 +9480,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Oumar_Diakit%C3%A9",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9498,8 +9498,8 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Manchester_United_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Amad_Diallo",
-    "wcApps": 3,
-    "wcGoals": 1,
+    "wcApps": 4,
+    "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -9534,7 +9534,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Evann_Guessand",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -9552,7 +9552,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/TSG_1899_Hoffenheim",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Bazoumana_Tour%C3%A9",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -10536,7 +10536,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Derby_County_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jacob_Widell_Zetterstr%C3%B6m",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -10590,7 +10590,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/S.C._Braga",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Gustaf_Lagerbielke_(footballer)",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -10608,7 +10608,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Aston_Villa_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Victor_Lindel%C3%B6f",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -10644,7 +10644,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Leeds_United_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Gabriel_Gudmundsson",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -10680,7 +10680,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Borussia_Dortmund",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Daniel_Svensson_(footballer%2C_born_2002)",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -10770,7 +10770,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Mj%C3%A4llby_AIF",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Elliot_Stroud",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -10788,7 +10788,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Lucas_Bergvall",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -10806,7 +10806,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Celtic_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Benjamin_Nygren",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -10860,7 +10860,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Brighton_%26_Hove_Albion_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Yasin_Ayari",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 2,
     "wcYellow": 1,
     "wcRed": 0
@@ -10878,7 +10878,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/VfL_Wolfsburg",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Mattias_Svanberg",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -10896,7 +10896,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Royale_Union_Saint-Gilloise",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Besfort_Zeneli",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -10914,7 +10914,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Liverpool_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Alexander_Isak",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -10932,7 +10932,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Newcastle_United_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Anthony_Elanga",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
@@ -10950,7 +10950,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Arsenal_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Viktor_Gy%C3%B6keres",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 1,
     "wcYellow": 1,
     "wcRed": 0
@@ -10968,7 +10968,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Club_Brugge_KV",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Gustaf_Nilsson_(footballer%2C_born_1997)",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -10986,7 +10986,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Malm%C3%B6_FF",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Taha_Ali",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15334,7 +15334,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AC_Milan",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Mike_Maignan",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15370,7 +15370,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Malo_Gusto",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15388,7 +15388,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Aston_Villa_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Lucas_Digne",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15406,7 +15406,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Dayot_Upamecano",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15424,7 +15424,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Barcelona",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jules_Kound%C3%A9",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15460,7 +15460,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Arsenal_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/William_Saliba",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15478,7 +15478,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Al_Hilal_SFC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Th%C3%A9o_Hernandez",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15550,7 +15550,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Real_Madrid_CF",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Aur%C3%A9lien_Tchouam%C3%A9ni",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -15586,7 +15586,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AC_Milan",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Adrien_Rabiot",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15622,7 +15622,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Rayan_Cherki",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15658,7 +15658,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 4,
     "wcYellow": 0,
     "wcRed": 0
@@ -15694,8 +15694,8 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Real_Madrid_CF",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9",
-    "wcApps": 3,
-    "wcGoals": 4,
+    "wcApps": 4,
+    "wcGoals": 6,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -15712,7 +15712,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Michael_Olise",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15730,8 +15730,8 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Bradley_Barcola",
-    "wcApps": 3,
-    "wcGoals": 1,
+    "wcApps": 4,
+    "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -15748,7 +15748,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/D%C3%A9sir%C3%A9_Dou%C3%A9",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -15766,7 +15766,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jean-Philippe_Mateta",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -16560,7 +16560,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/S.L._Benfica",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Fredrik_Aursnes",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -16632,7 +16632,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/S.L._Benfica",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Andreas_Schjelderup",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -16650,7 +16650,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Fulham_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Oscar_Bobb",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -16705,7 +16705,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Erling_Haaland",
     "wcApps": 3,
-    "wcGoals": 4,
+    "wcGoals": 5,
     "wcYellow": 0,
     "wcRed": 0
    },

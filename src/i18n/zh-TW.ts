@@ -348,12 +348,11 @@ const zhTW: Dict = {
   missNotMember: '非國際足總會員',
   navMatchSim: '單場模擬器',
   aimsTitle: '單場模擬器',
-  aimsSub: '任選兩支球隊，用 Elo 模型預測這場比賽的走勢：中立球場（無主場優勢），採用目前的評分。',
+  aimsSub: '任選兩支球隊，用 Elo 模型預測這場比賽的走勢，採用目前的評分。',
   aimsTeamA: '球隊 A',
   aimsTeamB: '球隊 B',
   aimsSwap: '交換球隊',
   aimsSimulate: '模擬比賽',
-  aimsAnalyzing: '正在分析機率…',
   aimsDraw: '平手！',
   aimsWinner: '{team} 獲勝！',
   aimsDrawLabel: '平手',
@@ -364,6 +363,7 @@ const zhTW: Dict = {
   aimsHome: '主場優勢',
   aimsNeutral: '中立',
   aimsGoal: '進球啦！',
+  aimsKnockout: '淘汰賽（延長賽 + 點球）',
 }
 
 export default zhTW

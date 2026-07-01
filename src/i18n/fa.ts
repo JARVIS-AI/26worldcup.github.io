@@ -353,13 +353,11 @@ const fa: Dict = {
   missNotMember: 'عضو فیفا نیست',
   navMatchSim: 'شبیه‌ساز تک‌بازی',
   aimsTitle: 'شبیه‌ساز تک‌بازی',
-  aimsSub:
-    'هر دو تیم را انتخاب کنید تا مدل اِلو نتیجهٔ بازی را در زمین بی‌طرف (بدون مزیت میزبانی) و با رتبه‌بندی فعلی پیش‌بینی کند.',
+  aimsSub: 'هر دو تیم را انتخاب کنید تا مدل اِلو نتیجهٔ بازی را با رتبه‌بندی فعلی پیش‌بینی کند.',
   aimsTeamA: 'تیم الف',
   aimsTeamB: 'تیم ب',
   aimsSwap: 'جابه‌جایی تیم‌ها',
   aimsSimulate: 'شبیه‌سازی بازی',
-  aimsAnalyzing: 'در حال تحلیل احتمالات…',
   aimsDraw: 'مساوی شد!',
   aimsWinner: 'برد {team}!',
   aimsDrawLabel: 'مساوی',
@@ -371,6 +369,7 @@ const fa: Dict = {
   aimsHome: 'مزیت میزبانی',
   aimsNeutral: 'بی‌طرف',
   aimsGoal: 'گوووول!',
+  aimsKnockout: 'مرحله حذفی (وقت اضافه + پنالتی)',
 }
 
 export default fa
