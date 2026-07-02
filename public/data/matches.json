@@ -5652,7 +5652,7 @@
    "date": "2026-07-02T00:00:00Z",
    "venueId": "400257521",
    "status": "live",
-   "time": "63'",
+   "time": "77'",
    "home": {
     "code": "USA",
     "score": 1,
@@ -5666,7 +5666,7 @@
    "phA": "1D",
    "phB": "3BEFIJ",
    "winner": null,
-   "attendance": null,
+   "attendance": 68827,
    "officials": [
     {
      "id": "383222",
