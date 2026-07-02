@@ -145,6 +145,14 @@
    "ownGoals": 0
   },
   {
+   "id": "430751",
+   "name": "Mikel OYARZABAL",
+   "code": "ESP",
+   "no": 21,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "441316",
    "name": "Yoane WISSA",
    "code": "COD",
@@ -269,14 +277,6 @@
    "name": "Maxi ARAUJO",
    "code": "URU",
    "no": 20,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "430751",
-   "name": "Mikel OYARZABAL",
-   "code": "ESP",
-   "no": 21,
    "goals": 2,
    "ownGoals": 0
   },
