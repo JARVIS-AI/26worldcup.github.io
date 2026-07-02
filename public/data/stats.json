@@ -323,8 +323,16 @@
  ],
  "cards": {
   "yellow": 205,
-  "red": 11,
+  "red": 12,
   "players": [
+   {
+    "id": "466624",
+    "name": "Folarin BALOGUN",
+    "code": "USA",
+    "no": 20,
+    "y": 1,
+    "r": 1
+   },
    {
     "id": "369761",
     "name": "Miguel ALMIRON",
@@ -474,14 +482,6 @@
     "name": "Gervane KASTANEER",
     "code": "CUW",
     "no": 19,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "403083",
-    "name": "Issa DIOP",
-    "code": "MAR",
-    "no": 14,
     "y": 2,
     "r": 0
    }
