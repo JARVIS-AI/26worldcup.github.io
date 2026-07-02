@@ -5861,16 +5861,16 @@
    "group": null,
    "date": "2026-07-02T19:00:00Z",
    "venueId": "400017978",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "3'",
    "home": {
     "code": "ESP",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "AUT",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "1H",
