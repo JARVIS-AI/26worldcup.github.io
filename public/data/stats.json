@@ -41,6 +41,14 @@
    "ownGoals": 0
   },
   {
+   "id": "430751",
+   "name": "Mikel OYARZABAL",
+   "code": "ESP",
+   "no": 21,
+   "goals": 4,
+   "ownGoals": 0
+  },
+  {
    "id": "398680",
    "name": "Ousmane DEMBELE",
    "code": "FRA",
@@ -141,14 +149,6 @@
    "name": "MATHEUS CUNHA",
    "code": "BRA",
    "no": 9,
-   "goals": 3,
-   "ownGoals": 0
-  },
-  {
-   "id": "430751",
-   "name": "Mikel OYARZABAL",
-   "code": "ESP",
-   "no": 21,
    "goals": 3,
    "ownGoals": 0
   },
@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 207,
+  "yellow": 208,
   "red": 12,
   "players": [
    {
