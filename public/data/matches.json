@@ -5862,10 +5862,10 @@
    "date": "2026-07-02T19:00:00Z",
    "venueId": "400017978",
    "status": "live",
-   "time": "78'",
+   "time": "90'+2'",
    "home": {
     "code": "ESP",
-    "score": 2,
+    "score": 3,
     "pen": null
    },
    "away": {
