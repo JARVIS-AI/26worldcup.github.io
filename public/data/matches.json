@@ -5652,7 +5652,7 @@
    "date": "2026-07-02T00:00:00Z",
    "venueId": "400257521",
    "status": "live",
-   "time": "45'+4'",
+   "time": null,
    "home": {
     "code": "USA",
     "score": 1,
