@@ -5862,7 +5862,7 @@
    "date": "2026-07-02T19:00:00Z",
    "venueId": "400017978",
    "status": "live",
-   "time": "49'",
+   "time": "63'",
    "home": {
     "code": "ESP",
     "score": 1,
@@ -5876,7 +5876,7 @@
    "phA": "1H",
    "phB": "2J",
    "winner": null,
-   "attendance": null,
+   "attendance": 70492,
    "officials": [
     {
      "id": "392336",
