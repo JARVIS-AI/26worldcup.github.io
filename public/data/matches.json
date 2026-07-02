@@ -5651,8 +5651,8 @@
    "group": null,
    "date": "2026-07-02T00:00:00Z",
    "venueId": "400257521",
-   "status": "live",
-   "time": "90'",
+   "status": "finished",
+   "time": "101'",
    "home": {
     "code": "USA",
     "score": 2,
@@ -5665,7 +5665,7 @@
    },
    "phA": "1D",
    "phB": "3BEFIJ",
-   "winner": null,
+   "winner": "USA",
    "attendance": 68827,
    "officials": [
     {
@@ -6173,7 +6173,11 @@
    "venueId": "400216606",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "USA",
+    "score": null,
+    "pen": null
+   },
    "away": {
     "code": "BEL",
     "score": null,
