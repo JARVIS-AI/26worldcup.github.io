@@ -6197,7 +6197,7 @@
    "date": "2026-07-03T18:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "63'",
+   "time": "77'",
    "home": {
     "code": "AUS",
     "score": 1,
@@ -6211,7 +6211,7 @@
    "phA": "2D",
    "phB": "2G",
    "winner": null,
-   "attendance": null,
+   "attendance": 70244,
    "officials": [
     {
      "id": "408669",
