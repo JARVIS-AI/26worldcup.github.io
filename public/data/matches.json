@@ -5803,10 +5803,10 @@
    "date": "2026-07-02T23:00:00Z",
    "venueId": "400242032",
    "status": "live",
-   "time": "64'",
+   "time": "78'",
    "home": {
     "code": "POR",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
