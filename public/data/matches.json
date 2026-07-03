@@ -6164,16 +6164,16 @@
    "date": "2026-07-03T18:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "117'",
+   "time": null,
    "home": {
     "code": "AUS",
     "score": 1,
-    "pen": null
+    "pen": 1
    },
    "away": {
     "code": "EGY",
     "score": 1,
-    "pen": null
+    "pen": 1
    },
    "phA": "2D",
    "phB": "2G",
