@@ -1,17 +1,17 @@
 {
  "scorers": [
   {
-   "id": "389867",
-   "name": "Kylian MBAPPE",
-   "code": "FRA",
-   "no": 10,
-   "goals": 6,
-   "ownGoals": 0
-  },
-  {
    "id": "229397",
    "name": "Lionel MESSI",
    "code": "ARG",
+   "no": 10,
+   "goals": 7,
+   "ownGoals": 0
+  },
+  {
+   "id": "389867",
+   "name": "Kylian MBAPPE",
+   "code": "FRA",
    "no": 10,
    "goals": 6,
    "ownGoals": 0
