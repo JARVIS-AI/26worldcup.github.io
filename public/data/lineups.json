@@ -52017,8 +52017,19 @@
      "player": "408950",
      "minute": "55'",
      "type": 3,
-     "period": 5,
-     "sec": 549
+     "period": 5
+    },
+    {
+     "player": "355775",
+     "minute": "",
+     "type": 1,
+     "period": 11
+    },
+    {
+     "player": "406606",
+     "minute": "",
+     "type": 1,
+     "period": 11
     }
    ],
    "bookings": [],
@@ -52325,8 +52336,31 @@
      "player": "430482",
      "minute": "13'",
      "type": 2,
-     "period": 3,
-     "sec": 744
+     "period": 3
+    },
+    {
+     "player": "483183",
+     "minute": "",
+     "type": 1,
+     "period": 11
+    },
+    {
+     "player": "344661",
+     "minute": "",
+     "type": 1,
+     "period": 11
+    },
+    {
+     "player": "344654",
+     "minute": "",
+     "type": 1,
+     "period": 11
+    },
+    {
+     "player": "483182",
+     "minute": "",
+     "type": 1,
+     "period": 11
     }
    ],
    "bookings": [
@@ -52382,9 +52416,9 @@
     }
    ]
   },
-  "matchTime": null,
-  "period": 11,
-  "final": false,
+  "matchTime": "129'",
+  "period": 10,
+  "final": true,
   "secTried": true
  },
  "400021516": {

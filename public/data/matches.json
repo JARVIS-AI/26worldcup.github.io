@@ -6013,7 +6013,7 @@
    "date": "2026-07-03T22:00:00Z",
    "venueId": "400257525",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "ARG",
     "score": null,
@@ -6163,21 +6163,21 @@
    "group": null,
    "date": "2026-07-03T18:00:00Z",
    "venueId": "400257526",
-   "status": "live",
-   "time": null,
+   "status": "finished",
+   "time": "129'",
    "home": {
     "code": "AUS",
     "score": 1,
-    "pen": 1
+    "pen": 2
    },
    "away": {
     "code": "EGY",
     "score": 1,
-    "pen": 1
+    "pen": 4
    },
    "phA": "2D",
    "phB": "2G",
-   "winner": null,
+   "winner": "EGY",
    "attendance": 70244,
    "officials": [
     {
@@ -6509,7 +6509,11 @@
    "status": "scheduled",
    "time": null,
    "home": null,
-   "away": null,
+   "away": {
+    "code": "EGY",
+    "score": null,
+    "pen": null
+   },
    "phA": "W86",
    "phB": "W88",
    "winner": null,
