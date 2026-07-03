@@ -6196,16 +6196,16 @@
    "group": null,
    "date": "2026-07-03T18:00:00Z",
    "venueId": "400257526",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "2'",
    "home": {
     "code": "AUS",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "EGY",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "2D",
