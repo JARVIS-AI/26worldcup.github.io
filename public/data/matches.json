@@ -5803,7 +5803,7 @@
    "date": "2026-07-02T23:00:00Z",
    "venueId": "400242032",
    "status": "live",
-   "time": "51'",
+   "time": "64'",
    "home": {
     "code": "POR",
     "score": 0,
@@ -5811,7 +5811,7 @@
    },
    "away": {
     "code": "CRO",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "2K",
