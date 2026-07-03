@@ -52012,7 +52012,15 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "408950",
+     "minute": "55'",
+     "type": 3,
+     "period": 5,
+     "sec": 551
+    }
+   ],
    "bookings": [],
    "substitutions": [
     {
@@ -52294,7 +52302,7 @@
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "48'",
+  "matchTime": "63'",
   "period": 5,
   "final": false,
   "secTried": true
