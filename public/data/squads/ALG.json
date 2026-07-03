@@ -144,7 +144,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/BSC_Young_Boys",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jaouen_Hadjam",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -288,9 +288,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/OGC_Nice",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Hicham_Boudaoui",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -378,7 +378,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Olympique_de_Marseille",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Amine_Gouiri",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -396,7 +396,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Feyenoord",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Anis_Hadj_Moussa",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -450,7 +450,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Al_Duhail_SC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Adil_Boulbina",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
