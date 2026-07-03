@@ -81,6 +81,14 @@
    "ownGoals": 0
   },
   {
+   "id": "201200",
+   "name": "CRISTIANO RONALDO",
+   "code": "POR",
+   "no": 7,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "484851",
    "name": "Deniz UNDAV",
    "code": "GER",
@@ -189,14 +197,6 @@
    "name": "Bradley BARCOLA",
    "code": "FRA",
    "no": 12,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "201200",
-   "name": "CRISTIANO RONALDO",
-   "code": "POR",
-   "no": 7,
    "goals": 2,
    "ownGoals": 0
   },
@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 209,
+  "yellow": 210,
   "red": 12,
   "players": [
    {

@@ -20150,7 +20150,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Fenerbah%C3%A7e_S.K._(football)",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/N%C3%A9lson_Semedo",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -20348,7 +20348,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Bernardo_Silva",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -20421,7 +20421,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
     "wcApps": 4,
-    "wcGoals": 2,
+    "wcGoals": 3,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -20438,7 +20438,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Gon%C3%A7alo_Ramos",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -20546,7 +20546,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Juventus_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Francisco_Concei%C3%A7%C3%A3o",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -21288,7 +21288,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Luka_Modri%C4%87",
     "wcApps": 4,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -21322,7 +21322,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Atalanta_BC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Mario_Pa%C5%A1ali%C4%87",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
