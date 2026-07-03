@@ -52323,7 +52323,20 @@
      "sec": 744
     }
    ],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": null,
+     "minute": "91'",
+     "card": 1,
+     "period": 7
+    },
+    {
+     "player": "424106",
+     "minute": "105'",
+     "card": 1,
+     "period": 7
+    }
+   ],
    "substitutions": [
     {
      "off": "483161",
@@ -52342,11 +52355,17 @@
      "on": "363863",
      "minute": "80'",
      "period": 5
+    },
+    {
+     "off": "430476",
+     "on": "495488",
+     "minute": "",
+     "period": 8
     }
    ]
   },
-  "matchTime": "93'",
-  "period": 7,
+  "matchTime": null,
+  "period": 8,
   "final": false,
   "secTried": true
  },

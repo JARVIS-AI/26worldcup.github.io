@@ -6197,7 +6197,7 @@
    "date": "2026-07-03T18:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "93'",
+   "time": null,
    "home": {
     "code": "AUS",
     "score": 1,
