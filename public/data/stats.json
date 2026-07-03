@@ -241,6 +241,14 @@
    "ownGoals": 0
   },
   {
+   "id": "430482",
+   "name": "EMAM ASHOUR",
+   "code": "EGY",
+   "no": 8,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "522846",
    "name": "Ermin MAHMIC",
    "code": "BIH",
@@ -309,14 +317,6 @@
    "name": "Ramin REZAEIAN",
    "code": "IRN",
    "no": 23,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "356731",
-   "name": "Raul JIMENEZ",
-   "code": "MEX",
-   "no": 9,
    "goals": 2,
    "ownGoals": 0
   }
