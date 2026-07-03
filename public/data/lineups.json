@@ -57829,10 +57829,39 @@
    ],
    "goals": [],
    "bookings": [],
+   "substitutions": [
+    {
+     "off": "430070",
+     "on": "485068",
+     "minute": "",
+     "period": 4
+    }
+   ]
+  },
+  "matchTime": "51'",
+  "period": 5,
+  "final": false,
+  "secTried": true
+ },
+ "400021527": {
+  "home": {
+   "tactics": null,
+   "xi": [],
+   "subs": [],
+   "goals": [],
+   "bookings": [],
    "substitutions": []
   },
-  "matchTime": null,
-  "period": 4,
+  "away": {
+   "tactics": null,
+   "xi": [],
+   "subs": [],
+   "goals": [],
+   "bookings": [],
+   "substitutions": []
+  },
+  "matchTime": "0'",
+  "period": 0,
   "final": false,
   "secTried": true
  }
