@@ -3366,7 +3366,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Borussia_Dortmund",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Gregor_Kobel",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3438,7 +3438,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/1._FSV_Mainz_05",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Silvan_Widmer",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3456,7 +3456,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nico_Elvedi",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -3474,7 +3474,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Inter_Milan",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Manuel_Akanji",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3492,7 +3492,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Real_Betis",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ricardo_Rodriguez_(footballer)",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3564,7 +3564,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AS_Monaco_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Denis_Zakaria",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -3582,7 +3582,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Bologna_FC_1909",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Remo_Freuler",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3600,7 +3600,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/SC_Freiburg",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Johan_Manzambi",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 3,
     "wcYellow": 0,
     "wcRed": 0
@@ -3618,7 +3618,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Sunderland_A.F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Granit_Xhaka",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 1,
     "wcYellow": 1,
     "wcRed": 0
@@ -3672,7 +3672,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Pisa_SC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Michel_Aebischer",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3690,7 +3690,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Augsburg",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Fabian_Rieder",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3708,8 +3708,8 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Stade_Rennais_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Breel_Embolo",
-    "wcApps": 3,
-    "wcGoals": 1,
+    "wcApps": 4,
+    "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -3726,8 +3726,8 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Dan_Ndoye",
-    "wcApps": 3,
-    "wcGoals": 0,
+    "wcApps": 4,
+    "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -3762,7 +3762,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Sevilla_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Rub%C3%A9n_Vargas",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
@@ -3780,7 +3780,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Leeds_United_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Noah_Okafor",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3798,7 +3798,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Burnley_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Zeki_Amdouni",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17264,7 +17264,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Granada_CF",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Luca_Zidane",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17282,7 +17282,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Lille_OSC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/A%C3%AFssa_Mandi",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17354,7 +17354,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/BSC_Young_Boys",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jaouen_Hadjam",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17372,7 +17372,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Rayan_A%C3%AFt-Nouri",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17390,7 +17390,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Hellas_Verona_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Rafik_Belghali",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -17408,7 +17408,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Borussia_Dortmund",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ramy_Bensebaini",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17444,7 +17444,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Twente",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ramiz_Zerrouki",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -17462,7 +17462,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Al-Ittihad_Club_(Jeddah)",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Houssem_Aouar",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17480,9 +17480,9 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Far%C3%A8s_Cha%C3%AFbi",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -17498,9 +17498,9 @@
     "clubWiki": "https://en.wikipedia.org/wiki/OGC_Nice",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Hicham_Boudaoui",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -17516,7 +17516,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Lille_OSC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nabil_Bentaleb",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17534,7 +17534,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Bayer_04_Leverkusen",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ibrahim_Maza",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17570,7 +17570,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Al-Ahli_Saudi_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Riyad_Mahrez",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
@@ -17588,7 +17588,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Olympique_de_Marseille",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Amine_Gouiri",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -17606,7 +17606,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Feyenoord",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Anis_Hadj_Moussa",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17660,7 +17660,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Al_Duhail_SC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Adil_Boulbina",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
