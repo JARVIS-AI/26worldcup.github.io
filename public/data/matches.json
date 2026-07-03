@@ -6013,7 +6013,7 @@
    "date": "2026-07-03T22:00:00Z",
    "venueId": "400257525",
    "status": "live",
-   "time": "42'",
+   "time": null,
    "home": {
     "code": "ARG",
     "score": 1,
