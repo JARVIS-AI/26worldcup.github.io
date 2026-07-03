@@ -5824,18 +5824,18 @@
      "country": "NOR",
      "role": "referee",
      "name": {
-      "en": "E. Eskås",
-      "fr": "E. Eskås",
-      "zh": "埃斯克斯",
-      "ar": "E. Eskås",
-      "es": "E. Eskås",
-      "de": "E. Eskås",
-      "pt": "E. Eskås",
-      "it": "E. Eskås",
-      "ja": "E. Eskås",
-      "ko": "E. Eskås",
-      "id": "E. Eskås",
-      "ru": "E. Eskås"
+      "en": "Espen ESKAS",
+      "fr": "Espen ESKAS",
+      "zh": "Espen ESKAS",
+      "ar": "Espen ESKAS",
+      "es": "Espen ESKAS",
+      "de": "Espen ESKAS",
+      "pt": "Espen ESKAS",
+      "it": "Espen ESKAS",
+      "ja": "Espen ESKAS",
+      "ko": "Espen ESKAS",
+      "id": "Espen ESKAS",
+      "ru": "Espen ESKAS"
      },
      "typeName": {
       "en": "Referee",
@@ -5909,6 +5909,39 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "408591",
+     "country": "MTN",
+     "role": "fourth",
+     "name": {
+      "en": "Dahane BEIDA",
+      "fr": "Dahane BEIDA",
+      "zh": "Dahane BEIDA",
+      "ar": "Dahane BEIDA",
+      "es": "Dahane BEIDA",
+      "de": "Dahane BEIDA",
+      "pt": "Dahane BEIDA",
+      "it": "Dahane BEIDA",
+      "ja": "Dahane BEIDA",
+      "ko": "Dahane BEIDA",
+      "id": "Dahane BEIDA",
+      "ru": "Dahane BEIDA"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
      }
     }
    ]
@@ -6164,7 +6197,7 @@
    "date": "2026-07-03T18:00:00Z",
    "venueId": "400257526",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "AUS",
     "score": null,
@@ -6238,7 +6271,74 @@
    "phB": "W77",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "360687",
+     "country": "UZB",
+     "role": "referee",
+     "name": {
+      "en": "Ilgiz TANTASHEV",
+      "fr": "Ilgiz TANTASHEV",
+      "zh": "Ilgiz TANTASHEV",
+      "ar": "Ilgiz TANTASHEV",
+      "es": "Ilgiz TANTASHEV",
+      "de": "Ilgiz TANTASHEV",
+      "pt": "Ilgiz TANTASHEV",
+      "it": "Ilgiz TANTASHEV",
+      "ja": "Ilgiz TANTASHEV",
+      "ko": "Ilgiz TANTASHEV",
+      "id": "Ilgiz TANTASHEV",
+      "ru": "Ilgiz TANTASHEV"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "361083",
+     "country": "QAT",
+     "role": "fourth",
+     "name": {
+      "en": "Abdulrahman ALJASSIM",
+      "fr": "Abdulrahman ALJASSIM",
+      "zh": "Abdulrahman ALJASSIM",
+      "ar": "Abdulrahman ALJASSIM",
+      "es": "Abdulrahman ALJASSIM",
+      "de": "Abdulrahman ALJASSIM",
+      "pt": "Abdulrahman ALJASSIM",
+      "it": "Abdulrahman ALJASSIM",
+      "ja": "Abdulrahman ALJASSIM",
+      "ko": "Abdulrahman ALJASSIM",
+      "id": "Abdulrahman ALJASSIM",
+      "ru": "Abdulrahman ALJASSIM"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021530",
@@ -6263,7 +6363,74 @@
    "phB": "W75",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "347710",
+     "country": "ENG",
+     "role": "referee",
+     "name": {
+      "en": "Michael OLIVER",
+      "fr": "Michael OLIVER",
+      "zh": "Michael OLIVER",
+      "ar": "Michael OLIVER",
+      "es": "Michael OLIVER",
+      "de": "Michael OLIVER",
+      "pt": "Michael OLIVER",
+      "it": "Michael OLIVER",
+      "ja": "Michael OLIVER",
+      "ko": "Michael OLIVER",
+      "id": "Michael OLIVER",
+      "ru": "Michael OLIVER"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "327159",
+     "country": "NED",
+     "role": "fourth",
+     "name": {
+      "en": "Danny MAKKELIE",
+      "fr": "Danny MAKKELIE",
+      "zh": "Danny MAKKELIE",
+      "ar": "Danny MAKKELIE",
+      "es": "Danny MAKKELIE",
+      "de": "Danny MAKKELIE",
+      "pt": "Danny MAKKELIE",
+      "it": "Danny MAKKELIE",
+      "ja": "Danny MAKKELIE",
+      "ko": "Danny MAKKELIE",
+      "id": "Danny MAKKELIE",
+      "ru": "Danny MAKKELIE"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021532",
