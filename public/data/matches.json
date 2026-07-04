@@ -6223,7 +6223,7 @@
    "date": "2026-07-04T21:00:00Z",
    "venueId": "400248622",
    "status": "live",
-   "time": "63'",
+   "time": "77'",
    "home": {
     "code": "PAR",
     "score": 0,
@@ -6231,7 +6231,7 @@
    },
    "away": {
     "code": "FRA",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "W74",
