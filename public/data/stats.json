@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 230,
+  "yellow": 231,
   "red": 12,
   "players": [
    {
@@ -470,18 +470,18 @@
     "r": 0
    },
    {
-    "id": "335656",
-    "name": "DANILO",
-    "code": "BRA",
-    "no": 13,
+    "id": "390670",
+    "name": "Cyle LARIN",
+    "code": "CAN",
+    "no": 9,
     "y": 2,
     "r": 0
    },
    {
-    "id": "463128",
-    "name": "Diego GOMEZ",
-    "code": "PAR",
-    "no": 8,
+    "id": "335656",
+    "name": "DANILO",
+    "code": "BRA",
+    "no": 13,
     "y": 2,
     "r": 0
    }

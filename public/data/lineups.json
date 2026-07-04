@@ -60975,9 +60975,22 @@
      "minute": "49'",
      "card": 1,
      "period": 5
+    },
+    {
+     "player": "390670",
+     "minute": "67'",
+     "card": 1,
+     "period": 5
     }
    ],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "486929",
+     "on": "390670",
+     "minute": "63'",
+     "period": 5
+    }
+   ]
   },
   "away": {
    "tactics": "4-2-3-1",
@@ -61312,10 +61325,22 @@
      "on": "433426",
      "minute": "22'",
      "period": 3
+    },
+    {
+     "off": "485760",
+     "on": "372266",
+     "minute": "63'",
+     "period": 5
+    },
+    {
+     "off": "448612",
+     "on": "494293",
+     "minute": "63'",
+     "period": 5
     }
    ]
   },
-  "matchTime": "60'",
+  "matchTime": "74'",
   "period": 5,
   "final": false,
   "secTried": true
