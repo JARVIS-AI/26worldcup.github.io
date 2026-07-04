@@ -61253,10 +61253,24 @@
     }
    ],
    "goals": [],
-   "bookings": [],
-   "substitutions": []
+   "bookings": [
+    {
+     "player": "485767",
+     "minute": "20'",
+     "card": 1,
+     "period": 3
+    }
+   ],
+   "substitutions": [
+    {
+     "off": "448598",
+     "on": "433426",
+     "minute": "22'",
+     "period": 3
+    }
+   ]
   },
-  "matchTime": "15'",
+  "matchTime": "29'",
   "period": 3,
   "final": false,
   "secTried": true
