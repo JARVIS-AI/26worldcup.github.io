@@ -61985,10 +61985,17 @@
     }
    ],
    "goals": [],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "484860",
+     "minute": "19'",
+     "card": 1,
+     "period": 3
+    }
+   ],
    "substitutions": []
   },
-  "matchTime": "8'",
+  "matchTime": "22'",
   "period": 3,
   "final": false,
   "secTried": true
