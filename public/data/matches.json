@@ -6072,7 +6072,7 @@
    "date": "2026-07-04T01:30:00Z",
    "venueId": "400254717",
    "status": "live",
-   "time": "61'",
+   "time": "90'+5'",
    "home": {
     "code": "COL",
     "score": 1,
@@ -6086,7 +6086,7 @@
    "phA": "1K",
    "phB": "3DEIJL",
    "winner": null,
-   "attendance": null,
+   "attendance": 69045,
    "officials": [
     {
      "id": "314589",
