@@ -193,6 +193,14 @@
    "ownGoals": 0
   },
   {
+   "id": "441307",
+   "name": "Azzedine OUNAHI",
+   "code": "MAR",
+   "no": 8,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "484860",
    "name": "Bradley BARCOLA",
    "code": "FRA",
@@ -309,14 +317,6 @@
    "name": "Pape GUEYE",
    "code": "SEN",
    "no": 26,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "384797",
-   "name": "Ramin REZAEIAN",
-   "code": "IRN",
-   "no": 23,
    "goals": 2,
    "ownGoals": 0
   }
