@@ -6315,7 +6315,7 @@
    "date": "2026-07-04T17:00:00Z",
    "venueId": "400249385",
    "status": "live",
-   "time": "74'",
+   "time": "88'",
    "home": {
     "code": "CAN",
     "score": 0,
@@ -6323,7 +6323,7 @@
    },
    "away": {
     "code": "MAR",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "W73",
