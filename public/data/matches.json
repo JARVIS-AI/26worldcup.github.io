@@ -6314,8 +6314,8 @@
    "group": null,
    "date": "2026-07-04T17:00:00Z",
    "venueId": "400249385",
-   "status": "live",
-   "time": "88'",
+   "status": "finished",
+   "time": "100'",
    "home": {
     "code": "CAN",
     "score": 0,
@@ -6323,12 +6323,12 @@
    },
    "away": {
     "code": "MAR",
-    "score": 2,
+    "score": 3,
     "pen": null
    },
    "phA": "W73",
    "phB": "W75",
-   "winner": null,
+   "winner": "MAR",
    "attendance": 68777,
    "officials": [
     {
