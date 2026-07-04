@@ -6013,15 +6013,15 @@
    "date": "2026-07-03T22:00:00Z",
    "venueId": "400257525",
    "status": "live",
-   "time": null,
+   "time": "114'",
    "home": {
     "code": "ARG",
-    "score": 1,
+    "score": 3,
     "pen": null
    },
    "away": {
     "code": "CPV",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "1J",
@@ -6072,7 +6072,7 @@
    "date": "2026-07-04T01:30:00Z",
    "venueId": "400254717",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "COL",
     "score": null,
@@ -6119,39 +6119,6 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
-     }
-    },
-    {
-     "id": "373845",
-     "country": "ESP",
-     "role": "fourth",
-     "name": {
-      "en": "Alejandro HERNANDEZ",
-      "fr": "Alejandro HERNANDEZ",
-      "zh": "Alejandro HERNANDEZ",
-      "ar": "Alejandro HERNANDEZ",
-      "es": "Alejandro HERNANDEZ",
-      "de": "Alejandro HERNANDEZ",
-      "pt": "Alejandro HERNANDEZ",
-      "it": "Alejandro HERNANDEZ",
-      "ja": "Alejandro HERNANDEZ",
-      "ko": "Alejandro HERNANDEZ",
-      "id": "Alejandro HERNANDEZ",
-      "ru": "Alejandro HERNANDEZ"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
      }
     }
    ]
