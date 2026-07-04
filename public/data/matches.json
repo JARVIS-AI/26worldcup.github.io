@@ -6012,8 +6012,8 @@
    "group": null,
    "date": "2026-07-03T22:00:00Z",
    "venueId": "400257525",
-   "status": "live",
-   "time": "114'",
+   "status": "finished",
+   "time": "124'",
    "home": {
     "code": "ARG",
     "score": 3,
@@ -6026,7 +6026,7 @@
    },
    "phA": "1J",
    "phB": "2H",
-   "winner": null,
+   "winner": "ARG",
    "attendance": 64478,
    "officials": [
     {
@@ -6475,7 +6475,11 @@
    "venueId": "400098290",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "ARG",
+    "score": null,
+    "pen": null
+   },
    "away": {
     "code": "EGY",
     "score": null,

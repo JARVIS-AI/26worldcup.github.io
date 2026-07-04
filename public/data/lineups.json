@@ -56062,14 +56062,21 @@
      "sec": 118
     },
     {
-     "player": "431196",
+     "player": "409241",
      "minute": "111'",
-     "type": 2,
+     "type": 3,
      "period": 9,
      "sec": 330
     }
    ],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": "402926",
+     "minute": "115'",
+     "card": 1,
+     "period": 9
+    }
+   ],
    "substitutions": [
     {
      "off": "418975",
@@ -56458,9 +56465,9 @@
     }
    ]
   },
-  "matchTime": "114'",
-  "period": 9,
-  "final": false,
+  "matchTime": "124'",
+  "period": 10,
+  "final": true,
   "secTried": true
  },
  "400021522": {
