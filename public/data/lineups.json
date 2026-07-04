@@ -62030,6 +62030,12 @@
      "minute": "81'",
      "card": 1,
      "period": 5
+    },
+    {
+     "player": "485655",
+     "minute": "90'+7'",
+     "card": 1,
+     "period": 5
     }
    ],
    "substitutions": [
@@ -62038,10 +62044,16 @@
      "on": "464114",
      "minute": "61'",
      "period": 5
+    },
+    {
+     "off": "398680",
+     "on": "431861",
+     "minute": "84'",
+     "period": 5
     }
    ]
   },
-  "matchTime": "84'",
+  "matchTime": "90'+7'",
   "period": 5,
   "final": false,
   "secTried": true
