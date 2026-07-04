@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 219,
+  "yellow": 220,
   "red": 12,
   "players": [
    {
@@ -454,6 +454,14 @@
     "r": 0
    },
    {
+    "id": "506279",
+    "name": "Caleb YIRENKYI",
+    "code": "GHA",
+    "no": 3,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "308386",
     "name": "CASEMIRO",
     "code": "BRA",
@@ -474,14 +482,6 @@
     "name": "Diego GOMEZ",
     "code": "PAR",
     "no": 8,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "466372",
-    "name": "Gervane KASTANEER",
-    "code": "CUW",
-    "no": 19,
     "y": 2,
     "r": 0
    }
