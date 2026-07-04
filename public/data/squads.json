@@ -13604,7 +13604,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Kevin_Pina_(footballer)",
     "wcApps": 4,
     "wcGoals": 1,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -13656,7 +13656,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/PEC_Zwolle",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jamiro_Monteiro",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -13746,7 +13746,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AC_Omonia",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Willy_Semedo",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -13800,7 +13800,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Maccabi_Tel_Aviv_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/H%C3%A9lio_Varela",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -13836,7 +13836,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Dailon_Livramento",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17778,7 +17778,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Olympique_Lyonnais",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nicol%C3%A1s_Tagliafico",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17904,7 +17904,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Boca_Juniors",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Leandro_Paredes",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
