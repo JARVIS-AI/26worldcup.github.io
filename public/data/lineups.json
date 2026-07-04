@@ -61689,7 +61689,14 @@
     }
    ],
    "goals": [],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": null,
+     "minute": "90'",
+     "card": 1,
+     "period": 10
+    }
+   ],
    "substitutions": [
     {
      "off": "431202",
@@ -62053,9 +62060,9 @@
     }
    ]
   },
-  "matchTime": "90'+7'",
-  "period": 5,
-  "final": false,
+  "matchTime": "101'",
+  "period": 10,
+  "final": true,
   "secTried": true
  }
 }
