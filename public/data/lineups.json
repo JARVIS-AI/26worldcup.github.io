@@ -61707,6 +61707,18 @@
      "on": "463746",
      "minute": "58'",
      "period": 5
+    },
+    {
+     "off": "430597",
+     "on": "314197",
+     "minute": "67'",
+     "period": 5
+    },
+    {
+     "off": "475036",
+     "on": "429392",
+     "minute": "67'",
+     "period": 5
     }
    ]
   },
@@ -62005,10 +62017,16 @@
      "on": "477470",
      "minute": "",
      "period": 4
+    },
+    {
+     "off": "483496",
+     "on": "483497",
+     "minute": "63'",
+     "period": 5
     }
    ]
   },
-  "matchTime": "62'",
+  "matchTime": "76'",
   "period": 5,
   "final": false,
   "secTried": true
