@@ -34,8 +34,14 @@ export default function Stats() {
     return () => cancelAnimationFrame(id)
   }, [searchParams])
 
-  // fair-play (team conduct) score table: group-stage by default, toggleable to all
-  const [fpMode, setFpMode] = useState<'group' | 'all'>('group')
+  // fair-play (team conduct) score table: group-stage by default, toggleable to all.
+  // once the group stage is over and the first knockout match has finished, the
+  // group-only table is stale, so default the toggle to the cumulative "all" view
+  const groupMatches = matches.filter((m) => m.stage === 'group')
+  const groupStageOver =
+    groupMatches.length > 0 && groupMatches.every((m) => m.status === 'finished' || m.status === 'postponed')
+  const firstKnockoutDone = matches.some((m) => m.stage !== 'group' && m.status === 'finished')
+  const [fpMode, setFpMode] = useState<'group' | 'all'>(groupStageOver && firstKnockoutDone ? 'all' : 'group')
   const fpScores = stats.fairPlay?.[fpMode] ?? {}
   // most deductions first (most negative), like the cards table; cleanest teams last
   const fairPlayRows = Object.values(teams)
@@ -43,7 +49,8 @@ export default function Stats() {
     .sort((a, b) => a.score - b.score || a.code.localeCompare(b.code))
 
   const finished = matches.filter((m) => m.status === 'finished')
-  const liveCount = matches.filter((m) => m.status === 'live').length
+  const live = matches.filter((m) => m.status === 'live')
+  const liveCount = live.length
   const goals = finished.reduce((sum, m) => sum + (m.home?.score ?? 0) + (m.away?.score ?? 0), 0)
   // average goals per finished match, 1 decimal, Latin digits in every locale
   const goalsAvg = finished.length > 0 ? (goals / finished.length).toFixed(1) : null
@@ -139,15 +146,24 @@ export default function Stats() {
             <div className="sx-lbl">{t('statUpset')}</div>
           </Link>
         )}
-        {liveCount > 0 && (
-          <div className="card sx-stat sx-live">
-            <div className="sx-num tnum">{liveCount}</div>
-            <div className="sx-lbl">
-              <span className="sx-live-dot" />
-              {t('liveNow')}
+        {liveCount > 0 &&
+          (liveCount === 1 ? (
+            <Link to={`/match/${live[0].id}`} className="card sx-stat sx-live sx-stat-link">
+              <div className="sx-num tnum">{liveCount}</div>
+              <div className="sx-lbl">
+                <span className="sx-live-dot" />
+                {t('liveNow')}
+              </div>
+            </Link>
+          ) : (
+            <div className="card sx-stat sx-live">
+              <div className="sx-num tnum">{liveCount}</div>
+              <div className="sx-lbl">
+                <span className="sx-live-dot" />
+                {t('liveNow')}
+              </div>
             </div>
-          </div>
-        )}
+          ))}
       </div>
 
       <div className="sx-cols">

@@ -703,26 +703,28 @@ export default function MatchDetail() {
                     {tl.subs.map((p) => (
                       <div className="md-sub" key={p.id}>
                         <span className="no tnum">{p.number ?? ''}</span>
-                        {code && p.number != null ? (
-                          <Link className="nm md-plink" to={`/team/${code}?p=${p.number}`}>
-                            {p.name}
-                          </Link>
-                        ) : (
-                          <span className="nm">{p.name}</span>
-                        )}
-                        {p.captain && (
-                          <span className="md-cap" title={t('captain')}>
-                            C
-                          </span>
-                        )}
-                        {cardInfo.subOn[p.id] && (
-                          <span className="md-sub-on tnum">↑ {cardInfo.subOn[p.id]}</span>
-                        )}
-                        {cardInfo.goals[p.id] && (
-                          <span className="md-sub-goal tnum">⚽ {cardInfo.goals[p.id]}</span>
-                        )}
-                        {cardInfo.marks[p.id]?.card === 'y' && <span aria-hidden="true">🟨</span>}
-                        {cardInfo.marks[p.id]?.card === 'r' && <span aria-hidden="true">🟥</span>}
+                        <span className="md-sub-body">
+                          {code && p.number != null ? (
+                            <Link className="nm md-plink" to={`/team/${code}?p=${p.number}`}>
+                              {p.name}
+                            </Link>
+                          ) : (
+                            <span className="nm">{p.name}</span>
+                          )}
+                          {p.captain && (
+                            <span className="md-cap" title={t('captain')}>
+                              C
+                            </span>
+                          )}
+                          {cardInfo.subOn[p.id] && (
+                            <span className="md-sub-on tnum">↑ {cardInfo.subOn[p.id]}</span>
+                          )}
+                          {cardInfo.goals[p.id] && (
+                            <span className="md-sub-goal tnum">⚽ {cardInfo.goals[p.id]}</span>
+                          )}
+                          {cardInfo.marks[p.id]?.card === 'y' && <span aria-hidden="true">🟨</span>}
+                          {cardInfo.marks[p.id]?.card === 'r' && <span aria-hidden="true">🟥</span>}
+                        </span>
                       </div>
                     ))}
                   </div>
