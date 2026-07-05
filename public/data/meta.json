@@ -1,26 +1,26 @@
 {
- "updatedAt": "2026-07-05T21:39:04.539Z",
+ "updatedAt": "2026-07-05T21:52:49.531Z",
  "season": "285023",
  "titleOdds": [
   {
    "c": "ARG",
-   "p": 25.3
+   "p": 24.4
   },
   {
    "c": "FRA",
-   "p": 21.1
+   "p": 21.2
   },
   {
    "c": "ESP",
-   "p": 18.1
+   "p": 17.8
   },
   {
    "c": "ENG",
-   "p": 7.5
+   "p": 7.6
   },
   {
    "c": "BRA",
-   "p": 7.4
+   "p": 7
   }
  ],
  "counts": {
@@ -32,7 +32,8 @@
   "flags": 179
  },
  "errors": [
-  "geocode New Tecumseth: no usable result — not cached, will retry next run"
+  "geocode New Tecumseth: no usable result — not cached, will retry next run",
+  "timeline 400021532 away: 1 goals vs 2"
  ],
  "sources": [
   "api.fifa.com",
