@@ -61701,7 +61701,14 @@
    ],
    "goals": [],
    "bookings": [],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "430609",
+     "on": "463746",
+     "minute": "58'",
+     "period": 5
+    }
+   ]
   },
   "away": {
    "tactics": "4-1-2-3",
@@ -62001,7 +62008,7 @@
     }
    ]
   },
-  "matchTime": "49'",
+  "matchTime": "62'",
   "period": 5,
   "final": false,
   "secTried": true
