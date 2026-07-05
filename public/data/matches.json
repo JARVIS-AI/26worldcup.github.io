@@ -6439,11 +6439,11 @@
    "group": null,
    "date": "2026-07-05T20:00:00Z",
    "venueId": "400257536",
-   "status": "live",
-   "time": "90'",
+   "status": "finished",
+   "time": "102'",
    "home": {
     "code": "BRA",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
@@ -6453,7 +6453,7 @@
    },
    "phA": "W76",
    "phB": "W78",
-   "winner": null,
+   "winner": "NOR",
    "attendance": 80663,
    "officials": [
     {
