@@ -1,6 +1,14 @@
 {
  "scorers": [
   {
+   "id": "419652",
+   "name": "Erling HAALAND",
+   "code": "NOR",
+   "no": 9,
+   "goals": 7,
+   "ownGoals": 0
+  },
+  {
    "id": "389867",
    "name": "Kylian MBAPPE",
    "code": "FRA",
@@ -14,14 +22,6 @@
    "code": "ARG",
    "no": 10,
    "goals": 7,
-   "ownGoals": 0
-  },
-  {
-   "id": "419652",
-   "name": "Erling HAALAND",
-   "code": "NOR",
-   "no": 9,
-   "goals": 6,
    "ownGoals": 0
   },
   {
@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 234,
+  "yellow": 235,
   "red": 12,
   "players": [
    {
