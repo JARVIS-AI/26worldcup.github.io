@@ -6439,16 +6439,16 @@
    "group": null,
    "date": "2026-07-05T20:00:00Z",
    "venueId": "400257536",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "3'",
    "home": {
     "code": "BRA",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "NOR",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "W76",
