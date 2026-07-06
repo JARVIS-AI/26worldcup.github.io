@@ -6683,7 +6683,7 @@
    "date": "2026-07-07T00:00:00Z",
    "venueId": "400216606",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "USA",
     "score": null,
@@ -6730,39 +6730,6 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
-     }
-    },
-    {
-     "id": "408417",
-     "country": "GAB",
-     "role": "fourth",
-     "name": {
-      "en": "Pierre ATCHO",
-      "fr": "Pierre ATCHO",
-      "zh": "Pierre ATCHO",
-      "ar": "Pierre ATCHO",
-      "es": "Pierre ATCHO",
-      "de": "Pierre ATCHO",
-      "pt": "Pierre ATCHO",
-      "it": "Pierre ATCHO",
-      "ja": "Pierre ATCHO",
-      "ko": "Pierre ATCHO",
-      "id": "Pierre ATCHO",
-      "ru": "Pierre ATCHO"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
      }
     }
    ]
