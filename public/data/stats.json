@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 242,
+  "yellow": 243,
   "red": 13,
   "players": [
    {
@@ -462,6 +462,14 @@
     "r": 0
    },
    {
+    "id": "395205",
+    "name": "BERNARDO SILVA",
+    "code": "POR",
+    "no": 10,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "506279",
     "name": "Caleb YIRENKYI",
     "code": "GHA",
@@ -474,14 +482,6 @@
     "name": "CASEMIRO",
     "code": "BRA",
     "no": 5,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "390670",
-    "name": "Cyle LARIN",
-    "code": "CAN",
-    "no": 9,
     "y": 2,
     "r": 0
    }
