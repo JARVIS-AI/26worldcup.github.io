@@ -21620,7 +21620,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/John_Stones",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -21731,7 +21731,7 @@
     "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 1,
-    "wcRed": 0
+    "wcRed": 1
    },
    {
     "id": "declan-rice",
@@ -21891,7 +21891,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Harry_Kane",
     "wcApps": 5,
-    "wcGoals": 5,
+    "wcGoals": 6,
     "wcYellow": 0,
     "wcRed": 0
    },

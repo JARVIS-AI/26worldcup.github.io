@@ -29,7 +29,7 @@
    "name": "Harry KANE",
    "code": "ENG",
    "no": 9,
-   "goals": 5,
+   "goals": 6,
    "ownGoals": 0
   },
   {
@@ -323,13 +323,21 @@
  ],
  "cards": {
   "yellow": 237,
-  "red": 12,
+  "red": 13,
   "players": [
    {
     "id": "466624",
     "name": "Folarin BALOGUN",
     "code": "USA",
     "no": 20,
+    "y": 1,
+    "r": 1
+   },
+   {
+    "id": "463809",
+    "name": "Jarell QUANSAH",
+    "code": "ENG",
+    "no": 26,
     "y": 1,
     "r": 1
    },
@@ -474,14 +482,6 @@
     "name": "Cyle LARIN",
     "code": "CAN",
     "no": 9,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "335656",
-    "name": "DANILO",
-    "code": "BRA",
-    "no": 13,
     "y": 2,
     "r": 0
    }
