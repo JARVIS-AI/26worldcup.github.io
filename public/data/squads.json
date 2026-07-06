@@ -554,7 +554,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Jorge_S%C3%A1nchez_(footballer%2C_born_1997)",
     "wcApps": 4,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -804,7 +804,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/C.D._Guadalajara",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Brian_Guti%C3%A9rrez",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -823,7 +823,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Jim%C3%A9nez",
     "wcApps": 4,
-    "wcGoals": 2,
+    "wcGoals": 3,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -858,7 +858,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AC_Milan",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Santiago_Gim%C3%A9nez",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -21604,7 +21604,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Nico_O'Reilly",
     "wcApps": 5,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -21640,7 +21640,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Marc_Gu%C3%A9hi",
     "wcApps": 5,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {

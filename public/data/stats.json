@@ -169,6 +169,14 @@
    "ownGoals": 0
   },
   {
+   "id": "356731",
+   "name": "Raul JIMENEZ",
+   "code": "MEX",
+   "no": 9,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "441316",
    "name": "Yoane WISSA",
    "code": "COD",
@@ -311,18 +319,10 @@
    "no": 19,
    "goals": 2,
    "ownGoals": 0
-  },
-  {
-   "id": "431788",
-   "name": "Pape GUEYE",
-   "code": "SEN",
-   "no": 26,
-   "goals": 2,
-   "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 237,
+  "yellow": 240,
   "red": 13,
   "players": [
    {
