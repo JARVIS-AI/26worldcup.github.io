@@ -41,6 +41,22 @@
    "ownGoals": 0
   },
   {
+   "id": "448202",
+   "name": "Jude BELLINGHAM",
+   "code": "ENG",
+   "no": 10,
+   "goals": 4,
+   "ownGoals": 0
+  },
+  {
+   "id": "429157",
+   "name": "Julian QUINONES",
+   "code": "MEX",
+   "no": 16,
+   "goals": 4,
+   "ownGoals": 0
+  },
+  {
    "id": "430751",
    "name": "Mikel OYARZABAL",
    "code": "ESP",
@@ -133,14 +149,6 @@
    "name": "Jonathan DAVID",
    "code": "CAN",
    "no": 10,
-   "goals": 3,
-   "ownGoals": 0
-  },
-  {
-   "id": "429157",
-   "name": "Julian QUINONES",
-   "code": "MEX",
-   "no": 16,
    "goals": 3,
    "ownGoals": 0
   },
@@ -273,14 +281,6 @@
    "ownGoals": 0
   },
   {
-   "id": "448202",
-   "name": "Jude BELLINGHAM",
-   "code": "ENG",
-   "no": 10,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
    "id": "448355",
    "name": "Leandro TROSSARD",
    "code": "BEL",
@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 236,
+  "yellow": 237,
   "red": 12,
   "players": [
    {
