@@ -6498,8 +6498,8 @@
    "group": null,
    "date": "2026-07-06T01:00:00Z",
    "venueId": "400222084",
-   "status": "live",
-   "time": "90'+1'",
+   "status": "finished",
+   "time": "103'",
    "home": {
     "code": "MEX",
     "score": 2,
@@ -6512,7 +6512,7 @@
    },
    "phA": "W79",
    "phB": "W80",
-   "winner": null,
+   "winner": "ENG",
    "attendance": 80824,
    "officials": [
     {
@@ -6840,7 +6840,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "ENG",
+    "score": null,
+    "pen": null
+   },
    "phA": "W91",
    "phB": "W92",
    "winner": null,
