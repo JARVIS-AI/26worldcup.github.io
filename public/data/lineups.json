@@ -60975,6 +60975,18 @@
      "on": "395212",
      "minute": "56'",
      "period": 5
+    },
+    {
+     "off": "418535",
+     "on": "418550",
+     "minute": "71'",
+     "period": 5
+    },
+    {
+     "off": "368649",
+     "on": "403002",
+     "minute": "71'",
+     "period": 5
     }
    ]
   },
@@ -61272,9 +61284,16 @@
    ],
    "goals": [],
    "bookings": [],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "447860",
+     "on": "405545",
+     "minute": "75'",
+     "period": 5
+    }
+   ]
   },
-  "matchTime": "62'",
+  "matchTime": "76'",
   "period": 5,
   "final": false,
   "secTried": true
