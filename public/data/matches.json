@@ -6499,7 +6499,7 @@
    "date": "2026-07-06T01:00:00Z",
    "venueId": "400222084",
    "status": "live",
-   "time": "78'",
+   "time": "90'+1'",
    "home": {
     "code": "MEX",
     "score": 2,
@@ -6513,7 +6513,7 @@
    "phA": "W79",
    "phB": "W80",
    "winner": null,
-   "attendance": null,
+   "attendance": 80824,
    "officials": [
     {
      "id": "283448",
