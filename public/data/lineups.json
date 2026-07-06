@@ -61688,7 +61688,15 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "429157",
+     "minute": "42'",
+     "type": 2,
+     "period": 3,
+     "sec": 2508
+    }
+   ],
    "bookings": [],
    "substitutions": []
   },
@@ -61984,7 +61992,22 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "448202",
+     "minute": "36'",
+     "type": 2,
+     "period": 3,
+     "sec": 2155
+    },
+    {
+     "player": "448202",
+     "minute": "38'",
+     "type": 2,
+     "period": 3,
+     "sec": 2253
+    }
+   ],
    "bookings": [
     {
      "player": "433097",
@@ -61995,7 +62018,7 @@
    ],
    "substitutions": []
   },
-  "matchTime": "31'",
+  "matchTime": "45'",
   "period": 3,
   "final": false,
   "secTried": true
