@@ -6498,16 +6498,16 @@
    "group": null,
    "date": "2026-07-06T01:00:00Z",
    "venueId": "400222084",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "17'",
    "home": {
     "code": "MEX",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "ENG",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "W79",
