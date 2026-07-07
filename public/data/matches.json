@@ -6867,7 +6867,7 @@
    "date": "2026-07-07T20:00:00Z",
    "venueId": "400248370",
    "status": "live",
-   "time": "55'",
+   "time": "69'",
    "home": {
     "code": "SUI",
     "score": 0,
@@ -6881,7 +6881,7 @@
    "phA": "W85",
    "phB": "W87",
    "winner": null,
-   "attendance": null,
+   "attendance": 52497,
    "officials": [
     {
      "id": "408378",
