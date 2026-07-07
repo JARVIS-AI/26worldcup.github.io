@@ -233,6 +233,14 @@
    "ownGoals": 0
   },
   {
+   "id": "448362",
+   "name": "Charles DE KETELAERE",
+   "code": "BEL",
+   "no": 17,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "489518",
    "name": "Crysencio SUMMERVILLE",
    "code": "NED",
@@ -297,32 +305,24 @@
    "ownGoals": 0
   },
   {
+   "id": "448214",
+   "name": "Malik TILLMAN",
+   "code": "USA",
+   "no": 17,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "299200",
    "name": "Marko ARNAUTOVIC",
    "code": "AUT",
    "no": 7,
    "goals": 2,
    "ownGoals": 0
-  },
-  {
-   "id": "419100",
-   "name": "Maxi ARAUJO",
-   "code": "URU",
-   "no": 20,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "402261",
-   "name": "Nicolas PEPE",
-   "code": "CIV",
-   "no": 19,
-   "goals": 2,
-   "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 244,
+  "yellow": 245,
   "red": 13,
   "players": [
    {

@@ -6683,15 +6683,15 @@
    "date": "2026-07-07T00:00:00Z",
    "venueId": "400216606",
    "status": "live",
-   "time": "30'",
+   "time": "44'",
    "home": {
     "code": "USA",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
     "code": "BEL",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "W81",
