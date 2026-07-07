@@ -7370,7 +7370,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Columbus_Crew",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Max_Arfsten",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -7586,7 +7586,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Coventry_City_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Haji_Wright",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11853,7 +11853,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Romelu_Lukaku",
     "wcApps": 5,
-    "wcGoals": 2,
+    "wcGoals": 3,
     "wcYellow": 1,
     "wcRed": 0
    },
