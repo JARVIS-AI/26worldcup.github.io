@@ -6682,16 +6682,16 @@
    "group": null,
    "date": "2026-07-07T00:00:00Z",
    "venueId": "400216606",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "2'",
    "home": {
     "code": "USA",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "BEL",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "W81",
