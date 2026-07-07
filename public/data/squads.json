@@ -12402,7 +12402,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Omar_Marmoush",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17833,7 +17833,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Cristian_Romero",
     "wcApps": 4,
-    "wcGoals": 0,
+    "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -18067,7 +18067,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Lionel_Messi",
     "wcApps": 5,
-    "wcGoals": 7,
+    "wcGoals": 8,
     "wcYellow": 0,
     "wcRed": 0
    },

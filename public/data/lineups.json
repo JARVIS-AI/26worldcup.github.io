@@ -60967,7 +60967,22 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "431196",
+     "minute": "79'",
+     "type": 2,
+     "period": 5,
+     "sec": 2020
+    },
+    {
+     "player": "229397",
+     "minute": "83'",
+     "type": 2,
+     "period": 5,
+     "sec": 2279
+    }
+   ],
    "bookings": [],
    "substitutions": [
     {
@@ -61296,10 +61311,16 @@
      "on": "363863",
      "minute": "73'",
      "period": 5
+    },
+    {
+     "off": "483161",
+     "on": "430476",
+     "minute": "80'",
+     "period": 5
     }
    ]
   },
-  "matchTime": "77'",
+  "matchTime": "90'+1'",
   "period": 5,
   "final": false,
   "secTried": true
