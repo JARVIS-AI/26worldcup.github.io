@@ -61250,10 +61250,17 @@
      "sec": 845
     }
    ],
-   "bookings": [],
+   "bookings": [
+    {
+     "player": null,
+     "minute": "21'",
+     "card": 1,
+     "period": 3
+    }
+   ],
    "substitutions": []
   },
-  "matchTime": "15'",
+  "matchTime": "29'",
   "period": 3,
   "final": false,
   "secTried": true
