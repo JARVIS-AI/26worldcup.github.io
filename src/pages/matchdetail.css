@@ -79,7 +79,15 @@ a.md-side {
   font-size: 0.86rem;
   margin-top: 2px;
 }
-.md-pens {
+/* "a.e.t." marker riding the big score, and the 90-minute / shootout sub-line */
+.md-aet {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  vertical-align: super;
+  margin-inline-start: 3px;
+}
+.md-score-sub {
   margin-top: 2px;
 }
 
@@ -295,11 +303,17 @@ a.md-side {
   text-align: end;
   flex: none;
 }
-.md-sub .nm {
-  /* wrap long names onto a second line (like the goals list) instead of
+.md-sub-body {
+  /* name + its trailing annotations (came-on minute, goals, cards) flow inline
+     as one unit, so the minute stays with the last word of the name and wraps
+     with it instead of floating up beside the first line of a long name.
+     wrap long names onto a second line (like the goals list) instead of
      overflowing; `anywhere` also breaks a single over-long token */
   min-width: 0;
   overflow-wrap: anywhere;
+}
+.md-sub-body > :not(.nm) {
+  margin-left: 6px;
 }
 a.md-plink {
   color: inherit;

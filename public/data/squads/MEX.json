@@ -18,7 +18,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/C.D._Guadalajara",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Rangel_(footballer)",
-   "wcApps": 4,
+   "wcApps": 5,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -72,9 +72,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/PAOK_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jorge_S%C3%A1nchez_(footballer%2C_born_1997)",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -90,7 +90,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Lokomotiv_Moscow",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/C%C3%A9sar_Montes",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 1
@@ -108,7 +108,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Fenerbah%C3%A7e_S.K._(football)",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Edson_%C3%81lvarez",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -126,9 +126,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Genoa_CFC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Johan_V%C3%A1squez_(footballer%2C_born_1998)",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -180,7 +180,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Toluca_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jes%C3%BAs_Gallardo",
-   "wcApps": 4,
+   "wcApps": 5,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -198,7 +198,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Cruz_Azul",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/%C3%89rik_Lira",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -216,7 +216,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/C.D._Guadalajara",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Luis_Romo",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -234,7 +234,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Real_Betis",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/%C3%81lvaro_Fidalgo",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -288,7 +288,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Club_Tijuana",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Gilberto_Mora_(footballer%2C_born_2008)",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -324,7 +324,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/C.D._Guadalajara",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Brian_Guti%C3%A9rrez",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -342,8 +342,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Fulham_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Jim%C3%A9nez",
-   "wcApps": 3,
-   "wcGoals": 2,
+   "wcApps": 4,
+   "wcGoals": 3,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -378,7 +378,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/AC_Milan",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Santiago_Gim%C3%A9nez",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -414,8 +414,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Al_Qadsiah_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Qui%C3%B1ones",
-   "wcApps": 4,
-   "wcGoals": 3,
+   "wcApps": 5,
+   "wcGoals": 4,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -450,7 +450,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Pumas_UNAM",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Guillermo_Mart%C3%ADnez_(footballer)",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -468,7 +468,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/C.D._Guadalajara",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Roberto_Alvarado",
-   "wcApps": 4,
+   "wcApps": 5,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

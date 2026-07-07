@@ -273,6 +273,17 @@
   font-weight: 500;
 }
 
+/* "a.e.t." + 90-minute score under a knockout node decided after extra time;
+   wraps rather than truncating so the 90' score is never lost on narrow nodes */
+.bk-aet {
+  margin-top: 2px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--text-3);
+}
+
 .bk-ghost {
   width: 100%;
   height: var(--bk-node-min);

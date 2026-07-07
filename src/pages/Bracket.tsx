@@ -6,7 +6,7 @@ import { useI18n } from '../i18n'
 import { useSettings } from '../settings/SettingsContext'
 import { useAppData } from '../data/DataContext'
 import { displayTz, fmtDate, fmtTime } from '../utils/time'
-import { placeholderLabel, STAGE_LABEL_KEY } from '../utils/helpers'
+import { matchResult, placeholderLabel, STAGE_LABEL_KEY } from '../utils/helpers'
 import { resolvedSlots } from '../utils/bracketResolve'
 import Flag from '../components/Flag'
 import Trophy from '../components/Trophy'
@@ -113,9 +113,11 @@ function BkNode({
 }) {
   const { t, locale } = useI18n()
   const { settings } = useSettings()
-  const { venues } = useAppData()
+  const { venues, lineups } = useAppData()
   const venue = m.venueId ? (venues[m.venueId] ?? null) : null
   const tz = displayTz(settings, venue)
+  // extra-time / shootout breakdown, so the tree flags a result decided after 90'
+  const et = matchResult(m, lineups[m.id])
   return (
     <Link
       to={`/match/${m.id}`}
@@ -161,6 +163,17 @@ function BkNode({
         flagSize={big ? 22 : 18}
         resolved={overlay?.away}
       />
+      {m.status === 'finished' && et.aet && (
+        <div className="bk-aet tnum">
+          {t('simAet')}
+          {et.reg && (
+            <>
+              {' '}
+              · 90′ {et.reg.h}–{et.reg.a}
+            </>
+          )}
+        </div>
+      )}
     </Link>
   )
 }

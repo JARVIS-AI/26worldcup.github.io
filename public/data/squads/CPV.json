@@ -18,7 +18,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/G.D._Chaves",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Vozinha",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -90,7 +90,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Al_Bataeh_Club",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Diney_(footballer%2C_born_1995)",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -108,7 +108,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Shamrock_Rovers_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Pico_Lopes",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -144,8 +144,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/S.L._Benfica",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Sidny_Lopes_Cabral",
-   "wcApps": 2,
-   "wcGoals": 0,
+   "wcApps": 3,
+   "wcGoals": 1,
    "wcYellow": 2,
    "wcRed": 0
   },
@@ -162,7 +162,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Columbus_Crew",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Steven_Moreira",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -216,9 +216,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Krasnodar",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Kevin_Pina_(footballer)",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 1,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -234,7 +234,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jovane_Cabral",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -270,7 +270,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/PEC_Zwolle",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jamiro_Monteiro",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -306,8 +306,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/PFC_Ludogorets_Razgrad",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Deroy_Duarte",
-   "wcApps": 3,
-   "wcGoals": 0,
+   "wcApps": 4,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -324,7 +324,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Pusk%C3%A1s_Akad%C3%A9mia_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Laros_Duarte",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -342,7 +342,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/S.C._Farense",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Yannick_Semedo",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -360,7 +360,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/AC_Omonia",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Willy_Semedo",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -396,7 +396,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/%C4%B0stanbul_Ba%C5%9Fak%C5%9Fehir_F.K.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nuno_da_Costa",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -414,7 +414,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Maccabi_Tel_Aviv_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/H%C3%A9lio_Varela",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -432,7 +432,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Akron_Tolyatti",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Gilson_Benchimol",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -450,7 +450,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Dailon_Livramento",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -468,7 +468,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/I%C4%9Fd%C4%B1r_F.K.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ryan_Mendes",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

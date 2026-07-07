@@ -9,6 +9,7 @@ import {
   flagSrc,
   fmtTemp,
   localizedNote,
+  matchResult,
   placeholderLabel,
   sortMatches,
   STAGE_LABEL_KEY,
@@ -463,8 +464,11 @@ function VenueMap({
 
 function VenueMatchRow({ m, tz }: { m: Match; tz?: string }) {
   const { t, pick, locale } = useI18n()
-  const { teams } = useAppData()
+  const { teams, lineups } = useAppData()
   const played = m.status === 'finished' || m.status === 'live'
+  // extra-time / shootout breakdown, so a knockout result decided after 90'
+  // shows an a.e.t. marker and the shootout score, matching the home cards
+  const et = matchResult(m, lineups[m.id])
 
   const side = (s: MatchSide | null, ph: string | null, right: boolean) => {
     const team = s ? teams[s.code] : null
@@ -490,9 +494,25 @@ function VenueMatchRow({ m, tz }: { m: Match; tz?: string }) {
       </span>
       <span className="vn-mteams">
         {side(m.home, m.phA, false)}
-        <span className={played && m.home && m.away ? 'vn-msc tnum' : 'vn-mvs muted small'}>
-          {played && m.home && m.away ? `${m.home.score ?? '–'}–${m.away.score ?? '–'}` : t('vs')}
-        </span>
+        {played && m.home && m.away ? (
+          <span className="vn-mscore">
+            <span className="vn-msc tnum">
+              {m.home.score ?? '–'}–{m.away.score ?? '–'}
+            </span>
+            {m.status === 'finished' && et.aet && (
+              <span className="vn-maet tnum">
+                {t('simAet')}
+                {/* 90' score only when extra time changed it (else it duplicates the score above) */}
+                {et.reg &&
+                  (et.reg.h !== m.home.score || et.reg.a !== m.away.score) &&
+                  ` · 90′ ${et.reg.h}–${et.reg.a}`}
+                {et.pens && ` · ${t('pens')} ${et.pens.h}–${et.pens.a}`}
+              </span>
+            )}
+          </span>
+        ) : (
+          <span className="vn-mvs muted small">{t('vs')}</span>
+        )}
         {side(m.away, m.phB, true)}
       </span>
       <span className="chip vn-mstage">

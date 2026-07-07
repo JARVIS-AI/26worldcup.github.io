@@ -36,7 +36,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Atlas_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Camilo_Vargas",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -72,7 +72,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Daniel_Mu%C3%B1oz_(footballer)",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 2,
    "wcYellow": 0,
    "wcRed": 0
@@ -90,7 +90,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Bologna_FC_1909",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jhon_Lucum%C3%AD",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -144,7 +144,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Racing_de_Santander",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Gustavo_Puerta",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -162,7 +162,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/RCD_Mallorca",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Johan_Mojica",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -216,7 +216,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Galatasaray_S.K._(football)",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Davinson_S%C3%A1nchez",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -252,9 +252,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/S.L._Benfica",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Richard_R%C3%ADos",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -288,7 +288,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Minnesota_United_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/James_Rodr%C3%ADguez",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -306,9 +306,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/SE_Palmeiras",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jhon_Arias_(footballer)",
-   "wcApps": 3,
-   "wcGoals": 0,
-   "wcYellow": 0,
+   "wcApps": 4,
+   "wcGoals": 1,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -342,7 +342,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jefferson_Lerma",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -360,7 +360,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Club_Atl%C3%A9tico_River_Plate",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Juan_Fernando_Quintero",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -378,7 +378,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Luis_D%C3%ADaz_(footballer%2C_born_1997)",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -396,7 +396,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Krasnodar",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jhon_C%C3%B3rdoba",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -432,7 +432,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Rosario_Central",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Jaminton_Campaz",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -450,7 +450,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Sporting_CP",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Luis_Su%C3%A1rez_(footballer%2C_born_1997)",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

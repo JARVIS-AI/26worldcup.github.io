@@ -18,7 +18,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_St._Pauli",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nikola_Vasilj",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -108,7 +108,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/US_Sassuolo_Calcio",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Tarik_Muharemovi%C4%87",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 1
@@ -126,7 +126,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Atalanta_BC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Sead_Kola%C5%A1inac",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -144,7 +144,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/S.L._Benfica",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Amar_Dedi%C4%87",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -162,7 +162,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Schalke_04",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nikola_Kati%C4%87",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -180,9 +180,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/HNK_Rijeka",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Stjepan_Radelji%C4%87",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -216,7 +216,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Br%C3%B8ndby_IF",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Benjamin_Tahirovi%C4%87",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -234,7 +234,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/BSC_Young_Boys",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Armin_Gigovi%C4%87",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -270,7 +270,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Pafos_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ivan_%C5%A0unji%C4%87",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -288,7 +288,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Viktoria_Plze%C5%88",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Amar_Memi%C4%87",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -342,7 +342,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Slovan_Liberec",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ermin_Mahmi%C4%87",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 2,
    "wcYellow": 1,
    "wcRed": 0
@@ -378,7 +378,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/VfB_Stuttgart",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ermedin_Demirovi%C4%87",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -396,7 +396,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Schalke_04",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Edin_D%C5%BEeko",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -414,7 +414,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Red_Bull_Salzburg",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Kerim_Alajbegovi%C4%87",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -432,7 +432,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/PSV_Eindhoven",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Esmir_Bajraktarevi%C4%87",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -450,7 +450,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Haris_Tabakovi%C4%87",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0

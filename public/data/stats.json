@@ -1,11 +1,19 @@
 {
  "scorers": [
   {
+   "id": "419652",
+   "name": "Erling HAALAND",
+   "code": "NOR",
+   "no": 9,
+   "goals": 7,
+   "ownGoals": 0
+  },
+  {
    "id": "389867",
    "name": "Kylian MBAPPE",
    "code": "FRA",
    "no": 10,
-   "goals": 6,
+   "goals": 7,
    "ownGoals": 0
   },
   {
@@ -13,15 +21,47 @@
    "name": "Lionel MESSI",
    "code": "ARG",
    "no": 10,
+   "goals": 7,
+   "ownGoals": 0
+  },
+  {
+   "id": "369419",
+   "name": "Harry KANE",
+   "code": "ENG",
+   "no": 9,
    "goals": 6,
    "ownGoals": 0
   },
   {
-   "id": "419652",
-   "name": "Erling HAALAND",
-   "code": "NOR",
-   "no": 9,
-   "goals": 5,
+   "id": "401889",
+   "name": "Ismaila SARR",
+   "code": "SEN",
+   "no": 18,
+   "goals": 4,
+   "ownGoals": 0
+  },
+  {
+   "id": "448202",
+   "name": "Jude BELLINGHAM",
+   "code": "ENG",
+   "no": 10,
+   "goals": 4,
+   "ownGoals": 0
+  },
+  {
+   "id": "429157",
+   "name": "Julian QUINONES",
+   "code": "MEX",
+   "no": 16,
+   "goals": 4,
+   "ownGoals": 0
+  },
+  {
+   "id": "430751",
+   "name": "Mikel OYARZABAL",
+   "code": "ESP",
+   "no": 21,
+   "goals": 4,
    "ownGoals": 0
   },
   {
@@ -57,6 +97,14 @@
    "ownGoals": 0
   },
   {
+   "id": "201200",
+   "name": "CRISTIANO RONALDO",
+   "code": "POR",
+   "no": 7,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "484851",
    "name": "Deniz UNDAV",
    "code": "GER",
@@ -73,10 +121,10 @@
    "ownGoals": 0
   },
   {
-   "id": "369419",
-   "name": "Harry KANE",
-   "code": "ENG",
-   "no": 9,
+   "id": "466624",
+   "name": "Folarin BALOGUN",
+   "code": "USA",
+   "no": 20,
    "goals": 3,
    "ownGoals": 0
   },
@@ -85,14 +133,6 @@
    "name": "Ismael SAIBARI",
    "code": "MAR",
    "no": 11,
-   "goals": 3,
-   "ownGoals": 0
-  },
-  {
-   "id": "401889",
-   "name": "Ismaila SARR",
-   "code": "SEN",
-   "no": 18,
    "goals": 3,
    "ownGoals": 0
   },
@@ -113,14 +153,6 @@
    "ownGoals": 0
   },
   {
-   "id": "429157",
-   "name": "Julian QUINONES",
-   "code": "MEX",
-   "no": 16,
-   "goals": 3,
-   "ownGoals": 0
-  },
-  {
    "id": "411367",
    "name": "Kai HAVERTZ",
    "code": "GER",
@@ -132,6 +164,22 @@
    "id": "430609",
    "name": "MATHEUS CUNHA",
    "code": "BRA",
+   "no": 9,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
+   "id": "356731",
+   "name": "Raul JIMENEZ",
+   "code": "MEX",
+   "no": 9,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
+   "id": "358112",
+   "name": "Romelu LUKAKU",
+   "code": "BEL",
    "no": 9,
    "goals": 3,
    "ownGoals": 0
@@ -169,6 +217,14 @@
    "ownGoals": 0
   },
   {
+   "id": "441307",
+   "name": "Azzedine OUNAHI",
+   "code": "MAR",
+   "no": 8,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "484860",
    "name": "Bradley BARCOLA",
    "code": "FRA",
@@ -177,10 +233,18 @@
    "ownGoals": 0
   },
   {
-   "id": "201200",
-   "name": "CRISTIANO RONALDO",
-   "code": "POR",
+   "id": "393480",
+   "name": "Breel EMBOLO",
+   "code": "SUI",
    "no": 7,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
+   "id": "448362",
+   "name": "Charles DE KETELAERE",
+   "code": "BEL",
+   "no": 17,
    "goals": 2,
    "ownGoals": 0
   },
@@ -217,6 +281,14 @@
    "ownGoals": 0
   },
   {
+   "id": "430482",
+   "name": "EMAM ASHOUR",
+   "code": "EGY",
+   "no": 8,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "522846",
    "name": "Ermin MAHMIC",
    "code": "BIH",
@@ -225,18 +297,10 @@
    "ownGoals": 0
   },
   {
-   "id": "466624",
-   "name": "Folarin BALOGUN",
-   "code": "USA",
-   "no": 20,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "448202",
-   "name": "Jude BELLINGHAM",
-   "code": "ENG",
-   "no": 10,
+   "id": "486130",
+   "name": "Habib DIARRA",
+   "code": "SEN",
+   "no": 21,
    "goals": 2,
    "ownGoals": 0
   },
@@ -249,82 +313,34 @@
    "ownGoals": 0
   },
   {
-   "id": "299200",
-   "name": "Marko ARNAUTOVIC",
-   "code": "AUT",
-   "no": 7,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "419100",
-   "name": "Maxi ARAUJO",
-   "code": "URU",
-   "no": 20,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "430751",
-   "name": "Mikel OYARZABAL",
-   "code": "ESP",
-   "no": 21,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "402261",
-   "name": "Nicolas PEPE",
-   "code": "CIV",
-   "no": 19,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "431788",
-   "name": "Pape GUEYE",
-   "code": "SEN",
-   "no": 26,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "384797",
-   "name": "Ramin REZAEIAN",
-   "code": "IRN",
-   "no": 23,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "356731",
-   "name": "Raul JIMENEZ",
-   "code": "MEX",
-   "no": 9,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "379942",
-   "name": "Riyad MAHREZ",
-   "code": "ALG",
-   "no": 7,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "448131",
-   "name": "Ruben VARGAS",
-   "code": "SUI",
+   "id": "448214",
+   "name": "Malik TILLMAN",
+   "code": "USA",
    "no": 17,
    "goals": 2,
    "ownGoals": 0
   }
  ],
  "cards": {
-  "yellow": 200,
-  "red": 11,
+  "yellow": 246,
+  "red": 13,
   "players": [
+   {
+    "id": "466624",
+    "name": "Folarin BALOGUN",
+    "code": "USA",
+    "no": 20,
+    "y": 1,
+    "r": 1
+   },
+   {
+    "id": "463809",
+    "name": "Jarell QUANSAH",
+    "code": "ENG",
+    "no": 26,
+    "y": 1,
+    "r": 1
+   },
    {
     "id": "369761",
     "name": "Miguel ALMIRON",
@@ -453,48 +469,32 @@
     "r": 0
    },
    {
+    "id": "395205",
+    "name": "BERNARDO SILVA",
+    "code": "POR",
+    "no": 10,
+    "y": 2,
+    "r": 0
+   },
+   {
+    "id": "506279",
+    "name": "Caleb YIRENKYI",
+    "code": "GHA",
+    "no": 3,
+    "y": 2,
+    "r": 0
+   },
+   {
     "id": "308386",
     "name": "CASEMIRO",
     "code": "BRA",
     "no": 5,
     "y": 2,
     "r": 0
-   },
-   {
-    "id": "335656",
-    "name": "DANILO",
-    "code": "BRA",
-    "no": 13,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "463128",
-    "name": "Diego GOMEZ",
-    "code": "PAR",
-    "no": 8,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "466372",
-    "name": "Gervane KASTANEER",
-    "code": "CUW",
-    "no": 19,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "403083",
-    "name": "Issa DIOP",
-    "code": "MAR",
-    "no": 14,
-    "y": 2,
-    "r": 0
    }
   ]
  },
- "attAvg": 64923,
+ "attAvg": 65307,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -563,20 +563,20 @@
    "COL": -4
   },
   "all": {
-   "MEX": -6,
+   "MEX": -8,
    "RSA": -13,
    "KOR": -4,
    "CZE": -1,
-   "CAN": -7,
-   "BIH": -10,
-   "USA": -5,
+   "CAN": -11,
+   "BIH": -12,
+   "USA": -11,
    "PAR": -17,
    "HAI": -7,
    "SCO": -5,
    "AUS": -5,
    "TUR": -3,
-   "BRA": -7,
-   "MAR": -2,
+   "BRA": -8,
+   "MAR": -6,
    "QAT": -12,
    "SUI": -3,
    "CIV": -4,
@@ -589,119 +589,72 @@
    "TUN": -1,
    "KSA": -6,
    "URU": -9,
-   "ESP": -2,
-   "CPV": -4,
+   "ESP": -3,
+   "CPV": -5,
    "IRN": -6,
    "NZL": -4,
-   "BEL": -7,
-   "EGY": -6,
-   "FRA": -1,
-   "SEN": -2,
+   "BEL": -9,
+   "EGY": -9,
+   "FRA": -4,
+   "SEN": -3,
    "IRQ": -8,
    "NOR": -2,
-   "ARG": -2,
-   "ALG": -1,
-   "AUT": -4,
+   "ARG": -3,
+   "ALG": -3,
+   "AUT": -5,
    "JOR": -4,
-   "GHA": -3,
+   "GHA": -6,
    "PAN": -5,
-   "ENG": -2,
-   "CRO": -2,
-   "POR": -4,
-   "COD": -5,
+   "ENG": -11,
+   "CRO": -4,
+   "POR": -7,
+   "COD": -6,
    "UZB": -4,
-   "COL": -4
+   "COL": -6
   }
  },
  "suspensions": {
-  "MAR": [
-   {
-    "id": "403083",
-    "name": "Issa DIOP",
-    "bans": [
-     {
-      "type": "yellows",
-      "due": [
-       "400021454",
-       "400021522"
-      ],
-      "banned": "400021530"
-     }
-    ]
-   }
-  ],
-  "BRA": [
-   {
-    "id": "308386",
-    "name": "CASEMIRO",
-    "bans": [
-     {
-      "type": "yellows",
-      "due": [
-       "400021456",
-       "400021516"
-      ],
-      "banned": "400021532"
-     }
-    ]
-   },
-   {
-    "id": "335656",
-    "name": "DANILO",
-    "bans": [
-     {
-      "type": "yellows",
-      "due": [
-       "400021455",
-       "400021516"
-      ],
-      "banned": "400021532"
-     }
-    ]
-   }
-  ],
-  "PAR": [
-   {
-    "id": "424422",
-    "name": "Matias GALARZA",
-    "bans": [
-     {
-      "type": "yellows",
-      "due": [
-       "400021460",
-       "400021513"
-      ],
-      "banned": "400021533"
-     }
-    ]
-   },
-   {
-    "id": "null",
-    "name": "#null",
-    "bans": [
-     {
-      "type": "yellows",
-      "due": [
-       "400021460",
-       "400021513"
-      ],
-      "banned": "400021533"
-     }
-    ]
-   }
-  ],
   "EGY": [
    {
-    "id": "433469",
-    "name": "MOHANAD LASHIN",
+    "id": "369267",
+    "name": "YASSER IBRAHIM",
     "bans": [
      {
       "type": "yellows",
       "due": [
-       "400021480",
-       "400021479"
+       "400021479",
+       "400021515"
       ],
-      "banned": "400021515"
+      "banned": "400021528"
+     }
+    ]
+   }
+  ],
+  "ENG": [
+   {
+    "id": "433097",
+    "name": "Declan RICE",
+    "bans": [
+     {
+      "type": "yellows",
+      "due": [
+       "400021506",
+       "400021531"
+      ],
+      "banned": "400021539"
+     }
+    ]
+   },
+   {
+    "id": "463809",
+    "name": "Jarell QUANSAH",
+    "bans": [
+     {
+      "type": "red",
+      "due": [
+       "400021531"
+      ],
+      "banned": "400021539"
      }
     ]
    }

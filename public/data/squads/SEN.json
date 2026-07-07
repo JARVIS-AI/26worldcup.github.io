@@ -54,7 +54,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Le_Havre_AC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Mory_Diaw",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -126,7 +126,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Galatasaray_S.K._(football)",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ismail_Jakobs",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -144,7 +144,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/AS_Monaco_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Kr%C3%A9pin_Diatta",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -162,7 +162,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Olympique_Lyonnais",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Moussa_Niakhat%C3%A9",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -198,7 +198,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/West_Ham_United_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/El_Hadji_Malick_Diouf",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -216,7 +216,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Everton_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Idrissa_Gueye",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -234,7 +234,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Rayo_Vallecano",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Path%C3%A9_Ciss",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -252,9 +252,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/AS_Monaco_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Lamine_Camara",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -270,7 +270,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Pape_Matar_Sarr",
-   "wcApps": 1,
+   "wcApps": 2,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -288,8 +288,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Sunderland_A.F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Habib_Diarra",
-   "wcApps": 2,
-   "wcGoals": 1,
+   "wcApps": 3,
+   "wcGoals": 2,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -306,7 +306,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Bara_Sapoko_Ndiaye",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -324,7 +324,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Villarreal_CF",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Pape_Gueye",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 2,
    "wcYellow": 1,
    "wcRed": 0
@@ -378,7 +378,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Al-Nassr_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Sadio_Man%C3%A9",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -396,7 +396,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nicolas_Jackson",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -432,7 +432,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Everton_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Iliman_Ndiaye",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -450,8 +450,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Isma%C3%AFla_Sarr",
-   "wcApps": 3,
-   "wcGoals": 3,
+   "wcApps": 4,
+   "wcGoals": 4,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -468,7 +468,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Ibrahim_Mbaye",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0

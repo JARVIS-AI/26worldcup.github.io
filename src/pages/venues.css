@@ -334,10 +334,25 @@
   font-weight: 500;
   font-size: 0.8rem;
 }
+.vn-mscore {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.15;
+}
 .vn-msc {
   flex: none;
   font-weight: 800;
   font-size: 0.95rem;
+}
+/* "a.e.t." + 90'/shootout breakdown under a knockout result decided after 90' */
+.vn-maet {
+  margin-top: 1px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--text-3);
+  white-space: nowrap;
 }
 .vn-mvs {
   flex: none;

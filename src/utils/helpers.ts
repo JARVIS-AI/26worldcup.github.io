@@ -1,4 +1,4 @@
-import type { Lang, LocalizedName, Match, Stage, Standings, Team } from '../types'
+import type { Lang, LocalizedName, Match, MatchLineups, Stage, Standings, Team } from '../types'
 import fifaIso from '../data/fifa-iso.json'
 
 /** resolve a data note that may be a plain string (legacy) or a {en,zh,fr} object */
@@ -462,6 +462,62 @@ export function placeholderLabel(
   if (/^RU\d+$/.test(ph)) return t('loserOf', { n: ph.slice(2) })
   if (/^3[A-L]+$/.test(ph)) return t('thirdOfGroups', { x: ph.slice(1).split('').join('/') })
   return ph
+}
+
+/** extra-time / shootout breakdown of a match, so results decided after 90'
+ *  can show the 90-minute score alongside the final one (as the simulator does) */
+export interface MatchResult {
+  /** decided after extra time (with or without a penalty shootout) */
+  aet: boolean
+  /** score at the end of 90 minutes, when it can be derived from the timeline */
+  reg: { h: number; a: number } | null
+  /** penalty shootout score, when there was a shootout */
+  pens: { h: number; a: number } | null
+}
+
+// a goal scored in extra time (91'–120'): FIFA periods 7 and 9 are the two ET
+// halves; period 11 is a shootout kick (not a goal); periods up to 5 are the two
+// regular halves. Falls back to the shown minute when a period is missing.
+function isExtraTimeGoal(g: { minute: string | null; period: number | null }): boolean {
+  if (g.period === 11) return false
+  if (g.period === 7 || g.period === 9) return true
+  if (g.period != null && g.period <= 5) return false
+  return Number.parseInt(g.minute ?? '0', 10) > 90
+}
+
+/** derive the extra-time / shootout breakdown of a match from its lineup goals.
+ *  The 90-minute score is only reported when the goal timeline reconciles with
+ *  the final score; otherwise it is null and callers fall back to a plain marker. */
+export function matchResult(m: Match, lu: MatchLineups | undefined): MatchResult {
+  const pens =
+    m.home?.pen != null || m.away?.pen != null ? { h: m.home?.pen ?? 0, a: m.away?.pen ?? 0 } : null
+
+  // tally extra-time and total (non-shootout) goals from each side's timeline
+  let etH = 0
+  let etA = 0
+  let totH = 0
+  let totA = 0
+  for (const g of lu?.home?.goals ?? []) {
+    if (g.period === 11) continue
+    totH++
+    if (isExtraTimeGoal(g)) etH++
+  }
+  for (const g of lu?.away?.goals ?? []) {
+    if (g.period === 11) continue
+    totA++
+    if (isExtraTimeGoal(g)) etA++
+  }
+
+  const fh = m.home?.score ?? 0
+  const fa = m.away?.score ?? 0
+  // only trust a derived 90' score when the timeline reconciles with the final one
+  const reg = lu && totH === fh && totA === fa ? { h: fh - etH, a: fa - etA } : null
+
+  // a shootout or an extra-time goal proves the tie went to extra time; the match
+  // clock past 105' is a last resort when the timeline is missing
+  const aet = pens != null || etH > 0 || etA > 0 || (reg == null && Number.parseInt(m.time ?? '', 10) > 105)
+
+  return { aet, reg, pens }
 }
 
 /** does this match involve any of the given team codes (empty set = all match) */

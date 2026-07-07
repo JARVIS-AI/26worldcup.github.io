@@ -18,7 +18,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Real_Madrid_CF",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Thibaut_Courtois",
-   "wcApps": 3,
+   "wcApps": 5,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -90,7 +90,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Arthur_Theate",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -108,9 +108,9 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Club_Brugge_KV",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Brandon_Mechele",
-   "wcApps": 3,
+   "wcApps": 5,
    "wcGoals": 0,
-   "wcYellow": 0,
+   "wcYellow": 1,
    "wcRed": 0
   },
   {
@@ -126,7 +126,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Brighton_%26_Hove_Albion_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Maxim_De_Cuyper",
-   "wcApps": 3,
+   "wcApps": 5,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -144,7 +144,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Lille_OSC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Thomas_Meunier",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -198,7 +198,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Fulham_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Timothy_Castagne",
-   "wcApps": 3,
+   "wcApps": 5,
    "wcGoals": 0,
    "wcYellow": 1,
    "wcRed": 0
@@ -216,7 +216,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Lille_OSC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nathan_Ngoy",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 1
@@ -234,7 +234,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Girona_FC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Axel_Witsel",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -252,7 +252,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/SSC_Napoli",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Kevin_De_Bruyne",
-   "wcApps": 3,
+   "wcApps": 4,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -270,8 +270,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Aston_Villa_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Youri_Tielemans",
-   "wcApps": 3,
-   "wcGoals": 0,
+   "wcApps": 5,
+   "wcGoals": 2,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -288,7 +288,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/RC_Strasbourg_Alsace",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Diego_Moreira",
-   "wcApps": 0,
+   "wcApps": 1,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -306,8 +306,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Club_Brugge_KV",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Hans_Vanaken",
-   "wcApps": 3,
-   "wcGoals": 0,
+   "wcApps": 5,
+   "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
   },
@@ -324,7 +324,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/AC_Milan",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Alexis_Saelemaekers",
-   "wcApps": 2,
+   "wcApps": 3,
    "wcGoals": 1,
    "wcYellow": 0,
    "wcRed": 0
@@ -342,7 +342,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Rangers_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Nicolas_Raskin",
-   "wcApps": 3,
+   "wcApps": 5,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -360,7 +360,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Aston_Villa_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Amadou_Onana",
-   "wcApps": 2,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -378,8 +378,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/SSC_Napoli",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Romelu_Lukaku",
-   "wcApps": 3,
-   "wcGoals": 1,
+   "wcApps": 5,
+   "wcGoals": 3,
    "wcYellow": 1,
    "wcRed": 0
   },
@@ -396,7 +396,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Arsenal_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Leandro_Trossard",
-   "wcApps": 3,
+   "wcApps": 5,
    "wcGoals": 2,
    "wcYellow": 0,
    "wcRed": 0
@@ -414,7 +414,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/J%C3%A9r%C3%A9my_Doku",
-   "wcApps": 2,
+   "wcApps": 4,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -432,7 +432,7 @@
    "clubWiki": "https://en.wikipedia.org/wiki/S.L._Benfica",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Dodi_Luk%C3%A9bakio",
-   "wcApps": 1,
+   "wcApps": 3,
    "wcGoals": 0,
    "wcYellow": 0,
    "wcRed": 0
@@ -450,8 +450,8 @@
    "clubWiki": "https://en.wikipedia.org/wiki/Atalanta_BC",
    "captain": false,
    "wiki": "https://en.wikipedia.org/wiki/Charles_De_Ketelaere",
-   "wcApps": 2,
-   "wcGoals": 0,
+   "wcApps": 4,
+   "wcGoals": 2,
    "wcYellow": 0,
    "wcRed": 0
   },

@@ -863,6 +863,13 @@ input.input {
   font-weight: 700;
   color: var(--accent);
 }
+/* "a.e.t." + 90-minute score for a result decided after extra time */
+.mc-aet {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-3);
+}
 
 /* grids */
 .cards-grid {

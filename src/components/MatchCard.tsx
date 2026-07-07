@@ -5,7 +5,7 @@ import { useI18n } from '../i18n'
 import { useSettings } from '../settings/SettingsContext'
 import { useAppData } from '../data/DataContext'
 import { displayTz, fmtDate, fmtTime } from '../utils/time'
-import { fmtTemp, placeholderLabel, STAGE_LABEL_KEY, wmoEmoji } from '../utils/helpers'
+import { fmtTemp, matchResult, placeholderLabel, STAGE_LABEL_KEY, wmoEmoji } from '../utils/helpers'
 import Flag from './Flag'
 
 interface MatchCardProps {
@@ -66,10 +66,13 @@ function SideRow({
 function MatchCard({ match: m, hideDate = false, showWeather = false, domId }: MatchCardProps) {
   const { t, pick, locale } = useI18n()
   const { settings } = useSettings()
-  const { venues, weather } = useAppData()
+  const { venues, weather, lineups } = useAppData()
   const venue = m.venueId ? venues[m.venueId] : null
   const tz = displayTz(settings, venue)
   const w = showWeather ? weather[m.id] : undefined
+  // extra-time / shootout breakdown, so a result decided after 90' shows the
+  // 90-minute score too (the shootout score already rides each team's row)
+  const et = matchResult(m, lineups[m.id])
 
   return (
     <Link id={domId} to={`/match/${m.id}`} className={`match-card${m.status === 'live' ? ' live' : ''}`}>
@@ -104,6 +107,12 @@ function MatchCard({ match: m, hideDate = false, showWeather = false, domId }: M
           {!hideDate && <div className="dt">{fmtDate(m.date, locale, tz)}</div>}
         </div>
       </div>
+      {m.status === 'finished' && et.aet && (
+        <div className="mc-aet tnum">
+          {t('simAet')}
+          {et.reg && ` · 90′ ${et.reg.h}–${et.reg.a}`}
+        </div>
+      )}
     </Link>
   )
 }
