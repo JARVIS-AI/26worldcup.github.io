@@ -6866,16 +6866,16 @@
    "group": null,
    "date": "2026-07-07T20:00:00Z",
    "venueId": "400248370",
-   "status": "scheduled",
-   "time": null,
+   "status": "live",
+   "time": "19'",
    "home": {
     "code": "SUI",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "COL",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "W85",
@@ -6914,39 +6914,6 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
-     }
-    },
-    {
-     "id": "416317",
-     "country": "MEX",
-     "role": "fourth",
-     "name": {
-      "en": "Katia GARCIA",
-      "fr": "Katia GARCIA",
-      "zh": "Katia GARCIA",
-      "ar": "Katia GARCIA",
-      "es": "Katia GARCIA",
-      "de": "Katia GARCIA",
-      "pt": "Katia GARCIA",
-      "it": "Katia GARCIA",
-      "ja": "Katia GARCIA",
-      "ko": "Katia GARCIA",
-      "id": "Katia GARCIA",
-      "ru": "Katia GARCIA"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
      }
     }
    ]
