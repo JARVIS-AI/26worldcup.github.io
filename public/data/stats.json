@@ -487,7 +487,7 @@
    }
   ]
  },
- "attAvg": 65338,
+ "attAvg": 65204,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -571,7 +571,7 @@
    "BRA": -8,
    "MAR": -6,
    "QAT": -12,
-   "SUI": -3,
+   "SUI": -6,
    "CIV": -4,
    "ECU": -12,
    "GER": -6,
@@ -603,10 +603,40 @@
    "POR": -7,
    "COD": -6,
    "UZB": -4,
-   "COL": -6
+   "COL": -9
   }
  },
  "suspensions": {
+  "SUI": [
+   {
+    "id": "311558",
+    "name": "Granit XHAKA",
+    "bans": [
+     {
+      "type": "yellows",
+      "due": [
+       "400021451",
+       "400021535"
+      ],
+      "banned": "400021537"
+     }
+    ]
+   },
+   {
+    "id": "401448",
+    "name": "Denis ZAKARIA",
+    "bans": [
+     {
+      "type": "yellows",
+      "due": [
+       "400021447",
+       "400021535"
+      ],
+      "banned": "400021537"
+     }
+    ]
+   }
+  ],
   "ENG": [
    {
     "id": "433097",

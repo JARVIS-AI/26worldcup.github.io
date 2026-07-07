@@ -6866,12 +6866,12 @@
    "group": null,
    "date": "2026-07-07T20:00:00Z",
    "venueId": "400248370",
-   "status": "live",
-   "time": null,
+   "status": "finished",
+   "time": "130'",
    "home": {
     "code": "SUI",
     "score": 0,
-    "pen": 3
+    "pen": 4
    },
    "away": {
     "code": "COL",
@@ -6880,7 +6880,7 @@
    },
    "phA": "W85",
    "phB": "W87",
-   "winner": null,
+   "winner": "SUI",
    "attendance": 52497,
    "officials": [
     {
@@ -7007,7 +7007,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "SUI",
+    "score": null,
+    "pen": null
+   },
    "phA": "W95",
    "phB": "W96",
    "winner": null,
