@@ -6683,7 +6683,7 @@
    "date": "2026-07-07T00:00:00Z",
    "venueId": "400216606",
    "status": "live",
-   "time": "77'",
+   "time": "90'+2'",
    "home": {
     "code": "USA",
     "score": 1,
@@ -6697,7 +6697,7 @@
    "phA": "W81",
    "phB": "W82",
    "winner": null,
-   "attendance": null,
+   "attendance": 66925,
    "officials": [
     {
      "id": "361034",
