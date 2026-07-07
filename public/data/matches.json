@@ -6672,6 +6672,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "348147",
+     "country": "GER",
+     "role": "fourth",
+     "name": {
+      "en": "Felix ZWAYER",
+      "fr": "Felix ZWAYER",
+      "zh": "Felix ZWAYER",
+      "ar": "Felix ZWAYER",
+      "es": "Felix ZWAYER",
+      "de": "Felix ZWAYER",
+      "pt": "Felix ZWAYER",
+      "it": "Felix ZWAYER",
+      "ja": "Felix ZWAYER",
+      "ko": "Felix ZWAYER",
+      "id": "Felix ZWAYER",
+      "ru": "Felix ZWAYER"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
@@ -6731,6 +6764,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "408417",
+     "country": "GAB",
+     "role": "fourth",
+     "name": {
+      "en": "Pierre ATCHO",
+      "fr": "Pierre ATCHO",
+      "zh": "Pierre ATCHO",
+      "ar": "Pierre ATCHO",
+      "es": "Pierre ATCHO",
+      "de": "Pierre ATCHO",
+      "pt": "Pierre ATCHO",
+      "it": "Pierre ATCHO",
+      "ja": "Pierre ATCHO",
+      "ko": "Pierre ATCHO",
+      "id": "Pierre ATCHO",
+      "ru": "Pierre ATCHO"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
@@ -6742,7 +6808,7 @@
    "date": "2026-07-07T16:00:00Z",
    "venueId": "400098290",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "ARG",
     "score": null,
@@ -6834,7 +6900,7 @@
    "date": "2026-07-07T20:00:00Z",
    "venueId": "400248370",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "SUI",
     "score": null,
@@ -6926,7 +6992,7 @@
    "date": "2026-07-09T20:00:00Z",
    "venueId": "400248623",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "FRA",
     "score": null,
@@ -6951,7 +7017,7 @@
    "date": "2026-07-10T19:00:00Z",
    "venueId": "400017978",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "ESP",
     "score": null,
@@ -6976,7 +7042,7 @@
    "date": "2026-07-11T21:00:00Z",
    "venueId": "400257525",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "NOR",
     "score": null,
