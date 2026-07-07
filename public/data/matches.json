@@ -6856,39 +6856,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "400227",
-     "country": "NOR",
-     "role": "fourth",
-     "name": {
-      "en": "Espen ESKAS",
-      "fr": "Espen ESKAS",
-      "zh": "Espen ESKAS",
-      "ar": "Espen ESKAS",
-      "es": "Espen ESKAS",
-      "de": "Espen ESKAS",
-      "pt": "Espen ESKAS",
-      "it": "Espen ESKAS",
-      "ja": "Espen ESKAS",
-      "ko": "Espen ESKAS",
-      "id": "Espen ESKAS",
-      "ru": "Espen ESKAS"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -6900,7 +6867,7 @@
    "date": "2026-07-07T20:00:00Z",
    "venueId": "400248370",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "SUI",
     "score": null,
@@ -6992,7 +6959,7 @@
    "date": "2026-07-09T20:00:00Z",
    "venueId": "400248623",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "FRA",
     "score": null,
@@ -7017,7 +6984,7 @@
    "date": "2026-07-10T19:00:00Z",
    "venueId": "400017978",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "ESP",
     "score": null,
@@ -7042,7 +7009,7 @@
    "date": "2026-07-11T21:00:00Z",
    "venueId": "400257525",
    "status": "scheduled",
-   "time": "0'",
+   "time": null,
    "home": {
     "code": "NOR",
     "score": null,
