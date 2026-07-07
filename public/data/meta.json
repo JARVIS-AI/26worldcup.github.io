@@ -1,18 +1,18 @@
 {
- "updatedAt": "2026-07-07T22:50:12.655Z",
+ "updatedAt": "2026-07-07T23:03:54.852Z",
  "season": "285023",
  "titleOdds": [
   {
    "c": "ARG",
-   "p": 28.2
+   "p": 30.8
   },
   {
    "c": "ESP",
-   "p": 25.5
+   "p": 24.5
   },
   {
    "c": "FRA",
-   "p": 17.7
+   "p": 18.1
   },
   {
    "c": "ENG",
@@ -20,7 +20,7 @@
   },
   {
    "c": "MAR",
-   "p": 4.8
+   "p": 4.9
   }
  ],
  "counts": {
@@ -33,7 +33,7 @@
  },
  "errors": [
   "geocode New Tecumseth: no usable result — not cached, will retry next run",
-  "timeline 400021535 home: 3 goals vs 0",
+  "timeline 400021535 home: 4 goals vs 0",
   "timeline 400021535 away: 3 goals vs 0"
  ],
  "sources": [
