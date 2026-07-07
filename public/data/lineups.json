@@ -61241,11 +61241,19 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "369267",
+     "minute": "15'",
+     "type": 2,
+     "period": 3,
+     "sec": 845
+    }
+   ],
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "1'",
+  "matchTime": "15'",
   "period": 3,
   "final": false,
   "secTried": true
