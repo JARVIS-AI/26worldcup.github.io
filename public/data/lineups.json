@@ -64719,9 +64719,16 @@
     }
    ],
    "bookings": [],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "448364",
+     "on": "448343",
+     "minute": "21'",
+     "period": 3
+    }
+   ]
   },
-  "matchTime": "16'",
+  "matchTime": "30'",
   "period": 3,
   "final": false,
   "secTried": true
