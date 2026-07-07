@@ -7035,7 +7035,11 @@
    "venueId": "400254717",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "ARG",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "W95",
    "phB": "W96",
