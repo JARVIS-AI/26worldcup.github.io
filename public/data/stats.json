@@ -177,6 +177,14 @@
    "ownGoals": 0
   },
   {
+   "id": "358112",
+   "name": "Romelu LUKAKU",
+   "code": "BEL",
+   "no": 9,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "441316",
    "name": "Yoane WISSA",
    "code": "COD",
@@ -309,14 +317,6 @@
    "name": "Malik TILLMAN",
    "code": "USA",
    "no": 17,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "299200",
-   "name": "Marko ARNAUTOVIC",
-   "code": "AUT",
-   "no": 7,
    "goals": 2,
    "ownGoals": 0
   }
@@ -487,7 +487,7 @@
    }
   ]
  },
- "attAvg": 65289,
+ "attAvg": 65307,
  "biggestWin": {
   "diff": 6,
   "id": "400021464",
@@ -562,7 +562,7 @@
    "CZE": -1,
    "CAN": -11,
    "BIH": -12,
-   "USA": -9,
+   "USA": -11,
    "PAR": -17,
    "HAI": -7,
    "SCO": -5,
@@ -607,21 +607,6 @@
   }
  },
  "suspensions": {
-  "USA": [
-   {
-    "id": "466624",
-    "name": "Folarin BALOGUN",
-    "bans": [
-     {
-      "type": "red",
-      "due": [
-       "400021524"
-      ],
-      "banned": "400021534"
-     }
-    ]
-   }
-  ],
   "EGY": [
    {
     "id": "369267",
