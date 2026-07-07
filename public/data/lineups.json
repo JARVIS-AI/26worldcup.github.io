@@ -64716,11 +64716,19 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "448362",
+     "minute": "9'",
+     "type": 2,
+     "period": 3,
+     "sec": 516
+    }
+   ],
    "bookings": [],
    "substitutions": []
   },
-  "matchTime": "6'",
+  "matchTime": "19'",
   "period": 3,
   "final": false,
   "secTried": true

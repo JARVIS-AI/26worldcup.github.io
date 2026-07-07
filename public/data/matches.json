@@ -6683,7 +6683,7 @@
    "date": "2026-07-07T00:00:00Z",
    "venueId": "400216606",
    "status": "live",
-   "time": "6'",
+   "time": "19'",
    "home": {
     "code": "USA",
     "score": 0,
@@ -6691,7 +6691,7 @@
    },
    "away": {
     "code": "BEL",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "W81",
