@@ -6807,16 +6807,16 @@
    "group": null,
    "date": "2026-07-07T16:00:00Z",
    "venueId": "400098290",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "1'",
    "home": {
     "code": "ARG",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "EGY",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "W86",
