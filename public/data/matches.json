@@ -6871,12 +6871,12 @@
    "home": {
     "code": "SUI",
     "score": 0,
-    "pen": null
+    "pen": 3
    },
    "away": {
     "code": "COL",
     "score": 0,
-    "pen": null
+    "pen": 3
    },
    "phA": "W85",
    "phB": "W87",
