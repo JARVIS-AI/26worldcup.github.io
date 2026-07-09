@@ -33,6 +33,14 @@
    "ownGoals": 0
   },
   {
+   "id": "398680",
+   "name": "Ousmane DEMBELE",
+   "code": "FRA",
+   "no": 7,
+   "goals": 5,
+   "ownGoals": 0
+  },
+  {
    "id": "401889",
    "name": "Ismaila SARR",
    "code": "SEN",
@@ -61,14 +69,6 @@
    "name": "Mikel OYARZABAL",
    "code": "ESP",
    "no": 21,
-   "goals": 4,
-   "ownGoals": 0
-  },
-  {
-   "id": "398680",
-   "name": "Ousmane DEMBELE",
-   "code": "FRA",
-   "no": 7,
    "goals": 4,
    "ownGoals": 0
   },
@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 259,
+  "yellow": 260,
   "red": 14,
   "players": [
    {
@@ -430,6 +430,14 @@
     "r": 1
    },
    {
+    "id": "403083",
+    "name": "Issa DIOP",
+    "code": "MAR",
+    "no": 14,
+    "y": 3,
+    "r": 0
+   },
+   {
     "id": "464924",
     "name": "Abdukodir KHUSANOV",
     "code": "UZB",
@@ -474,14 +482,6 @@
     "name": "Caleb YIRENKYI",
     "code": "GHA",
     "no": 3,
-    "y": 2,
-    "r": 0
-   },
-   {
-    "id": "308386",
-    "name": "CASEMIRO",
-    "code": "BRA",
-    "no": 5,
     "y": 2,
     "r": 0
    }
