@@ -54,6 +54,10 @@ const uz: Dict = {
   stageSf: 'Yarim final',
   stageThird: "Uchinchi o'rin uchun o'yin",
   stageFinal: 'Final',
+  abbrR32: '1/16',
+  abbrR16: '1/8',
+  abbrQf: '1/4',
+  abbrSf: '1/2',
   // match status
   statusLive: 'JONLI',
   statusFinished: 'Yakunlandi',
@@ -360,6 +364,12 @@ const uz: Dict = {
   missDne: 'Ishtirok etmadi',
   missBanned: 'Chetlatilgan',
   missNotMember: 'FIFA aʼzosi emas',
+  missRejected: 'Arizani FIFA rad etdi',
+  missNotEligible: "Ishtirok etishga huquqi yo'q edi",
+  missPartOf: '{x} tarkibida',
+  missProtectorate: '{x} protektorati',
+  entYugoslavia: 'Yugoslaviya',
+  entSovietUnion: 'Sovet Ittifoqi',
   navMatchSim: "Bitta o'yin simulyatori",
   aimsTitle: "Bitta o'yin simulyatori",
   aimsSub:

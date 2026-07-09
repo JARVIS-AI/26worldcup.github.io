@@ -53,6 +53,10 @@ const it: Dict = {
   stageSf: 'Semifinali',
   stageThird: 'Finale per il terzo posto',
   stageFinal: 'Finale',
+  abbrR32: '1/16',
+  abbrR16: '1/8',
+  abbrQf: 'Quarti',
+  abbrSf: 'Semifinali',
   // match status
   statusLive: 'LIVE',
   statusFinished: 'Terminata',
@@ -360,6 +364,12 @@ const it: Dict = {
   missDne: 'Non iscritta',
   missBanned: 'Esclusa',
   missNotMember: 'Non membro FIFA',
+  missRejected: 'Iscrizione respinta dalla FIFA',
+  missNotEligible: 'Non ammessa a partecipare',
+  missPartOf: 'Parte di: {x}',
+  missProtectorate: 'Protettorato di: {x}',
+  entYugoslavia: 'Jugoslavia',
+  entSovietUnion: 'Unione Sovietica',
   navMatchSim: 'Simulatore di partita',
   aimsTitle: 'Simulatore di partita',
   aimsSub:

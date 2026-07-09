@@ -53,6 +53,10 @@ const nl: Dict = {
   stageSf: 'Halve finales',
   stageThird: 'Troostfinale',
   stageFinal: 'Finale',
+  abbrR32: '1/16',
+  abbrR16: '1/8',
+  abbrQf: 'KF',
+  abbrSf: 'HF',
   // match status
   statusLive: 'LIVE',
   statusFinished: 'Afgelopen',
@@ -361,6 +365,12 @@ const nl: Dict = {
   missDne: 'Niet ingeschreven',
   missBanned: 'Uitgesloten',
   missNotMember: 'Geen FIFA-lid',
+  missRejected: 'Inschrijving afgewezen door de FIFA',
+  missNotEligible: 'Niet speelgerechtigd',
+  missPartOf: 'Onderdeel van {x}',
+  missProtectorate: 'Protectoraat van {x}',
+  entYugoslavia: 'Joegoslavië',
+  entSovietUnion: 'Sovjet-Unie',
   navMatchSim: 'Wedstrijdsimulator',
   aimsTitle: 'Wedstrijdsimulator',
   aimsSub:

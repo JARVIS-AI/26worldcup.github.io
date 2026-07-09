@@ -53,6 +53,10 @@ const en: Dict = {
   stageSf: 'Semi-finals',
   stageThird: 'Third place play-off',
   stageFinal: 'Final',
+  abbrR32: 'R32',
+  abbrR16: 'R16',
+  abbrQf: 'QF',
+  abbrSf: 'SF',
   // match status
   statusLive: 'LIVE',
   statusFinished: 'Full time',
@@ -276,6 +280,12 @@ const en: Dict = {
   missDne: 'Did not enter',
   missBanned: 'Banned',
   missNotMember: 'Not a FIFA member',
+  missRejected: 'Entry rejected by FIFA',
+  missNotEligible: 'Not eligible to enter',
+  missPartOf: 'Part of {x}',
+  missProtectorate: 'Protectorate of {x}',
+  entYugoslavia: 'Yugoslavia',
+  entSovietUnion: 'Soviet Union',
   // venues
   venuesTitle: 'Venues',
   venuesSub: '16 stadiums across 3 host countries',

@@ -15,6 +15,7 @@ import {
   placeholderLabel,
   savedMatchFilters,
   sortMatches,
+  stageTag,
 } from '../utils/helpers'
 import { usePersistentState } from '../utils/viewState'
 import Flag from '../components/Flag'
@@ -170,7 +171,7 @@ export default function Settings() {
     if (exportMatches.length === 0) return
     const ics = buildIcs(
       exportMatches,
-      (m) => `${sideName(m.home, m.phA)} ${t('vs')} ${sideName(m.away, m.phB)} (${t('matchN', { n: m.n })})`,
+      (m) => `${sideName(m.home, m.phA)} ${t('vs')} ${sideName(m.away, m.phB)} (${stageTag(m, t)})`,
       (m) => {
         const v = m.venueId ? venues[m.venueId] : null
         return v ? `${v.realName}, ${pick(v.cityName, v.city)}` : ''

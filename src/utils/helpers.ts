@@ -17,6 +17,23 @@ export function fifaToIso2(code: string | null | undefined): string | null {
   return (fifaIso.map as Record<string, string>)[code] ?? null
 }
 
+/** short tag per stage, for places where the full round name is too long (.ics titles) */
+const STAGE_TAG_KEY: Record<Stage, string> = {
+  group: 'stageGroup',
+  r32: 'abbrR32',
+  r16: 'abbrR16',
+  qf: 'abbrQf',
+  sf: 'abbrSf',
+  third: 'stageThird',
+  final: 'stageFinal',
+}
+
+/** "Group A" for group games, else the short round tag ("R16", "Final") */
+export function stageTag(m: Match, t: (k: string, v?: Record<string, string | number>) => string): string {
+  if (m.stage === 'group' && m.group) return t('groupX', { x: m.group })
+  return t(STAGE_TAG_KEY[m.stage])
+}
+
 export const STAGE_LABEL_KEY: Record<Stage, string> = {
   group: 'stageGroup',
   r32: 'stageR32',

@@ -57,7 +57,16 @@ const REASON_KEY: Record<string, string> = {
   dne: 'missDne',
   banned: 'missBanned',
   notmember: 'missNotMember',
+  rejected: 'missRejected',
+  noteligible: 'missNotEligible',
 }
+// "partOf:<iso>" / "protectorateOf:<iso>": the team was not an independent nation yet
+const BELONGED_KEY: Record<string, string> = {
+  partOf: 'missPartOf',
+  protectorateOf: 'missProtectorate',
+}
+// CLDR aliases these away (YU -> Serbia, SU -> Russia), so we carry our own labels
+const HISTORIC_STATE_KEY: Record<string, string> = { YU: 'entYugoslavia', SU: 'entSovietUnion' }
 
 function ageFrom(dob: string): number {
   const d = new Date(dob)
@@ -192,7 +201,17 @@ export default function TeamDetail() {
 
   // round reached, or reason for absence (both fall back to the raw code)
   const finishLabel = (f: string | null) => (f ? (FINISH_KEY[f] ? t(FINISH_KEY[f]) : f) : t('none'))
-  const reasonLabel = (r: string | null) => (r ? (REASON_KEY[r] ? t(REASON_KEY[r]) : r) : t('none'))
+  const reasonLabel = (r: string | null) => {
+    if (!r) return t('none')
+    if (REASON_KEY[r]) return t(REASON_KEY[r])
+    const [kind, iso] = r.split(':')
+    const frame = BELONGED_KEY[kind]
+    if (frame && iso) {
+      const state = HISTORIC_STATE_KEY[iso]
+      return t(frame, { x: state ? t(state) : countryName(iso, iso) })
+    }
+    return r
+  }
 
   const teamMatches = useMemo(
     () => sortMatches(matches.filter((m) => m.home?.code === code || m.away?.code === code)),

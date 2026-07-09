@@ -53,6 +53,10 @@ const id: Dict = {
   stageSf: 'Semifinal',
   stageThird: 'Perebutan tempat ketiga',
   stageFinal: 'Final',
+  abbrR32: '32 Besar',
+  abbrR16: '16 Besar',
+  abbrQf: '8 Besar',
+  abbrSf: 'Semifinal',
   // match status
   statusLive: 'LIVE',
   statusFinished: 'Selesai',
@@ -359,6 +363,12 @@ const id: Dict = {
   missDne: 'Tidak ikut',
   missBanned: 'Dilarang',
   missNotMember: 'Bukan anggota FIFA',
+  missRejected: 'Pendaftaran ditolak FIFA',
+  missNotEligible: 'Tidak memenuhi syarat ikut serta',
+  missPartOf: 'Bagian dari {x}',
+  missProtectorate: 'Protektorat {x}',
+  entYugoslavia: 'Yugoslavia',
+  entSovietUnion: 'Uni Soviet',
   navMatchSim: 'Simulator pertandingan',
   aimsTitle: 'Simulator pertandingan',
   aimsSub:
