@@ -6856,6 +6856,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "400227",
+     "country": "NOR",
+     "role": "fourth",
+     "name": {
+      "en": "Espen ESKAS",
+      "fr": "Espen ESKAS",
+      "zh": "Espen ESKAS",
+      "ar": "Espen ESKAS",
+      "es": "Espen ESKAS",
+      "de": "Espen ESKAS",
+      "pt": "Espen ESKAS",
+      "it": "Espen ESKAS",
+      "ja": "Espen ESKAS",
+      "ko": "Espen ESKAS",
+      "id": "Espen ESKAS",
+      "ru": "Espen ESKAS"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
@@ -6915,6 +6948,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "416317",
+     "country": "MEX",
+     "role": "fourth",
+     "name": {
+      "en": "Katia GARCIA",
+      "fr": "Katia GARCIA",
+      "zh": "Katia GARCIA",
+      "ar": "Katia GARCIA",
+      "es": "Katia GARCIA",
+      "de": "Katia GARCIA",
+      "pt": "Katia GARCIA",
+      "it": "Katia GARCIA",
+      "ja": "Katia GARCIA",
+      "ko": "Katia GARCIA",
+      "id": "Katia GARCIA",
+      "ru": "Katia GARCIA"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
@@ -6926,7 +6992,7 @@
    "date": "2026-07-09T20:00:00Z",
    "venueId": "400248623",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "FRA",
     "score": null,
@@ -6941,7 +7007,41 @@
    "phB": "W90",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "416165",
+     "country": "ARG",
+     "role": "referee",
+     "name": {
+      "en": "Facundo TELLO",
+      "fr": "Facundo TELLO",
+      "zh": "Facundo TELLO",
+      "ar": "Facundo TELLO",
+      "es": "Facundo TELLO",
+      "de": "Facundo TELLO",
+      "pt": "Facundo TELLO",
+      "it": "Facundo TELLO",
+      "ja": "Facundo TELLO",
+      "ko": "Facundo TELLO",
+      "id": "Facundo TELLO",
+      "ru": "Facundo TELLO"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021538",
@@ -6966,7 +7066,74 @@
    "phB": "W94",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "347710",
+     "country": "ENG",
+     "role": "referee",
+     "name": {
+      "en": "Michael OLIVER",
+      "fr": "Michael OLIVER",
+      "zh": "Michael OLIVER",
+      "ar": "Michael OLIVER",
+      "es": "Michael OLIVER",
+      "de": "Michael OLIVER",
+      "pt": "Michael OLIVER",
+      "it": "Michael OLIVER",
+      "ja": "Michael OLIVER",
+      "ko": "Michael OLIVER",
+      "id": "Michael OLIVER",
+      "ru": "Michael OLIVER"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "446932",
+     "country": "BRA",
+     "role": "fourth",
+     "name": {
+      "en": "Ramon ABATTI",
+      "fr": "Ramon ABATTI",
+      "zh": "Ramon ABATTI",
+      "ar": "Ramon ABATTI",
+      "es": "Ramon ABATTI",
+      "de": "Ramon ABATTI",
+      "pt": "Ramon ABATTI",
+      "it": "Ramon ABATTI",
+      "ja": "Ramon ABATTI",
+      "ko": "Ramon ABATTI",
+      "id": "Ramon ABATTI",
+      "ru": "Ramon ABATTI"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021539",
