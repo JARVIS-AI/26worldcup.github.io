@@ -6991,8 +6991,8 @@
    "group": null,
    "date": "2026-07-09T20:00:00Z",
    "venueId": "400248623",
-   "status": "live",
-   "time": "88'",
+   "status": "finished",
+   "time": "97'",
    "home": {
     "code": "FRA",
     "score": 2,
@@ -7005,7 +7005,7 @@
    },
    "phA": "W89",
    "phB": "W90",
-   "winner": null,
+   "winner": "FRA",
    "attendance": 63811,
    "officials": [
     {
@@ -7194,7 +7194,11 @@
    "venueId": "400257526",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "FRA",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "W97",
    "phB": "W98",
