@@ -322,6 +322,7 @@ const uk: Dict = {
   exportEmpty: 'Немає матчів для експорту.',
   downloadIcs: 'Завантажити .ics',
   dataTitle: 'Дані',
+  countFlags: 'Прапори',
   clearSettings: 'Скинути всі налаштування',
   // weather codes (WMO)
   wmo0: 'Ясно',

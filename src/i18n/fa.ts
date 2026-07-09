@@ -317,6 +317,7 @@ const fa: Dict = {
   exportEmpty: 'بازی‌ای برای خروجی گرفتن نیست.',
   downloadIcs: 'دانلود ‎.ics',
   dataTitle: 'داده‌ها',
+  countFlags: 'پرچم‌ها',
   clearSettings: 'بازنشانی همه تنظیمات',
   // weather codes (WMO)
   wmo0: 'صاف',

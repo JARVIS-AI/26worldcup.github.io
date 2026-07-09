@@ -316,6 +316,7 @@ const ko: Dict = {
   exportEmpty: '내보낼 경기가 없습니다.',
   downloadIcs: '.ics 다운로드',
   dataTitle: '데이터',
+  countFlags: '국기',
   clearSettings: '모든 설정 초기화',
   // weather codes (WMO)
   wmo0: '맑음',

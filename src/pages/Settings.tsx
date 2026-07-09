@@ -38,6 +38,7 @@ const COUNT_LABEL_KEY: Record<string, string> = {
   squads: 'squad',
   weather: 'weatherTitle',
   lineups: 'lineups',
+  flags: 'countFlags',
   venues: 'navVenues',
   broadcasters: 'whereToWatch',
   stats: 'navStats',

@@ -317,6 +317,7 @@ const tr: Dict = {
   exportEmpty: 'Dışa aktarılacak maç yok.',
   downloadIcs: '.ics indir',
   dataTitle: 'Veriler',
+  countFlags: 'Bayraklar',
   clearSettings: 'Tüm ayarları sıfırla',
   // weather codes (WMO)
   wmo0: 'Açık',

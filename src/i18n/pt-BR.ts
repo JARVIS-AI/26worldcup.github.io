@@ -321,6 +321,7 @@ const ptBR: Dict = {
   exportEmpty: 'Não há jogos para exportar.',
   downloadIcs: 'Baixar .ics',
   dataTitle: 'Dados',
+  countFlags: 'Bandeiras',
   clearSettings: 'Redefinir todas as configurações',
   // weather codes (WMO)
   wmo0: 'Céu limpo',

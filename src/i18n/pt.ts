@@ -322,6 +322,7 @@ const pt: Dict = {
   exportEmpty: 'Não há jogos para exportar.',
   downloadIcs: 'Descarregar .ics',
   dataTitle: 'Dados',
+  countFlags: 'Bandeiras',
   clearSettings: 'Repor todas as definições',
   // weather codes (WMO)
   wmo0: 'Céu limpo',

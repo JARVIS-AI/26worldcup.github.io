@@ -320,6 +320,7 @@ const uz: Dict = {
   exportEmpty: "Eksport qilish uchun o'yin yo'q.",
   downloadIcs: '.ics yuklab olish',
   dataTitle: "Ma'lumotlar",
+  countFlags: 'Bayroqlar',
   clearSettings: 'Barcha sozlamalarni tiklash',
   // weather codes (WMO)
   wmo0: 'Ochiq osmon',

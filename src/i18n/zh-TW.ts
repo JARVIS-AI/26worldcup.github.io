@@ -313,6 +313,7 @@ const zhTW: Dict = {
   exportEmpty: '沒有可匯出的比賽。',
   downloadIcs: '下載.ics',
   dataTitle: '資料',
+  countFlags: '國旗',
   clearSettings: '重設所有設定',
   // weather codes (WMO)
   wmo0: '晴朗',

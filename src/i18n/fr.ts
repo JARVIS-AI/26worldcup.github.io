@@ -322,6 +322,7 @@ const fr: Dict = {
   exportEmpty: 'Aucun match à exporter.',
   downloadIcs: 'Télécharger le .ics',
   dataTitle: 'Données',
+  countFlags: 'Drapeaux',
   clearSettings: 'Réinitialiser les réglages',
   // weather codes (WMO)
   wmo0: 'Ciel dégagé',

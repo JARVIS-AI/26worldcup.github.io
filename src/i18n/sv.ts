@@ -319,6 +319,7 @@ const sv: Dict = {
   exportEmpty: 'Inga matcher att exportera.',
   downloadIcs: 'Ladda ner .ics',
   dataTitle: 'Data',
+  countFlags: 'Flaggor',
   clearSettings: 'Återställ alla inställningar',
   // weather codes (WMO)
   wmo0: 'Klart',

@@ -321,6 +321,7 @@ const cs: Dict = {
   exportEmpty: 'Žádné zápasy k exportu.',
   downloadIcs: 'Stáhnout .ics',
   dataTitle: 'Data',
+  countFlags: 'Vlajky',
   clearSettings: 'Resetovat všechna nastavení',
   // weather codes (WMO)
   wmo0: 'Jasno',

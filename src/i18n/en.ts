@@ -346,6 +346,7 @@ const en: Dict = {
   exportEmpty: 'No matches to export.',
   downloadIcs: 'Download .ics',
   dataTitle: 'Data',
+  countFlags: 'Flags',
   clearSettings: 'Reset all settings',
   // weather codes (WMO)
   wmo0: 'Clear sky',

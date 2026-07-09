@@ -322,6 +322,7 @@ const ru: Dict = {
   exportEmpty: 'Нет матчей для экспорта.',
   downloadIcs: 'Скачать .ics',
   dataTitle: 'Данные',
+  countFlags: 'Флаги',
   clearSettings: 'Сбросить все настройки',
   // weather codes (WMO)
   wmo0: 'Ясно',

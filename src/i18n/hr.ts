@@ -320,6 +320,7 @@ const hr: Dict = {
   exportEmpty: 'Nema utakmica za izvoz.',
   downloadIcs: 'Preuzmi .ics',
   dataTitle: 'Podaci',
+  countFlags: 'Zastave',
   clearSettings: 'Poništi sve postavke',
   // weather codes (WMO)
   wmo0: 'Vedro',

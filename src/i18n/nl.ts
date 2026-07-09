@@ -321,6 +321,7 @@ const nl: Dict = {
   exportEmpty: 'Geen wedstrijden om te exporteren.',
   downloadIcs: '.ics downloaden',
   dataTitle: 'Gegevens',
+  countFlags: 'Vlaggen',
   clearSettings: 'Alle instellingen resetten',
   // weather codes (WMO)
   wmo0: 'Onbewolkt',

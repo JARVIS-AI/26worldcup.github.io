@@ -320,6 +320,7 @@ const it: Dict = {
   exportEmpty: 'Nessuna partita da esportare.',
   downloadIcs: 'Scarica .ics',
   dataTitle: 'Dati',
+  countFlags: 'Bandiere',
   clearSettings: 'Ripristina tutte le impostazioni',
   // weather codes (WMO)
   wmo0: 'Sereno',

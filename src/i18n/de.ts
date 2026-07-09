@@ -321,6 +321,7 @@ const de: Dict = {
   exportEmpty: 'Keine Spiele zum Exportieren.',
   downloadIcs: '.ics herunterladen',
   dataTitle: 'Daten',
+  countFlags: 'Flaggen',
   clearSettings: 'Alle Einstellungen zurücksetzen',
   // weather codes (WMO)
   wmo0: 'Klarer Himmel',

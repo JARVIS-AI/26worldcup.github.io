@@ -327,6 +327,7 @@ const ar: Dict = {
   exportEmpty: 'لا توجد مباريات للتصدير.',
   downloadIcs: 'تنزيل ‎.ics',
   dataTitle: 'البيانات',
+  countFlags: 'أعلام',
   clearSettings: 'إعادة تعيين كل الإعدادات',
   // weather codes (WMO)
   wmo0: 'صحو',

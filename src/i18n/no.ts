@@ -319,6 +319,7 @@ const no: Dict = {
   exportEmpty: 'Ingen kamper å eksportere.',
   downloadIcs: 'Last ned .ics',
   dataTitle: 'Data',
+  countFlags: 'Flagg',
   clearSettings: 'Tilbakestill alle innstillinger',
   // weather codes (WMO)
   wmo0: 'Klarvær',

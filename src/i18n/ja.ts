@@ -317,6 +317,7 @@ const ja: Dict = {
   exportEmpty: 'エクスポートする試合がありません。',
   downloadIcs: '.ics をダウンロード',
   dataTitle: 'データ',
+  countFlags: '国旗',
   clearSettings: 'すべての設定をリセット',
   // weather codes (WMO)
   wmo0: '快晴',

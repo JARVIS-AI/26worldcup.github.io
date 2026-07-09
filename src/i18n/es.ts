@@ -321,6 +321,7 @@ const es: Dict = {
   exportEmpty: 'No hay partidos que exportar.',
   downloadIcs: 'Descargar .ics',
   dataTitle: 'Datos',
+  countFlags: 'Banderas',
   clearSettings: 'Restablecer todos los ajustes',
   // weather codes (WMO)
   wmo0: 'Despejado',

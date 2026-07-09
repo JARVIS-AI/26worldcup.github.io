@@ -319,6 +319,7 @@ const id: Dict = {
   exportEmpty: 'Tidak ada pertandingan untuk diekspor.',
   downloadIcs: 'Unduh .ics',
   dataTitle: 'Data',
+  countFlags: 'Bendera',
   clearSettings: 'Atur ulang semua pengaturan',
   // weather codes (WMO)
   wmo0: 'Cerah',
