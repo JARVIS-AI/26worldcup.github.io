@@ -6992,10 +6992,10 @@
    "date": "2026-07-09T20:00:00Z",
    "venueId": "400248623",
    "status": "live",
-   "time": "48'",
+   "time": "61'",
    "home": {
     "code": "FRA",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
