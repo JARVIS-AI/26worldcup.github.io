@@ -1,4 +1,4 @@
-import type { Lang, LocalizedName, Match, MatchLineups, Stage, Standings, Team } from '../types'
+import type { Lang, LocalizedName, Match, MatchLineups, Stage, Standings, Team, Venue } from '../types'
 import fifaIso from '../data/fifa-iso.json'
 
 /** resolve a data note that may be a plain string (legacy) or a {en,zh,fr} object */
@@ -529,6 +529,61 @@ export function involvesTeams(m: Match, codes: string[]): boolean {
 /** matches sorted by official match number (already sorted by update script, but be safe) */
 export function sortMatches(matches: Match[]): Match[] {
   return matches.slice().sort((a, b) => Date.parse(a.date) - Date.parse(b.date) || a.n - b.n)
+}
+
+/** stage filter values: real stages + 'ko' = all knockout rounds */
+export const STAGE_FILTERS = ['group', 'ko', 'r32', 'r16', 'qf', 'sf', 'third', 'final'] as const
+export type StageFilter = (typeof STAGE_FILTERS)[number]
+
+export interface MatchFilters {
+  stage: StageFilter | ''
+  venueId: string
+  teamCodes: string[]
+}
+
+/** the Matches page mirrors its filter bar into the URL and remembers the last
+ * one here, so other pages (calendar export) can reuse the same selection */
+export const MATCH_FILTERS_KEY = 'wc2026-matches-filters'
+
+/** read the Matches-page filter bar out of URL params, dropping unknown values */
+export function parseMatchFilters(
+  params: URLSearchParams,
+  teams: Record<string, Team>,
+  venues: Record<string, Venue>,
+): MatchFilters {
+  const rawStage = params.get('stage') ?? ''
+  const rawVenue = params.get('venue') ?? ''
+  const teamCodes: string[] = []
+  for (const raw of (params.get('teams') ?? '').split(',')) {
+    const c = raw.trim().toUpperCase()
+    if (c && teams[c] && !teamCodes.includes(c)) teamCodes.push(c)
+  }
+  return {
+    stage: (STAGE_FILTERS as readonly string[]).includes(rawStage) ? (rawStage as StageFilter) : '',
+    venueId: rawVenue && venues[rawVenue] ? rawVenue : '',
+    teamCodes,
+  }
+}
+
+/** the filter bar the Matches page last used, restored from storage */
+export function savedMatchFilters(teams: Record<string, Team>, venues: Record<string, Venue>): MatchFilters {
+  let saved = ''
+  try {
+    saved = localStorage.getItem(MATCH_FILTERS_KEY) ?? ''
+  } catch {
+    /* blocked storage: no filters */
+  }
+  return parseMatchFilters(new URLSearchParams(saved), teams, venues)
+}
+
+/** apply a filter bar to the match list, in display order */
+export function applyMatchFilters(matches: Match[], f: MatchFilters): Match[] {
+  let list = sortMatches(matches)
+  if (f.stage === 'ko') list = list.filter((m) => m.stage !== 'group')
+  else if (f.stage !== '') list = list.filter((m) => m.stage === f.stage)
+  if (f.venueId) list = list.filter((m) => m.venueId === f.venueId)
+  if (f.teamCodes.length) list = list.filter((m) => involvesTeams(m, f.teamCodes))
+  return list
 }
 
 export type QualState = 'through' | 'third' | 'out' | null
