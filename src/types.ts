@@ -163,7 +163,15 @@ export interface TeamLineup {
     type: number | null
     period: number | null
   }[]
-  bookings: { player: string; minute: string | null; card: number | null; period: number | null }[]
+  bookings: {
+    /** null when the card went to a coach/team official rather than a player */
+    player: string | null
+    /** IdCoach/IdStaff of the booked team official; absent for player cards */
+    official?: string
+    minute: string | null
+    card: number | null
+    period: number | null
+  }[]
   substitutions?: { off: string; on: string; minute: string | null; period: number | null }[]
 }
 

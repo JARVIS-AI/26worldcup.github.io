@@ -31,11 +31,26 @@ const CACHE = path.join(ROOT, 'scripts', 'cache')
 const FIFA = 'https://api.fifa.com/api/v3'
 const ID_COMPETITION = '17'
 const ID_SEASON = '285023' // FIFA World Cup 2026
+// shape of a lineups.json entry. Finished matches latch out of refetching, so bump
+// this whenever a new field must be backfilled from the live feed (v2: booking.official)
+const LINEUP_V = 2
 // languages whose team names we synthesize from CLDR region names (FIFA doesn't serve them)
 const CLDR_LANGS = ['nl', 'sv', 'no', 'cs', 'hr', 'tr', 'uz', 'fa', 'uk']
 const REGION_DN = Object.fromEntries(
   CLDR_LANGS.map((l) => [l, new Intl.DisplayNames([l === 'no' ? 'nb' : l], { type: 'region' })]),
 )
+
+/**
+ * Who a booking belongs to. FIFA sends no IdPlayer for cards shown to a coach or
+ * another team official; those carry IdCoach/IdStaff instead, which `mapTeam`
+ * keeps as `official`. Both count towards the team conduct score, so they need
+ * distinct keys: grouping on `b.player` alone merges every official of a team
+ * into one phantom person (two coaches booked in one match read as a second
+ * yellow). Falls back to a per-booking key so an unattributable card still costs
+ * its own deduction rather than merging.
+ */
+const bookedBy = (b, i) =>
+  b.player != null ? `p${b.player}` : b.official != null ? `o${b.official}` : `x${i}`
 
 /** fill missing team-name languages with CLDR country names (ENG/SCO/WAL etc. stay en) */
 function withCldrNames(name, iso2) {
@@ -302,11 +317,12 @@ function computeStandings(matches, teams, lineups = {}) {
     for (const r of Object.values(g)) r.gd = r.gf - r.ga
   }
 
-  // fair-play score (criterion f): one deduction per player per group match,
-  // worst card only. Y -1, second yellow / yellow+red -3, direct red -4. The
-  // FIFA feed only codes card 1 (yellow) and 2 (sending-off); a red preceded by
-  // a yellow is read as a second yellow (the rarer yellow+direct-red -5 case
-  // can't be told apart from this data and collapses here).
+  // fair-play score (criterion f): "team conduct score (players and team officials)",
+  // one deduction per player or official per group match, worst card only.
+  // Y -1, second yellow / yellow+red -3, direct red -4. The FIFA feed only codes
+  // card 1 (yellow) and 2 (sending-off); a red preceded by a yellow is read as a
+  // second yellow (the rarer yellow+direct-red -5 case can't be told apart from
+  // this data and collapses here).
   const fairPlay = {}
   for (const [code, t] of Object.entries(teams)) if (t.group) fairPlay[code] = 0
   for (const m of groupMatches) {
@@ -319,12 +335,13 @@ function computeStandings(matches, teams, lineups = {}) {
     ]) {
       const tl = lu[side]
       if (!tl || fairPlay[code] === undefined) continue
-      const byPlayer = {}
-      for (const b of tl.bookings || []) {
-        byPlayer[b.player] = byPlayer[b.player] ?? []
-        byPlayer[b.player].push(b)
-      }
-      for (const cards of Object.values(byPlayer)) {
+      const byPerson = {}
+      ;(tl.bookings || []).forEach((b, i) => {
+        const key = bookedBy(b, i)
+        byPerson[key] = byPerson[key] ?? []
+        byPerson[key].push(b)
+      })
+      for (const cards of Object.values(byPerson)) {
         const reds = cards.filter((b) => (b.card ?? 0) >= 2).length
         const yellows = cards.filter((b) => b.card === 1).length
         if (reds > 0) fairPlay[code] += yellows >= 1 ? -3 : -4
@@ -789,12 +806,17 @@ function parseLivePlayers(team) {
       type: g.Type,
       period: g.Period ?? null,
     })),
-    bookings: (team.Bookings || []).map((b) => ({
-      player: b.IdPlayer,
-      minute: b.Minute,
-      card: b.Card,
-      period: b.Period ?? null,
-    })),
+    bookings: (team.Bookings || []).map((b) => {
+      // a card shown to a coach or other team official has no IdPlayer
+      const official = b.IdCoach ?? b.IdStaff ?? null
+      return {
+        player: b.IdPlayer,
+        ...(official ? { official } : {}),
+        minute: b.Minute,
+        card: b.Card,
+        period: b.Period ?? null,
+      }
+    }),
     substitutions: (team.Substitutions || []).map((sub) => ({
       off: sub.IdPlayerOff,
       on: sub.IdPlayerOn,
@@ -839,6 +861,29 @@ async function fetchGoalSecs(stageId, matchId) {
   return out
 }
 
+/**
+ * Merge a refetched side into a `final` (frozen) one. A finished match is only
+ * refetched to backfill fields captured since it was written (goal seconds,
+ * booking officials; see LINEUP_V), and FIFA does degrade old records now and
+ * then (a 9th-minute goal came back as 0'), so the merge only ever adds: it
+ * keeps the frozen goals and takes the fresher bookings, never the reverse.
+ */
+function mergeFinalSide(prev, next) {
+  if (!prev) return next ?? null
+  if (!next) return prev
+  const pg = prev.goals || []
+  const ng = next.goals || []
+  const goals =
+    ng.length > pg.length
+      ? ng
+      : ng.length < pg.length
+        ? pg
+        : pg.map((g, i) => (g.sec == null && ng[i].sec != null ? { ...g, sec: ng[i].sec } : g))
+  const pb = prev.bookings || []
+  const nb = next.bookings || []
+  return { ...prev, goals, bookings: nb.length >= pb.length ? nb : pb }
+}
+
 async function fetchLiveDetails(matches, rawById) {
   const lineups = (await readJsonSafe(path.join(OUT, 'lineups.json'))) || {}
   const hasGoals = (lu) => ['home', 'away'].some((s) => (lu?.[s]?.goals || []).length > 0)
@@ -847,8 +892,10 @@ async function fetchLiveDetails(matches, rawById) {
     return (
       m.status === 'live' ||
       // finished matches latch via `final`; re-fetch once more to backfill goal
-      // seconds (secTried) on entries written before timelines were captured
-      (m.status === 'finished' && (!lu?.final || (!lu?.secTried && hasGoals(lu)))) ||
+      // seconds (secTried) on entries written before timelines were captured, or
+      // any field added since the entry was written (LINEUP_V)
+      (m.status === 'finished' &&
+        (!lu?.final || (lu.v ?? 1) < LINEUP_V || (!lu?.secTried && hasGoals(lu)))) ||
       (m.status === 'scheduled' && Math.abs(Date.parse(m.date) - Date.now()) < 3 * 3600e3)
     )
   })
@@ -898,13 +945,15 @@ async function fetchLiveDetails(matches, rawById) {
       // refetches, so only set it when finished AND both sides parsed this run.
       // secTried latches the one-time goal-seconds backfill (see targets above)
       const prev = lineups[m.id]
+      const merge = prev?.final ? mergeFinalSide : (p, n) => n ?? p ?? null
       lineups[m.id] = {
-        home: home ?? prev?.home ?? null,
-        away: away ?? prev?.away ?? null,
+        home: merge(prev?.home, home),
+        away: merge(prev?.away, away),
         matchTime: d.MatchTime || null,
         period: d.Period ?? null,
         final: m.status === 'finished' && !!home && !!away,
         secTried: true,
+        v: LINEUP_V,
       }
       await sleep(400)
     } catch (e) {
@@ -937,7 +986,7 @@ function computeSuspensions(lineups, matches) {
       const nameOf = (pid) =>
         (team.xi || []).concat(team.subs || []).find((p) => p.id === pid)?.name || `#${pid}`
       for (const b of team.bookings || []) {
-        if (b.player == null) continue // no IdPlayer: can't track a ban for an unnamed player
+        if (b.player == null) continue // a coach/team-official card bans no player
         events[code] ??= {}
         events[code][b.player] ??= { name: nameOf(b.player), list: [] }
         events[code][b.player].list.push({
@@ -1090,7 +1139,7 @@ function computeStats(lineups, matches) {
       }
     }
   }
-  // discipline: bookings per player (card 1 = yellow, >=2 = red incl. second yellow)
+  // discipline: player bookings (card 1 = yellow, >=2 = red incl. second yellow)
   const carded = {}
   let yellow = 0
   let red = 0
@@ -1105,14 +1154,13 @@ function computeStats(lineups, matches) {
       const nameOf = (pid) =>
         (team.xi || []).concat(team.subs || []).find((p) => p.id === pid)?.name || `#${pid}`
       for (const b of team.bookings || []) {
+        // cards shown to a coach or other team official (no IdPlayer) still cost the
+        // team conduct score, but they aren't player cards: they belong in neither the
+        // tournament tallies nor the per-player table.
+        if (b.player == null) continue
         const isRed = (b.card ?? 0) >= 2
         if (isRed) red++
         else yellow++
-        // FIFA sometimes ships a booking with no IdPlayer. It can't be tied to a
-        // named player, and the shared `null` key would merge unrelated players
-        // (a TUR and a PAR yellow once collapsed into one bogus "#null" row) — so
-        // count it in the totals above but leave it out of the per-player table.
-        if (b.player == null) continue
         const key = `${b.player}`
         carded[key] ??= { id: b.player, name: nameOf(b.player), code, no: numberOf[b.player], y: 0, r: 0 }
         if (isRed) carded[key].r++
@@ -1122,9 +1170,9 @@ function computeStats(lineups, matches) {
   }
 
   // team conduct ("fair play") score per team — same scheme as the standings
-  // tiebreaker (criterion f): one deduction per player per match, worst card only
-  // (Y -1, second yellow / yellow+red -3, direct red -4). Computed for group-stage
-  // matches and for all matches; 0 means no deductions.
+  // tiebreaker (criterion f): one deduction per player or team official per match,
+  // worst card only (Y -1, second yellow / yellow+red -3, direct red -4). Computed
+  // for group-stage matches and for all matches; 0 means no deductions.
   const fairPlayOver = (ms) => {
     const score = {}
     for (const m of ms) {
@@ -1136,12 +1184,13 @@ function computeStats(lineups, matches) {
         const tl = lu[side]
         if (!code || !tl) continue
         score[code] ??= 0
-        const byPlayer = {}
-        for (const b of tl.bookings || []) {
-          byPlayer[b.player] = byPlayer[b.player] ?? []
-          byPlayer[b.player].push(b)
-        }
-        for (const cards of Object.values(byPlayer)) {
+        const byPerson = {}
+        ;(tl.bookings || []).forEach((b, i) => {
+          const key = bookedBy(b, i)
+          byPerson[key] = byPerson[key] ?? []
+          byPerson[key].push(b)
+        })
+        for (const cards of Object.values(byPerson)) {
           const reds = cards.filter((b) => (b.card ?? 0) >= 2).length
           const yellows = cards.filter((b) => b.card === 1).length
           if (reds > 0) score[code] += yellows >= 1 ? -3 : -4

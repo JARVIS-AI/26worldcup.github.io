@@ -186,6 +186,9 @@ export default function MatchDetail() {
       if (!tl) continue
       const all = [...tl.xi, ...tl.subs]
       tl.bookings.forEach((b, i) => {
+        // cards shown to a coach/team official carry no player id and belong to
+        // nobody on the pitch: no lineup mark, no red-card row
+        if (b.player == null) return
         const red = (b.card ?? 0) >= 2
         marks[b.player] = { card: red ? 'r' : marks[b.player]?.card === 'r' ? 'r' : 'y' }
         if (red) {
