@@ -7084,7 +7084,7 @@
    "date": "2026-07-10T19:00:00Z",
    "venueId": "400017978",
    "status": "live",
-   "time": "30'",
+   "time": "44'",
    "home": {
     "code": "ESP",
     "score": 1,
@@ -7092,7 +7092,7 @@
    },
    "away": {
     "code": "BEL",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "W93",

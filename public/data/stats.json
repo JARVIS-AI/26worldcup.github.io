@@ -89,6 +89,14 @@
    "ownGoals": 0
   },
   {
+   "id": "448362",
+   "name": "Charles DE KETELAERE",
+   "code": "BEL",
+   "no": 17,
+   "goals": 3,
+   "ownGoals": 0
+  },
+  {
    "id": "448152",
    "name": "Cody GAKPO",
    "code": "NED",
@@ -241,14 +249,6 @@
    "ownGoals": 0
   },
   {
-   "id": "448362",
-   "name": "Charles DE KETELAERE",
-   "code": "BEL",
-   "no": 17,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
    "id": "489518",
    "name": "Crysencio SUMMERVILLE",
    "code": "NED",
@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 260,
+  "yellow": 261,
   "red": 14,
   "players": [
    {
