@@ -7084,7 +7084,7 @@
    "date": "2026-07-10T19:00:00Z",
    "venueId": "400017978",
    "status": "live",
-   "time": "64'",
+   "time": "78'",
    "home": {
     "code": "ESP",
     "score": 1,
@@ -7098,7 +7098,7 @@
    "phA": "W93",
    "phB": "W94",
    "winner": null,
-   "attendance": null,
+   "attendance": 70492,
    "officials": [
     {
      "id": "347710",
