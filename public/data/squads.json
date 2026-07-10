@@ -11654,7 +11654,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Club_Brugge_KV",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Joaquin_Seys",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11708,7 +11708,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Girona_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Axel_Witsel",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -11852,7 +11852,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/SSC_Napoli",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Romelu_Lukaku",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 3,
     "wcYellow": 1,
     "wcRed": 0
@@ -14666,7 +14666,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Barcelona",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Pedri",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -14684,7 +14684,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Barcelona",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ferran_Torres",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
