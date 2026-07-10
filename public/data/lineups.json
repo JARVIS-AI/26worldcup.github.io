@@ -67664,10 +67664,16 @@
      "on": "506088",
      "minute": "60'",
      "period": 5
+    },
+    {
+     "off": "358106",
+     "on": "495348",
+     "minute": "71'",
+     "period": 5
     }
    ]
   },
-  "matchTime": "64'",
+  "matchTime": "78'",
   "period": 5,
   "final": false,
   "secTried": true,
