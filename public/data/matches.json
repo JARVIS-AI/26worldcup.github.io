@@ -7083,8 +7083,8 @@
    "group": null,
    "date": "2026-07-10T19:00:00Z",
    "venueId": "400017978",
-   "status": "live",
-   "time": "90'+1'",
+   "status": "finished",
+   "time": "98'",
    "home": {
     "code": "ESP",
     "score": 2,
@@ -7097,7 +7097,7 @@
    },
    "phA": "W93",
    "phB": "W94",
-   "winner": null,
+   "winner": "ESP",
    "attendance": 70492,
    "officials": [
     {
@@ -7333,7 +7333,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "ESP",
+    "score": null,
+    "pen": null
+   },
    "phA": "W97",
    "phB": "W98",
    "winner": null,
