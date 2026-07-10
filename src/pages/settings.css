@@ -39,8 +39,12 @@
     border-color 0.15s,
     background 0.15s;
 }
-.se-radio:hover {
+.se-radio:hover:not(:disabled) {
   background: var(--bg-sunken);
+}
+.se-radio:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 .se-radio.on {
   border-color: var(--accent-2);
@@ -152,11 +156,27 @@
 }
 
 /* calendar export */
+.se-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.se-check input {
+  accent-color: var(--accent);
+}
 .se-export-row {
   display: flex;
   align-items: center;
   gap: 14px;
   flex-wrap: wrap;
+}
+.se-export-row .btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
 }
 
 /* data card */

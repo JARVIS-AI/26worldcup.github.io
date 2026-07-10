@@ -5,16 +5,18 @@ import { useI18n } from '../i18n'
 import { useSettings } from '../settings/SettingsContext'
 import { useAppData } from '../data/DataContext'
 import { displayTz, dayKey, fmtDateLong, relativeDay } from '../utils/time'
-import { involvesTeams, sortMatches, STAGE_LABEL_KEY } from '../utils/helpers'
+import {
+  applyMatchFilters,
+  MATCH_FILTERS_KEY,
+  parseMatchFilters,
+  STAGE_FILTERS,
+  STAGE_LABEL_KEY,
+} from '../utils/helpers'
 import MatchCard from '../components/MatchCard'
 import Flag from '../components/Flag'
 import Trophy from '../components/Trophy'
 import Icon from '../components/Icon'
 import './matches.css'
-
-/** stage filter values: real stages + 'ko' = all knockout rounds */
-const STAGE_FILTERS = ['group', 'ko', 'r32', 'r16', 'qf', 'sf', 'third', 'final'] as const
-type StageFilter = (typeof STAGE_FILTERS)[number]
 
 export default function Matches() {
   const { t, pick, locale } = useI18n()
@@ -41,7 +43,7 @@ export default function Matches() {
     }
     if ([...searchParams.keys()].length > 0) return
     try {
-      const saved = localStorage.getItem('wc2026-matches-filters')
+      const saved = localStorage.getItem(MATCH_FILTERS_KEY)
       if (saved) {
         setSearchParams(new URLSearchParams(saved), { replace: true })
       }
@@ -52,29 +54,15 @@ export default function Matches() {
   useEffect(() => {
     if (restoredFor.current === null) return
     try {
-      localStorage.setItem('wc2026-matches-filters', searchParams.toString())
+      localStorage.setItem(MATCH_FILTERS_KEY, searchParams.toString())
     } catch {
       /* best-effort */
     }
   }, [searchParams])
 
   // ---- filters from URL (shareable links), validated against data ----
-  const rawStage = searchParams.get('stage') ?? ''
-  const stage: StageFilter | '' = (STAGE_FILTERS as readonly string[]).includes(rawStage)
-    ? (rawStage as StageFilter)
-    : ''
-  const rawVenue = searchParams.get('venue') ?? ''
-  const venueId = rawVenue && venues[rawVenue] ? rawVenue : ''
-  const teamsParam = searchParams.get('teams') ?? ''
-
-  const teamCodes = useMemo(() => {
-    const out: string[] = []
-    for (const raw of teamsParam.split(',')) {
-      const c = raw.trim().toUpperCase()
-      if (c && teams[c] && !out.includes(c)) out.push(c)
-    }
-    return out
-  }, [teamsParam, teams])
+  const filters = useMemo(() => parseMatchFilters(searchParams, teams, venues), [searchParams, teams, venues])
+  const { stage, venueId, teamCodes } = filters
 
   const anyFilter = stage !== '' || venueId !== '' || teamCodes.length > 0
 
@@ -149,14 +137,7 @@ export default function Matches() {
     favs.length > 0 && teamCodes.length === favs.length && favs.every((c) => teamCodes.includes(c))
 
   // ---- filtering + grouping by calendar day in the display timezone ----
-  const filtered = useMemo(() => {
-    let list = sortMatches(matches)
-    if (stage === 'ko') list = list.filter((m) => m.stage !== 'group')
-    else if (stage !== '') list = list.filter((m) => m.stage === stage)
-    if (venueId) list = list.filter((m) => m.venueId === venueId)
-    if (teamCodes.length) list = list.filter((m) => involvesTeams(m, teamCodes))
-    return list
-  }, [matches, stage, venueId, teamCodes])
+  const filtered = useMemo(() => applyMatchFilters(matches, filters), [matches, filters])
 
   const days = useMemo(() => {
     const map = new Map<string, Match[]>()

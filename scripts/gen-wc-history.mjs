@@ -248,6 +248,10 @@ const cleanLabel = (t) =>
     .trim()
 // lowercased, footnote-stripped, for mapping to a code
 const normResult = (t) => cleanLabel(t).toLowerCase()
+// a bare footnote marker ("Not admitted 55") survives cleanLabel's bracketed-ref
+// strip; a reason label never legitimately ends in a number, unlike a round name
+const cleanReason = (t) => cleanLabel(t).replace(/\s+\d{1,3}$/, '')
+const normReason = (t) => cleanReason(t).toLowerCase()
 
 const FINISH_MAP = [
   [/^(champions?|winners?)$/, 'W'],
@@ -265,8 +269,27 @@ const REASON_MAP = [
   [/did not qualify/, 'dnq'],
   [/withdr/, 'withdrew'],
   [/did not enter|did not participate|entry not accepted|could not enter|declined|refused to partic/, 'dne'],
-  [/banned|disqualif|expelled|suspend|excluded/, 'banned'],
-  [/not a (fifa )?member|not a member of fifa|not affiliat/, 'notmember'],
+  [/rejected by fifa|entry rejected/, 'rejected'],
+  [/not eligible/, 'noteligible'],
+  [/banned|disqualif|expelled|suspend|excluded|not admitted/, 'banned'],
+  // "not a FIFA member", "not a member of FIFA" and the bare "not member of FIFA"
+  [/not (a )?(fifa )?member|not affiliat/, 'notmember'],
+]
+// a team that did not exist as an independent nation yet -> "partOf:<iso>", so the
+// app can name the state it belonged to in the reader's language. Historical states
+// keep a code Intl.DisplayNames would mis-resolve (YU -> Serbia, SU -> Russia), so
+// the app carries its own label for those two.
+const ENTITY_ISO = {
+  yugoslavia: 'YU',
+  'soviet union': 'SU',
+  france: 'FR',
+  portugal: 'PT',
+  'united kingdom': 'GB',
+  japan: 'JP',
+}
+const BELONGED_MAP = [
+  [/^part of (?:the )?(.+)$/, 'partOf'],
+  [/^protectorate of (?:the )?(.+)$/, 'protectorateOf'],
 ]
 const mapFinish = (t) => {
   const n = normResult(t)
@@ -274,8 +297,12 @@ const mapFinish = (t) => {
   return null
 }
 const mapReason = (t) => {
-  const n = normResult(t)
+  const n = normReason(t)
   for (const [re, c] of REASON_MAP) if (re.test(n)) return c
+  for (const [re, kind] of BELONGED_MAP) {
+    const iso = ENTITY_ISO[re.exec(n)?.[1] ?? '']
+    if (iso) return `${kind}:${iso}`
+  }
   return null
 }
 
@@ -384,7 +411,7 @@ async function main() {
       const override = curated.teams?.[code]?.reasons?.[year]
       if (raw == null && !override) warn(`${code}: missing ${year} (no matches, no Wikipedia row)`)
       const reason =
-        raw != null ? mapReason(raw) || cleanLabel(raw) : override ? mapReason(override) || override : null
+        raw != null ? mapReason(raw) || cleanReason(raw) : override ? mapReason(override) || override : null
       if (raw != null && mapFinish(raw)) warn(`${code}: ${year} not in CSV but Wikipedia says "${raw}"`)
       return { year, host, played: false, finish: null, reason, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0 }
     })

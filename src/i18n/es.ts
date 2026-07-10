@@ -54,6 +54,10 @@ const es: Dict = {
   stageSf: 'Semifinales',
   stageThird: 'Partido por el tercer puesto',
   stageFinal: 'Final',
+  abbrR32: '1/16',
+  abbrR16: '1/8',
+  abbrQf: 'Cuartos',
+  abbrSf: 'Semis',
   // match status
   statusLive: 'EN VIVO',
   statusFinished: 'Final',
@@ -312,10 +316,17 @@ const es: Dict = {
   themeLight: 'Claro',
   themeDark: 'Oscuro',
   exportCalendar: 'Exportar calendario (.ics)',
-  exportCalendarHint:
-    'Descarga un archivo de calendario .ics con los partidos de tus selecciones (todos los partidos si no eliges ninguna).',
+  exportCalendarHint: 'Descarga un archivo .ics que puedes importar en cualquier aplicación de calendario.',
+  exportScope: 'Partidos a exportar',
+  exportScopeFiltered: 'Según los filtros de la página Partidos',
+  exportScopeFavorites: 'Mis selecciones',
+  exportScopeFavoritesEmpty: 'Elige primero tus selecciones más arriba.',
+  exportScopeAll: 'Todos los partidos',
+  exportUpcomingOnly: 'Solo los partidos que aún no han empezado',
+  exportEmpty: 'No hay partidos que exportar.',
   downloadIcs: 'Descargar .ics',
   dataTitle: 'Datos',
+  countFlags: 'Banderas',
   clearSettings: 'Restablecer todos los ajustes',
   // weather codes (WMO)
   wmo0: 'Despejado',
@@ -355,6 +366,12 @@ const es: Dict = {
   missDne: 'No participó',
   missBanned: 'Excluido',
   missNotMember: 'No miembro de la FIFA',
+  missRejected: 'Inscripción rechazada por la FIFA',
+  missNotEligible: 'Sin derecho a participar',
+  missPartOf: 'Parte de: {x}',
+  missProtectorate: 'Protectorado de: {x}',
+  entYugoslavia: 'Yugoslavia',
+  entSovietUnion: 'Unión Soviética',
   // Single Match Simulator
   aimsTitle: 'Simulador de partido',
   aimsSub:

@@ -3,20 +3,34 @@ import { useI18n } from '../i18n'
 import { useSettings } from '../settings/SettingsContext'
 import { useAppData } from '../data/DataContext'
 import { LANG_LABEL } from '../i18n/strings'
-import type { Lang, MatchSide, Team, Theme, TzMode, Units } from '../types'
+import type { Lang, Match, MatchSide, Team, Theme, TzMode, Units } from '../types'
 import { allTimezones, fmtDateTime } from '../utils/time'
 import {
+  applyMatchFilters,
   buildIcs,
   detectMarket,
   flagEmoji,
   download,
   involvesTeams,
   placeholderLabel,
+  savedMatchFilters,
   sortMatches,
+  stageTag,
 } from '../utils/helpers'
+import { usePersistentState } from '../utils/viewState'
 import Flag from '../components/Flag'
 import Icon from '../components/Icon'
 import './settings.css'
+
+/** which matches the .ics export covers */
+const EXPORT_SCOPES = ['filtered', 'favorites', 'all'] as const
+type ExportScope = (typeof EXPORT_SCOPES)[number]
+
+const SCOPE_LABEL_KEY: Record<ExportScope, string> = {
+  filtered: 'exportScopeFiltered',
+  favorites: 'exportScopeFavorites',
+  all: 'exportScopeAll',
+}
 
 /** meta.counts keys -> existing i18n keys (raw key shown as-is when unmapped) */
 const COUNT_LABEL_KEY: Record<string, string> = {
@@ -25,6 +39,7 @@ const COUNT_LABEL_KEY: Record<string, string> = {
   squads: 'squad',
   weather: 'weatherTitle',
   lineups: 'lineups',
+  flags: 'countFlags',
   venues: 'navVenues',
   broadcasters: 'whereToWatch',
   stats: 'navStats',
@@ -115,10 +130,37 @@ export default function Settings() {
       .map(([g, list]) => ({ g, list: list.sort((x, y) => x.code.localeCompare(y.code)) }))
   }, [teams])
 
-  const exportMatches = useMemo(
-    () => sortMatches(matches.filter((m) => involvesTeams(m, settings.favorites))),
-    [matches, settings.favorites],
+  // ---- calendar export ----
+  const [scopePref, setScopePref] = usePersistentState<ExportScope>('wc2026-ics-scope', 'filtered', (v) =>
+    (EXPORT_SCOPES as readonly unknown[]).includes(v),
   )
+  const [upcomingOnly, setUpcomingOnly] = usePersistentState<boolean>(
+    'wc2026-ics-upcoming',
+    true,
+    (v) => typeof v === 'boolean',
+  )
+
+  const favorites = useMemo(
+    () => settings.favorites.filter((c) => Boolean(teams[c])),
+    [settings.favorites, teams],
+  )
+  // no favorites picked yet -> that scope has nothing to export, so fall back
+  const scope: ExportScope = scopePref === 'favorites' && favorites.length === 0 ? 'filtered' : scopePref
+
+  // the Matches page keeps its filter bar in storage; mirror the list it shows
+  const pageFilters = useMemo(() => savedMatchFilters(teams, venues), [teams, venues])
+
+  const scopeMatches: Record<ExportScope, Match[]> = useMemo(() => {
+    const now = Date.now()
+    const cut = (list: Match[]) => (upcomingOnly ? list.filter((m) => Date.parse(m.date) > now) : list)
+    return {
+      filtered: cut(applyMatchFilters(matches, pageFilters)),
+      favorites: cut(favorites.length ? sortMatches(matches.filter((m) => involvesTeams(m, favorites))) : []),
+      all: cut(sortMatches(matches)),
+    }
+  }, [matches, pageFilters, favorites, upcomingOnly])
+
+  const exportMatches = scopeMatches[scope]
 
   const sideName = (side: MatchSide | null, ph: string | null): string => {
     if (side) return pick(teams[side.code]?.name, side.code)
@@ -126,9 +168,10 @@ export default function Settings() {
   }
 
   const exportIcs = () => {
+    if (exportMatches.length === 0) return
     const ics = buildIcs(
       exportMatches,
-      (m) => `${sideName(m.home, m.phA)} ${t('vs')} ${sideName(m.away, m.phB)} (${t('matchN', { n: m.n })})`,
+      (m) => `${sideName(m.home, m.phA)} ${t('vs')} ${sideName(m.away, m.phB)} (${stageTag(m, t)})`,
       (m) => {
         const v = m.venueId ? venues[m.venueId] : null
         return v ? `${v.realName}, ${pick(v.cityName, v.city)}` : ''
@@ -319,12 +362,48 @@ export default function Settings() {
         <section className="card card-pad se-card">
           <h2>{t('exportCalendar')}</h2>
           <p className="se-hint">{t('exportCalendarHint')}</p>
+          <div role="radiogroup" aria-label={t('exportScope')} className="se-radio-list">
+            {EXPORT_SCOPES.map((s) => {
+              const off = s === 'favorites' && favorites.length === 0
+              return (
+                <button
+                  key={s}
+                  type="button"
+                  role="radio"
+                  aria-checked={scope === s}
+                  disabled={off}
+                  title={off ? t('exportScopeFavoritesEmpty') : undefined}
+                  className={`se-radio${scope === s ? ' on' : ''}`}
+                  onClick={() => setScopePref(s)}
+                >
+                  <span className="se-dot" />
+                  <span>{t(SCOPE_LABEL_KEY[s])}</span>
+                  <span className="se-radio-cur muted small tnum">
+                    {t('matchesShown', { n: scopeMatches[s].length })}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
+          <label className="se-check">
+            <input
+              type="checkbox"
+              checked={upcomingOnly}
+              onChange={(e) => setUpcomingOnly(e.target.checked)}
+            />
+            {t('exportUpcomingOnly')}
+          </label>
           <div className="se-export-row">
-            <button type="button" className="btn btn-primary" onClick={exportIcs}>
+            <button
+              type="button"
+              className="btn btn-primary"
+              disabled={exportMatches.length === 0}
+              onClick={exportIcs}
+            >
               <Icon name="download" size={18} />
               {t('downloadIcs')}
             </button>
-            <span className="muted small tnum">{t('matchesShown', { n: exportMatches.length })}</span>
+            {exportMatches.length === 0 && <span className="muted small">{t('exportEmpty')}</span>}
           </div>
         </section>
 
