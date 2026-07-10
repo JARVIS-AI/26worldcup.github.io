@@ -7040,6 +7040,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "383174",
+     "country": "ARG",
+     "role": "fourth",
+     "name": {
+      "en": "Dario HERRERA",
+      "fr": "Dario HERRERA",
+      "zh": "Dario HERRERA",
+      "ar": "Dario HERRERA",
+      "es": "Dario HERRERA",
+      "de": "Dario HERRERA",
+      "pt": "Dario HERRERA",
+      "it": "Dario HERRERA",
+      "ja": "Dario HERRERA",
+      "ko": "Dario HERRERA",
+      "id": "Dario HERRERA",
+      "ru": "Dario HERRERA"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
@@ -7051,7 +7084,7 @@
    "date": "2026-07-10T19:00:00Z",
    "venueId": "400017978",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "ESP",
     "score": null,
@@ -7099,39 +7132,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "446932",
-     "country": "BRA",
-     "role": "fourth",
-     "name": {
-      "en": "Ramon ABATTI",
-      "fr": "Ramon ABATTI",
-      "zh": "Ramon ABATTI",
-      "ar": "Ramon ABATTI",
-      "es": "Ramon ABATTI",
-      "de": "Ramon ABATTI",
-      "pt": "Ramon ABATTI",
-      "it": "Ramon ABATTI",
-      "ja": "Ramon ABATTI",
-      "ko": "Ramon ABATTI",
-      "id": "Ramon ABATTI",
-      "ru": "Ramon ABATTI"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -7158,7 +7158,74 @@
    "phB": "W92",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "314589",
+     "country": "FRA",
+     "role": "referee",
+     "name": {
+      "en": "Clement TURPIN",
+      "fr": "Clement TURPIN",
+      "zh": "Clement TURPIN",
+      "ar": "Clement TURPIN",
+      "es": "Clement TURPIN",
+      "de": "Clement TURPIN",
+      "pt": "Clement TURPIN",
+      "it": "Clement TURPIN",
+      "ja": "Clement TURPIN",
+      "ko": "Clement TURPIN",
+      "id": "Clement TURPIN",
+      "ru": "Clement TURPIN"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "373845",
+     "country": "ESP",
+     "role": "fourth",
+     "name": {
+      "en": "Alejandro HERNANDEZ",
+      "fr": "Alejandro HERNANDEZ",
+      "zh": "Alejandro HERNANDEZ",
+      "ar": "Alejandro HERNANDEZ",
+      "es": "Alejandro HERNANDEZ",
+      "de": "Alejandro HERNANDEZ",
+      "pt": "Alejandro HERNANDEZ",
+      "it": "Alejandro HERNANDEZ",
+      "ja": "Alejandro HERNANDEZ",
+      "ko": "Alejandro HERNANDEZ",
+      "id": "Alejandro HERNANDEZ",
+      "ru": "Alejandro HERNANDEZ"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021537",
@@ -7183,7 +7250,74 @@
    "phB": "W96",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "392268",
+     "country": "POR",
+     "role": "referee",
+     "name": {
+      "en": "Joao PINHEIRO",
+      "fr": "Joao PINHEIRO",
+      "zh": "Joao PINHEIRO",
+      "ar": "Joao PINHEIRO",
+      "es": "Joao PINHEIRO",
+      "de": "Joao PINHEIRO",
+      "pt": "Joao PINHEIRO",
+      "it": "Joao PINHEIRO",
+      "ja": "Joao PINHEIRO",
+      "ko": "Joao PINHEIRO",
+      "id": "Joao PINHEIRO",
+      "ru": "Joao PINHEIRO"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "372930",
+     "country": "CAN",
+     "role": "fourth",
+     "name": {
+      "en": "Drew FISCHER",
+      "fr": "Drew FISCHER",
+      "zh": "Drew FISCHER",
+      "ar": "Drew FISCHER",
+      "es": "Drew FISCHER",
+      "de": "Drew FISCHER",
+      "pt": "Drew FISCHER",
+      "it": "Drew FISCHER",
+      "ja": "Drew FISCHER",
+      "ko": "Drew FISCHER",
+      "id": "Drew FISCHER",
+      "ru": "Drew FISCHER"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021541",
