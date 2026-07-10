@@ -67362,7 +67362,20 @@
      "period": 3
     }
    ],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "447860",
+     "on": "405545",
+     "minute": "55'",
+     "period": 5
+    },
+    {
+     "off": "430718",
+     "on": "423646",
+     "minute": "55'",
+     "period": 5
+    }
+   ]
   },
   "away": {
    "tactics": "4-2-3-1",
@@ -67633,9 +67646,28 @@
     }
    ],
    "bookings": [],
-   "substitutions": []
+   "substitutions": [
+    {
+     "off": "448343",
+     "on": "358112",
+     "minute": "60'",
+     "period": 5
+    },
+    {
+     "off": "448355",
+     "on": "290821",
+     "minute": "60'",
+     "period": 5
+    },
+    {
+     "off": "448373",
+     "on": "506088",
+     "minute": "60'",
+     "period": 5
+    }
+   ]
   },
-  "matchTime": "50'",
+  "matchTime": "64'",
   "period": 5,
   "final": false,
   "secTried": true,
