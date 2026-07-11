@@ -7132,6 +7132,39 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
+    },
+    {
+     "id": "446932",
+     "country": "BRA",
+     "role": "fourth",
+     "name": {
+      "en": "Ramon ABATTI",
+      "fr": "Ramon ABATTI",
+      "zh": "Ramon ABATTI",
+      "ar": "Ramon ABATTI",
+      "es": "Ramon ABATTI",
+      "de": "Ramon ABATTI",
+      "pt": "Ramon ABATTI",
+      "it": "Ramon ABATTI",
+      "ja": "Ramon ABATTI",
+      "ko": "Ramon ABATTI",
+      "id": "Ramon ABATTI",
+      "ru": "Ramon ABATTI"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
     }
    ]
   },
@@ -7143,7 +7176,7 @@
    "date": "2026-07-11T21:00:00Z",
    "venueId": "400257525",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "NOR",
     "score": null,
@@ -7190,39 +7223,6 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
-     }
-    },
-    {
-     "id": "373845",
-     "country": "ESP",
-     "role": "fourth",
-     "name": {
-      "en": "Alejandro HERNANDEZ",
-      "fr": "Alejandro HERNANDEZ",
-      "zh": "Alejandro HERNANDEZ",
-      "ar": "Alejandro HERNANDEZ",
-      "es": "Alejandro HERNANDEZ",
-      "de": "Alejandro HERNANDEZ",
-      "pt": "Alejandro HERNANDEZ",
-      "it": "Alejandro HERNANDEZ",
-      "ja": "Alejandro HERNANDEZ",
-      "ko": "Alejandro HERNANDEZ",
-      "id": "Alejandro HERNANDEZ",
-      "ru": "Alejandro HERNANDEZ"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
      }
     }
    ]
