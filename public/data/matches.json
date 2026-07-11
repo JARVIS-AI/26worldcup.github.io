@@ -7176,7 +7176,7 @@
    "date": "2026-07-11T21:00:00Z",
    "venueId": "400257525",
    "status": "live",
-   "time": "62'",
+   "time": "76'",
    "home": {
     "code": "NOR",
     "score": 1,
@@ -7190,7 +7190,7 @@
    "phA": "W91",
    "phB": "W92",
    "winner": null,
-   "attendance": null,
+   "attendance": 64478,
    "officials": [
     {
      "id": "314589",
