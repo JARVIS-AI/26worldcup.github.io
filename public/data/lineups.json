@@ -68073,6 +68073,12 @@
      "on": "494625",
      "minute": "90'",
      "period": 5
+    },
+    {
+     "off": "491244",
+     "on": "419672",
+     "minute": "",
+     "period": 17
     }
    ]
   },
@@ -68400,8 +68406,8 @@
     }
    ]
   },
-  "matchTime": "90'",
-  "period": 5,
+  "matchTime": null,
+  "period": 17,
   "final": false,
   "secTried": true,
   "v": 2
