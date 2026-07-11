@@ -7176,10 +7176,10 @@
    "date": "2026-07-11T21:00:00Z",
    "venueId": "400257525",
    "status": "live",
-   "time": "29'",
+   "time": "42'",
    "home": {
     "code": "NOR",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
