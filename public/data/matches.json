@@ -7175,8 +7175,8 @@
    "group": null,
    "date": "2026-07-11T21:00:00Z",
    "venueId": "400257525",
-   "status": "live",
-   "time": "109'",
+   "status": "finished",
+   "time": "123'",
    "home": {
     "code": "NOR",
     "score": 1,
@@ -7189,7 +7189,7 @@
    },
    "phA": "W91",
    "phB": "W92",
-   "winner": null,
+   "winner": "ENG",
    "attendance": 64478,
    "officials": [
     {
