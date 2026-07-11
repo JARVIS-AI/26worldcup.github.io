@@ -7176,7 +7176,7 @@
    "date": "2026-07-11T21:00:00Z",
    "venueId": "400257525",
    "status": "live",
-   "time": "102'",
+   "time": "109'",
    "home": {
     "code": "NOR",
     "score": 1,
@@ -7235,7 +7235,7 @@
    "date": "2026-07-12T01:00:00Z",
    "venueId": "400254717",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "ARG",
     "score": null,
@@ -7282,39 +7282,6 @@
       "ko": "주심",
       "id": "Wasit",
       "ru": "Главный судья"
-     }
-    },
-    {
-     "id": "372930",
-     "country": "CAN",
-     "role": "fourth",
-     "name": {
-      "en": "Drew FISCHER",
-      "fr": "Drew FISCHER",
-      "zh": "Drew FISCHER",
-      "ar": "Drew FISCHER",
-      "es": "Drew FISCHER",
-      "de": "Drew FISCHER",
-      "pt": "Drew FISCHER",
-      "it": "Drew FISCHER",
-      "ja": "Drew FISCHER",
-      "ko": "Drew FISCHER",
-      "id": "Drew FISCHER",
-      "ru": "Drew FISCHER"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
      }
     }
    ]

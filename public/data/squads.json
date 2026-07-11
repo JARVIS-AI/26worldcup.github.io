@@ -3366,7 +3366,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Borussia_Dortmund",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Gregor_Kobel",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3456,7 +3456,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nico_Elvedi",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -3474,7 +3474,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Inter_Milan",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Manuel_Akanji",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3492,7 +3492,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Real_Betis",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ricardo_Rodriguez_(footballer)",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3564,7 +3564,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/AS_Monaco_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Denis_Zakaria",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 2,
     "wcRed": 0
@@ -3582,7 +3582,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Bologna_FC_1909",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Remo_Freuler",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3618,7 +3618,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Sunderland_A.F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Granit_Xhaka",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 1,
     "wcYellow": 2,
     "wcRed": 0
@@ -3654,7 +3654,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Sevilla_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Djibril_Sow",
-    "wcApps": 3,
+    "wcApps": 4,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3690,7 +3690,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Augsburg",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Fabian_Rieder",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -3708,7 +3708,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Stade_Rennais_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Breel_Embolo",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
@@ -3726,7 +3726,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Dan_Ndoye",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -16722,7 +16722,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/J%C3%B8rgen_Strand_Larsen",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17742,7 +17742,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Aston_Villa_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17778,7 +17778,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Olympique_Lyonnais",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nicol%C3%A1s_Tagliafico",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17814,7 +17814,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Manchester_United_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Lisandro_Mart%C3%ADnez",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -17832,7 +17832,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Cristian_Romero",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -17886,7 +17886,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nahuel_Molina",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -17904,7 +17904,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Boca_Juniors",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Leandro_Paredes",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 0,
     "wcYellow": 1,
     "wcRed": 0
@@ -17922,7 +17922,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Inter_Miami_CF",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Rodrigo_De_Paul",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -18012,7 +18012,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Liverpool_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Alexis_Mac_Allister",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -18030,7 +18030,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Enzo_Fern%C3%A1ndez",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -18048,7 +18048,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Alvarez",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -18066,7 +18066,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Inter_Miami_CF",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Lionel_Messi",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 8,
     "wcYellow": 0,
     "wcRed": 0
