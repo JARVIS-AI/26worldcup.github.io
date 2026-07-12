@@ -7235,10 +7235,10 @@
    "date": "2026-07-12T01:00:00Z",
    "venueId": "400254717",
    "status": "live",
-   "time": "108'",
+   "time": "120'+1'",
    "home": {
     "code": "ARG",
-    "score": 1,
+    "score": 3,
     "pen": null
    },
    "away": {
@@ -7249,7 +7249,7 @@
    "phA": "W95",
    "phB": "W96",
    "winner": null,
-   "attendance": null,
+   "attendance": 69045,
    "officials": [
     {
      "id": "392268",
