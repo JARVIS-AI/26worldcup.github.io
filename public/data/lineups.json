@@ -67359,6 +67359,13 @@
      "type": 2,
      "period": 9,
      "sec": 401
+    },
+    {
+     "player": "402920",
+     "minute": "120'+1'",
+     "type": 2,
+     "period": 9,
+     "sec": 943
     }
    ],
    "bookings": [
@@ -67763,9 +67770,9 @@
     }
    ]
   },
-  "matchTime": "117'",
-  "period": 9,
-  "final": false,
+  "matchTime": "125'",
+  "period": 10,
+  "final": true,
   "secTried": true,
   "v": 2
  },
