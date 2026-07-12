@@ -7234,8 +7234,8 @@
    "group": null,
    "date": "2026-07-12T01:00:00Z",
    "venueId": "400254717",
-   "status": "live",
-   "time": "120'+1'",
+   "status": "finished",
+   "time": "125'",
    "home": {
     "code": "ARG",
     "score": 3,
@@ -7248,7 +7248,7 @@
    },
    "phA": "W95",
    "phB": "W96",
-   "winner": null,
+   "winner": "ARG",
    "attendance": 69045,
    "officials": [
     {
@@ -7325,7 +7325,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "ARG",
+    "score": null,
+    "pen": null
+   },
    "phA": "W99",
    "phB": "W100",
    "winner": null,
