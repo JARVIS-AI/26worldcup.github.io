@@ -7235,10 +7235,10 @@
    "date": "2026-07-12T01:00:00Z",
    "venueId": "400254717",
    "status": "live",
-   "time": "10'",
+   "time": "23'",
    "home": {
     "code": "ARG",
-    "score": 2,
+    "score": 1,
     "pen": null
    },
    "away": {
