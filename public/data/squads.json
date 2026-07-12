@@ -3762,7 +3762,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Sevilla_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Rub%C3%A9n_Vargas",
-    "wcApps": 5,
+    "wcApps": 6,
     "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
@@ -17850,7 +17850,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/S.L._Benfica",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nicol%C3%A1s_Otamendi",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -18049,7 +18049,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Alvarez",
     "wcApps": 6,
-    "wcGoals": 0,
+    "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
    },
@@ -18138,9 +18138,9 @@
     "clubWiki": "https://en.wikipedia.org/wiki/SE_Palmeiras",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Jos%C3%A9_Manuel_L%C3%B3pez_(footballer)",
-    "wcApps": 1,
+    "wcApps": 2,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
