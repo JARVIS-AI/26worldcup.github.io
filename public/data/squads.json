@@ -3711,7 +3711,7 @@
     "wcApps": 6,
     "wcGoals": 2,
     "wcYellow": 1,
-    "wcRed": 0
+    "wcRed": 1
    },
    {
     "id": "dan-ndoye",
@@ -3727,7 +3727,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Dan_Ndoye",
     "wcApps": 6,
-    "wcGoals": 1,
+    "wcGoals": 2,
     "wcYellow": 0,
     "wcRed": 0
    },
