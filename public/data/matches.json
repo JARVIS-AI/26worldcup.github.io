@@ -7234,16 +7234,16 @@
    "group": null,
    "date": "2026-07-12T01:00:00Z",
    "venueId": "400254717",
-   "status": "scheduled",
-   "time": "0'",
+   "status": "live",
+   "time": "6'",
    "home": {
     "code": "ARG",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "away": {
     "code": "SUI",
-    "score": null,
+    "score": 0,
     "pen": null
    },
    "phA": "W95",
@@ -7320,7 +7320,11 @@
    "venueId": "400098290",
    "status": "scheduled",
    "time": null,
-   "home": null,
+   "home": {
+    "code": "ENG",
+    "score": null,
+    "pen": null
+   },
    "away": null,
    "phA": "W99",
    "phB": "W100",
