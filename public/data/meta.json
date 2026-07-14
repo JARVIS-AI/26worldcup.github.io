@@ -1,18 +1,18 @@
 {
- "updatedAt": "2026-07-14T19:44:58.246Z",
+ "updatedAt": "2026-07-14T19:58:41.363Z",
  "season": "285023",
  "titleOdds": [
   {
    "c": "ARG",
-   "p": 33.8
+   "p": 33.6
   },
   {
    "c": "ESP",
-   "p": 29.4
+   "p": 28.9
   },
   {
    "c": "FRA",
-   "p": 21.5
+   "p": 22.1
   },
   {
    "c": "ENG",
@@ -28,7 +28,6 @@
   "flags": 179
  },
  "errors": [
-  "wiki squads: HTTP 429",
   "geocode New Tecumseth: no usable result — not cached, will retry next run"
  ],
  "sources": [
