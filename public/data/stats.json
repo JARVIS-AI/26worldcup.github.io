@@ -41,6 +41,14 @@
    "ownGoals": 0
   },
   {
+   "id": "430751",
+   "name": "Mikel OYARZABAL",
+   "code": "ESP",
+   "no": 21,
+   "goals": 5,
+   "ownGoals": 0
+  },
+  {
    "id": "398680",
    "name": "Ousmane DEMBELE",
    "code": "FRA",
@@ -61,14 +69,6 @@
    "name": "Julian QUINONES",
    "code": "MEX",
    "no": 16,
-   "goals": 4,
-   "ownGoals": 0
-  },
-  {
-   "id": "430751",
-   "name": "Mikel OYARZABAL",
-   "code": "ESP",
-   "no": 21,
    "goals": 4,
    "ownGoals": 0
   },
@@ -322,7 +322,7 @@
   }
  ],
  "cards": {
-  "yellow": 257,
+  "yellow": 258,
   "red": 14,
   "players": [
    {
