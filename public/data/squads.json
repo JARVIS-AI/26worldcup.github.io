@@ -14468,7 +14468,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Marcos_Llorente",
-    "wcApps": 2,
+    "wcApps": 3,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -14738,7 +14738,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Nico_Williams",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
@@ -15696,7 +15696,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9",
     "wcApps": 7,
     "wcGoals": 8,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
