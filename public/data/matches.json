@@ -7360,7 +7360,7 @@
    "date": "2026-07-14T19:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "17'",
+   "time": "31'",
    "home": {
     "code": "FRA",
     "score": 0,
@@ -7368,7 +7368,7 @@
    },
    "away": {
     "code": "ESP",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "W97",
