@@ -7360,7 +7360,7 @@
    "date": "2026-07-14T19:00:00Z",
    "venueId": "400257526",
    "status": "live",
-   "time": "50'",
+   "time": "64'",
    "home": {
     "code": "FRA",
     "score": 0,
@@ -7368,13 +7368,13 @@
    },
    "away": {
     "code": "ESP",
-    "score": 1,
+    "score": 2,
     "pen": null
    },
    "phA": "W97",
    "phB": "W98",
    "winner": null,
-   "attendance": null,
+   "attendance": 70176,
    "officials": [
     {
      "id": "408378",
