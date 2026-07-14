@@ -7360,7 +7360,7 @@
    "date": "2026-07-14T19:00:00Z",
    "venueId": "400257526",
    "status": "scheduled",
-   "time": null,
+   "time": "0'",
    "home": {
     "code": "FRA",
     "score": null,
@@ -7408,39 +7408,6 @@
       "id": "Wasit",
       "ru": "Главный судья"
      }
-    },
-    {
-     "id": "392336",
-     "country": "SWE",
-     "role": "fourth",
-     "name": {
-      "en": "Glenn NYBERG",
-      "fr": "Glenn NYBERG",
-      "zh": "Glenn NYBERG",
-      "ar": "Glenn NYBERG",
-      "es": "Glenn NYBERG",
-      "de": "Glenn NYBERG",
-      "pt": "Glenn NYBERG",
-      "it": "Glenn NYBERG",
-      "ja": "Glenn NYBERG",
-      "ko": "Glenn NYBERG",
-      "id": "Glenn NYBERG",
-      "ru": "Glenn NYBERG"
-     },
-     "typeName": {
-      "en": "Fourth official",
-      "fr": "Quatrième arbitre",
-      "zh": "第四官员",
-      "ar": "الحَكَم الرابع",
-      "es": "Cuarto/a árbitro/a",
-      "de": "Vierter Offizieller",
-      "pt": "Quarto árbitro",
-      "it": "Quarto arbitro",
-      "ja": "第 4 審判員",
-      "ko": "대기심",
-      "id": "Ofisial keempat",
-      "ru": "Четвертый судья"
-     }
     }
    ]
   },
@@ -7467,7 +7434,74 @@
    "phB": "W100",
    "winner": null,
    "attendance": null,
-   "officials": []
+   "officials": [
+    {
+     "id": "392406",
+     "country": "USA",
+     "role": "referee",
+     "name": {
+      "en": "Ismail ELFATH",
+      "fr": "Ismail ELFATH",
+      "zh": "Ismail ELFATH",
+      "ar": "Ismail ELFATH",
+      "es": "Ismail ELFATH",
+      "de": "Ismail ELFATH",
+      "pt": "Ismail ELFATH",
+      "it": "Ismail ELFATH",
+      "ja": "Ismail ELFATH",
+      "ko": "Ismail ELFATH",
+      "id": "Ismail ELFATH",
+      "ru": "Ismail ELFATH"
+     },
+     "typeName": {
+      "en": "Referee",
+      "fr": "Arbitre",
+      "zh": "裁判员",
+      "ar": "الحَكم",
+      "es": "Árbitro/a",
+      "de": "Schiedsrichter",
+      "pt": "Árbitro",
+      "it": "Arbitro",
+      "ja": "主審",
+      "ko": "주심",
+      "id": "Wasit",
+      "ru": "Главный судья"
+     }
+    },
+    {
+     "id": "415965",
+     "country": "ITA",
+     "role": "fourth",
+     "name": {
+      "en": "Maurizio MARIANI",
+      "fr": "Maurizio MARIANI",
+      "zh": "Maurizio MARIANI",
+      "ar": "Maurizio MARIANI",
+      "es": "Maurizio MARIANI",
+      "de": "Maurizio MARIANI",
+      "pt": "Maurizio MARIANI",
+      "it": "Maurizio MARIANI",
+      "ja": "Maurizio MARIANI",
+      "ko": "Maurizio MARIANI",
+      "id": "Maurizio MARIANI",
+      "ru": "Maurizio MARIANI"
+     },
+     "typeName": {
+      "en": "Fourth official",
+      "fr": "Quatrième arbitre",
+      "zh": "第四官员",
+      "ar": "الحَكَم الرابع",
+      "es": "Cuarto/a árbitro/a",
+      "de": "Vierter Offizieller",
+      "pt": "Quarto árbitro",
+      "it": "Quarto arbitro",
+      "ja": "第 4 審判員",
+      "ko": "대기심",
+      "id": "Ofisial keempat",
+      "ru": "Четвертый судья"
+     }
+    }
+   ]
   },
   {
    "id": "400021542",
