@@ -17924,7 +17924,7 @@
     "wiki": "https://en.wikipedia.org/wiki/Rodrigo_De_Paul",
     "wcApps": 6,
     "wcGoals": 0,
-    "wcYellow": 0,
+    "wcYellow": 1,
     "wcRed": 0
    },
    {
@@ -18157,7 +18157,7 @@
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Lautaro_Mart%C3%ADnez",
     "wcApps": 7,
-    "wcGoals": 2,
+    "wcGoals": 3,
     "wcYellow": 1,
     "wcRed": 0
    }
@@ -21908,7 +21908,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/FC_Barcelona",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Marcus_Rashford",
-    "wcApps": 4,
+    "wcApps": 5,
     "wcGoals": 1,
     "wcYellow": 0,
     "wcRed": 0
@@ -21980,7 +21980,7 @@
     "clubWiki": "https://en.wikipedia.org/wiki/Al-Ahli_Saudi_FC",
     "captain": false,
     "wiki": "https://en.wikipedia.org/wiki/Ivan_Toney",
-    "wcApps": 0,
+    "wcApps": 1,
     "wcGoals": 0,
     "wcYellow": 0,
     "wcRed": 0
