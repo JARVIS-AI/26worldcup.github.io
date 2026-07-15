@@ -7517,7 +7517,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "ENG",
+    "score": null,
+    "pen": null
+   },
    "phA": "RU101",
    "phB": "RU102",
    "winner": null,
@@ -7538,7 +7542,11 @@
     "score": null,
     "pen": null
    },
-   "away": null,
+   "away": {
+    "code": "ARG",
+    "score": null,
+    "pen": null
+   },
    "phA": "W101",
    "phB": "W102",
    "winner": null,
