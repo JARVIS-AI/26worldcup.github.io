@@ -297,6 +297,14 @@
    "ownGoals": 0
   },
   {
+   "id": "448252",
+   "name": "Enzo FERNANDEZ",
+   "code": "ARG",
+   "no": 24,
+   "goals": 2,
+   "ownGoals": 0
+  },
+  {
    "id": "522846",
    "name": "Ermin MAHMIC",
    "code": "BIH",
@@ -309,14 +317,6 @@
    "name": "Habib DIARRA",
    "code": "SEN",
    "no": 21,
-   "goals": 2,
-   "ownGoals": 0
-  },
-  {
-   "id": "402920",
-   "name": "Lautaro MARTINEZ",
-   "code": "ARG",
-   "no": 22,
    "goals": 2,
    "ownGoals": 0
   }

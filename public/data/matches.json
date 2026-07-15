@@ -7452,7 +7452,7 @@
    "date": "2026-07-15T19:00:00Z",
    "venueId": "400098290",
    "status": "live",
-   "time": "78'",
+   "time": "90'+2'",
    "home": {
     "code": "ENG",
     "score": 1,
@@ -7460,7 +7460,7 @@
    },
    "away": {
     "code": "ARG",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "phA": "W99",
