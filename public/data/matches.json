@@ -7452,10 +7452,10 @@
    "date": "2026-07-15T19:00:00Z",
    "venueId": "400098290",
    "status": "live",
-   "time": "51'",
+   "time": "64'",
    "home": {
     "code": "ENG",
-    "score": 0,
+    "score": 1,
     "pen": null
    },
    "away": {
