@@ -87,6 +87,8 @@ const pt: Dict = {
   jumpNow: 'Agora',
   titleOdds: 'Probabilidade de título',
   runForecast: 'Faça o seu prognóstico',
+  runSimulation: 'Faça a sua simulação',
+  fullStanding: 'Classificação final completa',
   matchesShown: '{n} jogos',
   'matchesShown#one': '{n} jogo',
   // groups
@@ -178,6 +180,8 @@ const pt: Dict = {
   simChampion: 'Campeão',
   simSample: 'Execução de exemplo',
   simAet: 'a.p.',
+  abbrHalfTime: 'Int.',
+  abbrExtraTime: 'Prol.',
   podium2: 'Vice-campeão',
   podium3: 'Terceiro',
   podium4: 'Quarto',
@@ -278,6 +282,11 @@ const pt: Dict = {
   typeTvStreaming: 'TV + streaming',
   // stats
   statsTitle: 'Estatísticas',
+  tsTitle: 'Classificação final do torneio',
+  tsResult: 'Resultado final',
+  tsElimIn: 'Eliminado: {stage}',
+  tsConvNote:
+    'Os resultados no prolongamento contam como vitórias e derrotas; as grandes penalidades contam como empates.',
   topScorers: 'Melhores marcadores',
   goals: 'Golos',
   noStatsYet: 'As estatísticas aparecerão quando o torneio estiver em curso.',

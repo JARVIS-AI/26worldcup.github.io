@@ -87,6 +87,8 @@ const nl: Dict = {
   jumpNow: 'Nu',
   titleOdds: 'Titelkansen',
   runForecast: 'Maak je eigen prognose',
+  runSimulation: 'Maak je eigen simulatie',
+  fullStanding: 'Volledige eindrangschikking',
   matchesShown: '{n} wedstrijden',
   'matchesShown#one': '{n} wedstrijd',
   // groups
@@ -176,6 +178,8 @@ const nl: Dict = {
   simChampion: 'Kampioen',
   simSample: 'Voorbeeldrun',
   simAet: 'n.v.',
+  abbrHalfTime: 'rust',
+  abbrExtraTime: 'verl.',
   podium2: 'Tweede',
   podium3: 'Derde',
   podium4: 'Vierde',
@@ -277,6 +281,11 @@ const nl: Dict = {
   typeTvStreaming: 'Tv + streaming',
   // stats
   statsTitle: 'Statistieken',
+  tsTitle: 'Eindrangschikking toernooi',
+  tsResult: 'Eindresultaat',
+  tsElimIn: 'Uitgeschakeld in de {stage}',
+  tsConvNote:
+    'Uitslagen na verlenging tellen als winst of verlies; strafschoppenreeksen tellen als gelijkspel.',
   topScorers: 'Topscorers',
   goals: 'Doelpunten',
   noStatsYet: 'Statistieken verschijnen zodra het toernooi bezig is.',

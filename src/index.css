@@ -504,6 +504,17 @@ html.nav-fits .tab-bar {
   background: var(--accent);
   color: #fff;
 }
+/* the Final: gold like the bracket champion box (border + gradient + gold label) */
+.chip-final {
+  border: 1px solid color-mix(in srgb, var(--gold) 55%, var(--border));
+  background: linear-gradient(
+    140deg,
+    color-mix(in srgb, var(--gold) 26%, var(--bg-elev)),
+    color-mix(in srgb, var(--gold) 7%, var(--bg-elev))
+  );
+  color: color-mix(in srgb, var(--gold) 70%, var(--text));
+  font-weight: 750;
+}
 .chip-free {
   background: var(--free-bg);
   color: var(--free);
@@ -693,6 +704,18 @@ input.input {
 }
 .match-card.live {
   border-color: color-mix(in srgb, var(--live) 45%, var(--border));
+}
+/* the Final: gold border + subtle gold gradient, matching the bracket's final card */
+.match-card.mc-final {
+  border-color: color-mix(in srgb, var(--gold) 55%, var(--border));
+  background: linear-gradient(
+    168deg,
+    color-mix(in srgb, var(--gold) 10%, var(--bg-elev)),
+    var(--bg-elev) 58%
+  );
+}
+.match-card.mc-final:hover {
+  border-color: color-mix(in srgb, var(--gold) 70%, var(--border));
 }
 
 .mc-top {

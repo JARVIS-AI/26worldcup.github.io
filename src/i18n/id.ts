@@ -85,6 +85,8 @@ const id: Dict = {
   jumpNow: 'Sekarang',
   titleOdds: 'Peluang juara',
   runForecast: 'Jalankan prediksimu',
+  runSimulation: 'Jalankan simulasimu',
+  fullStanding: 'Klasemen akhir lengkap',
   matchesShown: '{n} pertandingan',
   // groups
   groupsTitle: 'Klasemen fase grup',
@@ -173,6 +175,8 @@ const id: Dict = {
   simChampion: 'Juara',
   simSample: 'Contoh run',
   simAet: 'p.w.',
+  abbrHalfTime: 'HT',
+  abbrExtraTime: 'p.w.',
   podium2: 'Runner-up',
   podium3: 'Peringkat 3',
   podium4: 'Peringkat 4',
@@ -275,6 +279,11 @@ const id: Dict = {
   typeTvStreaming: 'TV + streaming',
   // stats
   statsTitle: 'Statistik',
+  tsTitle: 'Klasemen akhir turnamen',
+  tsResult: 'Hasil akhir',
+  tsElimIn: 'Tersingkir di {stage}',
+  tsConvNote:
+    'Hasil di perpanjangan waktu dihitung sebagai kemenangan dan kekalahan; adu penalti dihitung sebagai seri.',
   topScorers: 'Pencetak gol terbanyak',
   goals: 'Gol',
   noStatsYet: 'Statistik akan tampil setelah turnamen bergulir.',

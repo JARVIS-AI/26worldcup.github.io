@@ -17,6 +17,7 @@ import {
   matchResult,
   placeholderLabel,
   STAGE_LABEL_KEY,
+  subMinuteLabel,
   wmoEmoji,
   wmoKey,
 } from '../utils/helpers'
@@ -205,11 +206,13 @@ export default function MatchDetail() {
           })
         }
       })
-      for (const sub of tl.substitutions ?? [])
-        if (sub.minute) {
-          subOn[sub.on] = sub.minute
-          subOff[sub.off] = sub.minute
-        }
+      for (const sub of tl.substitutions ?? []) {
+        // half-time / extra-time-break subs arrive with an empty minute — label them
+        // (HT / ET) instead of dropping them, so the swap still shows on the pitch
+        const label = subMinuteLabel(sub.minute, sub.period, t)
+        subOn[sub.on] = label
+        subOff[sub.off] = label
+      }
       // a player's goal minutes (open play + penalties; own goals & shootout excluded)
       for (const g of tl.goals ?? []) {
         if (g.type === 3 || g.period === 11 || !g.minute) continue
@@ -222,7 +225,7 @@ export default function MatchDetail() {
     for (const [id, mins] of Object.entries(goalMins))
       goals[id] = mins.sort((a, b) => (parseInt(a, 10) || 0) - (parseInt(b, 10) || 0)).join(', ')
     return { reds, marks, subOn, subOff, goals }
-  }, [lu, m])
+  }, [lu, m, t])
   const redRows = cardInfo.reds
 
   // scorer / red-card name, linked to the player's card on their team's squad page
@@ -285,14 +288,14 @@ export default function MatchDetail() {
   return (
     <div>
       {/* ===== header card ===== */}
-      <div className="card md-hero">
+      <div className={`card md-hero${m.stage === 'final' ? ' md-hero-final' : ''}`}>
         <div className="md-hero-top">
           {m.stage === 'group' && m.group ? (
             <Link className="chip md-group-chip" to={`/groups?g=${m.group}`}>
               {t('groupX', { x: m.group })}
             </Link>
           ) : (
-            <span className={m.stage === 'final' ? 'chip chip-accent' : 'chip'}>
+            <span className={m.stage === 'final' ? 'chip chip-final' : 'chip'}>
               {t(STAGE_LABEL_KEY[m.stage])}
             </span>
           )}

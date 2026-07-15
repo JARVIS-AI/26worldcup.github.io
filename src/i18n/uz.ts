@@ -86,6 +86,8 @@ const uz: Dict = {
   jumpNow: 'Hozir',
   titleOdds: 'Chempionlik imkoniyati',
   runForecast: "O'z prognozingizni yurgizing",
+  runSimulation: "O'z simulyatsiyangizni yurgizing",
+  fullStanding: "To'liq yakuniy jadval",
   matchesShown: "{n} ta o'yin",
   // groups
   groupsTitle: 'Guruh bosqichi jadvali',
@@ -174,6 +176,8 @@ const uz: Dict = {
   simChampion: 'Chempion',
   simSample: 'Namuna yurgizish',
   simAet: 'q.v.',
+  abbrHalfTime: 'tan.',
+  abbrExtraTime: 'q.v.',
   podium2: '2-oʻrin',
   podium3: '3-oʻrin',
   podium4: '4-oʻrin',
@@ -276,6 +280,11 @@ const uz: Dict = {
   typeTvStreaming: 'TV + striming',
   // stats
   statsTitle: 'Statistika',
+  tsTitle: 'Turnirning yakuniy jadvali',
+  tsResult: 'Yakuniy natija',
+  tsElimIn: '{stage}da bartaraf etilgan',
+  tsConvNote:
+    "Qo'shimcha vaqtdagi natijalar g'alaba va mag'lubiyat, penaltilar seriyasi esa durang sifatida hisoblanadi.",
   topScorers: "To'purarlar",
   goals: 'Gollar',
   noStatsYet: "Statistika turnir boshlangach paydo bo'ladi.",

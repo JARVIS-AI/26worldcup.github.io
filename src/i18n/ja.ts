@@ -85,6 +85,8 @@ const ja: Dict = {
   jumpNow: '現在',
   titleOdds: '優勝確率',
   runForecast: '自分で予想を実行',
+  runSimulation: '自分でシミュレーションを実行',
+  fullStanding: '最終順位一覧',
   matchesShown: '{n}試合',
   // groups
   groupsTitle: 'グループステージ順位表',
@@ -172,6 +174,8 @@ const ja: Dict = {
   simChampion: '優勝',
   simSample: 'サンプル実行',
   simAet: '延長',
+  abbrHalfTime: 'HT',
+  abbrExtraTime: '延長',
   podium2: '準優勝',
   podium3: '3位',
   podium4: '4位',
@@ -273,6 +277,10 @@ const ja: Dict = {
   typeTvStreaming: 'テレビ + 配信',
   // stats
   statsTitle: 'スタッツ',
+  tsTitle: '大会最終順位',
+  tsResult: '最終成績',
+  tsElimIn: '{stage}で敗退',
+  tsConvNote: '延長での決着は勝敗として、PK戦での決着は引き分けとして計上します。',
   topScorers: '得点ランキング',
   goals: '得点',
   noStatsYet: '大会開始後にスタッツが表示されます。',

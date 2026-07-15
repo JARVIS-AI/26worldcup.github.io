@@ -9,9 +9,11 @@ import {
   applyMatchFilters,
   MATCH_FILTERS_KEY,
   parseMatchFilters,
+  pickMatchFilterParams,
   STAGE_FILTERS,
   STAGE_LABEL_KEY,
 } from '../utils/helpers'
+import { tournamentRanking } from '../utils/tournamentRanking'
 import MatchCard from '../components/MatchCard'
 import Flag from '../components/Flag'
 import Trophy from '../components/Trophy'
@@ -21,7 +23,7 @@ import './matches.css'
 export default function Matches() {
   const { t, pick, locale } = useI18n()
   const { settings } = useSettings()
-  const { matches, teams, venues, meta } = useAppData()
+  const { matches, teams, venues, meta, stats } = useAppData()
   const [searchParams, setSearchParams] = useSearchParams()
   const location = useLocation()
 
@@ -41,11 +43,14 @@ export default function Matches() {
       selfChange.current = false
       return
     }
-    if ([...searchParams.keys()].length > 0) return
+    // a typed/shared URL with real filters wins; stray params (e.g. from a browser
+    // extension) don't count, so the saved selection can still be restored
+    if ([...pickMatchFilterParams(searchParams).keys()].length > 0) return
     try {
       const saved = localStorage.getItem(MATCH_FILTERS_KEY)
       if (saved) {
-        setSearchParams(new URLSearchParams(saved), { replace: true })
+        const clean = pickMatchFilterParams(new URLSearchParams(saved))
+        if ([...clean.keys()].length > 0) setSearchParams(clean, { replace: true })
       }
     } catch {
       /* blocked storage */
@@ -54,7 +59,8 @@ export default function Matches() {
   useEffect(() => {
     if (restoredFor.current === null) return
     try {
-      localStorage.setItem(MATCH_FILTERS_KEY, searchParams.toString())
+      // persist only the filter keys — never stray params that happen to be in the URL
+      localStorage.setItem(MATCH_FILTERS_KEY, pickMatchFilterParams(searchParams).toString())
     } catch {
       /* best-effort */
     }
@@ -234,22 +240,47 @@ export default function Matches() {
     )
   }
 
+  // final-standing strip below the match list. the podium appears once the quarter-
+  // finals are done (same gate as the standing table) and its slots fill in as they
+  // are decided: 3rd/4th after the play-off, 1st/2nd after the final. before the
+  // quarter-finals it stays the plain "Final tournament standing →" link.
+  const standingRows = useMemo(
+    () => tournamentRanking(matches, teams, stats.fairPlay?.all),
+    [matches, teams, stats],
+  )
+  const podium = useMemo(() => {
+    if (!standingRows) return null
+    const by = (b: string) => standingRows.find((r) => r.band === b)?.code
+    return { champ: by('champion'), ru: by('runnerUp'), third: by('third'), fourth: by('fourth') }
+  }, [standingRows])
+  // champion is known only after the final (which implies the whole podium is filled)
+  const champDecided = !!podium?.champ
+
   return (
     <div className="mxp">
       <div className="mxp-sticky" ref={stickyRef}>
         {meta.titleOdds && meta.titleOdds.length > 0 && (
           <div className={`mxp-odds-wrap${oddsHidden ? '' : ' open'}`}>
             <Link to="/forecast" className="mxp-odds" tabIndex={oddsHidden ? -1 : 0}>
-              {meta.titleOdds[0].p >= 100 ? (
-                <>
-                  <span className="mxp-odds-label">
-                    <Trophy size={17} /> {t('champion')}
+              {podium?.champ && podium.ru && podium.third ? (
+                <span className="mxp-odds-list mxp-odds-podium">
+                  <span className="mxp-odds-item mxp-odds-champ">
+                    <Trophy size={18} />
+                    <Flag team={teams[podium.champ]} size={20} natural />
                   </span>
-                  <span className="mxp-odds-champ">
-                    <Flag team={teams[meta.titleOdds[0].c]} size={20} />
-                    {pick(teams[meta.titleOdds[0].c]?.name, meta.titleOdds[0].c)}
+                  <span className="mxp-odds-item">
+                    <span className="mxp-odds-medal" aria-hidden="true">
+                      🥈
+                    </span>
+                    <Flag team={teams[podium.ru]} size={18} natural />
                   </span>
-                </>
+                  <span className="mxp-odds-item">
+                    <span className="mxp-odds-medal" aria-hidden="true">
+                      🥉
+                    </span>
+                    <Flag team={teams[podium.third]} size={18} natural />
+                  </span>
+                </span>
               ) : (
                 <>
                   <span className="mxp-odds-label">
@@ -265,7 +296,7 @@ export default function Matches() {
                   </span>
                 </>
               )}
-              <span className="mxp-odds-cta">{t('runForecast')} →</span>
+              <span className="mxp-odds-cta">{t(champDecided ? 'runSimulation' : 'runForecast')} →</span>
               <button
                 type="button"
                 className="mxp-odds-close"
@@ -380,9 +411,6 @@ export default function Matches() {
             <button type="button" className="mxp-jump-btn" onClick={() => scrollToDay(jumps.opener)}>
               {t('jumpOpener')}
             </button>
-            <button type="button" className="mxp-jump-btn" onClick={() => goNow()}>
-              {t('jumpNow')}
-            </button>
             {jumps.ko && (
               <button type="button" className="mxp-jump-btn" onClick={() => scrollToDay(jumps.ko)}>
                 {t('filterKnockout')}
@@ -390,6 +418,9 @@ export default function Matches() {
             )}
             <button type="button" className="mxp-jump-btn" onClick={() => scrollToDay(jumps.final)}>
               {t('stageFinal')}
+            </button>
+            <button type="button" className="mxp-jump-btn" onClick={() => goNow()}>
+              {t('jumpNow')}
             </button>
           </div>
         </div>
@@ -428,6 +459,80 @@ export default function Matches() {
           )
         })
       )}
+
+      {days.length > 0 &&
+        (podium ? (
+          // stepped podium: silver · gold(tallest) · bronze · 4th, left→right. slots
+          // fill in as decided (3rd/4th after the play-off, 1st/2nd after the final);
+          // filled teams link to their page, only the CTA jumps to the full table
+          <div className="mxp-standing mxp-standing-podium">
+            <div className="mxp-pod">
+              {(
+                [
+                  ['mxp-pod-2', '🥈', podium.ru, 22],
+                  ['mxp-pod-1', null, podium.champ, 34],
+                  ['mxp-pod-3', '🥉', podium.third, 22],
+                  ['mxp-pod-4', t('fcPos4'), podium.fourth, 22],
+                ] as const
+              ).map(([cls, badge, code, flagSize]) => (
+                <PodStep key={cls} cls={cls} badge={badge} code={code} flagSize={flagSize} />
+              ))}
+            </div>
+            <Link to="/bracket?standing=1" className="mxp-standing-cta">
+              {t('fullStanding')} →
+            </Link>
+          </div>
+        ) : (
+          <Link to="/bracket?standing=1" className="mxp-standing" aria-label={t('tsTitle')}>
+            <span className="mxp-standing-center">{t('tsTitle')} →</span>
+          </Link>
+        ))}
     </div>
+  )
+}
+
+/** one podium column: trophy/medal badge, then the team (linked) or a TBD placeholder */
+function PodStep({
+  cls,
+  badge,
+  code,
+  flagSize,
+}: {
+  cls: string
+  badge: string | null
+  code?: string
+  flagSize: number
+}) {
+  const { pick } = useI18n()
+  const { teams } = useAppData()
+  const inner = (
+    <>
+      {badge ? (
+        <span
+          className={cls === 'mxp-pod-4' ? 'mxp-pod-4th' : 'mxp-pod-medal'}
+          aria-hidden={cls !== 'mxp-pod-4'}
+        >
+          {badge}
+        </span>
+      ) : (
+        <Trophy size={40} />
+      )}
+      {code ? (
+        <>
+          <Flag team={teams[code]} size={flagSize} natural />
+          <span className="mxp-pod-name">{pick(teams[code]?.name, code)}</span>
+        </>
+      ) : (
+        <span className="mxp-pod-flag-tbd" aria-hidden="true" />
+      )}
+      <span className="mxp-pod-base" />
+    </>
+  )
+  return code ? (
+    <Link to={`/team/${code}`} className={`mxp-pod-step ${cls}`}>
+      {inner}
+    </Link>
+  ) : (
+    <div className={`mxp-pod-step ${cls}`}>{inner}</div>
   )
 }

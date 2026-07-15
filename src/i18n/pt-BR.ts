@@ -87,6 +87,8 @@ const ptBR: Dict = {
   jumpNow: 'Agora',
   titleOdds: 'Chance de título',
   runForecast: 'Faça seu prognóstico',
+  runSimulation: 'Faça sua simulação',
+  fullStanding: 'Classificação completa',
   matchesShown: '{n} jogos',
   'matchesShown#one': '{n} jogo',
   // groups
@@ -176,6 +178,8 @@ const ptBR: Dict = {
   simChampion: 'Campeão',
   simSample: 'Execução de exemplo',
   simAet: 'pror.',
+  abbrHalfTime: 'int.',
+  abbrExtraTime: 'pror.',
   podium2: 'Vice-campeão',
   podium3: 'Terceiro',
   podium4: 'Quarto',
@@ -277,6 +281,11 @@ const ptBR: Dict = {
   typeTvStreaming: 'TV + streaming',
   // stats
   statsTitle: 'Estatísticas',
+  tsTitle: 'Classificação final do torneio',
+  tsResult: 'Resultado final',
+  tsElimIn: 'Eliminado: {stage}',
+  tsConvNote:
+    'Resultados na prorrogação contam como vitórias e derrotas; disputas de pênaltis contam como empates.',
   topScorers: 'Artilheiros',
   goals: 'Gols',
   noStatsYet: 'As estatísticas aparecerão quando o torneio estiver em andamento.',

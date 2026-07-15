@@ -85,6 +85,8 @@ const zhTW: Dict = {
   jumpNow: '現在',
   titleOdds: '奪冠機率',
   runForecast: '跑一次你的預測',
+  runSimulation: '跑一次你的模擬',
+  fullStanding: '完整最終排名',
   matchesShown: '共{n}場比賽',
   // groups
   groupsTitle: '小組賽積分榜',
@@ -171,6 +173,8 @@ const zhTW: Dict = {
   simChampion: '冠軍',
   simSample: '單次示例',
   simAet: '延長',
+  abbrHalfTime: '半場',
+  abbrExtraTime: '延長',
   podium2: '亞軍',
   podium3: '季軍',
   podium4: '殿軍',
@@ -270,6 +274,10 @@ const zhTW: Dict = {
   typeTvStreaming: '電視+串流',
   // stats
   statsTitle: '數據統計',
+  tsTitle: '賽事最終排名',
+  tsResult: '最終成績',
+  tsElimIn: '止步{stage}',
+  tsConvNote: '延長賽賽果計為勝負，PK戰則計為平局。',
   topScorers: '射手榜',
   goals: '進球',
   noStatsYet: '賽事開始後這裡將顯示統計數據。',

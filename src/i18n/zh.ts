@@ -85,6 +85,8 @@ const zh: Dict = {
   jumpNow: '现在',
   titleOdds: '夺冠概率',
   runForecast: '跑一次你的预测',
+  runSimulation: '跑一次你的模拟',
+  fullStanding: '完整最终排名',
   matchesShown: '共{n}场比赛',
   // groups
   groupsTitle: '小组赛积分榜',
@@ -171,6 +173,8 @@ const zh: Dict = {
   simChampion: '冠军',
   simSample: '单次示例',
   simAet: '加时',
+  abbrHalfTime: '半场',
+  abbrExtraTime: '加时',
   podium2: '亚军',
   podium3: '季军',
   podium4: '第四名',
@@ -270,6 +274,10 @@ const zh: Dict = {
   typeTvStreaming: '电视+流媒体',
   // stats
   statsTitle: '数据统计',
+  tsTitle: '赛事最终排名',
+  tsResult: '最终成绩',
+  tsElimIn: '止步{stage}',
+  tsConvNote: '加时赛胜负计为胜、负；点球大战计为平局。',
   topScorers: '射手榜',
   goals: '进球',
   noStatsYet: '赛事开始后这里将显示统计数据。',

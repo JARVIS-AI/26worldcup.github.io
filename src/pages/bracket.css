@@ -552,3 +552,131 @@
     justify-content: space-between;
   }
 }
+
+/* ===== final tournament standing (ts-) ===== */
+.ts-card {
+  margin-bottom: 14px;
+}
+.ts-card h2 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+/* horizontal scroll on narrow screens; the table never widens the page */
+.ts-scroll {
+  overflow-x: auto;
+  margin-inline: -2px;
+}
+.ts-table {
+  width: 100%;
+  min-width: 540px;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.ts-table th {
+  padding: 0 6px 7px;
+  font-size: 0.7rem;
+  font-weight: 650;
+  color: var(--text-3);
+  text-align: end;
+  white-space: nowrap;
+}
+.ts-table th.ts-grp,
+.ts-table th.ts-team,
+.ts-table th.ts-res {
+  text-align: start;
+}
+.ts-table td {
+  padding: 7px 6px;
+  border-top: 1px solid var(--border);
+  text-align: end;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* tier boundary (1–4 | 5–8 | 9–16 | 17–32 | 33–48) */
+.ts-tr.ts-sep > td {
+  border-top: 2px solid var(--text-3);
+}
+.ts-table td.ts-grp,
+.ts-table td.ts-team,
+.ts-table td.ts-res {
+  text-align: start;
+}
+.ts-table td.ts-team,
+.ts-table td.ts-res {
+  white-space: normal;
+}
+.ts-pos {
+  width: 30px;
+  font-weight: 750;
+  color: var(--text-2);
+}
+.ts-grp {
+  width: 30px;
+  color: var(--text-3);
+  font-weight: 650;
+}
+.ts-team {
+  min-width: 128px;
+  font-weight: 600;
+}
+.ts-pts {
+  font-weight: 800;
+}
+.ts-res {
+  min-width: 120px;
+  font-size: 0.78rem;
+  color: var(--text-2);
+}
+/* de-emphasise the least-important columns a touch */
+.ts-table .ts-xxs,
+.ts-table .ts-xs {
+  color: var(--text-2);
+}
+/* medal tints (theme-aware: mixed toward transparent so they stay subtle in dark) */
+.ts-b-champion {
+  background: color-mix(in oklab, #f5c518 20%, transparent);
+}
+.ts-b-runnerUp {
+  background: color-mix(in oklab, #c0c5ce 22%, transparent);
+}
+.ts-b-third {
+  background: color-mix(in oklab, #cd7f32 20%, transparent);
+}
+.ts-b-fourth {
+  background: color-mix(in oklab, #cd7f32 8%, transparent);
+}
+/* still-competing rows: accent tint, italic pending result, dot instead of a number.
+   text stays full-strength (not accent-coloured) to keep AA contrast over the tint */
+.ts-prov {
+  background: color-mix(in oklab, var(--accent) 12%, transparent);
+}
+.ts-prov .ts-pos {
+  color: var(--text);
+  font-weight: 800;
+}
+.ts-prov .ts-res {
+  font-style: italic;
+  color: var(--text);
+  font-weight: 700;
+}
+.ts-note {
+  margin-top: 9px;
+}
+/* deep-link target from the Matches strip: offset under the sticky header, flash once */
+#sx-standing {
+  scroll-margin-top: calc(var(--hdr-h, 58px) + 12px);
+}
+.ts-card.flash {
+  animation: ts-card-flash 1.8s ease-out;
+}
+@keyframes ts-card-flash {
+  0%,
+  20% {
+    border-color: var(--accent-2);
+    box-shadow: 0 0 0 2px var(--accent-2);
+  }
+  100% {
+    border-color: var(--border);
+    box-shadow: var(--shadow);
+  }
+}

@@ -88,6 +88,8 @@ const uk: Dict = {
   jumpNow: 'Зараз',
   titleOdds: 'Шанси на титул',
   runForecast: 'Запустіть свій прогноз',
+  runSimulation: 'Запустіть свою симуляцію',
+  fullStanding: 'Повна підсумкова таблиця',
   matchesShown: 'Матчів: {n}',
   // groups
   groupsTitle: 'Турнірна таблиця групового етапу',
@@ -176,6 +178,8 @@ const uk: Dict = {
   simChampion: 'Чемпіон',
   simSample: 'Приклад прогону',
   simAet: 'д.ч.',
+  abbrHalfTime: 'пер.',
+  abbrExtraTime: 'д.ч.',
   podium2: '2-ге місце',
   podium3: '3-тє місце',
   podium4: '4-те місце',
@@ -278,6 +282,11 @@ const uk: Dict = {
   typeTvStreaming: 'ТБ + стримінг',
   // stats
   statsTitle: 'Статистика',
+  tsTitle: 'Підсумкова турнірна таблиця',
+  tsResult: 'Підсумковий результат',
+  tsElimIn: 'Вибули: {stage}',
+  tsConvNote:
+    'Результати в додатковий час зараховуються як перемоги та поразки, а серії пенальті — як нічиї.',
   topScorers: 'Бомбардири',
   goals: 'Голи',
   noStatsYet: 'Статистика з’явиться після старту турніру.',

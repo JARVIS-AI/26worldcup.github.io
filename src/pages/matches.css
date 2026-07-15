@@ -178,6 +178,11 @@
 .mxp-day .match-card {
   box-shadow: none;
 }
+/* gap below the sticky day header so a card's 1px hover-lift can't tuck its top
+   border under the header's opaque background */
+.mxp-day .cards-grid {
+  margin-top: 4px;
+}
 
 /* count sits on the title row; freshness on the jump row — both flush right */
 .mxp-head {
@@ -285,6 +290,15 @@
   gap: 7px;
   font-weight: 800;
 }
+/* post-final banner: 🏆 | 🥈 | 🥉 flags, divided */
+.mxp-odds-podium .mxp-odds-item + .mxp-odds-item {
+  border-inline-start: 1px solid var(--border);
+  padding-inline-start: 10px;
+}
+.mxp-odds-medal {
+  font-size: 1.05em;
+  line-height: 1;
+}
 .mxp-odds-cta {
   margin-inline-start: auto;
   font-size: 0.76rem;
@@ -341,4 +355,196 @@
 }
 .mxp-odds-restore:hover {
   border-color: var(--accent-2);
+}
+
+/* final-standing strip below the match list (mxp-odds-styled, not dismissible) */
+.mxp-standing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin: 16px 0 4px;
+  padding: 11px 14px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.95rem;
+  transition: border-color 0.15s;
+}
+/* only the plain (pre-final) full-width link highlights on hover; the podium box
+   isn't itself a link — its team columns and the CTA are */
+a.mxp-standing:hover {
+  border-color: var(--accent-2);
+}
+/* default: a single centered label */
+.mxp-standing-center {
+  flex: 1;
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent-2);
+}
+/* post-final: a stepped podium (silver · gold-tallest · bronze · 4th), then the CTA */
+.mxp-standing-podium {
+  align-items: flex-end;
+  gap: 10px 16px;
+  padding: 14px 14px 10px;
+}
+.mxp-pod {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.mxp-pod-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 108px;
+  text-decoration: none;
+  color: inherit;
+}
+/* hover: the flag lifts + pops with an accent glow, the pedestal catches a
+   medal-gleam sweep (see .mxp-pod-base::after), and the name turns accent */
+.mxp-pod-step .flag {
+  transition:
+    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.2s ease;
+}
+a.mxp-pod-step:hover .flag {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 4px 11px color-mix(in srgb, var(--accent) 30%, rgba(0, 0, 0, 0.16));
+}
+a.mxp-pod-step:hover .mxp-pod-name {
+  color: var(--accent-2);
+}
+.mxp-pod-medal {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.mxp-pod-4th {
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--text-2);
+}
+.mxp-pod-name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+/* not-yet-decided slot: a dashed flag placeholder + muted TBD label */
+.mxp-pod-flag-tbd {
+  width: 24px;
+  height: 17px;
+  border-radius: 3px;
+  border: 1px dashed var(--border-strong);
+  background: color-mix(in srgb, var(--text-3) 8%, transparent);
+}
+.mxp-pod-1 .mxp-pod-flag-tbd {
+  width: 36px;
+  height: 26px;
+}
+.mxp-pod-1 .mxp-pod-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+/* the stepped bases: decreasing height, medal-tinted, tops rounded */
+.mxp-pod-base {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 3px;
+  border: 1px solid var(--border);
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+}
+/* the gleam: a diagonal highlight that sweeps across the pedestal on hover */
+.mxp-pod-base::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 35%,
+    color-mix(in srgb, #fff 55%, transparent) 50%,
+    transparent 65%
+  );
+  transform: translateX(-130%);
+}
+a.mxp-pod-step:hover .mxp-pod-base::after {
+  transform: translateX(130%);
+  transition: transform 0.55s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  a.mxp-pod-step:hover .flag {
+    transform: none;
+  }
+  .mxp-pod-base::after {
+    display: none;
+  }
+}
+.mxp-pod-1 .mxp-pod-base {
+  height: 40px;
+  border-color: color-mix(in srgb, var(--gold) 55%, var(--border));
+  background: linear-gradient(
+    color-mix(in srgb, var(--gold) 32%, var(--bg-elev)),
+    color-mix(in srgb, var(--gold) 10%, var(--bg-elev))
+  );
+}
+.mxp-pod-2 .mxp-pod-base {
+  height: 28px;
+  background: linear-gradient(
+    color-mix(in srgb, #c0c5ce 34%, var(--bg-elev)),
+    color-mix(in srgb, #c0c5ce 12%, var(--bg-elev))
+  );
+}
+.mxp-pod-3 .mxp-pod-base {
+  height: 20px;
+  background: linear-gradient(
+    color-mix(in srgb, #cd7f32 32%, var(--bg-elev)),
+    color-mix(in srgb, #cd7f32 10%, var(--bg-elev))
+  );
+}
+.mxp-pod-4 .mxp-pod-base {
+  height: 13px;
+  background: color-mix(in srgb, var(--text-3) 16%, var(--bg-elev));
+}
+.mxp-standing-cta {
+  margin-inline-start: auto;
+  font-weight: 700;
+  color: var(--accent-2);
+  white-space: nowrap;
+  text-decoration: none;
+}
+.mxp-standing-cta:hover {
+  text-decoration: underline;
+}
+/* phones: tighter columns, CTA drops to its own full-width line */
+@media (max-width: 560px) {
+  .mxp-standing-podium {
+    padding: 12px 6px 8px;
+  }
+  .mxp-pod {
+    gap: 2px;
+  }
+  .mxp-pod-step {
+    max-width: none;
+  }
+  .mxp-pod-name {
+    font-size: 0.7rem;
+  }
+  .mxp-standing-podium .mxp-standing-cta {
+    width: 100%;
+    margin-top: 2px;
+    text-align: end;
+  }
 }

@@ -87,6 +87,8 @@ const de: Dict = {
   jumpNow: 'Jetzt',
   titleOdds: 'Titelchancen',
   runForecast: 'Eigene Prognose starten',
+  runSimulation: 'Eigene Simulation starten',
+  fullStanding: 'Vollständige Abschlusstabelle',
   matchesShown: '{n} Spiele',
   'matchesShown#one': '{n} Spiel',
   // groups
@@ -176,6 +178,8 @@ const de: Dict = {
   simChampion: 'Weltmeister',
   simSample: 'Beispiel-Durchlauf',
   simAet: 'n.V.',
+  abbrHalfTime: 'HZ',
+  abbrExtraTime: 'Verl.',
   podium2: 'Zweiter',
   podium3: 'Dritter',
   podium4: 'Vierter',
@@ -277,6 +281,11 @@ const de: Dict = {
   typeTvStreaming: 'TV + Streaming',
   // stats
   statsTitle: 'Statistiken',
+  tsTitle: 'Abschlusstabelle',
+  tsResult: 'Endergebnis',
+  tsElimIn: '{stage}: ausgeschieden',
+  tsConvNote:
+    'Ergebnisse nach Verlängerung zählen als Siege und Niederlagen; ein Elfmeterschießen zählt als Unentschieden.',
   topScorers: 'Torschützenliste',
   goals: 'Tore',
   noStatsYet: 'Statistiken erscheinen, sobald das Turnier läuft.',

@@ -85,6 +85,8 @@ const ko: Dict = {
   jumpNow: '지금',
   titleOdds: '우승 확률',
   runForecast: '직접 예측 실행',
+  runSimulation: '직접 시뮬레이션 실행',
+  fullStanding: '전체 최종 순위',
   matchesShown: '{n}경기',
   // groups
   groupsTitle: '조별리그 순위',
@@ -172,6 +174,8 @@ const ko: Dict = {
   simChampion: '우승',
   simSample: '샘플 실행',
   simAet: '연장',
+  abbrHalfTime: '하프',
+  abbrExtraTime: '연장',
   podium2: '준우승',
   podium3: '3위',
   podium4: '4위',
@@ -272,6 +276,10 @@ const ko: Dict = {
   typeTvStreaming: 'TV+스트리밍',
   // stats
   statsTitle: '통계',
+  tsTitle: '최종 순위',
+  tsResult: '최종 성적',
+  tsElimIn: '{stage}에서 탈락',
+  tsConvNote: '연장전 결과는 승패로, 승부차기는 무승부로 집계됩니다.',
   topScorers: '득점 순위',
   goals: '득점',
   noStatsYet: '통계는 대회 시작 후 표시됩니다.',

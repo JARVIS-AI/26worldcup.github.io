@@ -85,6 +85,8 @@ const tr: Dict = {
   jumpNow: 'Şimdi',
   titleOdds: 'Şampiyonluk ihtimali',
   runForecast: 'Kendi tahminini çalıştır',
+  runSimulation: 'Kendi simülasyonunu çalıştır',
+  fullStanding: 'Nihai sıralamanın tamamı',
   matchesShown: '{n} maç',
   // groups
   groupsTitle: 'Grup aşaması puan durumu',
@@ -173,6 +175,8 @@ const tr: Dict = {
   simChampion: 'Şampiyon',
   simSample: 'Örnek çalıştırma',
   simAet: 'u.s.',
+  abbrHalfTime: 'İY',
+  abbrExtraTime: 'UZ',
   podium2: 'İkinci',
   podium3: 'Üçüncü',
   podium4: 'Dördüncü',
@@ -273,6 +277,11 @@ const tr: Dict = {
   typeTvStreaming: 'TV + dijital',
   // stats
   statsTitle: 'İstatistikler',
+  tsTitle: 'Nihai turnuva sıralaması',
+  tsResult: 'Nihai sonuç',
+  tsElimIn: '{stage} - elendi',
+  tsConvNote:
+    'Uzatmalarda alınan sonuçlar galibiyet ve mağlubiyet, penaltı atışları ise beraberlik olarak sayılır.',
   topScorers: 'Gol krallığı',
   goals: 'Gol',
   noStatsYet: 'İstatistikler turnuva başladığında görünecek.',

@@ -86,6 +86,8 @@ const no: Dict = {
   jumpNow: 'Nå',
   titleOdds: 'Tittelsjanser',
   runForecast: 'Kjør din egen prognose',
+  runSimulation: 'Kjør din egen simulering',
+  fullStanding: 'Hele sluttstillingen',
   matchesShown: '{n} kamper',
   'matchesShown#one': '{n} kamp',
   // groups
@@ -175,6 +177,8 @@ const no: Dict = {
   simChampion: 'Mester',
   simSample: 'Eksempelkjøring',
   simAet: 'e.e.o.',
+  abbrHalfTime: 'pause',
+  abbrExtraTime: 'e.o.',
   podium2: '2. plass',
   podium3: '3. plass',
   podium4: '4. plass',
@@ -275,6 +279,11 @@ const no: Dict = {
   typeTvStreaming: 'TV + strømming',
   // stats
   statsTitle: 'Statistikk',
+  tsTitle: 'Sluttstilling i turneringen',
+  tsResult: 'Sluttresultat',
+  tsElimIn: 'Slått ut i {stage}',
+  tsConvNote:
+    'Resultater i ekstraomganger teller som seiere og tap; straffekonkurranser teller som uavgjort.',
   topScorers: 'Toppscorere',
   goals: 'Mål',
   noStatsYet: 'Statistikk vises når turneringen er i gang.',

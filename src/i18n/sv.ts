@@ -86,6 +86,8 @@ const sv: Dict = {
   jumpNow: 'Nu',
   titleOdds: 'Titelchanser',
   runForecast: 'Kör din egen prognos',
+  runSimulation: 'Kör din egen simulering',
+  fullStanding: 'Hela sluttabellen',
   matchesShown: '{n} matcher',
   'matchesShown#one': '{n} match',
   // groups
@@ -175,6 +177,8 @@ const sv: Dict = {
   simChampion: 'Mästare',
   simSample: 'Exempelkörning',
   simAet: 'e.f.',
+  abbrHalfTime: 'paus',
+  abbrExtraTime: 'förl.',
   podium2: 'Tvåa',
   podium3: 'Trea',
   podium4: 'Fyra',
@@ -275,6 +279,11 @@ const sv: Dict = {
   typeTvStreaming: 'TV + streaming',
   // stats
   statsTitle: 'Statistik',
+  tsTitle: 'Sluttabell',
+  tsResult: 'Resultat',
+  tsElimIn: 'Utslagen i {stage}',
+  tsConvNote:
+    'Resultat i förlängning räknas som vinster och förluster; avgöranden på straffar räknas som oavgjort.',
   topScorers: 'Skytteliga',
   goals: 'Mål',
   noStatsYet: 'Statistik visas när turneringen har börjat.',

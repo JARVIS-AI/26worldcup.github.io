@@ -87,6 +87,8 @@ const fr: Dict = {
   jumpNow: 'Maintenant',
   titleOdds: 'Chances de titre',
   runForecast: 'Lancez votre pronostic',
+  runSimulation: 'Lancez votre simulation',
+  fullStanding: 'Classement final complet',
   matchesShown: '{n} matchs',
   'matchesShown#one': '{n} match',
   // groups
@@ -176,6 +178,8 @@ const fr: Dict = {
   simChampion: 'Champion',
   simSample: 'Exemple de tirage',
   simAet: 'a.p.',
+  abbrHalfTime: 'MT',
+  abbrExtraTime: 'prol.',
   podium2: 'Finaliste',
   podium3: 'Troisième',
   podium4: 'Quatrième',
@@ -277,6 +281,11 @@ const fr: Dict = {
   typeTvStreaming: 'TV + streaming',
   // stats
   statsTitle: 'Statistiques',
+  tsTitle: 'Classement final du tournoi',
+  tsResult: 'Résultat final',
+  tsElimIn: 'Éliminé en {stage}',
+  tsConvNote:
+    'Les résultats en prolongation comptent comme des victoires et des défaites ; les tirs au but comptent comme des matchs nuls.',
   topScorers: 'Meilleurs buteurs',
   goals: 'Buts',
   noStatsYet: 'Les statistiques apparaîtront une fois le tournoi commencé.',

@@ -88,6 +88,8 @@ const ru: Dict = {
   jumpNow: 'Сейчас',
   titleOdds: 'Шансы на титул',
   runForecast: 'Запустите свой прогноз',
+  runSimulation: 'Запустите свою симуляцию',
+  fullStanding: 'Полная итоговая таблица',
   matchesShown: 'Матчей: {n}',
   // groups
   groupsTitle: 'Турнирная таблица группового этапа',
@@ -176,6 +178,8 @@ const ru: Dict = {
   simChampion: 'Чемпион',
   simSample: 'Пример прогона',
   simAet: 'д.в.',
+  abbrHalfTime: 'пер.',
+  abbrExtraTime: 'д.в.',
   podium2: '2-е место',
   podium3: '3-е место',
   podium4: '4-е место',
@@ -278,6 +282,11 @@ const ru: Dict = {
   typeTvStreaming: 'ТВ + стриминг',
   // stats
   statsTitle: 'Статистика',
+  tsTitle: 'Итоговая турнирная таблица',
+  tsResult: 'Итоговый результат',
+  tsElimIn: 'Выбыли: {stage}',
+  tsConvNote:
+    'Результаты в дополнительное время засчитываются как победы и поражения, а серии пенальти — как ничьи.',
   topScorers: 'Бомбардиры',
   goals: 'Голы',
   noStatsYet: 'Статистика появится после старта турнира.',

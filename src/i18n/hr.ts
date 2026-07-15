@@ -87,6 +87,8 @@ const hr: Dict = {
   jumpNow: 'Sada',
   titleOdds: 'Izgledi za naslov',
   runForecast: 'Pokreni svoju prognozu',
+  runSimulation: 'Pokreni svoju simulaciju',
+  fullStanding: 'Cijeli konačni poredak',
   matchesShown: '{n} utakmica',
   'matchesShown#few': '{n} utakmice',
   // groups
@@ -176,6 +178,8 @@ const hr: Dict = {
   simChampion: 'Prvak',
   simSample: 'Primjer simulacije',
   simAet: 'n.p.',
+  abbrHalfTime: 'pv.',
+  abbrExtraTime: 'pr.',
   podium2: '2. mjesto',
   podium3: '3. mjesto',
   podium4: '4. mjesto',
@@ -276,6 +280,11 @@ const hr: Dict = {
   typeTvStreaming: 'TV + streaming',
   // stats
   statsTitle: 'Statistika',
+  tsTitle: 'Konačni poredak turnira',
+  tsResult: 'Konačni rezultat',
+  tsElimIn: 'Ispadanje: {stage}',
+  tsConvNote:
+    'Rezultati u produžecima broje se kao pobjede i porazi, a rezultati nakon jedanaesteraca kao neriješeni.',
   topScorers: 'Najbolji strijelci',
   goals: 'Golovi',
   noStatsYet: 'Statistika će biti dostupna nakon početka turnira.',

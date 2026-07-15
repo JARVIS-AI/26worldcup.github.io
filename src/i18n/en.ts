@@ -87,6 +87,8 @@ const en: Dict = {
   jumpNow: 'Now',
   titleOdds: 'Title odds',
   runForecast: 'Run your own forecast',
+  runSimulation: 'Run your own simulation',
+  fullStanding: 'Full final standing',
   matchesShown: '{n} matches',
   'matchesShown#one': '{n} match',
   // groups
@@ -178,6 +180,8 @@ const en: Dict = {
   simChampion: 'Champion',
   simSample: 'Sample run',
   simAet: 'a.e.t.',
+  abbrHalfTime: 'HT',
+  abbrExtraTime: 'ET',
   podium2: 'Runner-up',
   podium3: 'Third place',
   podium4: 'Fourth place',
@@ -308,6 +312,10 @@ const en: Dict = {
   typeTvStreaming: 'TV + streaming',
   // stats
   statsTitle: 'Statistics',
+  tsTitle: 'Final tournament standing',
+  tsResult: 'Final result',
+  tsElimIn: 'Eliminated in {stage}',
+  tsConvNote: 'Extra-time results count as wins and losses; penalty shoot-outs count as draws.',
   topScorers: 'Top scorers',
   goals: 'Goals',
   noStatsYet: 'Statistics will appear once the tournament is under way.',

@@ -34,6 +34,14 @@ const SECTIONS: { key: string; cols: ColKey[] }[] = [
 ]
 const ALL_COLS = SECTIONS.flatMap((s) => s.cols)
 
+// default / tie-break ordering: champion odds first, then each following column
+// left-to-right (runner-up, 3rd, 4th, QF, R16, R32, group exit, then the group-seed
+// odds), and finally the FIFA three-letter code alphabetically — fully deterministic.
+const naturalCmp = (a: FcRow, b: FcRow): number => {
+  for (const c of ALL_COLS) if (b[c] !== a[c]) return b[c] - a[c]
+  return a.code.localeCompare(b.code)
+}
+
 export default function ForecastTable({ rows, teams }: { rows: FcRow[]; teams: Record<string, Team> }) {
   const { t, pick, lang } = useI18n()
   const { settings } = useSettings()
@@ -88,7 +96,7 @@ export default function ForecastTable({ rows, teams }: { rows: FcRow[]; teams: R
     })
     if (!sortKey) return out // unsorted: keep the table's natural order
     const dir = sortDir === 'desc' ? 1 : -1
-    return [...out].sort((a, b) => dir * (b[sortKey] - a[sortKey]) || b.oChamp - a.oChamp)
+    return [...out].sort((a, b) => dir * (b[sortKey] - a[sortKey]) || naturalCmp(a, b))
   }, [rows, query, grp, sortKey, sortDir, settings.favorites, teams, lang])
 
   const fmt = (v: number) => {

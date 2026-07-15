@@ -86,6 +86,8 @@ const fa: Dict = {
   jumpNow: 'اکنون',
   titleOdds: 'شانس قهرمانی',
   runForecast: 'پیش‌بینی خودتان را اجرا کنید',
+  runSimulation: 'شبیه‌سازی خودتان را اجرا کنید',
+  fullStanding: 'رده‌بندی کامل',
   matchesShown: '{n} بازی',
   // groups
   groupsTitle: 'جدول مرحله گروهی',
@@ -173,6 +175,8 @@ const fa: Dict = {
   simChampion: 'قهرمان',
   simSample: 'اجرای نمونه',
   simAet: 'و.ا.',
+  abbrHalfTime: 'نیمه',
+  abbrExtraTime: 'و.ا.',
   podium2: 'نایب‌قهرمان',
   podium3: 'سوم',
   podium4: 'چهارم',
@@ -273,6 +277,10 @@ const fa: Dict = {
   typeTvStreaming: 'تلویزیون + پخش آنلاین',
   // stats
   statsTitle: 'آمار',
+  tsTitle: 'رده‌بندی نهایی تورنمنت',
+  tsResult: 'نتیجه نهایی',
+  tsElimIn: 'حذف در {stage}',
+  tsConvNote: 'نتایج وقت اضافه به‌عنوان برد و باخت، و ضربات پنالتی به‌عنوان تساوی محسوب می‌شوند.',
   topScorers: 'بهترین گلزنان',
   goals: 'گل‌ها',
   noStatsYet: 'آمار پس از آغاز مسابقات نمایش داده می‌شود.',

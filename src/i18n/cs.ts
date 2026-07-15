@@ -87,6 +87,8 @@ const cs: Dict = {
   jumpNow: 'Nyní',
   titleOdds: 'Šance na titul',
   runForecast: 'Spusťte vlastní prognózu',
+  runSimulation: 'Spusťte vlastní simulaci',
+  fullStanding: 'Celé konečné pořadí',
   matchesShown: 'Zápasů: {n}',
   // groups
   groupsTitle: 'Pořadí ve skupinách',
@@ -175,6 +177,8 @@ const cs: Dict = {
   simChampion: 'Mistr',
   simSample: 'Ukázkový běh',
   simAet: 'po prodl.',
+  abbrHalfTime: 'pol.',
+  abbrExtraTime: 'prodl.',
   podium2: '2. místo',
   podium3: '3. místo',
   podium4: '4. místo',
@@ -277,6 +281,10 @@ const cs: Dict = {
   typeTvStreaming: 'TV + streaming',
   // stats
   statsTitle: 'Statistiky',
+  tsTitle: 'Konečné pořadí turnaje',
+  tsResult: 'Konečný výsledek',
+  tsElimIn: 'Vyřazení: {stage}',
+  tsConvNote: 'Výsledky po prodloužení se počítají jako výhry a prohry, penaltové rozstřely jako remízy.',
   topScorers: 'Nejlepší střelci',
   goals: 'Góly',
   noStatsYet: 'Statistiky se objeví po zahájení turnaje.',

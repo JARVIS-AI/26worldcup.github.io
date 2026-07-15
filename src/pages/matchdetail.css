@@ -4,6 +4,15 @@
 .md-hero {
   padding: 16px;
 }
+/* the Final: gold border + gradient, matching the match card and bracket final card */
+.md-hero-final {
+  border-color: color-mix(in srgb, var(--gold) 55%, var(--border));
+  background: linear-gradient(
+    168deg,
+    color-mix(in srgb, var(--gold) 10%, var(--bg-elev)),
+    var(--bg-elev) 58%
+  );
+}
 .md-hero-top {
   display: flex;
   align-items: center;

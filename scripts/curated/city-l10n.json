@@ -76,91 +76,223 @@
    "uk": "Арлінгтон (Даллас)"
   },
   "400257536": {
-   "fa": "ایست راترفورد (نیویورک)",
-   "uk": "Іст-Резерфорд (Нью-Йорк)",
-   "uz": "Nyu-Jersi"
+   "en": "New York/New Jersey",
+   "fr": "New York/New Jersey",
+   "zh": "纽约/新泽西州",
+   "ar": "نيويورك/نيو جيرسي",
+   "es": "Nueva York/Nueva Jersey",
+   "de": "New York/New Jersey",
+   "pt": "Nova York/Nova Jersey",
+   "it": "New York/New Jersey",
+   "ja": "ニューヨーク/ニュー・ジャージー州",
+   "ko": "뉴욕/뉴저지",
+   "id": "New York/New Jersey",
+   "ru": "Нью-Йорк/Нью-Джерси",
+   "fa": "نیویورک/نیوجرسی",
+   "uk": "Нью-Йорк/Нью-Джерсі",
+   "uz": "Nyu-York/Nyu-Jersi",
+   "nl": "New York/New Jersey",
+   "sv": "New York/New Jersey",
+   "no": "New York/New Jersey",
+   "cs": "New York/New Jersey",
+   "hr": "New York/New Jersey",
+   "tr": "New York/New Jersey"
   }
  },
  "stadiums": {
   "400017978": {
    "uz": "Los-Anjeles stadioni",
    "fa": "ورزشگاه لس‌آنجلس",
-   "uk": "Стадіон Лос-Анджелес"
+   "uk": "Стадіон Лос-Анджелес",
+   "zh": "洛杉矶体育场",
+   "nl": "Stadion van Los Angeles",
+   "sv": "Los Angeles Stadion",
+   "no": "Los Angeles stadion",
+   "cs": "Stadion Los Angeles",
+   "hr": "Stadion Los Angeles",
+   "tr": "Los Angeles Stadyumu",
+   "ru": "Лос-Анджелес-стейдиум"
   },
   "400098290": {
    "uz": "Atlanta stadioni",
    "fa": "ورزشگاه آتلانتا",
-   "uk": "Стадіон Атланта"
+   "uk": "Стадіон Атланта",
+   "zh": "亚特兰大体育场",
+   "nl": "Stadion van Atlanta",
+   "sv": "Atlanta Stadion",
+   "no": "Atlanta stadion",
+   "cs": "Stadion Atlanta",
+   "hr": "Stadion Atlanta",
+   "tr": "Atlanta Stadyumu",
+   "ru": "Атланта-стейдиум"
   },
   "400216606": {
    "uz": "Sietl stadioni",
    "fa": "ورزشگاه سیاتل",
-   "uk": "Стадіон Сіетл"
+   "uk": "Стадіон Сіетл",
+   "zh": "西雅图体育场",
+   "nl": "Stadion van Seattle",
+   "sv": "Seattle Stadion",
+   "no": "Seattle stadion",
+   "cs": "Stadion Seattle",
+   "hr": "Stadion Seattle",
+   "tr": "Seattle Stadyumu"
   },
   "400222084": {
    "uz": "Mexiko stadioni",
    "fa": "ورزشگاه مکزیکوسیتی",
-   "uk": "Стадіон Мехіко"
+   "uk": "Стадіон Мехіко",
+   "zh": "墨西哥城体育场",
+   "nl": "Stadion van Mexico-Stad",
+   "sv": "Mexico City Stadion",
+   "no": "Mexico by stadion",
+   "cs": "Stadion Mexico City",
+   "hr": "Stadion Mexico City",
+   "tr": "Meksiko Stadyumu"
   },
   "400238450": {
    "uz": "Monterrey stadioni",
    "fa": "ورزشگاه مونتری",
-   "uk": "Стадіон Монтеррей"
+   "uk": "Стадіон Монтеррей",
+   "zh": "蒙特雷体育场",
+   "nl": "Stadion van Monterrey",
+   "sv": "Monterrey Stadion",
+   "no": "Monterrey stadion",
+   "cs": "Stadion Monterrey",
+   "hr": "Stadion Monterrey",
+   "tr": "Monterrey Stadyumu"
   },
   "400242032": {
    "uz": "Toronto stadioni",
    "fa": "ورزشگاه تورنتو",
-   "uk": "Стадіон Торонто"
+   "uk": "Стадіон Торонто",
+   "zh": "多伦多体育场",
+   "nl": "Stadion van Toronto",
+   "sv": "Toronto Stadion",
+   "no": "Toronto stadion",
+   "cs": "Stadion Toronto",
+   "hr": "Stadion Toronto",
+   "tr": "Toronto Stadyumu"
   },
   "400248370": {
    "uz": "BC Place (Vankuver)",
    "fa": "بی‌سی پلیس ونکوور",
-   "uk": "Бі-Сі Плейс (Ванкувер)"
+   "uk": "Бі-Сі Плейс (Ванкувер)",
+   "zh": "温哥华BC Place体育场",
+   "cs": "Stadion BC Place Vancouver"
   },
   "400248622": {
    "uz": "Filadelfiya stadioni",
    "fa": "ورزشگاه فیلادلفیا",
-   "uk": "Стадіон Філадельфія"
+   "uk": "Стадіон Філадельфія",
+   "zh": "费城体育场",
+   "nl": "Stadion van Philadelphia",
+   "sv": "Philadelphia Stadion",
+   "no": "Philadelphia stadion",
+   "cs": "Stadion Filadelfie",
+   "hr": "Stadion Philadelphia",
+   "tr": "Philadelphia Stadyumu"
   },
   "400248623": {
    "uz": "Boston stadioni",
    "fa": "ورزشگاه بوستون",
-   "uk": "Стадіон Бостон"
+   "uk": "Стадіон Бостон",
+   "zh": "波士顿体育场",
+   "nl": "Stadion van Boston",
+   "sv": "Boston Stadion",
+   "no": "Boston stadion",
+   "cs": "Stadion Boston",
+   "hr": "Stadion Boston",
+   "tr": "Boston Stadyumu"
   },
   "400249385": {
    "uz": "Xyuston stadioni",
    "fa": "ورزشگاه هیوستون",
-   "uk": "Стадіон Х'юстон"
+   "uk": "Стадіон Х'юстон",
+   "zh": "休斯敦体育场",
+   "nl": "Stadion van Houston",
+   "sv": "Houston Stadion",
+   "no": "Houston stadion",
+   "cs": "Stadion Houston",
+   "hr": "Stadion Houston",
+   "tr": "Houston Stadyumu"
   },
   "400252150": {
    "uz": "Gvadalaxara stadioni",
    "fa": "ورزشگاه گوادالاخارا",
-   "uk": "Стадіон Гвадалахара"
+   "uk": "Стадіон Гвадалахара",
+   "zh": "瓜达拉哈拉体育场",
+   "nl": "Stadion van Guadalajara",
+   "sv": "Guadalajara Stadion",
+   "no": "Guadalajara stadion",
+   "cs": "Stadion Guadalajara",
+   "hr": "Stadion Guadalajara",
+   "tr": "Guadalajara Stadyumu"
   },
   "400254717": {
    "uz": "Kanzas-Siti stadioni",
    "fa": "ورزشگاه کانزاس‌سیتی",
-   "uk": "Стадіон Канзас-Сіті"
+   "uk": "Стадіон Канзас-Сіті",
+   "zh": "堪萨斯城体育场",
+   "nl": "Stadion van Kansas City",
+   "sv": "Kansas City Stadion",
+   "no": "Kansas City stadion",
+   "cs": "Stadion Kansas City",
+   "hr": "Stadion Kansas City",
+   "tr": "Kansas City Stadyumu",
+   "ru": "Канзас-Сити-стейдиум"
   },
   "400257521": {
    "uz": "San-Fransisko ko‘rfazi stadioni",
    "fa": "ورزشگاه منطقه خلیج سان‌فرانسیسکو",
-   "uk": "Стадіон Сан-Франциско-Бей"
+   "uk": "Стадіон Сан-Франциско-Бей",
+   "zh": "旧金山湾区体育场",
+   "nl": "Stadion van de San Francisco Bay Area",
+   "sv": "San Francisco Bay Area Stadion",
+   "no": "San Francisco Bay Area stadion",
+   "cs": "Stadion Sanfranciského zálivu",
+   "hr": "Stadion San Francisco Bay Area",
+   "tr": "San Francisco Körfez Bölgesi Stadyumu",
+   "ru": "Стадион залива Сан-Франциско"
   },
   "400257525": {
    "uz": "Mayami stadioni",
    "fa": "ورزشگاه میامی",
-   "uk": "Стадіон Маямі"
+   "uk": "Стадіон Маямі",
+   "zh": "迈阿密体育场",
+   "nl": "Stadion van Miami",
+   "sv": "Miami Stadion",
+   "no": "Miami stadion",
+   "cs": "Stadion Miami",
+   "hr": "Stadion Miami",
+   "tr": "Miami Stadyumu",
+   "ru": "Майами-стейдиум"
   },
   "400257526": {
    "uz": "Dallas stadioni",
    "fa": "ورزشگاه دالاس",
-   "uk": "Стадіон Даллас"
+   "uk": "Стадіон Даллас",
+   "zh": "达拉斯体育场",
+   "nl": "Stadion van Dallas",
+   "sv": "Dallas Stadion",
+   "no": "Dallas stadion",
+   "cs": "Stadion Dallas",
+   "hr": "Stadion Dallas",
+   "tr": "Dallas Stadyumu",
+   "ru": "Даллас-стейдиум"
   },
   "400257536": {
    "uz": "Nyu-York/Nyu-Jersi stadioni",
    "fa": "ورزشگاه نیویورک/نیوجرسی",
-   "uk": "Стадіон Нью-Йорк/Нью-Джерсі"
+   "uk": "Стадіон Нью-Йорк/Нью-Джерсі",
+   "zh": "纽约/新泽西体育场",
+   "nl": "Stadion van New York/New Jersey",
+   "sv": "New York/New Jersey Stadion",
+   "no": "New York/New Jersey stadion",
+   "cs": "Stadion New York/New Jersey",
+   "hr": "Stadion New York/New Jersey",
+   "tr": "New York/New Jersey Stadyumu",
+   "ru": "Нью-Йорк/Нью-Джерси-стейдиум"
   }
  }
 }

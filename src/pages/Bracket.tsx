@@ -1,6 +1,6 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import type { Match, MatchSide, Stage } from '../types'
 import { useI18n } from '../i18n'
 import { useSettings } from '../settings/SettingsContext'
@@ -11,6 +11,7 @@ import { resolvedSlots } from '../utils/bracketResolve'
 import Flag from '../components/Flag'
 import Trophy from '../components/Trophy'
 import TeamName from '../components/TeamName'
+import TournamentStanding from '../components/TournamentStanding'
 import './bracket.css'
 
 /** rounds of one bracket half, root first: [sf ×1, qf ×2, r16 ×4, r32 ×8] */
@@ -181,9 +182,25 @@ function BkNode({
 export default function Bracket() {
   const { t, locale } = useI18n()
   const { settings } = useSettings()
-  const { matches, venues } = useAppData()
+  const { matches, venues, teams, stats } = useAppData()
   const { standings } = useAppData()
   const overlay = useMemo(() => resolvedSlots(matches, standings), [matches, standings])
+
+  // deep link from the Matches strip (?standing=1): scroll to the final standing
+  // table once it exists and flash it once
+  const [searchParams] = useSearchParams()
+  useEffect(() => {
+    // re-runs once matches load so the (conditionally rendered) table exists to scroll to
+    if (!searchParams.get('standing') || matches.length === 0) return
+    const el = document.getElementById('sx-standing')
+    if (!el) return
+    const id = requestAnimationFrame(() => {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      el.classList.add('flash')
+      setTimeout(() => el.classList.remove('flash'), 1800)
+    })
+    return () => cancelAnimationFrame(id)
+  }, [searchParams, matches])
   // remembered across visits (narrow-screen half-tree view)
   const [half, setHalfState] = useState<'l' | 'r'>(() => {
     try {
@@ -376,6 +393,8 @@ export default function Bracket() {
           )}
         </div>
       </div>
+
+      <TournamentStanding matches={matches} teams={teams} fairPlay={stats.fairPlay?.all} />
     </div>
   )
 }
