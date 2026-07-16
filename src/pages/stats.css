@@ -224,6 +224,11 @@
   font-size: 0.86rem;
   color: var(--text-2);
 }
+/* fair-play scores can be one-decimal in the "per match" view (e.g. -4.00),
+   wider than the integer totals; give that list a roomier number column */
+#sx-fair-play .sx-rank-no {
+  width: 46px;
+}
 .sx-rank-team {
   flex: 1;
   min-width: 0;

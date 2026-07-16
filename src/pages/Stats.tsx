@@ -57,10 +57,18 @@ export default function Stats() {
     fpMode === 'allPerMatch'
       ? Object.fromEntries(Object.keys(allScores).map((c) => [c, played[c] ? allScores[c] / played[c] : 0]))
       : (stats.fairPlay?.[fpMode] ?? {})
-  // most deductions first (most negative), like the cards table; cleanest teams last
+  // fewest deductions first (score closest to 0); worst-behaved teams last.
+  // ties: in the "All" view, more matches played (a milder per-match average) ranks
+  // first; group-stage and per-match views fall through to the FIFA code. Only the
+  // score / among-equal ordering is reversed here; the code tiebreak stays alphabetical
   const fairPlayRows = Object.values(teams)
     .map((tm) => ({ code: tm.code, group: tm.group, score: fpScores[tm.code] ?? 0 }))
-    .sort((a, b) => a.score - b.score || a.code.localeCompare(b.code))
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        (fpMode === 'all' ? (played[b.code] ?? 0) - (played[a.code] ?? 0) : 0) ||
+        a.code.localeCompare(b.code),
+    )
 
   const finished = matches.filter((m) => m.status === 'finished')
   const live = matches.filter((m) => m.status === 'live')

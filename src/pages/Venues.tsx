@@ -243,7 +243,7 @@ function VenueMap({
   onPin: (id: string) => void
   onCountry: (c: HostCountry) => void
 }) {
-  const { t, pick, lang, locale } = useI18n()
+  const { t, pick, lang } = useI18n()
   const navigate = useNavigate()
   const [showCamps, setShowCamps] = useState(true)
 
@@ -263,10 +263,8 @@ function VenueMap({
     }
   }, [])
 
-  const teamOptions = useMemo(
-    () => camps.slice().sort((a, b) => pick(a.name, a.code).localeCompare(pick(b.name, b.code), locale)),
-    [camps, pick, locale],
-  )
+  // ordered by FIFA three-letter code (ARG, AUS, BRA, ...)
+  const teamOptions = useMemo(() => camps.slice().sort((a, b) => a.code.localeCompare(b.code)), [camps])
 
   // project the camps, then run a deterministic collision-relaxation pass so no
   // flag overlaps another flag or a stadium pin (same-city camps fan out around it)

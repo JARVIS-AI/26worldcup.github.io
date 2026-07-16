@@ -43,7 +43,9 @@ export default function TournamentStanding({
         <table className="ts-table tnum" aria-label={t('tsTitle')}>
           <thead>
             <tr>
-              <th className="ts-pos" scope="col" />
+              <th className="ts-pos" scope="col">
+                #
+              </th>
               <th className="ts-grp" scope="col">
                 {t('group')}
               </th>
