@@ -306,9 +306,28 @@
 .ams-history-team.away {
   text-align: end;
 }
+.ams-history-team.win {
+  color: var(--accent-text);
+}
 .ams-history-score {
-  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
   padding: 0 8px;
+}
+.ams-history-main {
+  font-weight: 800;
+}
+.ams-history-sub {
+  font-size: 0.66rem;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+.ams-real {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .ams-note {

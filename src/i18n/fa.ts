@@ -22,6 +22,7 @@ const fa: Dict = {
   loadError:
     'بارگذاری داده‌های مسابقات ممکن نشد. دستور «npm run update» را اجرا کنید و صفحه را تازه‌سازی کنید.',
   all: 'همه',
+  perMatch: 'در هر بازی',
   today: 'امروز',
   tomorrow: 'فردا',
   yesterday: 'دیروز',
@@ -157,7 +158,7 @@ const fa: Dict = {
   semiLiveNote: 'نتایج در طول بازی‌ها تقریبا هر 15 دقیقه به‌روزرسانی می‌شود.',
   probTitle: 'احتمال برد',
   probDraw: 'مساوی',
-  probAdvance: 'صعود (شامل وقت اضافه و پنالتی)',
+  probAdvance: 'برد (شامل وقت اضافه و پنالتی)',
   prob90: 'برد در 90 دقیقه',
   probEt: 'برد در وقت اضافه',
   probPens: 'برد در ضربات پنالتی',
@@ -386,6 +387,7 @@ const fa: Dict = {
   aimsWinner: 'برد {team}!',
   aimsDrawLabel: 'مساوی',
   aimsHistory: 'تاریخچهٔ شبیه‌سازی',
+  aimsRealMatch: 'بازی واقعی',
   aimsClearHistory: 'پاک کردن تاریخچه',
   aimsNote:
     'از همان مدل رتبه‌بندی اِلو در صفحهٔ پیش‌بینی تورنمنت استفاده می‌کند. فقط برای سرگرمی، نه پیش‌بینی رسمی.',

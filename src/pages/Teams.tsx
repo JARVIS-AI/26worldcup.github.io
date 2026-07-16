@@ -13,6 +13,8 @@ import './teams.css'
 const CONF_ORDER: Confederation[] = ['UEFA', 'CONMEBOL', 'CONCACAF', 'CAF', 'AFC', 'OFC']
 type TeamMode = 'group' | 'confed' | 'ranking'
 const byName = (a: Team, b: Team) => (a.name.en || a.code).localeCompare(b.name.en || b.code)
+// FIFA ranking, best first; teams without a ranking sink to the end, ties broken by name
+const byRanking = (a: Team, b: Team) => (a.ranking ?? Infinity) - (b.ranking ?? Infinity) || byName(a, b)
 
 function TeamCard({ team }: { team: Team }) {
   const { t, pick } = useI18n()
@@ -63,9 +65,7 @@ export default function Teams() {
       return [
         {
           key: '',
-          teams: all
-            .slice()
-            .sort((a, b) => (a.ranking ?? Infinity) - (b.ranking ?? Infinity) || byName(a, b)),
+          teams: all.slice().sort(byRanking),
         },
       ]
     }
@@ -76,7 +76,7 @@ export default function Teams() {
       by[k].push(tm)
     }
     const order = mode === 'confed' ? CONF_ORDER.filter((c) => by[c]?.length) : Object.keys(by).sort()
-    return order.map((k) => ({ key: k, teams: by[k].slice().sort(byName) }))
+    return order.map((k) => ({ key: k, teams: by[k].slice().sort(byRanking) }))
   }, [teams, mode])
 
   // space-separated terms AND together: "ko pu" finds Korea Republic, "墨 哥" finds 墨西哥;

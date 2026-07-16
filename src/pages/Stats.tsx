@@ -41,8 +41,22 @@ export default function Stats() {
   const groupStageOver =
     groupMatches.length > 0 && groupMatches.every((m) => m.status === 'finished' || m.status === 'postponed')
   const firstKnockoutDone = matches.some((m) => m.stage !== 'group' && m.status === 'finished')
-  const [fpMode, setFpMode] = useState<'group' | 'all'>(groupStageOver && firstKnockoutDone ? 'all' : 'group')
-  const fpScores = stats.fairPlay?.[fpMode] ?? {}
+  const [fpMode, setFpMode] = useState<'group' | 'all' | 'allPerMatch'>(
+    groupStageOver && firstKnockoutDone ? 'all' : 'group',
+  )
+  // matches each team has actually played (finished), for the per-match average
+  const played: Record<string, number> = {}
+  for (const m of matches) {
+    if (m.status !== 'finished') continue
+    if (m.home?.code) played[m.home.code] = (played[m.home.code] ?? 0) + 1
+    if (m.away?.code) played[m.away.code] = (played[m.away.code] ?? 0) + 1
+  }
+  const allScores = stats.fairPlay?.all ?? {}
+  // 'allPerMatch' = the cumulative "all" score divided by matches played (0 before any)
+  const fpScores: Record<string, number> =
+    fpMode === 'allPerMatch'
+      ? Object.fromEntries(Object.keys(allScores).map((c) => [c, played[c] ? allScores[c] / played[c] : 0]))
+      : (stats.fairPlay?.[fpMode] ?? {})
   // most deductions first (most negative), like the cards table; cleanest teams last
   const fairPlayRows = Object.values(teams)
     .map((tm) => ({ code: tm.code, group: tm.group, score: fpScores[tm.code] ?? 0 }))
@@ -298,12 +312,22 @@ export default function Stats() {
               >
                 {t('all')}
               </button>
+              <button
+                type="button"
+                className={fpMode === 'allPerMatch' ? 'on' : ''}
+                aria-pressed={fpMode === 'allPerMatch'}
+                onClick={() => setFpMode('allPerMatch')}
+              >
+                {t('all')} ({t('perMatch')})
+              </button>
             </div>
           </div>
           <div className="sx-rank-list">
             {fairPlayRows.map((row) => (
               <div key={row.code} className="sx-rank-row">
-                <span className="sx-rank-no tnum">{row.score}</span>
+                <span className="sx-rank-no tnum">
+                  {fpMode === 'allPerMatch' ? row.score.toFixed(2) : row.score}
+                </span>
                 <TeamName code={row.code} flagSize={20} className="sx-rank-team" />
                 <span className="chip" title={t('groupX', { x: row.group })}>
                   {row.group}
