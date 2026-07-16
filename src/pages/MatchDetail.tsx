@@ -340,9 +340,10 @@ export default function MatchDetail() {
                 .filter((g) => g.code === m.home?.code)
                 .map((g) => (
                   <div key={g.key}>
-                    {scorerName(g)} {g.minute}
+                    {/* home side: minute pinned to the far right (after the og/pen tag) */}
+                    {scorerName(g)}
                     {g.own && <span className="muted"> ({t('ownGoal')})</span>}
-                    {g.pen && <span className="muted"> ({t('penaltyGoal')})</span>}
+                    {g.pen && <span className="muted"> ({t('penaltyGoal')})</span>} {g.minute}
                   </div>
                 ))}
             </div>
