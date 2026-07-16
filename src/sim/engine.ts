@@ -146,25 +146,10 @@ export function knockoutProbs(p: { h: number; d: number; a: number; dr: number }
   return { eh, ea, ph: pens, pa: pens, ah, aa: 1 - ah }
 }
 
-/** largest-remainder rounding: integer parts of `vals` (already scaled) that sum to `total` */
-function largestRemainder(vals: number[], total: number): number[] {
-  const ints = vals.map(Math.floor)
-  let left = total - ints.reduce((s, v) => s + v, 0)
-  vals
-    .map((v, i): [number, number] => [v - ints[i], i])
-    .sort((x, y) => y[0] - x[0])
-    .forEach(([, i]) => {
-      if (left > 0) {
-        ints[i]++
-        left--
-      }
-    })
-  return ints
-}
-
-/** integer knockout percentages exactly as the data pipeline reports them (elo.mjs
- *  intify): 90' h/d/a sum to 100 and the ET + penalty cells sum to the integer draw %.
- *  use this for display so the simulator's knockout table matches the match pages. */
+/** one-decimal knockout percentages for display, mirroring the data pipeline (elo.mjs
+ *  intify): each cell is the honest round of its own value (no largest-remainder
+ *  redistribution, so equal probabilities render equally), and the advance % is the exact
+ *  float rounded once. keeps the simulator's table in step with the match pages. */
 export function intifyKo(p: { h: number; d: number; a: number; dr: number }): {
   h: number
   d: number
@@ -175,10 +160,18 @@ export function intifyKo(p: { h: number; d: number; a: number; dr: number }): {
   pa: number
   ah: number
 } {
-  const [h, d, a] = largestRemainder([p.h * 100, p.d * 100, p.a * 100], 100)
+  const r1 = (v: number) => Math.round(v * 1000) / 10
   const kp = knockoutProbs(p)
-  const [eh, ea, ph, pa] = largestRemainder([kp.eh * 100, kp.ea * 100, kp.ph * 100, kp.pa * 100], d)
-  return { h, d, a, eh, ea, ph, pa, ah: h + eh + ph }
+  return {
+    h: r1(p.h),
+    d: r1(p.d),
+    a: r1(p.a),
+    eh: r1(kp.eh),
+    ea: r1(kp.ea),
+    ph: r1(kp.ph),
+    pa: r1(kp.pa),
+    ah: r1(kp.ah),
+  }
 }
 
 const poisson = (lambda: number, rnd: () => number): number => {

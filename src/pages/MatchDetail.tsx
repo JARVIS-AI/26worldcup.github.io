@@ -30,6 +30,9 @@ import Pitch from '../components/Pitch'
 import TeamName from '../components/TeamName'
 import './matchdetail.css'
 
+/** one-decimal percentage for the win/advance probabilities (stored as 0-100) */
+const pct1 = (v = 0) => `${v.toFixed(1)}%`
+
 const ROLE_KEY: Record<string, string> = {
   referee: 'roleReferee',
   ar1: 'roleAr1',
@@ -406,7 +409,7 @@ export default function MatchDetail() {
             <div
               className="md-prob-bar"
               role="img"
-              aria-label={`${m.home.code} ${probs[m.id].h}% · ${t('probDraw')} ${probs[m.id].d}% · ${m.away.code} ${probs[m.id].a}%`}
+              aria-label={`${m.home.code} ${pct1(probs[m.id].h)} · ${t('probDraw')} ${pct1(probs[m.id].d)} · ${m.away.code} ${pct1(probs[m.id].a)}`}
             >
               <span className="md-prob-h" style={{ width: `${probs[m.id].h}%` }} />
               <span className="md-prob-d" style={{ width: `${probs[m.id].d}%` }} />
@@ -414,13 +417,13 @@ export default function MatchDetail() {
             </div>
             <div className="md-prob-legend small tnum">
               <span>
-                {m.home.code} {probs[m.id].h}%
+                {m.home.code} {pct1(probs[m.id].h)}
               </span>
               <span>
-                {t('probDraw')} {probs[m.id].d}%
+                {t('probDraw')} {pct1(probs[m.id].d)}
               </span>
               <span>
-                {m.away.code} {probs[m.id].a}%
+                {m.away.code} {pct1(probs[m.id].a)}
               </span>
             </div>
             {probs[m.id].eh != null ? (
@@ -435,23 +438,23 @@ export default function MatchDetail() {
                 <tbody>
                   <tr>
                     <th scope="row">{t('prob90')}</th>
-                    <td>{probs[m.id].h}%</td>
-                    <td>{probs[m.id].a}%</td>
+                    <td>{pct1(probs[m.id].h)}</td>
+                    <td>{pct1(probs[m.id].a)}</td>
                   </tr>
                   <tr>
                     <th scope="row">{t('probEt')}</th>
-                    <td>+{probs[m.id].eh}%</td>
-                    <td>+{probs[m.id].ea}%</td>
+                    <td>+{pct1(probs[m.id].eh)}</td>
+                    <td>+{pct1(probs[m.id].ea)}</td>
                   </tr>
                   <tr>
                     <th scope="row">{t('probPens')}</th>
-                    <td>+{probs[m.id].ph}%</td>
-                    <td>+{probs[m.id].pa}%</td>
+                    <td>+{pct1(probs[m.id].ph)}</td>
+                    <td>+{pct1(probs[m.id].pa)}</td>
                   </tr>
                   <tr className="md-prob-total">
                     <th scope="row">{t('probAdvance')}</th>
-                    <td>{probs[m.id].ah}%</td>
-                    <td>{100 - (probs[m.id].ah ?? 0)}%</td>
+                    <td>{pct1(probs[m.id].ah)}</td>
+                    <td>{pct1(100 - (probs[m.id].ah ?? 0))}</td>
                   </tr>
                 </tbody>
               </table>
@@ -460,7 +463,7 @@ export default function MatchDetail() {
                 <div className="md-prob-adv small muted">
                   {t('probAdvance')}
                   {t('colon')}
-                  {m.home.code} {probs[m.id].ah}% · {m.away.code} {100 - (probs[m.id].ah ?? 0)}%
+                  {m.home.code} {pct1(probs[m.id].ah)} · {m.away.code} {pct1(100 - (probs[m.id].ah ?? 0))}
                 </div>
               )
             )}

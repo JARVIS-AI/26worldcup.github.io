@@ -316,36 +316,21 @@ export function koBreakdown(p) {
   return { eh: p.d * hw, ea: p.d * (1 - tie - hw), ph: (p.d * tie) / 2, pa: (p.d * tie) / 2 }
 }
 
-/** turn raw float probs into integer percentages summing to 100 (+ ah for KO) */
+/** round raw float probs to one-decimal percentages for display. each cell is the
+ * honest round of its own value (no largest-remainder redistribution, so equal
+ * probabilities render equally and nothing is nudged to force a running total); the
+ * knockout advance % is the exact float, rounded once. h/d/a may therefore total
+ * 99.9-100.1, and the ET/penalty cells need not add up to the rounded advance %. */
 export function intify(p, knockout) {
-  const raw = [p.h, p.d, p.a].map((v) => v * 100)
-  const ints = raw.map(Math.floor)
-  let left = 100 - ints.reduce((s, v) => s + v, 0)
-  raw
-    .map((v, i) => [v - ints[i], i])
-    .sort((x, y) => y[0] - x[0])
-    .forEach(([, i]) => {
-      if (left > 0) {
-        ints[i]++
-        left--
-      }
-    })
-  const out = { h: ints[0], d: ints[1], a: ints[2] }
+  const r1 = (v) => Math.round(v * 1000) / 10 // probability in [0,1] -> one-decimal percent
+  const out = { h: r1(p.h), d: r1(p.d), a: r1(p.a) }
   if (knockout) {
     const bd = koBreakdown(p)
-    const cells = [bd.eh, bd.ea, bd.ph, bd.pa].map((v) => v * 100)
-    const ci = cells.map(Math.floor)
-    let left = out.d - ci.reduce((s, v) => s + v, 0)
-    const order = cells.map((v, i) => [v - ci[i], i]).sort((x, y) => y[0] - x[0])
-    for (let k = 0; left > 0; k = (k + 1) % order.length) {
-      ci[order[k][1]]++
-      left--
-    }
-    out.eh = ci[0]
-    out.ea = ci[1]
-    out.ph = ci[2]
-    out.pa = ci[3]
-    out.ah = out.h + out.eh + out.ph
+    out.eh = r1(bd.eh)
+    out.ea = r1(bd.ea)
+    out.ph = r1(bd.ph)
+    out.pa = r1(bd.pa)
+    out.ah = r1(p.h + bd.eh + bd.ph)
   }
   return out
 }

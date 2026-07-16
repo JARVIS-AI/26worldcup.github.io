@@ -374,23 +374,23 @@ function KoProbTable({ home, away, p }: { home: string; away: string; p: KoProbs
       <tbody>
         <tr>
           <th scope="row">{t('prob90')}</th>
-          <td>{k.h}%</td>
-          <td>{k.a}%</td>
+          <td>{k.h.toFixed(1)}%</td>
+          <td>{k.a.toFixed(1)}%</td>
         </tr>
         <tr>
           <th scope="row">{t('probEt')}</th>
-          <td>+{k.eh}%</td>
-          <td>+{k.ea}%</td>
+          <td>+{k.eh.toFixed(1)}%</td>
+          <td>+{k.ea.toFixed(1)}%</td>
         </tr>
         <tr>
           <th scope="row">{t('probPens')}</th>
-          <td>+{k.ph}%</td>
-          <td>+{k.pa}%</td>
+          <td>+{k.ph.toFixed(1)}%</td>
+          <td>+{k.pa.toFixed(1)}%</td>
         </tr>
         <tr className="ams-kotable-total">
           <th scope="row">{t('probAdvance')}</th>
-          <td>{k.ah}%</td>
-          <td>{100 - k.ah}%</td>
+          <td>{k.ah.toFixed(1)}%</td>
+          <td>{(100 - k.ah).toFixed(1)}%</td>
         </tr>
       </tbody>
     </table>
@@ -409,7 +409,7 @@ function ProbBar({
   compact?: boolean
 }) {
   const { t } = useI18n()
-  const pct = (x: number) => `${Math.round(x * 100)}%`
+  const pct = (x: number) => `${(x * 100).toFixed(1)}%`
   return (
     <div className={`ams-probbar${compact ? ' compact' : ''}`}>
       {!compact && (

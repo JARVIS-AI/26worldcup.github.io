@@ -240,6 +240,8 @@ export interface Broadcasters {
   asOf?: string
 }
 
+// win/advance probabilities as one-decimal percentages (0-100); each cell is rounded
+// independently, so h/d/a need not total exactly 100 nor the ET/pen cells the advance %
 export interface MatchProbs {
   h: number
   d: number
