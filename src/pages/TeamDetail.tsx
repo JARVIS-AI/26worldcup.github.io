@@ -7,6 +7,7 @@ import { useSettings } from '../settings/SettingsContext'
 import { useAppData, useData } from '../data/DataContext'
 import {
   assetUrl,
+  bandResultLabel,
   CONF_REGION_KEY,
   fifaSquadUrl,
   fifaToIso2,
@@ -14,6 +15,7 @@ import {
   sortMatches,
   TEAM_CONFEDERATION,
 } from '../utils/helpers'
+import { tournamentRanking } from '../utils/tournamentRanking'
 import { FifaMark, HomeMark, WikipediaMark } from '../components/BrandMarks'
 import Flag from '../components/Flag'
 import Icon from '../components/Icon'
@@ -216,6 +218,12 @@ export default function TeamDetail() {
   const teamMatches = useMemo(
     () => sortMatches(matches.filter((m) => m.home?.code === code || m.away?.code === code)),
     [matches, code],
+  )
+  // this team's row in the final tournament standing (null until the quarter-finals
+  // are done); its result label + overall record head the matches section
+  const teamResult = useMemo(
+    () => tournamentRanking(matches, teams, stats.fairPlay?.all)?.find((r) => r.code === code) ?? null,
+    [matches, teams, stats, code],
   )
 
   const squad = squads ? (squads[code] ?? null) : null
@@ -461,6 +469,41 @@ export default function TeamDetail() {
         </section>
       </div>
 
+      {teamResult && (
+        <Link to="/bracket?standing=1" className={`card card-pad td-result td-band-${teamResult.band}`}>
+          <span className="td-result-head">
+            <span className="td-result-label">{bandResultLabel(teamResult.band, t)}</span>
+            {teamResult.pos != null && <span className="td-result-pos tnum">#{teamResult.pos}</span>}
+            <span className="td-result-cta">{t('fullStanding')} →</span>
+          </span>
+          <span className="td-result-stats tnum">
+            <span>
+              {t('colP')} <b>{teamResult.p}</b>
+            </span>
+            <span>
+              {t('colW')} <b>{teamResult.w}</b>
+            </span>
+            <span>
+              {t('colD')} <b>{teamResult.d}</b>
+            </span>
+            <span>
+              {t('colL')} <b>{teamResult.l}</b>
+            </span>
+            <span>
+              {t('colGF')} <b>{teamResult.gf}</b>
+            </span>
+            <span>
+              {t('colGA')} <b>{teamResult.ga}</b>
+            </span>
+            <span>
+              {t('colGD')} <b>{teamResult.gd > 0 ? `+${teamResult.gd}` : teamResult.gd}</b>
+            </span>
+            <span>
+              {t('colPts')} <b>{teamResult.pts}</b>
+            </span>
+          </span>
+        </Link>
+      )}
       <div className="section-title">
         <h2>{t('teamMatches')}</h2>
       </div>

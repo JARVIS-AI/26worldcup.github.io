@@ -23,6 +23,7 @@ const fa: Dict = {
   loadError:
     'بارگذاری داده‌های مسابقات ممکن نشد. دستور «npm run update» را اجرا کنید و صفحه را تازه‌سازی کنید.',
   all: 'همه',
+  perMatch: 'در هر بازی',
   today: 'امروز',
   tomorrow: 'فردا',
   yesterday: 'دیروز',
@@ -87,6 +88,8 @@ const fa: Dict = {
   jumpNow: 'اکنون',
   titleOdds: 'شانس قهرمانی',
   runForecast: 'پیش‌بینی خودتان را اجرا کنید',
+  runSimulation: 'شبیه‌سازی خودتان را اجرا کنید',
+  fullStanding: 'رده‌بندی کامل',
   matchesShown: '{n} بازی',
   // groups
   groupsTitle: 'جدول مرحله گروهی',
@@ -156,7 +159,7 @@ const fa: Dict = {
   semiLiveNote: 'نتایج در طول بازی‌ها تقریبا هر 15 دقیقه به‌روزرسانی می‌شود.',
   probTitle: 'احتمال برد',
   probDraw: 'مساوی',
-  probAdvance: 'صعود (شامل وقت اضافه و پنالتی)',
+  probAdvance: 'برد (شامل وقت اضافه و پنالتی)',
   prob90: 'برد در 90 دقیقه',
   probEt: 'برد در وقت اضافه',
   probPens: 'برد در ضربات پنالتی',
@@ -174,6 +177,8 @@ const fa: Dict = {
   simChampion: 'قهرمان',
   simSample: 'اجرای نمونه',
   simAet: 'و.ا.',
+  abbrHalfTime: 'نیمه',
+  abbrExtraTime: 'و.ا.',
   podium2: 'نایب‌قهرمان',
   podium3: 'سوم',
   podium4: 'چهارم',
@@ -274,6 +279,10 @@ const fa: Dict = {
   typeTvStreaming: 'تلویزیون + پخش آنلاین',
   // stats
   statsTitle: 'آمار',
+  tsTitle: 'رده‌بندی نهایی تورنمنت',
+  tsResult: 'نتیجه نهایی',
+  tsElimIn: 'حذف در {stage}',
+  tsConvNote: 'نتایج وقت اضافه به‌عنوان برد و باخت، و ضربات پنالتی به‌عنوان تساوی محسوب می‌شوند.',
   topScorers: 'بهترین گلزنان',
   goals: 'گل‌ها',
   noStatsYet: 'آمار پس از آغاز مسابقات نمایش داده می‌شود.',
@@ -379,6 +388,7 @@ const fa: Dict = {
   aimsWinner: 'برد {team}!',
   aimsDrawLabel: 'مساوی',
   aimsHistory: 'تاریخچهٔ شبیه‌سازی',
+  aimsRealMatch: 'بازی واقعی',
   aimsClearHistory: 'پاک کردن تاریخچه',
   aimsNote:
     'از همان مدل رتبه‌بندی اِلو در صفحهٔ پیش‌بینی تورنمنت استفاده می‌کند. فقط برای سرگرمی، نه پیش‌بینی رسمی.',

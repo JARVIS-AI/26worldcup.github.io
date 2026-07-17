@@ -7,6 +7,7 @@ import type { SimScore } from '../sim/engine'
 import { flagEmoji, hostSide } from '../utils/helpers'
 import Flag from '../components/Flag'
 import Icon from '../components/Icon'
+import MatchCard from '../components/MatchCard'
 import './matchsimulator.css'
 
 interface KoProbs {
@@ -36,10 +37,11 @@ export default function MatchSimulator() {
   // every team with a known Elo rating, sorted by name for the pickers
   const teamCodes = useMemo(() => {
     if (!simModel) return []
+    // pickers sorted by FIFA three-letter code (ARG, AUS, BRA, ...)
     return Object.keys(simModel.teams)
       .filter((c) => teams[c])
-      .sort((a, b) => pick(teams[a]?.name, a).localeCompare(pick(teams[b]?.name, b)))
-  }, [simModel, teams, pick])
+      .sort((a, b) => a.localeCompare(b))
+  }, [simModel, teams])
 
   const [homeCode, setHomeCode] = useState('')
   const [awayCode, setAwayCode] = useState('')
@@ -97,6 +99,19 @@ export default function MatchSimulator() {
     if (!simModel || !homeCode || !awayCode || homeCode === awayCode) return null
     return pairProbs(simModel, homeCode, awayCode, undefined, homeAdvantage)
   }, [simModel, homeCode, awayCode, homeAdvantage])
+
+  // every real World Cup fixture between the two picked teams, either order, regardless of
+  // the home-advantage / knockout toggles (they only affect the hypothetical simulation)
+  const realMatches = useMemo(() => {
+    if (!homeCode || !awayCode) return []
+    return matches
+      .filter(
+        (m) =>
+          (m.home?.code === homeCode && m.away?.code === awayCode) ||
+          (m.home?.code === awayCode && m.away?.code === homeCode),
+      )
+      .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
+  }, [matches, homeCode, awayCode])
 
   const canSimulate = !!simModel && !!homeCode && !!awayCode && homeCode !== awayCode
 
@@ -283,16 +298,45 @@ export default function MatchSimulator() {
             </button>
           </div>
           <div className="ams-history">
-            {history.map((h) => (
-              <div key={h.id} className="card card-pad ams-history-row">
-                <Flag team={teams[h.homeCode]} size={18} />
-                <span className="ams-history-team">{teamLabel(h.homeCode)}</span>
-                <span className="tnum ams-history-score">
-                  {h.score.h}–{h.score.a}
-                </span>
-                <span className="ams-history-team away">{teamLabel(h.awayCode)}</span>
-                <Flag team={teams[h.awayCode]} size={18} />
-              </div>
+            {history.map((h) => {
+              const won = h.score.winner
+              return (
+                <div key={h.id} className="card card-pad ams-history-row">
+                  <Flag team={teams[h.homeCode]} size={18} />
+                  <span className={`ams-history-team${won === h.homeCode ? ' win' : ''}`}>
+                    {teamLabel(h.homeCode)}
+                  </span>
+                  <span className="tnum ams-history-score">
+                    <span className="ams-history-main">
+                      {h.score.et ? `${h.score.et.h}–${h.score.et.a}` : `${h.score.h}–${h.score.a}`}
+                      {h.score.et && <span className="ams-aet">{t('simAet')}</span>}
+                    </span>
+                    {h.score.et && (
+                      <small className="ams-history-sub">
+                        90′ {h.score.h}–{h.score.a}
+                        {h.score.pens && ` · ${t('pens')} ${h.score.pens.h}–${h.score.pens.a}`}
+                      </small>
+                    )}
+                  </span>
+                  <span className={`ams-history-team away${won === h.awayCode ? ' win' : ''}`}>
+                    {teamLabel(h.awayCode)}
+                  </span>
+                  <Flag team={teams[h.awayCode]} size={18} />
+                </div>
+              )
+            })}
+          </div>
+        </section>
+      )}
+
+      {realMatches.length > 0 && (
+        <section className="ams-history-section">
+          <div className="section-title">
+            <h2>{t('aimsRealMatch')}</h2>
+          </div>
+          <div className="ams-real">
+            {realMatches.map((m) => (
+              <MatchCard key={m.id} match={m} />
             ))}
           </div>
         </section>
@@ -374,23 +418,23 @@ function KoProbTable({ home, away, p }: { home: string; away: string; p: KoProbs
       <tbody>
         <tr>
           <th scope="row">{t('prob90')}</th>
-          <td>{k.h}%</td>
-          <td>{k.a}%</td>
+          <td>{k.h.toFixed(1)}%</td>
+          <td>{k.a.toFixed(1)}%</td>
         </tr>
         <tr>
           <th scope="row">{t('probEt')}</th>
-          <td>+{k.eh}%</td>
-          <td>+{k.ea}%</td>
+          <td>+{k.eh.toFixed(1)}%</td>
+          <td>+{k.ea.toFixed(1)}%</td>
         </tr>
         <tr>
           <th scope="row">{t('probPens')}</th>
-          <td>+{k.ph}%</td>
-          <td>+{k.pa}%</td>
+          <td>+{k.ph.toFixed(1)}%</td>
+          <td>+{k.pa.toFixed(1)}%</td>
         </tr>
         <tr className="ams-kotable-total">
           <th scope="row">{t('probAdvance')}</th>
-          <td>{k.ah}%</td>
-          <td>{100 - k.ah}%</td>
+          <td>{k.ah.toFixed(1)}%</td>
+          <td>{(100 - k.ah).toFixed(1)}%</td>
         </tr>
       </tbody>
     </table>
@@ -409,7 +453,7 @@ function ProbBar({
   compact?: boolean
 }) {
   const { t } = useI18n()
-  const pct = (x: number) => `${Math.round(x * 100)}%`
+  const pct = (x: number) => `${(x * 100).toFixed(1)}%`
   return (
     <div className={`ams-probbar${compact ? ' compact' : ''}`}>
       {!compact && (

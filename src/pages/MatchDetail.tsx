@@ -17,6 +17,7 @@ import {
   matchResult,
   placeholderLabel,
   STAGE_LABEL_KEY,
+  subMinuteLabel,
   wmoEmoji,
   wmoKey,
 } from '../utils/helpers'
@@ -28,6 +29,9 @@ import MatchCard from '../components/MatchCard'
 import Pitch from '../components/Pitch'
 import TeamName from '../components/TeamName'
 import './matchdetail.css'
+
+/** one-decimal percentage for the win/advance probabilities (stored as 0-100) */
+const pct1 = (v = 0) => `${v.toFixed(1)}%`
 
 const ROLE_KEY: Record<string, string> = {
   referee: 'roleReferee',
@@ -205,11 +209,13 @@ export default function MatchDetail() {
           })
         }
       })
-      for (const sub of tl.substitutions ?? [])
-        if (sub.minute) {
-          subOn[sub.on] = sub.minute
-          subOff[sub.off] = sub.minute
-        }
+      for (const sub of tl.substitutions ?? []) {
+        // half-time / extra-time-break subs arrive with an empty minute — label them
+        // (HT / ET) instead of dropping them, so the swap still shows on the pitch
+        const label = subMinuteLabel(sub.minute, sub.period, t)
+        subOn[sub.on] = label
+        subOff[sub.off] = label
+      }
       // a player's goal minutes (open play + penalties; own goals & shootout excluded)
       for (const g of tl.goals ?? []) {
         if (g.type === 3 || g.period === 11 || !g.minute) continue
@@ -222,7 +228,7 @@ export default function MatchDetail() {
     for (const [id, mins] of Object.entries(goalMins))
       goals[id] = mins.sort((a, b) => (parseInt(a, 10) || 0) - (parseInt(b, 10) || 0)).join(', ')
     return { reds, marks, subOn, subOff, goals }
-  }, [lu, m])
+  }, [lu, m, t])
   const redRows = cardInfo.reds
 
   // scorer / red-card name, linked to the player's card on their team's squad page
@@ -285,14 +291,14 @@ export default function MatchDetail() {
   return (
     <div>
       {/* ===== header card ===== */}
-      <div className="card md-hero">
+      <div className={`card md-hero${m.stage === 'final' ? ' md-hero-final' : ''}`}>
         <div className="md-hero-top">
           {m.stage === 'group' && m.group ? (
             <Link className="chip md-group-chip" to={`/groups?g=${m.group}`}>
               {t('groupX', { x: m.group })}
             </Link>
           ) : (
-            <span className={m.stage === 'final' ? 'chip chip-accent' : 'chip'}>
+            <span className={m.stage === 'final' ? 'chip chip-final' : 'chip'}>
               {t(STAGE_LABEL_KEY[m.stage])}
             </span>
           )}
@@ -334,9 +340,10 @@ export default function MatchDetail() {
                 .filter((g) => g.code === m.home?.code)
                 .map((g) => (
                   <div key={g.key}>
-                    {scorerName(g)} {g.minute}
+                    {/* home side: minute pinned to the far right (after the og/pen tag) */}
+                    {scorerName(g)}
                     {g.own && <span className="muted"> ({t('ownGoal')})</span>}
-                    {g.pen && <span className="muted"> ({t('penaltyGoal')})</span>}
+                    {g.pen && <span className="muted"> ({t('penaltyGoal')})</span>} {g.minute}
                   </div>
                 ))}
             </div>
@@ -403,7 +410,7 @@ export default function MatchDetail() {
             <div
               className="md-prob-bar"
               role="img"
-              aria-label={`${m.home.code} ${probs[m.id].h}% · ${t('probDraw')} ${probs[m.id].d}% · ${m.away.code} ${probs[m.id].a}%`}
+              aria-label={`${m.home.code} ${pct1(probs[m.id].h)} · ${t('probDraw')} ${pct1(probs[m.id].d)} · ${m.away.code} ${pct1(probs[m.id].a)}`}
             >
               <span className="md-prob-h" style={{ width: `${probs[m.id].h}%` }} />
               <span className="md-prob-d" style={{ width: `${probs[m.id].d}%` }} />
@@ -411,13 +418,13 @@ export default function MatchDetail() {
             </div>
             <div className="md-prob-legend small tnum">
               <span>
-                {m.home.code} {probs[m.id].h}%
+                {m.home.code} {pct1(probs[m.id].h)}
               </span>
               <span>
-                {t('probDraw')} {probs[m.id].d}%
+                {t('probDraw')} {pct1(probs[m.id].d)}
               </span>
               <span>
-                {m.away.code} {probs[m.id].a}%
+                {m.away.code} {pct1(probs[m.id].a)}
               </span>
             </div>
             {probs[m.id].eh != null ? (
@@ -432,23 +439,23 @@ export default function MatchDetail() {
                 <tbody>
                   <tr>
                     <th scope="row">{t('prob90')}</th>
-                    <td>{probs[m.id].h}%</td>
-                    <td>{probs[m.id].a}%</td>
+                    <td>{pct1(probs[m.id].h)}</td>
+                    <td>{pct1(probs[m.id].a)}</td>
                   </tr>
                   <tr>
                     <th scope="row">{t('probEt')}</th>
-                    <td>+{probs[m.id].eh}%</td>
-                    <td>+{probs[m.id].ea}%</td>
+                    <td>+{pct1(probs[m.id].eh)}</td>
+                    <td>+{pct1(probs[m.id].ea)}</td>
                   </tr>
                   <tr>
                     <th scope="row">{t('probPens')}</th>
-                    <td>+{probs[m.id].ph}%</td>
-                    <td>+{probs[m.id].pa}%</td>
+                    <td>+{pct1(probs[m.id].ph)}</td>
+                    <td>+{pct1(probs[m.id].pa)}</td>
                   </tr>
                   <tr className="md-prob-total">
                     <th scope="row">{t('probAdvance')}</th>
-                    <td>{probs[m.id].ah}%</td>
-                    <td>{100 - (probs[m.id].ah ?? 0)}%</td>
+                    <td>{pct1(probs[m.id].ah)}</td>
+                    <td>{pct1(100 - (probs[m.id].ah ?? 0))}</td>
                   </tr>
                 </tbody>
               </table>
@@ -457,7 +464,7 @@ export default function MatchDetail() {
                 <div className="md-prob-adv small muted">
                   {t('probAdvance')}
                   {t('colon')}
-                  {m.home.code} {probs[m.id].ah}% · {m.away.code} {100 - (probs[m.id].ah ?? 0)}%
+                  {m.home.code} {pct1(probs[m.id].ah)} · {m.away.code} {pct1(100 - (probs[m.id].ah ?? 0))}
                 </div>
               )
             )}

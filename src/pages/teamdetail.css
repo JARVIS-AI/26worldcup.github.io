@@ -562,3 +562,69 @@
   font-weight: 750;
   color: var(--text-2);
 }
+
+/* final-result card above the matches; links to the full standing */
+.td-result {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s;
+}
+.td-result:hover {
+  border-color: var(--accent-2);
+}
+.td-result-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+.td-result-label {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.td-result-pos {
+  font-weight: 700;
+  color: var(--text-2);
+}
+.td-result-cta {
+  margin-inline-start: auto;
+  align-self: center;
+  font-size: 0.82rem;
+  font-weight: 650;
+  color: var(--accent-2);
+  white-space: nowrap;
+}
+.td-result-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  font-size: 0.9rem;
+  color: var(--text-3);
+}
+.td-result-stats b {
+  color: var(--text);
+  font-weight: 750;
+}
+/* medal accents for the top finishes */
+.td-band-champion {
+  border-color: color-mix(in srgb, var(--gold) 55%, var(--border));
+  background: linear-gradient(
+    168deg,
+    color-mix(in srgb, var(--gold) 10%, var(--bg-elev)),
+    var(--bg-elev) 58%
+  );
+}
+.td-band-champion .td-result-label {
+  color: color-mix(in srgb, var(--gold) 68%, var(--text));
+}
+.td-band-runnerUp {
+  border-color: color-mix(in srgb, #c0c5ce 62%, var(--border));
+}
+.td-band-third {
+  border-color: color-mix(in srgb, #cd7f32 52%, var(--border));
+}

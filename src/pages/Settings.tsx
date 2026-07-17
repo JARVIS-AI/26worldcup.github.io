@@ -127,7 +127,12 @@ export default function Settings() {
     }
     return [...map.entries()]
       .sort(([a], [b]) => a.localeCompare(b))
-      .map(([g, list]) => ({ g, list: list.sort((x, y) => x.code.localeCompare(y.code)) }))
+      .map(([g, list]) => ({
+        g,
+        list: list.sort(
+          (x, y) => (x.ranking ?? Infinity) - (y.ranking ?? Infinity) || x.code.localeCompare(y.code),
+        ),
+      }))
   }, [teams])
 
   // ---- calendar export ----

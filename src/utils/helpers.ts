@@ -1,5 +1,6 @@
 import type { Lang, LocalizedName, Match, MatchLineups, Stage, Standings, Team, Venue } from '../types'
 import fifaIso from '../data/fifa-iso.json'
+import type { RankBand } from './tournamentRanking'
 
 /** resolve a data note that may be a plain string (legacy) or a {en,zh,fr} object */
 export function localizedNote(
@@ -45,6 +46,56 @@ export const STAGE_LABEL_KEY: Record<Stage, string> = {
 }
 
 export const STAGE_ORDER: Stage[] = ['group', 'r32', 'r16', 'qf', 'sf', 'third', 'final']
+
+// FIFA records a break-time substitution with an empty minute, tagged only by the
+// timeline Period it falls in: 4 = half-time, 8 & 17 = the extra-time breaks. Map
+// those to a localized short tag so half-time / extra-time subs are not mistaken
+// for missing data and dropped.
+const SUB_BREAK_KEY: Record<number, string> = { 4: 'abbrHalfTime', 8: 'abbrExtraTime', 17: 'abbrExtraTime' }
+
+/** display label for when a substitution happened: the FIFA minute when present,
+ *  otherwise a localized break-period tag (HT / ET). Empty only if both are unknown. */
+export function subMinuteLabel(
+  minute: string | null,
+  period: number | null,
+  t: (key: string) => string,
+): string {
+  if (minute) return minute
+  const key = period != null ? SUB_BREAK_KEY[period] : undefined
+  return key ? t(key) : ''
+}
+
+/** the "Final result" label for a team's tournament finish — or, while it is still
+ *  competing, the stage it has reached. Shared by the standing table and team page. */
+export function bandResultLabel(
+  band: RankBand,
+  t: (key: string, vars?: Record<string, string | number>) => string,
+): string {
+  switch (band) {
+    case 'champion':
+      return t('simChampion')
+    case 'runnerUp':
+      return t('podium2')
+    case 'third':
+      return t('podium3')
+    case 'fourth':
+      return t('podium4')
+    case 'final':
+      return t('stageFinal')
+    case 'sf':
+      return t('stageSf')
+    case 'thirdPlay':
+      return t('stageThird')
+    case 'qf':
+      return t('tsElimIn', { stage: t('stageQf') })
+    case 'r16':
+      return t('tsElimIn', { stage: t('stageR16') })
+    case 'r32':
+      return t('tsElimIn', { stage: t('stageR32') })
+    case 'group':
+      return t('tsElimIn', { stage: t('stageGroup') })
+  }
+}
 
 // FIFA match-centre deep link: /{lang}/match-centre/match/{idCompetition}/{idSeason}/{idStage}/{idMatch}.
 // idCompetition (17 = men's World Cup) and idSeason (285023 = 2026) are fixed for the tournament; idStage is
@@ -561,6 +612,21 @@ export interface MatchFilters {
 /** the Matches page mirrors its filter bar into the URL and remembers the last
  * one here, so other pages (calendar export) can reuse the same selection */
 export const MATCH_FILTERS_KEY = 'wc2026-matches-filters'
+
+/** the only URL params the Matches filter bar owns. Anything else (stray params
+ *  from browser extensions, shared deep links, etc.) is never persisted or
+ *  restored, so it can't be replayed onto the URL on the next no-param visit. */
+export const MATCH_FILTER_PARAMS = ['stage', 'venue', 'teams'] as const
+
+/** a copy of `params` keeping only the known, non-empty filter keys (stable order). */
+export function pickMatchFilterParams(params: URLSearchParams): URLSearchParams {
+  const out = new URLSearchParams()
+  for (const k of MATCH_FILTER_PARAMS) {
+    const v = params.get(k)
+    if (v) out.set(k, v)
+  }
+  return out
+}
 
 /** read the Matches-page filter bar out of URL params, dropping unknown values */
 export function parseMatchFilters(

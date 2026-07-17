@@ -23,6 +23,7 @@ const uz: Dict = {
   loadError:
     "Turnir ma'lumotlarini yuklab bo'lmadi. \"npm run update\" buyrug'ini bajaring va sahifani yangilang.",
   all: 'Barchasi',
+  perMatch: "har o'yinga",
   today: 'Bugun',
   tomorrow: 'Ertaga',
   yesterday: 'Kecha',
@@ -87,6 +88,8 @@ const uz: Dict = {
   jumpNow: 'Hozir',
   titleOdds: 'Chempionlik imkoniyati',
   runForecast: "O'z prognozingizni yurgizing",
+  runSimulation: "O'z simulyatsiyangizni yurgizing",
+  fullStanding: "To'liq yakuniy jadval",
   matchesShown: "{n} ta o'yin",
   // groups
   groupsTitle: 'Guruh bosqichi jadvali',
@@ -156,7 +159,7 @@ const uz: Dict = {
   semiLiveNote: 'Natijalar oʻyinlar davomida taxminan har 15 daqiqada yangilanadi.',
   probTitle: "G'alaba ehtimoli",
   probDraw: 'Durang',
-  probAdvance: "Keyingi bosqichga chiqish (qo'shimcha vaqt va penaltilar bilan)",
+  probAdvance: "G'alaba (qo'shimcha vaqt va penaltilar bilan)",
   prob90: "90 daqiqada g'alaba",
   probEt: "Qo'shimcha vaqtda g'alaba",
   probPens: "Penaltilarda g'alaba",
@@ -175,6 +178,8 @@ const uz: Dict = {
   simChampion: 'Chempion',
   simSample: 'Namuna yurgizish',
   simAet: 'q.v.',
+  abbrHalfTime: 'tan.',
+  abbrExtraTime: 'q.v.',
   podium2: '2-oʻrin',
   podium3: '3-oʻrin',
   podium4: '4-oʻrin',
@@ -277,6 +282,11 @@ const uz: Dict = {
   typeTvStreaming: 'TV + striming',
   // stats
   statsTitle: 'Statistika',
+  tsTitle: 'Turnirning yakuniy jadvali',
+  tsResult: 'Yakuniy natija',
+  tsElimIn: '{stage}da bartaraf etilgan',
+  tsConvNote:
+    "Qo'shimcha vaqtdagi natijalar g'alaba va mag'lubiyat, penaltilar seriyasi esa durang sifatida hisoblanadi.",
   topScorers: "To'purarlar",
   goals: 'Gollar',
   noStatsYet: "Statistika turnir boshlangach paydo bo'ladi.",
@@ -383,6 +393,7 @@ const uz: Dict = {
   aimsWinner: "{team} g'alaba qozonadi!",
   aimsDrawLabel: 'Durang',
   aimsHistory: 'Simulyatsiya tarixi',
+  aimsRealMatch: "Haqiqiy o'yin",
   aimsClearHistory: 'Tarixni tozalash',
   aimsNote:
     "Turnir bashorati sahifasidagi xuddi shu Elo reyting modelidan foydalanadi. Faqat o'yin-kulgi uchun, rasmiy bashorat emas.",

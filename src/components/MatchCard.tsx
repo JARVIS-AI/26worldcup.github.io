@@ -75,10 +75,14 @@ function MatchCard({ match: m, hideDate = false, showWeather = false, domId }: M
   const et = matchResult(m, lineups[m.id])
 
   return (
-    <Link id={domId} to={`/match/${m.id}`} className={`match-card${m.status === 'live' ? ' live' : ''}`}>
+    <Link
+      id={domId}
+      to={`/match/${m.id}`}
+      className={`match-card${m.status === 'live' ? ' live' : ''}${m.stage === 'final' ? ' mc-final' : ''}`}
+    >
       <div className="mc-top">
         <span>{t('matchN', { n: m.n })}</span>
-        <span className="chip">
+        <span className={`chip${m.stage === 'final' ? ' chip-final' : ''}`}>
           {m.stage === 'group' && m.group ? t('groupX', { x: m.group }) : t(STAGE_LABEL_KEY[m.stage])}
         </span>
         {venue && <span>{pick(venue.cityName, venue.city)}</span>}
