@@ -71553,14 +71553,14 @@
    "bookings": [],
    "substitutions": [
     {
-     "off": "405545",
-     "on": "430751",
+     "off": "430751",
+     "on": "405545",
      "minute": "62'",
      "period": 5
     },
     {
-     "off": "423646",
-     "on": "430718",
+     "off": "430718",
+     "on": "423646",
      "minute": "62'",
      "period": 5
     }
@@ -71891,10 +71891,22 @@
      "on": "402925",
      "minute": "58'",
      "period": 5
+    },
+    {
+     "off": "431196",
+     "on": "418963",
+     "minute": "70'",
+     "period": 5
+    },
+    {
+     "off": "428882",
+     "on": "485595",
+     "minute": "70'",
+     "period": 5
     }
    ]
   },
-  "matchTime": "62'",
+  "matchTime": "75'",
   "period": 5,
   "final": false,
   "secTried": true,
