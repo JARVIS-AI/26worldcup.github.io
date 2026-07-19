@@ -71846,11 +71846,25 @@
     }
    ],
    "goals": [],
-   "bookings": [],
-   "substitutions": []
+   "bookings": [
+    {
+     "player": "402921",
+     "minute": "41'",
+     "card": 1,
+     "period": 3
+    }
+   ],
+   "substitutions": [
+    {
+     "off": "402921",
+     "on": "310116",
+     "minute": "44'",
+     "period": 3
+    }
+   ]
   },
-  "matchTime": "38'",
-  "period": 3,
+  "matchTime": null,
+  "period": 4,
   "final": false,
   "secTried": true,
   "v": 2
