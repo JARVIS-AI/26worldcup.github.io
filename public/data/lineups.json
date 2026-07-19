@@ -71549,7 +71549,15 @@
      "y": null
     }
    ],
-   "goals": [],
+   "goals": [
+    {
+     "player": "405545",
+     "minute": "106'",
+     "type": 2,
+     "period": 9,
+     "sec": 38
+    }
+   ],
    "bookings": [],
    "substitutions": [
     {
@@ -71913,6 +71921,13 @@
      "minute": "90'+3'",
      "card": 3,
      "period": 5
+    },
+    {
+     "player": null,
+     "official": "183380",
+     "minute": "105'",
+     "card": 1,
+     "period": 7
     }
    ],
    "substitutions": [
@@ -71954,8 +71969,8 @@
     }
    ]
   },
-  "matchTime": "103'",
-  "period": 7,
+  "matchTime": "110'",
+  "period": 9,
   "final": false,
   "secTried": true,
   "v": 2
