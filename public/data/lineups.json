@@ -71860,11 +71860,17 @@
      "on": "310116",
      "minute": "44'",
      "period": 3
+    },
+    {
+     "off": "430631",
+     "on": "332847",
+     "minute": "",
+     "period": 4
     }
    ]
   },
-  "matchTime": null,
-  "period": 4,
+  "matchTime": "48'",
+  "period": 5,
   "final": false,
   "secTried": true,
   "v": 2
